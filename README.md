@@ -41,13 +41,14 @@ Many commercial distributors, including Red Hat, Ubuntu, SUSE, and Oracle, provi
 **Debian Family**
 
 The Debian distribution is upstream for several other distributions including Ubuntu, and Ubuntu is upstream for Linux Mint and others. It is commonly used on both servers and desktop computers. Debian is a pure open source project and focuses on one key aspect, that is, stability. It also provides the largest and most complete software repository to its users.
+
 Ubuntu aims at providing a good compromise between long term stability and ease of use. Since Ubuntu gets most of its packages from Debian’s stable branch, Ubuntu also has access to a very large software repository. 
 
 Key Facts About the Debian Family
 
-	• The Debian family is upstream for Ubuntu, and Ubuntu is upstream for Linux Mint and others.
-	• It uses the DPKG-based apt-get package manager (we cover in more detail later) to install, update, and remove packages in the system.
-	• Ubuntu has been widely used for cloud deployments.
+* The Debian family is upstream for Ubuntu, and Ubuntu is upstream for Linux Mint and others.
+* It uses the DPKG-based apt-get package manager (we cover in more detail later) to install, update, and remove packages in the system.
+* Ubuntu has been widely used for cloud deployments.
 	
 **Fedora Family**
 
