@@ -31,7 +31,7 @@ CentOS is a popular free alternative to Red Hat Enterprise Linux (RHEL). Ubuntu 
 
 Many commercial distributors, including Red Hat, Ubuntu, SUSE, and Oracle, provide long term fee-based support for their distributions, as well as hardware and software certification. All major distributors provide update services for keeping your system primed with the latest security and bug fixes, and performance enhancements, as well as provide online support resources.
 
-![image](images/linuxkernel-distros)
+![image](images/linuxkernel-distros.png)
 
 
 
