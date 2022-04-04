@@ -48,22 +48,32 @@ Because the FHS is the default filesystem layout on Linux machines, and each dir
 :white_check_mark: This directory cannot contain any binary executable files according to FHS.
 
 :white_check_mark: These configuration files affect all users on system. If you want to make config changes for a specific user, ~/.conf/ should be used instead of 
+/etc/
 
-### **/etc/**
-Etc Directory
-/home
-Home contains all the personal user specific files. It contains separate directories for each user which can be accessed by cd /home/username
-This is where you do most of your work. All the downloads, pictures, music etc on your system are in /home.
-The user specific configuration file for each application can be found in /home/[username]/.conf
-You can go to any users home directory by executing cd ~[username] . If there is only one user on system, just cd ~ works.
-/lib
-Libraries are standard code files that define the commands used in a programming language. During compilation, a compiler looks up these libraries to make sense of the code just as we might look up a dictionary to understand the meaning of words while reading a book.
-This directory contains all the libraries needed to boot up the system and for commands in /bin and /sbin to run.
-This also contains kernel modules which control a lot of your hardware and device functioning
-A lot of times, there are different 32 bit and 64 bit libraries with the same name. To avoid any collusion, these binaries are kept in two separate directories accordingly named /lib32 and /lib64 .
-Lib Directory
-/media
-This directory contains several sub-directories where the system mounts removable devices such as usb drives.
+
+### **/home**
+
+:white_check_mark: Home contains all the personal user specific files. It contains separate directories for each user which can be accessed by cd /home/username
+
+:white_check_mark: This is where you do most of your work. All the downloads, pictures, music etc on your system are in /home.
+
+:white_check_mark: The user specific configuration file for each application can be found in /home/[username]/.conf
+
+:white_check_mark: You can go to any users home directory by executing cd ~[username] . If there is only one user on system, just cd ~ works.
+
+### **/lib**
+
+:white_check_mark: Libraries are standard code files that define the commands used in a programming language. During compilation, a compiler looks up these libraries to make sense of the code just as we might look up a dictionary to understand the meaning of words while reading a book.
+
+:white_check_mark: This directory contains all the libraries needed to boot up the system and for commands in /bin and /sbin to run.
+
+:white_check_mark:v This also contains kernel modules which control a lot of your hardware and device functioning
+
+:white_check_mark: A lot of times, there are different 32 bit and 64 bit libraries with the same name. To avoid any collusion, these binaries are kept in two separate directories accordingly named /lib32 and /lib64 .
+
+### **/media**
+
+:white_check_mark: This directory contains several sub-directories where the system mounts removable devices such as usb drives.
 /mnt
 This directory can be used by an user to manually mount a device. (as opposed to /media which is only used by the system)
 The current convention among users is making a separate subdirectory under /mnt and mounting the device in that subdirectory, while the older tradition is mounting the device directly in /mnt.
