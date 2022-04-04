@@ -1,2 +1,2 @@
-# FastHack - Matering Linux 
+# FastHack - Mastering Linux 
 FastHack Linux Edition
