@@ -29,9 +29,9 @@ The terms “terminal,” “shell,” and “command line interface” are ofte
 * A command line interface is a user interface (managed by a command line interpreter program) which processes commands to a computer program and outputs the results.
 When someone refers to one of these three terms in the context of Linux, they generally mean a terminal environment where you can run commands and see the results printed out to the terminal. 
 
-For our activites, is recommended to use thr [Azure Cloud Shell](http://shell.azure.com/).
-
 Becoming a Linux expert requires you to be comfortable with using a terminal. Any administrative task, including file manipulation, package installation, and user management, can be accomplished through the terminal. The terminal is interactive: you specify commands to run and the terminal outputs the results of those commands. To execute any command, you type it into the prompt and press ENTER.
+
+For our activites, is recommended to use the [Azure Cloud Shell](http://shell.azure.com/).
 
 ### THe FHS
 
