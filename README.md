@@ -1,2 +1,2 @@
-# fasthack-linux
+# FastHack - Matering Linux 
 FastHack Linux Edition
