@@ -20,6 +20,8 @@ Linux is a fully multitasking (a method where multiple tasks are performed durin
 
 As illustrated below, the [Linux kernel](http://www.kernel.org) is the core of a computer operating system. A full **Linux distribution** consists of the kernel plus a number of other software tools for file-related operations, user management, and software package management. Each of these tools provides a small part of the complete system. Each tool is often its own separate project, with its own developers working to perfect that piece of the system.
 
+<img align="center" alt="GIF" src="images/linux-intro.png" width="500"/>
+
 ![image](images/linux-intro.png)
 
 
