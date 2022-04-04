@@ -20,4 +20,4 @@ Please follow these steps before submitting a PR:
 * Submit a PR.
 
 ## License
-See LICENSE.
+See [LICENSE](LICENSE).
