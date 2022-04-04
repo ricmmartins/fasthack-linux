@@ -26,11 +26,15 @@ A vast variety of Linux distributions cater to different audiences and organizat
 
 <img align="center" src="images/services-distributions.png"/>
 
+<img align="center" src="images/linuxkernel-distros.png"/>
+
 CentOS is a popular free alternative to Red Hat Enterprise Linux (RHEL). Ubuntu and Fedora are popular in the educational realm. Scientific Linux is favored by the scientific research community for its compatibility with scientific and mathematical software packages. Both CentOS and Scientific Linux are binary-compatible with RHEL; i.e., binary software packages in most cases will install properly across the distributions.
 
 Many commercial distributors, including Red Hat, Ubuntu, SUSE, and Oracle, provide long term fee-based support for their distributions, as well as hardware and software certification. All major distributors provide update services for keeping your system primed with the latest security and bug fixes, and performance enhancements, as well as provide online support resources.
 
-![image](images/linuxkernel-distros.png)
+
+
+
 
 
 
