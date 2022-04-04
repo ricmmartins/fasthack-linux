@@ -21,14 +21,17 @@ Because the FHS is the default filesystem layout on Linux machines, and each dir
 **/bin**
 
 :arrow_right: Stores essential command binaries which can be used by both system administrator and user such as cat,ls,mv,ps,mount etc.
+
 :arrow_right: These commands are used to boot up a system (access boot files, mount drives) and can be used while repairing a system when the binaries in /usr aren’t available
 
 **/boot**
 
 :arrow_right: This directory contains all the files necessary for the system to boot up
+
 :arrow_right: This includes the kernel files, initrd, initramfs, bootloader etc.
-Boot Directory 1
-/dev
+
+**/dev**
+
 Contains device files for all the for all the physical and virtual devices mounted in the system.
 Device files arent files in in the traditional sense. They are a way for device drivers to access and interact with the said device
 Usually the primary storage is called sda (/dev/sda)
