@@ -18,29 +18,38 @@ Because the FHS is the default filesystem layout on Linux machines, and each dir
 
 :white_check_mark: This is the beginning of the Linux filesystem hierarchy. All the file paths originate from root. The directories listed above or symbolic links to those directories are required in / otherwise, the file structure isn’t FSH compliant.
 
-**/bin**
+### **/bin**
 
-:arrow_right: Stores essential command binaries which can be used by both system administrator and user such as cat,ls,mv,ps,mount etc.
+:white_check_mark: Stores essential command binaries which can be used by both system administrator and user such as cat,ls,mv,ps,mount etc.
 
-:arrow_right: These commands are used to boot up a system (access boot files, mount drives) and can be used while repairing a system when the binaries in /usr aren’t available
+:white_check_mark: These commands are used to boot up a system (access boot files, mount drives) and can be used while repairing a system when the binaries in /usr aren’t available
 
-**/boot**
+### **/boot**
 
-:arrow_right: This directory contains all the files necessary for the system to boot up
+:white_check_mark: This directory contains all the files necessary for the system to boot up
 
-:arrow_right: This includes the kernel files, initrd, initramfs, bootloader etc.
+:white_check_mark: This includes the kernel files, initrd, initramfs, bootloader etc.
 
-**/dev**
+### **/dev**
 
-Contains device files for all the for all the physical and virtual devices mounted in the system.
-Device files arent files in in the traditional sense. They are a way for device drivers to access and interact with the said device
-Usually the primary storage is called sda (/dev/sda)
-Dev Directory
-/etc
-This directory contains configuration files of your system.
-The name of your device, your passwords, your network configuration, DNS, crontabs, date and time ..etc are stored here in configuration files.
-This directory cannot contain any binary executable files according to FHS.
-These configuration files affect all users on system. If you want to make config changes for a specific user, ~/.conf/ should be used instead of /etc/
+:white_check_mark: Contains device files for all the for all the physical and virtual devices mounted in the system.
+
+:white_check_mark: Device files arent files in in the traditional sense. They are a way for device drivers to access and interact with the said device
+
+:white_check_mark: Usually the primary storage is called sda (/dev/sda)
+
+
+### **/etc**
+
+:white_check_mark: This directory contains configuration files of your system.
+
+:white_check_mark: The name of your device, your passwords, your network configuration, DNS, crontabs, date and time ..etc are stored here in configuration files.
+
+:white_check_mark: This directory cannot contain any binary executable files according to FHS.
+
+:white_check_mark: These configuration files affect all users on system. If you want to make config changes for a specific user, ~/.conf/ should be used instead of 
+
+### **/etc/**
 Etc Directory
 /home
 Home contains all the personal user specific files. It contains separate directories for each user which can be accessed by cd /home/username
