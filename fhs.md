@@ -35,115 +35,129 @@ Because the FHS is the default filesystem layout on Linux machines, and each dir
 * Usually the primary storage is called sda (/dev/sda)
 
 
-### **/etc**
+### :white_check_mark: **/etc**
 
-:white_check_mark: This directory contains configuration files of your system.
-
-:white_check_mark: The name of your device, your passwords, your network configuration, DNS, crontabs, date and time ..etc are stored here in configuration files.
-
-:white_check_mark: This directory cannot contain any binary executable files according to FHS.
-
-:white_check_mark: These configuration files affect all users on system. If you want to make config changes for a specific user, ~/.conf/ should be used instead of 
+* This directory contains configuration files of your system.
+* The name of your device, your passwords, your network configuration, DNS, crontabs, date and time ..etc are stored here in configuration files.
+* This directory cannot contain any binary executable files according to FHS.
+* These configuration files affect all users on system. If you want to make config changes for a specific user, ~/.conf/ should be used instead of 
 /etc/
 
+### :white_check_mark: **/home**
 
-### **/home**
+* Home contains all the personal user specific files. It contains separate directories for each user which can be accessed by cd /home/username
+* This is where you do most of your work. All the downloads, pictures, music etc on your system are in /home.
+* The user specific configuration file for each application can be found in /home/[username]/.conf
+* You can go to any users home directory by executing cd ~[username] . If there is only one user on system, just cd ~ works.
 
-:white_check_mark: Home contains all the personal user specific files. It contains separate directories for each user which can be accessed by cd /home/username
+### :white_check_mark: **/lib**
 
-:white_check_mark: This is where you do most of your work. All the downloads, pictures, music etc on your system are in /home.
+* Libraries are standard code files that define the commands used in a programming language. During compilation, a compiler looks up these libraries to make sense of the code just as we might look up a dictionary to understand the meaning of words while reading a book.
+* This directory contains all the libraries needed to boot up the system and for commands in /bin and /sbin to run.
+* This also contains kernel modules which control a lot of your hardware and device functioning
+* A lot of times, there are different 32 bit and 64 bit libraries with the same name. To avoid any collusion, these binaries are kept in two separate directories accordingly named /lib32 and /lib64 .
 
-:white_check_mark: The user specific configuration file for each application can be found in /home/[username]/.conf
+### :white_check_mark:  **/media**
 
-:white_check_mark: You can go to any users home directory by executing cd ~[username] . If there is only one user on system, just cd ~ works.
+* This directory contains several sub-directories where the system mounts removable devices such as usb drives.
 
-### **/lib**
+### :white_check_mark: **/mnt**
 
-:white_check_mark: Libraries are standard code files that define the commands used in a programming language. During compilation, a compiler looks up these libraries to make sense of the code just as we might look up a dictionary to understand the meaning of words while reading a book.
+* This directory can be used by an user to manually mount a device. (as opposed to /media which is only used by the system)
+* The current convention among users is making a separate subdirectory under /mnt and mounting the device in that subdirectory, while the older tradition is mounting the device directly in /mnt.
 
-:white_check_mark: This directory contains all the libraries needed to boot up the system and for commands in /bin and /sbin to run.
+### :white_check_mark: **/opt**
 
-:white_check_mark:v This also contains kernel modules which control a lot of your hardware and device functioning
+* /opt contains libraries and binaries related to packages which are not installed by your system’s package managers but are installed through third party means like using Discord’s in-application update button.
+* /opt is a less popular alternative of /usr/local . It is the vendor who decided where the libraries and binaries go but usually more monolithic and proprietary softwares like zoom use /opt .
 
-:white_check_mark: A lot of times, there are different 32 bit and 64 bit libraries with the same name. To avoid any collusion, these binaries are kept in two separate directories accordingly named /lib32 and /lib64 .
+### :white_check_mark: **/run**
 
-### **/media**
+* This directory contains the metadata of the device since the last boot.
+* This includes data of all the system processes and daemons that were executed in the current session.
+* Files under this directory are cleared (removed or truncated) at the beginning of the boot process.
 
-:white_check_mark: This directory contains several sub-directories where the system mounts removable devices such as usb drives.
-/mnt
-This directory can be used by an user to manually mount a device. (as opposed to /media which is only used by the system)
-The current convention among users is making a separate subdirectory under /mnt and mounting the device in that subdirectory, while the older tradition is mounting the device directly in /mnt.
-/opt
-/opt contains libraries and binaries related to packages which are not installed by your system’s package managers but are installed through third party means like using Discord’s in-application update button.
-/opt is a less popular alternative of /usr/local . It is the vendor who decided where the libraries and binaries go but usually more monolithic and proprietary softwares like zoom use /opt .
-Opt Directory
-/run
-This directory contains the metadata of the device since the last boot.
-This includes data of all the system processes and daemons that were executed in the current session.
-Files under this directory are cleared (removed or truncated) at the beginning of the boot process.
-Run Directory
-/sbin
-Just like /bin, /sbin also contains essential system binaries. However these binaries are only meant to be used by a system administrator rather than a normal user.
-These binaries are mostly used for device management. For example, fdisk, fsck, mkfs, ifconfig, reboot.
-Sbin Directory
-NOTE: In the above screenshot, you might see that /sbin does not only contain the essential binaries but also non-essential ones. For the full explanation check the /usr merge section
+### :white_check_mark: **/sbin**
 
+* Just like /bin, /sbin also contains essential system binaries. However these binaries are only meant to be used by a system administrator rather than a normal user.
+* These binaries are mostly used for device management. For example, fdisk, fsck, mkfs, ifconfig, reboot.
 
-/srv
-You will only ever use this directory if your device is acting as a webserver, as this directory contains all the files regarding webservers.
-For example if host a FTP connection, all the files that need to be shared should by default go in a /srv/ftp.
-/tmp
-Contains temporary files of the currently running processes.
-This data is also flushed after every boot.
-Tmp Directory
-/proc
-Just like /dev which provides devices as files, this folder contains system information and kernel information as files.
-This includes information regarding memory, partitions, hardware (battery, temprature etc) , all loaded kernel modules etc.
-Proc Directory
-/sys (distro specific)
-It contains information similarly held in /proc/, but displays a hierarchical view of specific device information in regards to hot plug devices.
-Sys Directory
-/var
-Contains variable data regarding the running processes.
-This includes the logs, cache and spools for all applications.
-Spools are the data which are waiting for further processing. For example, A document waiting in printer queue or a email header waiting to be sent.
-Var Directory
-/lost+found (ext4 feature)
-While not listed in the FHS, this directory is automatically generated by fsck.
-It stores all the orphaned and corruped files in this folder.
-This inculdes the files you couldnt save becuase of a power cut, files corrupted due to a failed upgrade process etc.
-/root (optional)
-This is supposed to be the home directory for the root user, as opposed to /home which is the home directory for the non root users.
-/usr
-The /usr directory has very interesting origins. At the time of formation, it was supposed to act like the /home directory, but when people ran out of space on /bin, they started storing the non-essential binaries in /usr. You can read the whole story here.
+### :white_check_mark: **/srv**
+
+* You will only ever use this directory if your device is acting as a webserver, as this directory contains all the files regarding webservers.
+* For example if host a FTP connection, all the files that need to be shared should by default go in a /srv/ftp.
+
+### :white_check_mark: **/tmp**
+
+* Contains temporary files of the currently running processes.
+* This data is also flushed after every boot.
+
+### :white_check_mark: **/proc**
+
+* Just like /dev which provides devices as files, this folder contains system information and kernel information as files.
+* This includes information regarding memory, partitions, hardware (battery, temprature etc) , all loaded kernel modules etc.
+
+### :white_check_mark: **/sys (distro specific)**
+
+* It contains information similarly held in /proc/, but displays a hierarchical view of specific device information in regards to hot plug devices.
+
+### :white_check_mark: **/var**
+
+* Contains variable data regarding the running processes.
+* This includes the logs, cache and spools for all applications.
+* Spools are the data which are waiting for further processing. For example, A document waiting in printer queue or a email header waiting to be sent.
+
+### :white_check_mark: **/lost+found (ext4 feature)**
+
+* While not listed in the FHS, this directory is automatically generated by fsck.
+* It stores all the orphaned and corruped files in this folder.
+* This inculdes the files you couldnt save becuase of a power cut, files corrupted due to a failed upgrade process etc.
+
+### :white_check_mark: **/root (optional)**
+
+* This is supposed to be the home directory for the root user, as opposed to /home which is the home directory for the non root users.
+
+### :white_check_mark: **/usr**
+
+The /usr directory has very interesting origins. At the time of formation, it was supposed to act like the /home directory, but when people ran out of space on /bin, they started storing the non-essential binaries in /usr. You can read the whole story [here](https://mobile.twitter.com/foone/status/1059310938354987008).
 
 Over time, this directory has been fashioned to store the binaries and libraries for the applications that are installed by the user. So for example, while bash is in /bin (since it can be used by all users) and fdisk is in /sbin (since it should only be used by administrators), user-installed applications like vlc are in /usr/bin.
 
 This way /usr has its own hierarchy just like the / (root) did.
 
-/usr/bin
-This is the primary directory of executable commands on the system.
-Contains all user installed command binaries and
-If you want to execute your scripts using a single command, you usually place them in /usr/bin/
-/usr/sbin
-This contains user installed command binaries that can only be used by system administrators.
-/usr/lib
-This contains the essential libraries for packages in /usr/bin and /usr/sbin just like /lib.
-/usr/local
-This is used for all packages which are compiled manually from source by the system administrator.
-This directory has its own hierarchy with all the bin, sbin and lib folders which contain the binaries and applications of the compiled softwares.
-/usr/share
-Contains several architecture-independent miscellaneous files
-Man files, word list(dictionaries) and defintion files are all included in this.
-The case for /usr merge – Is there really a difference between /bin and /usr/bin?
+#### :white_check_mark: /usr/bin
+
+* This is the primary directory of executable commands on the system.
+* Contains all user installed command binaries and
+* If you want to execute your scripts using a single command, you usually place them in /usr/bin/
+
+#### :white_check_mark: **/usr/sbin**
+
+* This contains user installed command binaries that can only be used by system administrators.
+
+#### :white_check_mark: **/usr/lib**
+
+* This contains the essential libraries for packages in /usr/bin and /usr/sbin just like /lib.
+
+#### :white_check_mark: **/usr/local**
+
+* This is used for all packages which are compiled manually from source by the system administrator.
+* This directory has its own hierarchy with all the bin, sbin and lib folders which contain the binaries and applications of the compiled softwares.
+
+#### :white_check_mark: **/usr/share**
+
+* Contains several architecture-independent miscellaneous files
+* Man files, word list(dictionaries) and defintion files are all included in this.
+
+**The case for /usr merge – Is there really a difference between /bin and /usr/bin?**
+
 The need for moving non-essential binaries to a different folder historically arose from a lack of space in the /bin hard disk. However, that was 1971. Today over 50 years later, we no longer face the same size problems. This has rendered two separate folders for default and user-installed binaries useless. Over time this has also caused a hodge-podge in the filesystems, with both the directory having redundant binaries which makes it confusing.
 
 For this reason, over the years, many distributions (Debian, Fedora, Ubuntu, Arch etc.) have merged /usr/bin and /bin in the same directory.
 
-
 Similarly /usr/sbin – /sbin and /usr/lib – /lib have been merged into the same directory to simplify the directory structure. Now the /bin folder is just a symlink to the /usr/bin directory and the same for other merges.
 
-You can read more about the discussion regarding these merges here and here.
+You can read more about the discussion regarding these merges [here](https://www.freedesktop.org/wiki/Software/systemd/TheCaseForTheUsrMerge/) and [here](https://www.linux-magazine.com/Issues/2019/228/Debian-usr-Merge).
 
 Usr Merge
 /bin , /sbin and /lib (including its variants) are symlinked to their /usr counterparts
@@ -151,3 +165,11 @@ Conclusion
 Since 1993, the Filesystem Hierarchy Standard has been the guideline for Unix-like directory structures. It requires the root directory partition to contain all the files the system needs for booting and mounting additional partitions.
 
 In 2015, FHS was integrated into the Linux Standard Base (LSB) and is now maintained by the Linux Foundation. To read more about the current FHS standard, I highly recommend checking out the full text of the last release in 2015. Keep exploring!
+
+## Conclusion
+
+Since 1993, the Filesystem Hierarchy Standard has been the guideline for Unix-like directory structures. It requires the root directory partition to contain all the files the system needs for booting and mounting additional partitions.
+
+In 2015, FHS was integrated into the Linux Standard Base (LSB) and is now maintained by the Linux Foundation. To read more about the current FHS standard, I highly recommend checking out the [full text](https://refspecs.linuxfoundation.org/FHS_3.0/fhs/index.html) of the last release in 2015. Keep exploring!
+
+
