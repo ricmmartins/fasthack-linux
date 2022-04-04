@@ -18,15 +18,15 @@ Linux is a fully multitasking (a method where multiple tasks are performed durin
 
 **So, what is a Linux distribution and how does it relate to the Linux kernel?**
 
+<img align="center" src="images/linux-intro.png"/>
+
 As illustrated below, the [Linux kernel](http://www.kernel.org) is the core of a computer operating system. A full **Linux distribution** consists of the kernel plus a number of other software tools for file-related operations, user management, and software package management. Each of these tools provides a small part of the complete system. Each tool is often its own separate project, with its own developers working to perfect that piece of the system.
 
-<img align="center" src="images/linux-intro.png"/>
+<img align="center" src="images/linuxkernel-distros.png"/>
 
 A vast variety of Linux distributions cater to different audiences and organizations depending on their specific needs. Large commercial organizations tend to favor the commercially supported distributions from Red Hat, SUSE and Canonical (Ubuntu).
 
 <img align="center" src="images/services-distributions.png"/>
-
-<img align="center" src="images/linuxkernel-distros.png"/>
 
 CentOS is a popular free alternative to Red Hat Enterprise Linux (RHEL). Ubuntu and Fedora are popular in the educational realm. Scientific Linux is favored by the scientific research community for its compatibility with scientific and mathematical software packages. Both CentOS and Scientific Linux are binary-compatible with RHEL; i.e., binary software packages in most cases will install properly across the distributions.
 
