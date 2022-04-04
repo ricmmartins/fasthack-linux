@@ -16,7 +16,7 @@ Because the FHS is the default filesystem layout on Linux machines, and each dir
 
 **/ (root)**
 
-:arrow_right: This is the beginning of the Linux filesystem hierarchy. All the file paths originate from root. The directories listed above or symbolic links to those directories are required in / otherwise, the file structure isn’t FSH compliant.
+:white_check_mark: This is the beginning of the Linux filesystem hierarchy. All the file paths originate from root. The directories listed above or symbolic links to those directories are required in / otherwise, the file structure isn’t FSH compliant.
 
 **/bin**
 
