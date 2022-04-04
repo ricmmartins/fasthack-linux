@@ -14,16 +14,19 @@ Because the FHS is the default filesystem layout on Linux machines, and each dir
 
 <img align="center" src="images/fhs.png"/>
 
-**/ (root)**: This is the beginning of the Linux filesystem hierarchy. All the file paths originate from root. The directories listed above or symbolic links to those directories are required in / otherwise, the file structure isn’t FSH compliant.
+**/ (root)**
 
-**/bin**: Stores essential command binaries which can be used by both system administrator and user such as cat,ls,mv,ps,mount etc.
-These commands are used to boot up a system (access boot files, mount drives) and can be used while repairing a system when the binaries in /usr aren’t available
-Bin Directory
-NOTE: In the above screenshot, you might see that /bin does not only contain the essential binaries but also non-essential ones like 7z. For the full explanation check the /usr merge section
+:arrow_right: This is the beginning of the Linux filesystem hierarchy. All the file paths originate from root. The directories listed above or symbolic links to those directories are required in / otherwise, the file structure isn’t FSH compliant.
 
-/boot
-This directory contains all the files necessary for the system to boot up
-This includes the kernel files, initrd, initramfs, bootloader etc.
+**/bin**
+
+:arrow_right: Stores essential command binaries which can be used by both system administrator and user such as cat,ls,mv,ps,mount etc.
+:arrow_right: These commands are used to boot up a system (access boot files, mount drives) and can be used while repairing a system when the binaries in /usr aren’t available
+
+**/boot**
+
+:arrow_right: This directory contains all the files necessary for the system to boot up
+:arrow_right: This includes the kernel files, initrd, initramfs, bootloader etc.
 Boot Directory 1
 /dev
 Contains device files for all the for all the physical and virtual devices mounted in the system.
