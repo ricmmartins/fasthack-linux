@@ -2,7 +2,7 @@
 FastHack Linux Edition
 <img align="right" alt="GIF" src="images/linuxpenguin.png" width="250"/>
 
-## Introduction to Linux
+## Linux History 
 
 Linux is a family of free and open-source operating systems based on the Linux kernel. Operating systems based on Linux are known as Linux distributions or distros. Examples include Debian, Ubuntu, Fedora, CentOS, Gentoo, Arch Linux, and many others.
 
@@ -41,7 +41,7 @@ Many commercial distributors, including Red Hat, Ubuntu, SUSE, and Oracle, provi
 **Debian Family**
 
 The Debian distribution is upstream for several other distributions including Ubuntu, and Ubuntu is upstream for Linux Mint and others. It is commonly used on both servers and desktop computers. Debian is a pure open source project and focuses on one key aspect, that is, stability. It also provides the largest and most complete software repository to its users.
-Ubuntu aims at providing a good compromise between long term stability and ease of use. Since Ubuntu gets most of its packages from Debian’s stable branch, Ubuntu also has access to a very large software repository. > 
+Ubuntu aims at providing a good compromise between long term stability and ease of use. Since Ubuntu gets most of its packages from Debian’s stable branch, Ubuntu also has access to a very large software repository. 
 
 Key Facts About the Debian Family
 
