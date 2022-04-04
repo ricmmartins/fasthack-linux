@@ -9,3 +9,6 @@ When a user logs in to the shell, they are brought to their own user directory, 
 The root user has its own home directory specified by the FHS: ```/root/```. Note that ```/``` is referred to as the “root directory”, and that it is different from ```root/```, which is stored within ```/```.
 
 Because the FHS is the default filesystem layout on Linux machines, and each directory within it is included to serve a specific purpose, it simplifies the process of organizing files by their function.
+
+
+<img align="center" src="images/fhs.png"/>
