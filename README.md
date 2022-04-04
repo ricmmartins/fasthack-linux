@@ -26,7 +26,7 @@ As illustrated below, the [Linux kernel](http://www.kernel.org) is the core of a
 
 A vast variety of Linux distributions cater to different audiences and organizations depending on their specific needs. Large commercial organizations tend to favor the commercially supported distributions from Red Hat, SUSE and Canonical (Ubuntu).
 
-<img align="center" src="images/linuxkernel-distros.png"/>
+**Services associated with distributions**
 
 <img align="center" src="images/services-distributions.png"/>
 
@@ -34,7 +34,7 @@ CentOS is a popular free alternative to Red Hat Enterprise Linux (RHEL). Ubuntu 
 
 Many commercial distributors, including Red Hat, Ubuntu, SUSE, and Oracle, provide long term fee-based support for their distributions, as well as hardware and software certification. All major distributors provide update services for keeping your system primed with the latest security and bug fixes, and performance enhancements, as well as provide online support resources.
 
-
+<img align="center" src="images/linuxkernel-distros.png"/>
 
 
 
