@@ -1,5 +1,5 @@
 # FastHack - Mastering Linux 
-FastHack Linux Edition
+FastHack Linux Edition - This FastHack will serves as an introduction to important command line concepts and skills to learn more about Linux.
 <img align="right" alt="GIF" src="images/linuxpenguin.png" width="250"/>
 
 ## Linux History 
@@ -77,17 +77,13 @@ Packaging differences aside, some distros - like Debian Testing, Fedora (Red-hat
 
 Whereas distros like Debian Stable and RHEL use older, better tested versions of software. Although they use slightly dated, older software - they are considered to be much more stable. Also the package maintainers always keep the software patched with the latest security updates.
 
-This FastHack will serves as an introduction to important command line concepts and skills to learn more about Linux.
+
 
 ## Prerequisites
 
 ## The Terminal
 
 ## Introduction to Linux System Adminsitration
-
-
-
-
 
 ## Contributions
 Contributions in the form of bug reports, feature requests and PRs are always welcome.
