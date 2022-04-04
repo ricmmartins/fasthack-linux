@@ -14,11 +14,9 @@ Because the FHS is the default filesystem layout on Linux machines, and each dir
 
 <img align="center" src="images/fhs.png"/>
 
-```/ (root)```
-This is the beginning of the Linux filesystem hierarchy. All the file paths originate from root. The directories listed above or symbolic links to those directories are required in / otherwise, the file structure isn’t FSH compliant.
+**/ (root)**: This is the beginning of the Linux filesystem hierarchy. All the file paths originate from root. The directories listed above or symbolic links to those directories are required in / otherwise, the file structure isn’t FSH compliant.
 
-/bin
-Stores essential command binaries which can be used by both system administrator and user such as cat,ls,mv,ps,mount etc.
+**/bin**: Stores essential command binaries which can be used by both system administrator and user such as cat,ls,mv,ps,mount etc.
 These commands are used to boot up a system (access boot files, mount drives) and can be used while repairing a system when the binaries in /usr aren’t available
 Bin Directory
 NOTE: In the above screenshot, you might see that /bin does not only contain the essential binaries but also non-essential ones like 7z. For the full explanation check the /usr merge section
