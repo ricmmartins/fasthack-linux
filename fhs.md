@@ -2,7 +2,7 @@
 
 Nearly all Linux distributions are compliant with a universal standard for filesystem directory structure known as the Filesystem Hierarchy Standard (FHS). The FHS defines a set of directories, each of which serve their own special function.
 
-The forward slash (/) is used to indicate the root directory in the filesystem hierarchy defined by the FHS.
+The forward slash (```/```) is used to indicate the root directory in the filesystem hierarchy defined by the FHS.
 
 When a user logs in to the shell, they are brought to their own user directory, stored within /home/. This is referred to as the user’s home directory. The FHS defines /home/ as containing the home directories for regular users.
 
