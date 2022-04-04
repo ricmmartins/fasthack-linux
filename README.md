@@ -33,7 +33,9 @@ Becoming a Linux expert requires you to be comfortable with using a terminal. An
 
 For our activites, is recommended to use the [Azure Cloud Shell](http://shell.azure.com/).
 
-### THe FHS
+### The Filesystem Hierarchy Standard
+
+Some concepts aroud the Linux Filesystem Herarchy Standard (FHS) is recommended, so you can [take a look here](fhs.md) to get more details about.
 
 ## Contributions
 Contributions in the form of bug reports, feature requests and PRs are always welcome.
