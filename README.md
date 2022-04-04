@@ -23,7 +23,7 @@ As illustrated below, the Linux kernel is the core of a computer operating syste
 
 
 
-![image](https://user-images.githubusercontent.com/44813563/161582668-b81871f9-b9f8-4373-8936-14e239bedc9b.png)
+![image](images/linux-intro.png)
 
 
 
