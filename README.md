@@ -13,6 +13,8 @@ To read more about Linux History, Linux Distributions and Linux Kernel, [click h
 
 ## Prerequisites
 
+To follow along you will need access to a server running a Linux-based operating system. Note that this fasthack was validated using a Linux server running Ubuntu 20.04, but the examples given should work on any Linux distribution. [Click here](create-linuxvm.md) to follow the steps to create your Linux Virtual Machine on Azure.
+
 ## The Terminal
 
 ## Introduction to Linux System Adminsitration
