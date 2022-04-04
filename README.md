@@ -16,7 +16,7 @@ Whenever possible, Linux makes its components available via files or objects tha
 
 Linux is a fully multitasking (a method where multiple tasks are performed during the same period of time), multiuser operating system, with built-in networking and service processes known as daemons in the UNIX world.
 
-So, what is a Linux distribution and how does it relate to the Linux kernel?
+**So, what is a Linux distribution and how does it relate to the Linux kernel?**
 
 As illustrated below, the Linux kernel is the core of a computer operating system. A full Linux distribution consists of the kernel plus a number of other software tools for file-related operations, user management, and software package management. Each of these tools provides a small part of the complete system. Each tool is often its own separate project, with its own developers working to perfect that piece of the system.
 
