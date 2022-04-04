@@ -34,11 +34,48 @@ CentOS is a popular free alternative to Red Hat Enterprise Linux (RHEL). Ubuntu 
 
 Many commercial distributors, including Red Hat, Ubuntu, SUSE, and Oracle, provide long term fee-based support for their distributions, as well as hardware and software certification. All major distributors provide update services for keeping your system primed with the latest security and bug fixes, and performance enhancements, as well as provide online support resources.
 
+**Distro Families**
+
 <img align="center" src="images/linuxkernel-distros.png"/>
 
+**Debian Family**
 
+The Debian distribution is upstream for several other distributions including Ubuntu, and Ubuntu is upstream for Linux Mint and others. It is commonly used on both servers and desktop computers. Debian is a pure open source project and focuses on one key aspect, that is, stability. It also provides the largest and most complete software repository to its users.
+Ubuntu aims at providing a good compromise between long term stability and ease of use. Since Ubuntu gets most of its packages from Debian’s stable branch, Ubuntu also has access to a very large software repository. > 
 
+Key Facts About the Debian Family
 
+	• The Debian family is upstream for Ubuntu, and Ubuntu is upstream for Linux Mint and others.
+	• It uses the DPKG-based apt-get package manager (we cover in more detail later) to install, update, and remove packages in the system.
+	• Ubuntu has been widely used for cloud deployments.
+	
+**Fedora Family**
+
+Fedora is the community distribution that forms the basis of Red Hat Enterprise Linux (RHEL), CentOS, Scientific Linux, and Oracle Linux. Fedora contains significantly more software than Red Hat’s enterprise version. One reason for this is that a diverse community is involved in building Fedora; it is not just a company.
+
+Key Facts About the Fedora Family
+
+	• The Fedora family is upstream for CentOS, RHEL, and Oracle Linux.
+	• It supports hardware platforms such as x86, x86-64, Itanium, PowerPC, and IBM System z.
+	• It uses the RPM-based yum package manager (we cover in more detail later) to install, update, and remove packages in the system.
+	• RHEL is widely used by enterprises which host their own systems.
+
+**SUSE Family**
+
+The relationship between SUSE,  SUSE Linux Enterprise Server (SLES), and openSUSE is similar to the one described between Fedora, Red Hat Enterprise Linux, and CentOS. 
+
+Key Facts About the SUSE Family
+
+	• SUSE Linux Enterprise Server (SLES) is upstream for openSUSE.
+	• It uses the RPM-based zypper package manager (we cover in more detail later) to install, update, and remove packages in the system.
+	• It includes the YaST (Yet another System Tool) application for system administration purposes.
+	
+As said, the biggest differences between the distros are their package management systems and tools.
+Debian (and derived distros) use the Debian (.deb) package format, Red-hat (and derived distros) use the RPM (.rpm) package format. And distros like Arch and Slackware use their own packaging formats and tools.
+
+Packaging differences aside, some distros - like Debian Testing, Fedora (Red-hat based) and Arch tend to use newer versions of the Linux kernel and other software packages. But this comes at the cost of potential instability and breakage - which can happen from time to time after updates on these systems - albeit rarely.
+
+Whereas distros like Debian Stable and RHEL use older, better tested versions of software. Although they use slightly dated, older software - they are considered to be much more stable. Also the package maintainers always keep the software patched with the latest security updates.
 
 This FastHack will serves as an introduction to important command line concepts and skills to learn more about Linux.
 
