@@ -14,7 +14,7 @@ Linux borrows heavily from the UNIX operating system because it was written to b
 
 Whenever possible, Linux makes its components available via files or objects that look like files. Processes, devices, and network sockets are all represented by file-like objects, and can often be worked with using the same utilities used for regular files.
 
-Linux is a fully multitasking (a method where multiple tasks are performed during the same period of time), multiuser operating system, with built-in networking and service processes known as daemons in the UNIX world.
+Linux is a fully multitasking (a method where multiple tasks are performed during the same period of time), multiuser operating system, with built-in networking and service processes known as daemons in the UNIX world. Linux was inspired by UNIX, but it is not UNIX.
 
 **So, what is a Linux distribution and how does it relate to the Linux kernel?**
 
