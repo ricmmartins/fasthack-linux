@@ -42,12 +42,9 @@ Some concepts around the Linux Filesystem Hierarchy Standard (FHS) are recommend
 | Topic        | Challenge|
 |--------------|-----------|
 | 1. Getting help | -     |
-| 2. Working with directories     | Working withg directories  |
-
-
-
-3. Working with files
-4. Working with file contents
+| 2. Working with directories     | Link  |
+| 3. Working with files    | Link  |
+| 4. Working with file contents    | Link  |
 5. The Linux file tree
 6. Commands and arguments
 7. Control operators
