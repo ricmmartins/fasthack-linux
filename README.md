@@ -37,9 +37,9 @@ For our activites, is recommended to use the [Azure Cloud Shell](http://shell.az
 
 Some concepts around the Linux Filesystem Hierarchy Standard (FHS) are recommended, so you can get more details about it [here](fhs.md).
 
-## Topics & Challenges
+## Challenges
 
-| Topic        |
+| Challenges        |
 |--------------|
 | 1. [Disks, Partitions and File Systems](topics/lab01-disks.md) |
 
