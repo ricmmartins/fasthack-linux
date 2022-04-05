@@ -41,11 +41,11 @@ Some concepts around the Linux Filesystem Hierarchy Standard (FHS) are recommend
 
 | Topic        | Challenge|
 |--------------|-----------|
-| Juicy Apples | 1.99      |
-| Bananas      | **1.89**  |
+| 1. Getting help | -     |
+| 2. Working with directories     | Working withg directories  |
 
-1. Getting help
-2. Working with directories
+
+
 3. Working with files
 4. Working with file contents
 5. The Linux file tree
@@ -76,7 +76,7 @@ Some concepts around the Linux Filesystem Hierarchy Standard (FHS) are recommend
 
 ## Challenges
 
-### 1. Working withg directories
+### 1. 
 ### 2. Working with files
 ### 3. File contents
 ### 4. File system tree
