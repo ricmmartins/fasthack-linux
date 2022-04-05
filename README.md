@@ -39,7 +39,7 @@ Some concepts around the Linux Filesystem Hierarchy Standard (FHS) are recommend
 
 ## Topics
 
-### 1. Getting help
+#### 1. Getting help
 ### 2. Working with directories
 ### 3. Working with files
 ### 4. Working with file contents
