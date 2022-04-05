@@ -110,7 +110,7 @@ No manual entry for woman
 
 ## 1.10. mandb
 
-Should you be convinced that a man page exists, but you can't access it, then try running mandb on Debian/Mint. 
+Should you be convinced that a man page exists, but you can't access it, then try running mandb on Debian/Ubuntu. 
 
 ```
 user@server:~# mandb
@@ -122,6 +122,7 @@ user@server:~# mandb
 
 Or run makewhatis on CentOS/Redhat.
 
+```
 [user@server ~]# apropos scsi 
 scsi: nothing appropriate 
 [user@server ~]# makewhatis
@@ -130,3 +131,4 @@ hpsa        (4) - HP Smart Array SCSI driver
 lsscsi      (8) - list SCSI devices (or hosts) and their attributes
 sd          (4) - Driver for SCSI Disk Drives
 st          (4) - SCSI tape device
+```
