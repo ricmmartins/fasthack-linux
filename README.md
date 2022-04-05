@@ -44,7 +44,7 @@ Some concepts around the Linux Filesystem Hierarchy Standard (FHS) are recommend
 | 1. [Getting help](topics/getting-help.md) | N/A |
 
 
-## Useful links & Study References
+## Useful links / Study References
 
 * [Linux Journey](https://linuxjourney.com/)
 * [Linux Training - Paul Cobbaut](https://linux-training.be/)
@@ -56,6 +56,7 @@ Some concepts around the Linux Filesystem Hierarchy Standard (FHS) are recommend
 * [The Linux Documentation Project](https://tldp.org/)
 * [Intrduction to Linux - from TLPD](https://tldp.org/LDP/intro-linux/intro-linux.pdf)
 * [Linux Book](https://goalkicker.com/LinuxBook/)
+* [Introduction to Linux - Free course on Linux Foundation](https://training.linuxfoundation.org/training/introduction-to-linux/)
 
 ## Contributions
 Contributions in the form of bug reports, feature requests and PRs are always welcome.
