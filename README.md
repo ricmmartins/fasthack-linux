@@ -37,6 +37,66 @@ For our activites, is recommended to use the [Azure Cloud Shell](http://shell.az
 
 Some concepts around the Linux Filesystem Hierarchy Standard (FHS) are recommended, so you can [take a look here](fhs.md) to get more details about it.
 
+## Topics
+
+### 1. Getting help
+### 2. Working with directories
+### 3. Working with files
+### 4. Working with file contents
+### 5. The Linux file tree
+### 6. Commands and arguments
+### 7. Control operators
+### 8. Shell variables
+### 9. Shell embedding and options
+### 10. Shell history
+### 11. File globbing
+### 12. I/O redirection
+### 13. Filters
+### 14. Basic Unix tools
+### 15. Regular expressions
+### 16. Scripting introduction
+### 17. Scripting loops
+### 18. Scripting parameters
+### 19. More scripting
+### 20. Introduction to users
+### 21. User management
+### 22. User passwords
+### 23. User profiles
+### 24. Groups
+### 25. Standard file permissions
+### 26. Advanced file permissions
+### 27. Access control lists
+### 28. File links
+
+
+## Challenges
+
+### 1. Working withg directories
+### 2. Working with files
+### 3. File contents
+### 4. File system tree
+### 5. Commands and arguments
+### 6. Control operators
+### 7. Shell variables
+### 8. Shell embedding
+### 9. Shell history
+### 10. File globbing
+### 11. Input/output redirection
+### 12. Filters
+### 13. Basic Unix tools
+### 14. Introduction to scripting
+### 15. Scripting tests and loops
+### 16. Scripting parameters and options
+### 17. More scripting
+### 18. Introduction to users
+### 19. User management
+### 20. User passwords
+### 21. User profiles
+### 22. Groups
+### 23. Standard file permissions
+### 24. Advanced file permissions
+### 25. File links
+
 ## Contributions
 Contributions in the form of bug reports, feature requests and PRs are always welcome.
 
