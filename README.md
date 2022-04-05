@@ -42,40 +42,17 @@ Some concepts around the Linux Filesystem Hierarchy Standard (FHS) are recommend
 | Topic        | Challenge|
 |--------------|-----------|
 | 1. [Getting help](topics/getting-help.md) | N/A |
-| 2. Working with directories | Link  |
-| 3. Working with files | Link  |
-| 4. Working with file contents | Link  |
-| 5. The Linux file tree | Link  |
-| 6. Commands and arguments | Link  |
-| 7. Control operators | Link  |
-| 8. Shell variables | Link  |
-| 9. Shell embedding and options  | Link  |
-| 10. Shell history | Link  |
-| 11. File globbing | Link  |
-| 12. I/O redirection | Link  |
-| 13. Filters | Link  |
-| 14. Basic Unix tools | Link  |
-| 15. Regular expressions | N/A  |
-| 16. Scripting introduction | Link  |
-| 17. Scripting loops | Link  |
-| 18. Scripting parameters | Link  |
-| 19. More scripting | Link  |
-| 20. Introduction to users | Link  |
-| 21. User management | Link  |
-| 22. User passwords | Link  |
-| 23. User profiles | Link  |
-| 24. Groups | Link  |
-| 25. Standard file permissions | Link  |
-| 26. Advanced file permissions | Link  |
-| 27. Access control lists | Link  |
-| 28. File links | Link  | 
 
-## Useful links/references
+
+## Useful links & Study References
 
 * [Linux Journey](https://linuxjourney.com/)
-* [Linux-Training](https://linux-training.be/)
+* [Linux Training - Paul Cobbaut](https://linux-training.be/)
 * [Linux Upskill Challenge](https://linuxupskillchallenge.org/)
+* [Beginner's Guide for Linux - Tecmint](https://www.tecmint.com/free-online-linux-learning-guide-for-beginners/)
 * [Linux Cheat Sheet Commands](https://ipcisco.com/linux-cheat-sheet/)
+* [Preparation for Linux Foundation Certified System Adminsitrator](https://github.com/Bes0n/LFCS)
+* [Linux Foundation Certified System Administrator (LFCS) Notes](https://github.com/simonesavi/lfcs)
 * [The Linux Documentation Project](https://tldp.org/)
 * [Intrduction to Linux - from TLPD](https://tldp.org/LDP/intro-linux/intro-linux.pdf)
 * [Linux Book](https://goalkicker.com/LinuxBook/)
