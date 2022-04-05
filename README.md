@@ -35,7 +35,7 @@ For our activites, is recommended to use the [Azure Cloud Shell](http://shell.az
 
 ### Basic knowkedge on the Filesystem Hierarchy Standard
 
-Some concepts around the Linux Filesystem Hierarchy Standard (FHS) are recommended, so you can [take a look here](fhs.md) to get more details about it.
+Some concepts around the Linux Filesystem Hierarchy Standard (FHS) are recommended, so you can get more details about it [here](fhs.md).
 
 ## Topics & Challenges
 
