@@ -70,22 +70,10 @@ Some concepts around the Linux Filesystem Hierarchy Standard (FHS) are recommend
 | 27. Access control lists | Link  |
 | 28. File links | Link  | 
 
+## Useful links/references
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+* [https://linuxjourney.com/](https://linuxjourney.com/)
+* [https://linuxupskillchallenge.org/](https://linuxupskillchallenge.org/)
 
 ## Contributions
 Contributions in the form of bug reports, feature requests and PRs are always welcome.
