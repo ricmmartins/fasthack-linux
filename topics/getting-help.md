@@ -1,6 +1,6 @@
 # Getting help
 
-This chapter will explain the use of man pages (also called manual pages) on your Unix or Linux computer. 
+Here we will explain the use of man pages. 
 
 You will learn the man command together with related commands like whereis, whatis and mandb.
 
