@@ -73,6 +73,7 @@ Some concepts around the Linux Filesystem Hierarchy Standard (FHS) are recommend
 ## Useful links/references
 
 * [Linux Journey](https://linuxjourney.com/)
+* [Linux-Training](https://linux-training.be/)
 * [Linux Upskill Challenge](https://linuxupskillchallenge.org/)
 * [Linux Cheat Sheet Commands](https://ipcisco.com/linux-cheat-sheet/)
 * [The Linux Documentation Project](https://tldp.org/)
