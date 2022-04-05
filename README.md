@@ -41,7 +41,7 @@ Some concepts around the Linux Filesystem Hierarchy Standard (FHS) are recommend
 
 | Challenges        |
 |--------------|
-| 1. [Disks, Partitions and File Systems](topics/lab01-disks.md) |
+| 1. [Disks, Partitions and File Systems](challenges/lab01-disks.md) |
 
 
 ## Useful links / Study References
