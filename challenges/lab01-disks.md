@@ -9,7 +9,7 @@
 
 1. Identify the new disk added to the machine
 2. Edit the disk partition table:
-  a. Add a new partition
+ * Add a new partition
   b  List and identify in the S.O. the partition created
   c.  Erase partition
   d. Check in S.O. that the partition has been removed
