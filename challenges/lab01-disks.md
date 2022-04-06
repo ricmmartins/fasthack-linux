@@ -7,6 +7,8 @@
 
 ## Objectives
 
+### Partitions
+
 1. Identify the new disk added to the machine
 2. Edit the disk partition table:
     1. Add a new partition
@@ -23,7 +25,7 @@
 8. Unmount the partitions
 9. Remove existing partitions
 
-## LVM
+### LVM
 
 1. Create a Physical Volume (```PV```) with the disk added
 2. Check that the ```PV``` is created
