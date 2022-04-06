@@ -18,7 +18,7 @@
     5. Add two new partitions with type 83
     6. Check in S.O. that the partitions were created
 3. Create a file system on each of the partitions created
-4. Create a directory for each of the partitions inside the /mnt directory
+4. Create a directory for each of the partitions inside the `/mnt` directory
 5. Mount each of the partitions in the respective directory
 6. Verify that the partitions are mounted correctly in OS.
 7. Write files inside one of the partitions
@@ -27,7 +27,7 @@
 
 ### LVM
 
-1. Create a Physical Volume (```PV```) with the disk added
+1. Create a Physical Volume (`PV`) with the disk added
 2. Check that the ```PV``` is created
 3. Create a Volume Group (```VG```) using the created PV
 4. Verify that the VG is created
