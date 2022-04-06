@@ -22,3 +22,4 @@
 7. Write files inside one of the partitions
 8. Unmount the partitions
 9. Remove existing partitions
+10. 
