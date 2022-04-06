@@ -39,3 +39,6 @@
  * That the ```LV``` has been resized
  * If there was reflection in the file system
 * Resize the file system
+
+------------
+[Answers](https://github.com/ricmmartins/fasthack-linux-answers/blob/main/challenges/lab01-disks.md)
