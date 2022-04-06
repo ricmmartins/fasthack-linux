@@ -42,7 +42,7 @@ Some concepts around the Linux Filesystem Hierarchy Standard (FHS) are recommend
 | Challenges |
 |--------------|
 | 1. [Disks, Partitions and File Systems](challenges/lab01-disks.md) |
-| 2. [Logical Volume Manager](challendes/lab02-lvm.md)|
+| 2. [Logical Volume Manager](challenges/lab02-lvm.md)|
 
 
 ## Useful links / Study References
