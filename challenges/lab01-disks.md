@@ -25,7 +25,7 @@
 
 ## LVM
 
-* Create a Physical Volume (```PVv) with the disk added
+* Create a Physical Volume (```PV```) with the disk added
 * Check that the ```PV``` is created
 * Create a Volume Group (```VG```) using the created PV
 * Verify that the VG is created
