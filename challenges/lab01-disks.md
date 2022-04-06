@@ -23,3 +23,19 @@
 * Unmount the partitions
 * Remove existing partitions
 
+## LVM
+
+* Create a Physical Volume (```PVv) with the disk added
+* Check that the ```PV``` is created
+* Create a Volume Group (```VG```) using the created PV
+* Verify that the VG is created
+* Create a Logical Volume (```LV```) using half the disk
+* Create an ```LV``` using 10% of the disk
+* Verify that ```LV```s are created
+* Format both ```LV```s as ```ext4```
+* Mount the ```LV```s in the directories created earlier in ```/mnt```
+* Resize the smallest ```LV``` to take up another 20% of the disk
+* Check:
+ * That the ```LV``` has been resized
+ * If there was reflection in the file system
+* Resize the file system
