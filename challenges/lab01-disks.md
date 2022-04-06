@@ -9,12 +9,12 @@
 
 1. Identify the new disk added to the machine
 2. Edit the disk partition table:
-* Add a new partition
-* List and identify in the S.O. the partition created
-* Erase partition
-* Check in S.O. that the partition has been removed
-* Add two new partitions with type 83
-* Check in S.O. that the partitions were created
+  a. Add a new partition
+  b  List and identify in the S.O. the partition created
+  c.  Erase partition
+  d. Check in S.O. that the partition has been removed
+  e. Add two new partitions with type 83
+  f. Check in S.O. that the partitions were created
 3. Create a file system on each of the partitions created
 4. Create a directory for each of the partitions inside the /mnt directory
 5. Mount each of the partitions in the respective directory
