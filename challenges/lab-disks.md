@@ -43,4 +43,4 @@
 12. Resize the file system
 
 ------------
-[Answers](https://github.com/ricmmartins/fasthack-linux-answers/blob/main/challenges/lab01-disks.md)
+[Answers](https://github.com/ricmmartins/fasthack-linux-answers/blob/main/challenges/lab-disks.md)
