@@ -151,6 +151,51 @@ In this tutorial, we’ll present you with a curated list of the most handy Linu
 
 | Command | Description |
 |--------------|--------------|
+|`df -h`|See free and used space on mounted systems|
+|`df -i`|Show free inodes on mounted filesystems|
+|`fdisk -l`|Display disk partitions, sizes, and types with the command|
+|`du -ah`|See disk usage for all files and directory|
+|`du -sh`|Show disk usage of the directory you are currently in|
+|`findmnt`|Display target mount point for all filesystem|
+|`mount [device_path] [mount_point]` | Mount a device|
+
+
+## SSH Login
+
+| Command | Description |
+|--------------|--------------|
+|`ssh user@host`|Connect to host as user|
+|`ssh host` | Securely connect to host via SSH default port 22| 
+| `ssh -p [port] user@host` |Connect to host using a particular port|
+
+## File Permission
+
+| Command | Description |
+|--------------|--------------|
+|`chmod 777 [file_name]`|Assign read, write, and execute permission to everyone|
+|`chmod 755 [file_name]`|Give read, write, and execute permission to owner, and read and execute permission to group and others|
+|`chmod 766 [file_name]` | Assign full permission to owner, and read and write permission to group and others| 
+|`chown [user] [file_name]`| Change the ownership of a file|
+|`chown [user]:[group] [file_name]`|Change the owner and group ownership of a file|
+
+## Network
+
+| Command | Description |
+|--------------|--------------|
+|`ip addr show` | List IP addresses and network interfaces|
+|`ip address add [IP_address]`| Assign an IP address to interface eth0|
+|`ifconfig` | Display IP addresses of all network interfaces with|
+|`netstat -pnltu` | See active (listening) ports with the netstat command|
+| `netstat -nutlp` | Show tcp and udp ports and their programs|
+| `whois [domain]` | Display more information about a domain|
+| `dig [domain] ` | Show DNS information about a domain using the dig command|
+| `dig -x host` | Do a reverse lookup on domain|
+| `dig -x [ip_address]` | Do reverse lookup of an IP address|
+| `host [domain]` | Perform an IP lookup for a domain|
+| `hostname -I` | Show the local IP address|
+| `wget [file_name]` | Download a file from a domain using the wget command|
+| `nslookup [domain-name]` | Receive information about an internet domain|
+| `curl -O [file-url]` | Save a remote file to your system using the filename that corresponds to the filename on the server|
 
 
 
