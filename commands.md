@@ -218,7 +218,21 @@ In this page, we’ll present you with a curated list of the most handy Linux co
 | `man [command]` | Display a built-in manual for a command |
 | `history` | Print the history of the commands you used in the terminal|
 
+## Linux Keyboard Shortcuts
 
+| Command | Description |
+|--------------|--------------|
+| `Ctrl + C` | Kill process running in the terminal|
+| `Ctrl + Z` | Stop current process - The process can be resumed in the foreground with `fg` or in the background with `bg`|
+| `Ctrl + W` | Cut one word before the cursor and add it to clipboard|
+| `Ctrl + U` | Cut part of the line before the cursor and add it to clipboard |
+| `Ctrl + K` | Cut part of the line after the cursor and add it to clipboard |
+| `Ctrl + Y` | Paste from clipboard |
+| `Ctrl + R` | Recall last command that matches the provided characters|
+| `Ctrl + O` | Run the previously recalled command|
+| `Ctrl + G` | Exit command history without running a command|
+| `!!` | Run the last command again |
+| `Ctrl + D | Log out of current session|
 
 
 
