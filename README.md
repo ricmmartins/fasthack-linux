@@ -45,7 +45,7 @@ Just for reference, [here is](commands.md) a good cheat sheet.
 
 | Challenges |
 |--------------|
-| 1. [First steps on the command line](challenges/lab-commandline.md) |
+| 1. [First steps on the command line](challenges/lab-firststeps.md) |
 | 2. [Disks, Partitions and File Systems](challenges/lab-disks.md) |
 
 
