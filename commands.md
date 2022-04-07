@@ -58,7 +58,7 @@ In this tutorial, we’ll present you with a curated list of the most handy Linu
 | `awk '[pattern] {print $0}' [filename]` | Print all lines matching a pattern in a file |
 | `diff [file1] [file2]` | Compare two files and display differences| 
 | `source [filename]` | Read and execute the file content in the current shell| 
-| `[command] | tee [filename] >/dev/null` | Store the command output in a file and skip the terminal output | 
+| `[command] \| tee [filename] >/dev/null` | Store the command output in a file and skip the terminal output | 
 
 ## Directory Navigation
 
