@@ -197,7 +197,26 @@ In this tutorial, we’ll present you with a curated list of the most handy Linu
 | `nslookup [domain-name]` | Receive information about an internet domain|
 | `curl -O [file-url]` | Save a remote file to your system using the filename that corresponds to the filename on the server|
 
+## Variables
 
+| Command | Description |
+|--------------|--------------|
+| `let "[variable]=[value]"`|Assign an integer value to a variable|
+| `export [variable-name]` | Export a Bash variable| 
+| `declare [variable-name]= "[value]"` | Declare a Bash variable|
+| `set` | List the names of all the shell variables and functions|
+| `echo $[variable-name]` | Display the value of a variable|
+
+## Shell Command Management
+
+| Command | Description |
+|--------------|--------------|
+| `alias [alias-name]='[command]'` | Create an alias for a command|
+| `watch -n [interval-in-seconds] [command]` | Set a custom interval to run a user-defined command|
+| `sleep [time-interval] && [command]` | Postpone the execution of a command|
+| `at [hh:mm]` | Create a job to be executed at a certain time (Ctrl+D to exit prompt after you type in the command)|
+| `man [command]` | Display a built-in manual for a command |
+| `history` | Print the history of the commands you used in the terminal|
 
 
 
