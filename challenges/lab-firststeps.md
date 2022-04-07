@@ -22,4 +22,4 @@
 14. Create a directory ~/etcbackup and copy all *.conf files from /etc into it. Did you include all subdirectories of /etc ?
 
 -----------
-[Answers](https://github.com/ricmmartins/fasthack-linux-answers/blob/main/challenges/lab-commandline.md)
+[Answers](https://github.com/ricmmartins/fasthack-linux-answers/blob/main/challenges/lab-firststeps.md)
