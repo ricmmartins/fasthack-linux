@@ -8,7 +8,7 @@
 
 1. List the files in the /bin directory
 2. Display the type of file of /bin/cat, /etc/passwd and /usr/bin/passwd
-3. Download vm-linux.png and azurefundamentals.pdf from [resources](resources) 
+3. Download vm-linux.png and azurefundamentals.pdf from [resources](/resources) 
 4. Display the type of file of wolf.jpg and LinuxFun.pdf
 5. Rename wolf.jpg to wolf.pdf 
 6. Display the type of file of wolf.pdf and LinuxFun.pdf
