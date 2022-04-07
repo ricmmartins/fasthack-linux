@@ -45,5 +45,34 @@ In this tutorial, we’ll present you with a curated list of the most handy Linu
 |`cp -r [directory_name1] [directory_name2]`|Recursively copy the contents of one file to a second file|
 |`mv [file_name1] [file_name2]`|Rename [file_name1] to [file_name2] with the command|
 |`ln -s /path/to/[file_name] [link_name]`|Create a symbolic link to a file|
+| `touch [file_name]` | Create a new file using touch |
+| `more [file_name]` | Show the contents of a file | 
+| `cat [file_name]`  | or use the cat command |
+| `cat [file_name1] >> [file_name2]` | Append file contents to another file | 
+| `head [file_name]` | Display the first 10 lines of a file with head command | 
+| `tail [file_name]` | Show the last 10 lines of a file | 
+| `wc` | Show the number of words, lines, and bytes in a file using wc | 
+| `ls | xargs wc`  | List number of lines/words/characters in each file in a directory with the xargs command | 
+| `cut -d[delimiter] [filename]` | Cut a section of a file and print the result to standard output | 
+| `[data] | cut -d[delimiter]` | Cut a section of piped data and print the result to standard output | 
+| `awk '[pattern] {print $0}' [filename]` | Print all lines matching a pattern in a file |
+| `diff [file1] [file2]` | Compare two files and display differences| 
+| `source [filename]` | Read and execute the file content in the current shell| 
+| `[command] | tee [filename] >/dev/null` | Store the command output in a file and skip the terminal output | 
+
+## Directory Navigation
+
+|`cd ..`|Move up one level in the directory tree structure|
+|`cd`|Change directory to $HOME|
+|`cd /chosen/directory`|Change location to a specified directory|
+
+
+
+
+
+
+
+
+
 
 
