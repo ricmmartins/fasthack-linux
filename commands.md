@@ -23,7 +23,7 @@ In this tutorial, we’ll present you with a curated list of the most handy Linu
 
 | Command | Description |
 |--------------|--------------
-|`grep [pattern] [file_name]` | Search for a specific pattern in a file with grep |
+| `grep [pattern] [file_name]` | Search for a specific pattern in a file with grep |
 | `grep -r [pattern] [directory_name]` | Recursively search for a pattern in a directory:|
 | `locate [name]` | Find all files and directories related to a particular name: |
 | `find [/folder/location] -name [a]` | List names that begin with a specified character [a] in a specified location [/folder/location] by using the find command: |
