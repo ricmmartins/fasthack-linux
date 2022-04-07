@@ -109,6 +109,56 @@ In this tutorial, we’ll present you with a curated list of the most handy Linu
 |`dpkg -r [package_name.deb]`|Remove an .deb package|
 |`tar zxvf [source_code.tar.gz] && cd [source_code] && ./configure && make && make install`|Install software from source code|
 
+## Process management
+
+| Command | Description |
+|--------------|--------------|
+|`ps` | See a snapshot of active processes|
+|`pstree`|Show processes in a tree-like diagram|
+|`pmap`|Display a memory usage map of processes|
+|`top`|See all running processes|
+|`kill [process_id]` |Terminate a Linux process under a given ID |
+|`pkill [proc_name]` | Terminate a process under a specific name|
+|`killall [proc_name`|Terminate all processes labelled “proc”|
+|`bg`|List and resume stopped jobs in the background|
+|`fg`|Bring the most recently suspended job to the foreground|
+|`fg [job]`|Bring a particular job to the foreground|
+|`lsof`|List files opened by running processes|
+|`trap "[commands-to-execute-on-trapping]" [signal]`|Catch a system error signal in a shell script|
+|`wait`|Pause terminal or a Bash script until a running process is completed|
+|`nohup [command] &`|Run a Linux process in the background|
+
+## System Management and Information
+
+| Command | Description |
+|--------------|--------------|
+|`uname -r` | Show system information|
+|`uname -a`|See kernel release information|
+|`uptime `|Display how long the system has been running, including load average|
+|`hostname`|See system hostname|
+|`hostname -i`|Show the IP address of the system|
+|`last reboot`|List system reboot history|
+|`date`|See current time and date|
+|`timedatectl `|Query and change the system clock with|
+|`cal`|Show current calendar (month and day)|
+|`whoami`|See which user you are using|
+|`finger [username]`|Show information about a particular user|
+|`ulimit [flags] [limit]`|View or limit system resource amounts|
+|`shutdown [hh:mm]`|Schedule a system shutdown|
+|`shutdown now` |Shut Down the system immediately|
+
+## Disk Usage
+
+| Command | Description |
+|--------------|--------------|
+
+
+
+
+
+
+
+
 
 
 
