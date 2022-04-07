@@ -7,7 +7,7 @@ In this tutorial, we’ll present you with a curated list of the most handy Linu
 ## Hardware information
 
 | Command | Description |
-|--------------|--------------
+|--------------|--------------|
 |`dmesg` | Show bootup messages |
 | `cat /proc/cpuinfo` | See CPU information|
 | `free -h` | Display free and used memory |
@@ -22,7 +22,7 @@ In this tutorial, we’ll present you with a curated list of the most handy Linu
 ## Searching
 
 | Command | Description |
-|--------------|--------------
+|--------------|--------------|
 | `grep [pattern] [file_name]` | Search for a specific pattern in a file with grep |
 | `grep -r [pattern] [directory_name]` | Recursively search for a pattern in a directory:|
 | `locate [name]` | Find all files and directories related to a particular name: |
@@ -32,7 +32,7 @@ In this tutorial, we’ll present you with a curated list of the most handy Linu
 ## File Commands
 
 | Command | Description |
-|--------------|--------------
+|--------------|--------------|
 |`ls` | List files in the directory|
 | `ls -a` | List all files (shows hidden files)|
 | `locate [name]` | Find all files and directories related to a particular name: |
@@ -63,7 +63,7 @@ In this tutorial, we’ll present you with a curated list of the most handy Linu
 ## Directory Navigation
 
 | Command | Description |
-|--------------|--------------
+|--------------|--------------|
 |`tar cf [compressed_file.tar] [file_name]`|Archive an existing file|
 |`tar xf [compressed_file.tar]`|Extract an archived file|
 |`tar czf [compressed_file.tar.gz]`|Create a gzip compressed tar file by running|
@@ -73,14 +73,14 @@ In this tutorial, we’ll present you with a curated list of the most handy Linu
 ## File Transfer
 
 | Command | Description |
-|--------------|--------------
+|--------------|--------------|
 |`scp [file_name.txt] [server/tmp]`|Copy a file to a server directory securely using the Linux scp command|
 |`rsync -a [/your/directory] [/backup/] `|Synchronize the contents of a directory with a backup directory using the rsync command|
 
 ## Users and Groups
 
 | Command | Description |
-|--------------|--------------
+|--------------|--------------|
 |`id`|See details about the active users|
 |`last`|Show last system logins|
 |`who`|Display who is currently logged into the system with the who command|
