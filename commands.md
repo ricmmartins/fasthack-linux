@@ -62,6 +62,8 @@ In this tutorial, we’ll present you with a curated list of the most handy Linu
 
 ## Directory Navigation
 
+| Command | Description |
+|--------------|--------------
 |`cd ..`|Move up one level in the directory tree structure|
 |`cd`|Change directory to $HOME|
 |`cd /chosen/directory`|Change location to a specified directory|
