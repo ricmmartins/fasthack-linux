@@ -93,6 +93,31 @@ In this tutorial, we’ll present you with a curated list of the most handy Linu
 | `usermod`| Modify user information with |
 | `chgrp [group-name] [directory-name]` | Change directory group|
 
+## Package Installation
+
+| Command | Description |
+|--------------|--------------|
+|`yum list installed`|List all installed packages with yum|
+|`yum search [keyword]`|Find a package by a related keyword|
+|`yum info [package_name]`|Show package information and summary|
+|`yum install [package_name.rpm]`|Install a package using the YUM package manager|
+|`dnf install [package_name.rpm]`|Install a package using the DNF package manager|
+|`apt install [package_name]`|Install a package using the APT package manager|
+|`rpm -i  [package_name.rpm]`|Install an .rpm package from a local file|
+|`rpm -e [package_name.rpm]`|Remove an .rpm package|
+|`dpkg -i [package_name.deb]`|Install an .deb package from a local file|
+|`dpkg -r [package_name.deb]`|Remove an .deb package|
+|`tar zxvf [source_code.tar.gz]
+cd [source_code]
+./configure
+make
+make install`|Install software from source code|
+
+
+
+
+
+
 
 
 
