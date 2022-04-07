@@ -6,22 +6,22 @@ In this tutorial, we’ll present you with a curated list of the most handy Linu
 
 ## Hardware information
 
-Show bootup messages:
+### Show bootup messages:
 
 `dmesg`
 
-See CPU information:
+### See CPU information:
 
 `cat /proc/cpuinfo`
 
-Display free and used memory with:
+### Display free and used memory with:
 
 `free -h`
 
-List hardware configuration information:
+### List hardware configuration information:
 
 `lshw`
 
-See information about block devices:
+### See information about block devices:
 
 `lsblk`
