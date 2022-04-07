@@ -4,31 +4,6 @@ The command line terminal in Linux is the operating system’s most powerful com
 
 In this page, we’ll present you with a curated list of the most handy Linux commands. 
 
-## Hardware information
-
-| Command | Description |
-|--------------|--------------|
-|`dmesg` | Show bootup messages |
-| `cat /proc/cpuinfo` | See CPU information|
-| `free -h` | Display free and used memory |
-| `lshw` | List hardware configuration information |
-| `lsblk` | See information about block devices |
-| `lspci -tv`| Show PCI devices in a tree-like diagram | 
-| `dmidecode` |Show hardware information from the BIOS |
-| `hdparm -i /dev/disk` | Display disk data information |
-| `hdparm -tT /dev/[device]` | Conduct a read-speed test on device/disk |
-| `fsck [disk-or-partition-location]`| Run a disk check on an unmounted disk or partition | 
-
-## Searching
-
-| Command | Description |
-|--------------|--------------|
-| `grep [pattern] [file_name]` | Search for a specific pattern in a file with grep |
-| `grep -r [pattern] [directory_name]` | Recursively search for a pattern in a directory:|
-| `locate [name]` | Find all files and directories related to a particular name: |
-| `find [/folder/location] -name [a]` | List names that begin with a specified character [a] in a specified location [/folder/location] by using the find command: |
-| `find [/folder/location] -size [+100M]` | See files larger than a specified size [+100M] in a folder: |
-
 ## File Commands
 
 | Command | Description |
@@ -59,6 +34,16 @@ In this page, we’ll present you with a curated list of the most handy Linux co
 | `diff [file1] [file2]` | Compare two files and display differences| 
 | `source [filename]` | Read and execute the file content in the current shell| 
 | `[command] \| tee [filename] >/dev/null` | Store the command output in a file and skip the terminal output | 
+
+## Searching
+
+| Command | Description |
+|--------------|--------------|
+| `grep [pattern] [file_name]` | Search for a specific pattern in a file with grep |
+| `grep -r [pattern] [directory_name]` | Recursively search for a pattern in a directory:|
+| `locate [name]` | Find all files and directories related to a particular name: |
+| `find [/folder/location] -name [a]` | List names that begin with a specified character [a] in a specified location [/folder/location] by using the find command: |
+| `find [/folder/location] -size [+100M]` | See files larger than a specified size [+100M] in a folder: |
 
 ## Directory Navigation
 
@@ -234,6 +219,20 @@ In this page, we’ll present you with a curated list of the most handy Linux co
 | `!!` | Run the last command again |
 | `Ctrl + D | Log out of current session|
 
+## Hardware information
+
+| Command | Description |
+|--------------|--------------|
+|`dmesg` | Show bootup messages |
+| `cat /proc/cpuinfo` | See CPU information|
+| `free -h` | Display free and used memory |
+| `lshw` | List hardware configuration information |
+| `lsblk` | See information about block devices |
+| `lspci -tv`| Show PCI devices in a tree-like diagram | 
+| `dmidecode` |Show hardware information from the BIOS |
+| `hdparm -i /dev/disk` | Display disk data information |
+| `hdparm -tT /dev/[device]` | Conduct a read-speed test on device/disk |
+| `fsck [disk-or-partition-location]`| Run a disk check on an unmounted disk or partition | 
 
 
 
