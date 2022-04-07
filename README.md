@@ -37,6 +37,10 @@ For our activites, is recommended to use the [Azure Cloud Shell](http://shell.az
 
 Some concepts around the Linux Filesystem Hierarchy Standard (FHS) are recommended, so you can get more details about it [here](fhs.md).
 
+### :white_check_mark: Knowledge of basic linux commands. 
+
+Just for reference, [here is](commands.md) a good cheat sheet.
+
 ## Challenges
 
 | Challenges |
