@@ -12,5 +12,11 @@ In this tutorial, we’ll present you with a curated list of the most handy Linu
 | `cat /proc/cpuinfo` | See CPU information|
 | `free -h` | Display free and used memory |
 | `lshw` | List hardware configuration information |
-| `lsblk` | ee information about block devices |
+| `lsblk` | See information about block devices |
+| `lspci -tv`| Show PCI devices in a tree-like diagram | 
+| `dmidecode` |Show hardware information from the BIOS |
+| `hdparm -i /dev/disk` | Display disk data information |
+| `hdparm -tT /dev/[device]` | Conduct a read-speed test on device/disk |
+| `fsck [disk-or-partition-location]`| Run a disk check on an unmounted disk or partition | 
 
+## Searching
