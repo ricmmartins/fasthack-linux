@@ -46,7 +46,7 @@ Just for reference, [here is](commands.md) a good cheat sheet.
 | Challenges |
 |--------------|
 | 1. [Disks, Partitions and File Systems](challenges/lab01-disks.md) |
-| 2. [Logical Volume Manager](challenges/lab02-lvm.md)|
+
 
 
 ## Useful links / Study References
