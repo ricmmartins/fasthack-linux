@@ -107,11 +107,7 @@ In this tutorial, we’ll present you with a curated list of the most handy Linu
 |`rpm -e [package_name.rpm]`|Remove an .rpm package|
 |`dpkg -i [package_name.deb]`|Install an .deb package from a local file|
 |`dpkg -r [package_name.deb]`|Remove an .deb package|
-|`tar zxvf [source_code.tar.gz]
-cd [source_code]
-./configure
-make
-make install`|Install software from source code|
+|`tar zxvf [source_code.tar.gz] && cd [source_code] && ./configure && make && make install`|Install software from source code|
 
 
 
