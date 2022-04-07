@@ -9,7 +9,7 @@ In this tutorial, we’ll present you with a curated list of the most handy Linu
 | Command | Description |
 |--------------|--------------
 |`dmesg` | Show bootup messages |
-| `cat /proc/cpuinfo` | | See CPU information|
+| `cat /proc/cpuinfo` | See CPU information|
 | `free -h` | Display free and used memory |
 | `lshw` | List hardware configuration information |
 | `lsblk` | ee information about block devices |
