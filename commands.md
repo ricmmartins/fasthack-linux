@@ -64,10 +64,34 @@ In this tutorial, we’ll present you with a curated list of the most handy Linu
 
 | Command | Description |
 |--------------|--------------
-|`cd ..`|Move up one level in the directory tree structure|
-|`cd`|Change directory to $HOME|
-|`cd /chosen/directory`|Change location to a specified directory|
+|`tar cf [compressed_file.tar] [file_name]`|Archive an existing file|
+|`tar xf [compressed_file.tar]`|Extract an archived file|
+|`tar czf [compressed_file.tar.gz]`|Create a gzip compressed tar file by running|
+|`gzip [file_name]`  | Compress a file with the .gz extension | 
 
+
+## File Transfer
+
+| Command | Description |
+|--------------|--------------
+|`scp [file_name.txt] [server/tmp]`|Copy a file to a server directory securely using the Linux scp command|
+|`rsync -a [/your/directory] [/backup/] `|Synchronize the contents of a directory with a backup directory using the rsync command|
+
+## Users and Groups
+
+| Command | Description |
+|--------------|--------------
+|`id`|See details about the active users|
+|`last`|Show last system logins|
+|`who`|Display who is currently logged into the system with the who command|
+|`w`  | Show which users are logged in and their activity | 
+| `groupadd [group_name]` | Add a new group by typing |
+| `adduser [user_name]` | Add a new user|
+| `usermod -aG [group_name] [user_name]` | Add a user to a group |
+| `sudo [command_to_be_executed_as_superuser]`| Temporarily elevate user privileges to superuser or root using the sudo command | 
+| `userdel [user_name] ` | Delete a user | 
+| `usermod`| Modify user information with |
+| `chgrp [group-name] [directory-name]` | Change directory group|
 
 
 
