@@ -73,5 +73,3 @@ Please follow these steps before submitting a PR:
 * Make changes, adding new tests for new functionality.
 * Submit a PR.
 
-## License
-See [LICENSE](LICENSE).
