@@ -6,7 +6,12 @@ In this tutorial, we’ll present you with a curated list of the most handy Linu
 
 ## Hardware information
 
-### Show bootup messages:
+| Command | Description |
+|--------------|--------------
+|`dmesg` | Show bootup messages
+
+
+### :
 
 `dmesg`
 
