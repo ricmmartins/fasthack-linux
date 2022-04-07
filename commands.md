@@ -52,7 +52,7 @@ In this tutorial, we’ll present you with a curated list of the most handy Linu
 | `head [file_name]` | Display the first 10 lines of a file with head command | 
 | `tail [file_name]` | Show the last 10 lines of a file | 
 | `wc` | Show the number of words, lines, and bytes in a file using wc | 
-| `"ls | xargs wc"` | List number of lines/words/characters in each file in a directory with the xargs command | 
+| `ls \| xargs wc` | List number of lines/words/characters in each file in a directory with the xargs command | 
 | `cut -d[delimiter] [filename]` | Cut a section of a file and print the result to standard output | 
 | `[data] | cut -d[delimiter]` | Cut a section of piped data and print the result to standard output | 
 | `awk '[pattern] {print $0}' [filename]` | Print all lines matching a pattern in a file |
