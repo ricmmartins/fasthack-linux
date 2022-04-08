@@ -9,5 +9,6 @@
 5. Change the ownership of all files in `~/permissions` to yourself.
 6. Make sure you have all rights to files within `~`, and others can only read
 
+---
 [Back](/README.md)| [Answers](https://github.com/ricmmartins/fasthack-linux-answers/blob/main/challenges/lab-permissions.md) | 
 :----- |:-----
