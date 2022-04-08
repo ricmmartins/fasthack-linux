@@ -20,7 +20,7 @@ To follow along you will need access to a server running a Linux-based operating
 * [Create a Linux virtual machine with the Azure CLI](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/quick-create-cli)
 * [Create a Linux virtual machine in Azure with PowerShell](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/quick-create-powershell)
 
-_Make sure to create the Linux VM with the user called student, just to facilitate following the instructions._
+_During the process of creation of the VM, ensure the usage of **student** for the username with administrator rights over the virtual machine, just to easier during the challenges._
 
 ### :white_check_mark: Access to a Terminal
 
