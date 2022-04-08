@@ -34,7 +34,7 @@
 25. Use cat to create a file named count.txt that looks like this
 26. Use cp to make a backup of this file to cnt.txt
 27. Use cat to make a backup of this file to catcnt.txt
-28. Display catcnt.txt, but with all lines in reverse order (the last line first
+28. Display catcnt.txt, but with all lines in reverse order (the last line first)
 29. Use more to display /etc/services
 30. Use ls to find the biggest file in /etc
 
