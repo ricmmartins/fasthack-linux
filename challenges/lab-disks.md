@@ -42,5 +42,10 @@
     2. If there was reflection in the file system
 12. Resize the file system
 
-------------
-[Answers](https://github.com/ricmmartins/fasthack-linux-answers/blob/main/challenges/lab-disks.md)
+---
+
+[Back](/README.md)| [Answers](https://github.com/ricmmartins/fasthack-linux-answers/blob/main/challenges/lab-disks.md) | 
+:----- |:-----
+
+
+
