@@ -2,8 +2,6 @@
 
 ## Objectives
 
-### File contents
-
 27. Display the first 12 lines of `/etc/services`
 28. Display the last line of `/etc/passwd`
 29. Use `cat` to create a file named `count.txt` that looks like this
