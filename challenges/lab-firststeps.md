@@ -7,6 +7,8 @@
 
 ## Objectives
 
+### Working with directories
+
 1. Display your current directory
 2. Go to the parent directory of the current directory
 3. Go to the root directory
@@ -16,6 +18,9 @@
 7.  List all the files (including hidden files) in your home directory
 8. Create in one command the directories ~/dir1/dir2/dir3 (dir3 is a subdirectory from dir2, and dir2 is a subdirectory from dir1)
 9. List recursively the content of your ~ 
+
+###  Working with files
+
 10. Display the type of file of /bin/cat, /etc/passwd and /usr/bin/passwd
 11. Download [azure-linux.svg](https://docs.microsoft.com/en-us/learn/achievements/azure-linux.svg)  and [azure-ops-guide.pdf](https://docsmsftpdfs.blob.core.windows.net/guides/azure/azure-ops-guide.pdf) 
 12. Display the type of file of azure-linux.svg and azure-ops-guide.pdf
@@ -29,6 +34,9 @@
 20. Create a directory called ~/testbackup and copy all files from ~/touched into it.
 21. Use one command to remove the directory ~/testbackup and all files into it.
 22. Create a directory ~/etcbackup and copy all *.conf files from /etc into it. Did you include all subdirectories of /etc ?
+
+### File contents
+
 23. Display the first 12 lines of /etc/services
 24. Display the last line of /etc/passwd
 25. Use cat to create a file named count.txt that looks like this
@@ -38,5 +46,10 @@
 29. Use more to display /etc/services
 30. Use ls to find the biggest file in /etc
 
+### Control Operators
+
+31. Execute ls after cd /etc, but only if cd /etc did not error
+32. Echo **it worked** when **touch test** works, and echo **it failed** when the **touch** failed. All on one command line as a normal user (not root). Test this line in your home directory and in /bin/ 
+33. Execute **sleep 60** in background (do no wait for it to finish)
 -----------
 [Answers](https://github.com/ricmmartins/fasthack-linux-answers/blob/main/challenges/lab-firststeps.md)
