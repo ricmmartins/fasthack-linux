@@ -16,8 +16,8 @@
 
 ---
 |--------------|
-| [Back](/README.md) | [Answers](https://github.com/ricmmartins/fasthack-linux-answers/blob/main/challenges/lab-working-directories.md)|
+|  | |
 |--------------|
 
-Anterior| Próximo | 
+[Back](/README.md)| [Answers](https://github.com/ricmmartins/fasthack-linux-answers/blob/main/challenges/lab-working-directories.md) | 
 :----- |:-----
