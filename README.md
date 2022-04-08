@@ -55,15 +55,13 @@ Just for reference, [here is](commands.md) a good cheat sheet.
 ## Useful links / Study References
 
 * [Linux Journey](https://linuxjourney.com/)
-* [Linux Training - Paul Cobbaut](https://linux-training.be/)
 * [Linux Upskill Challenge](https://linuxupskillchallenge.org/)
 * [Beginner's Guide for Linux - Tecmint](https://www.tecmint.com/free-online-linux-learning-guide-for-beginners/)
-* [Linux Cheat Sheet Commands](https://ipcisco.com/linux-cheat-sheet/)
 * [Preparation for Linux Foundation Certified System Adminsitrator](https://github.com/Bes0n/LFCS)
 * [Linux Foundation Certified System Administrator (LFCS) Notes](https://github.com/simonesavi/lfcs)
 * [The Linux Documentation Project](https://tldp.org/)
 * [Intrduction to Linux - from TLPD](https://tldp.org/LDP/intro-linux/intro-linux.pdf)
-* [Linux Book](https://goalkicker.com/LinuxBook/)
+* [Linux Commands Notes for Professionals](https://goalkicker.com/LinuxBook/LinuxNotesForProfessionals.pdf)
 * [Introduction to Linux - Free course on Linux Foundation](https://training.linuxfoundation.org/training/introduction-to-linux/)
 
 ## Contributions
