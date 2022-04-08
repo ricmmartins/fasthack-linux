@@ -14,7 +14,7 @@
 5. List a long listing of the root directory
 6. Stay where you are, and list the contents of ~
 7.  List all the files (including hidden files) in your home directory
-8. Create in one command the directories ~/dir1/dir2/dir3 (dir3 is a subdirectory from dir2, and dir2 is a subdirectory from dir1 )
+8. Create in one command the directories ~/dir1/dir2/dir3 (dir3 is a subdirectory from dir2, and dir2 is a subdirectory from dir1)
 9. List recursively the content of your ~ 
 10. Display the type of file of /bin/cat, /etc/passwd and /usr/bin/passwd
 11. Download [azure-linux.svg](https://docs.microsoft.com/en-us/learn/achievements/azure-linux.svg)  and [azure-ops-guide.pdf](https://docsmsftpdfs.blob.core.windows.net/guides/azure/azure-ops-guide.pdf) 
