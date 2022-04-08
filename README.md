@@ -47,8 +47,16 @@ Just for reference, [here is](commands.md) a good cheat sheet.
 
 | Challenges |
 |--------------|
+| 1. [Working with Directories](challenges/lab-working-directories.md)|
+| 2. [Working with Files](challenges/lab-working-files.md) |
+| 3. [File Contents](challenges/lab-file-contents.md) |
+| 4. [Control Operators](challenges/lab-control-operators.md) |
+| 5. [Standard file permissions](challenges/lab-permissions.md) |
+| 6. [Process Management](challenges/lab-process-management.md) |
+| 7. [Group and user management](challenges/lab-groups-and-users.md) |
+| 8. [Scripting](challenges/lab-scripting.md) |
 | 1. [First steps on the command line](challenges/lab-firststeps.md) |
-| 2. [Disks, Partitions and File Systems](challenges/lab-disks.md) |
+| 9. [Disks, Partitions and File Systems](challenges/lab-disks.md) |
 
 
 
