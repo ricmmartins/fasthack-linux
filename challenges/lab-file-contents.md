@@ -11,5 +11,6 @@
 7. Use `more` to display `/etc/services`
 8. Use `ls` to find the biggest file in `/etc`
 
+---
 [Back](/README.md)| [Answers](https://github.com/ricmmartins/fasthack-linux-answers/blob/main/challenges/lab-file-contents.md) | 
 :----- |:-----
