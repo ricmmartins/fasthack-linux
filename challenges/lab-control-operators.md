@@ -8,5 +8,6 @@
 4. When you type passwd, which file is executed?
 5. What kind of file is that?
 
+---
 [Back](/README.md)| [Answers](https://github.com/ricmmartins/fasthack-linux-answers/blob/main/challenges/lab-control-operators.md) | 
 :----- |:-----
