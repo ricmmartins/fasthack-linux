@@ -7,4 +7,6 @@
 3. Create a script that adds two integers requested from the user
 
 -----------
-[Answers](https://github.com/ricmmartins/fasthack-linux-answers/blob/main/challenges/lab-scripting.md)
+[Back](/README.md)| [Answers](https://github.com/ricmmartins/fasthack-linux-answers/blob/main/challenges/lab-scripting.md) | 
+:----- |:-----
+
