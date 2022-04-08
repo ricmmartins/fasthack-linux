@@ -15,4 +15,4 @@
 
 
 -----------
-[Back](/) | [Answers](https://github.com/ricmmartins/fasthack-linux-answers/blob/main/challenges/lab-working-directories.md)
+[Back](/#readme) | [Answers](https://github.com/ricmmartins/fasthack-linux-answers/blob/main/challenges/lab-working-directories.md)
