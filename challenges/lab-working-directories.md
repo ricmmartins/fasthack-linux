@@ -19,4 +19,6 @@
 | [Back](/README.md) | [Answers](https://github.com/ricmmartins/fasthack-linux-answers/blob/main/challenges/lab-working-directories.md)|
 |--------------|
 
-
+| Próximo | 
+|:-----
+| [Visão geral dos recursos nativos do Azure para governança em nuvem](/guide/overview-native-features.md)
