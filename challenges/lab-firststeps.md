@@ -7,13 +7,7 @@
 
 
 
-### Process Management
 
-46. View the list of your server processes
-47. How many processes are running on your server
-48. View the list of processes in tree format
-49. Identify if the omsagent process is running
-50. Identify the process id of the omsagent
 
 ### Group and user management
 
