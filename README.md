@@ -55,7 +55,6 @@ Just for reference, [here is](commands.md) a good cheat sheet.
 | 6. [Process Management](challenges/lab-process-management.md) |
 | 7. [Group and user management](challenges/lab-groups-and-users.md) |
 | 8. [Scripting](challenges/lab-scripting.md) |
-| 1. [First steps on the command line](challenges/lab-firststeps.md) |
 | 9. [Disks, Partitions and File Systems](challenges/lab-disks.md) |
 
 
