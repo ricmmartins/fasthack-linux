@@ -8,5 +8,6 @@
 4. Identify if the omsagent process is running
 5. Identify the process id of the omsagent
 
+---
 [Back](/README.md)| [Answers](https://github.com/ricmmartins/fasthack-linux-answers/blob/main/challenges/lab-process-management.md) | 
 :----- |:-----
