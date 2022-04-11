@@ -47,7 +47,7 @@ Just for reference, [here is](commands.md) a good cheat sheet.
 
 | Challenges |
 |--------------|
-| 1. [Working with Directories](challenges/lab-working-directories.md)|
+| 1. [Handling Directories](challenges/lab-working-directories.md)|
 | 2. [Handling Files](challenges/lab-working-files.md) |
 | 3. [File Contents](challenges/lab-file-contents.md) |
 | 4. [Control Operators](challenges/lab-control-operators.md) |
