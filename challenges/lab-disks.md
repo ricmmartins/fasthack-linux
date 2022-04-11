@@ -2,7 +2,7 @@
 
 ## Requirements
 
-* Create one data disks
+* Create a data disk
 * Add to the Virtual Machine
 
 ## Objectives
