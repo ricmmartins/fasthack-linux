@@ -8,7 +8,7 @@
 4. Display the type of file of `azure-linux.svg` and `azure-ops-guide.pdf`
 5. Rename `azure-linux.svg` to `azure-linux.pdf` 
 6. Display the type of file of `azure-linux.pdf` and `azure-ops-guide.pdf`
-7. Create a directory `~/touched` and enter it.
+7. Create a directory `~/lab` and enter it.
 8. Create the files `today.txt` and `yesterday.txt` in touched.
 9. Check the creation date and time:
 10. Change the date on `yesterday.txt` to match yesterday's date
