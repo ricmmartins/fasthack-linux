@@ -1,4 +1,4 @@
-# Process Management
+# Process management
 
 ## Objectives
 
