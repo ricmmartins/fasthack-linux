@@ -6,11 +6,11 @@
 2. Display the last 5 lines of `/etc/crontab`
 3. Use `cat` to create a file named `count.txt` that looks like this:
 
-One<br>
-Two<br>
-Three<br>
-Four<br>
-Five
+  One<br>
+  Two<br>
+  Three<br>
+  Four<br>
+  Five
 
 4. Use `cp` to make a backup of this file to `cnt.txt`
 5. Use `cat` to make a backup of this file to catcnt.txt
