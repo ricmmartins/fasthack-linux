@@ -10,9 +10,9 @@
 6. Display the type of file of `azure-linux.pdf` and `azure-ops-guide.pdf`
 7. Create a directory `~/lab` and enter it.
 8. Create the files `today.txt` and `yesterday.txt` in lab.
-9. Check the creation date and time:
+9. Check the creation date and time
 10. Change the date on `yesterday.txt` to match yesterday's date
-11. Check the creation date and time again: 
+11. Check the creation date and time again
 12. Create a directory `~/mybackup` and copy all files from `~/lab` into it
 13. Use one command to remove the directory `~/mybackup` and all files into it
 14. Create a directory `~/logbackup` and copy the *.log files from /var/log into it
