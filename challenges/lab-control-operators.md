@@ -1,4 +1,4 @@
-# Control Operators
+# Control operators
 
 ## Objectives
 
