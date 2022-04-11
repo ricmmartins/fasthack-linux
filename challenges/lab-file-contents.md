@@ -15,7 +15,7 @@
 4. Use `cp` to make a backup of this file to `count.bkp`
 5. Use `cat` to make a backup of this file saving as `cat-count.log`
 6. Display the content of `cat-count.log`, with all lines in reverse order
-7. Use `more` to display `/etc/services`
+7. Use `more` to display `/etc/selinux/semanage.conf`
 8. Use `ls` to find the biggest file in `/etc`
 
 ---
