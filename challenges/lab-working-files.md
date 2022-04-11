@@ -1,9 +1,9 @@
-#  Working with files
+#  Handling files
 
 ## Objectives
 
 1. Find in the `/var` directory all the files that have been modified in the last 60 minutes
-2. Display the type of file of `/bin/cat`, `/etc/passwd` and `/usr/bin/passwd`
+2. Show the type of file of `/bin/htop`, `/etc/passwd` and `/usr/bin/passwd`
 3. Download [azure-linux.svg](https://docs.microsoft.com/en-us/learn/achievements/azure-linux.svg)  and [azure-ops-guide.pdf](https://docsmsftpdfs.blob.core.windows.net/guides/azure/azure-ops-guide.pdf) 
 4. Display the type of file of `azure-linux.svg` and `azure-ops-guide.pdf`
 5. Rename `azure-linux.svg` to `azure-linux.pdf` 
