@@ -4,7 +4,7 @@
 
 1. Display the first 10 lines of `/etc/resolv.conf`
 2. Display the last 5 lines of `/etc/crontab`
-3. Use `cat` to create a file named `count.txt` that looks like this:
+3. Create a file named `count.log` with this content:
 
   One<br>
   Two<br>
@@ -12,9 +12,9 @@
   Four<br>
   Five
 
-4. Use `cp` to make a backup of this file to `cnt.txt`
-5. Use `cat` to make a backup of this file to catcnt.txt
-6. Display `catcnt.txt`, but with all lines in reverse order (the last line first)
+4. Use `cp` to make a backup of this file to `count.bkp`
+5. Use `cat` to make a backup of this file saving as `cat-count.log`
+6. Display the content of `cat-count.log`, with all lines in reverse order
 7. Use `more` to display `/etc/services`
 8. Use `ls` to find the biggest file in `/etc`
 
