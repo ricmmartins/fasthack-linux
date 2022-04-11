@@ -11,11 +11,12 @@ Two<br>
 Three<br>
 Four<br>
 Five
-5. Use `cp` to make a backup of this file to `cnt.txt`
-6. Use `cat` to make a backup of this file to catcnt.txt
-7. Display `catcnt.txt`, but with all lines in reverse order (the last line first)
-8. Use `more` to display `/etc/services`
-9. Use `ls` to find the biggest file in `/etc`
+
+4. Use `cp` to make a backup of this file to `cnt.txt`
+5. Use `cat` to make a backup of this file to catcnt.txt
+6. Display `catcnt.txt`, but with all lines in reverse order (the last line first)
+7. Use `more` to display `/etc/services`
+8. Use `ls` to find the biggest file in `/etc`
 
 ---
 [Back](/README.md)| [Answers](https://github.com/ricmmartins/fasthack-linux-answers/blob/main/challenges/lab-file-contents.md) | 
