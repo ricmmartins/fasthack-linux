@@ -6,6 +6,7 @@
 2. Install nginx
 3. Install php-fpm
 4. Configure Nginx
+5. Add SSL
 
 
 ---
