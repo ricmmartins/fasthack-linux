@@ -1,4 +1,4 @@
-# Deploying a simple web application
+# Setting up a webserver and deploying a simple php application into it
 
 ## Objectives
 
@@ -10,5 +10,5 @@
 
 
 ---
-[Back](/README.md)| [Answers](https://github.com/ricmmartins/fasthack-linux-answers/blob/main/challenges/lab-deploy.md) | 
+[Back](/README.md)| [Answers](https://github.com/ricmmartins/fasthack-linux-answers/blob/main/challenges/lab-webserver.md) | 
 :----- |:-----
