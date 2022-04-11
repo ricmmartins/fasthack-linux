@@ -5,6 +5,7 @@
 1. Display the first 10 lines of `/etc/resolv.conf`
 2. Display the last 5 lines of `/etc/crontab`
 3. Use `cat` to create a file named `count.txt` that looks like this:
+
 One<br>
 Two<br>
 Three<br>
