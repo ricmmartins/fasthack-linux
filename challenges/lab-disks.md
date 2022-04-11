@@ -7,8 +7,6 @@
 
 ## Objectives
 
-### Partitions
-
 1. Identify the new disk added to the machine
 2. Edit the disk partition table:
     1. Add a new partition
