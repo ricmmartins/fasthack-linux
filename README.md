@@ -55,6 +55,7 @@ Just for reference, [here is](commands.md) a good cheat sheet.
 | 6. [Group and user management](challenges/lab-groups-and-users.md) |
 | 7. [Scripting](challenges/lab-scripting.md) |
 | 8. [Disks, partitions and file systems](challenges/lab-disks.md) |
+| 9. [Logical Volume Mananager](challenges/lab0lvm.md) |
 
 
 
