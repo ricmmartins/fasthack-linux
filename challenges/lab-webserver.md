@@ -1,4 +1,6 @@
-# Setting up a webserver and deploying a simple php application into it
+# Setting up a webserver 
+
+In this lab we will setting up a webserver and deploy a simple php application into it
 
 ## Objectives
 
