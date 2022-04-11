@@ -13,9 +13,9 @@
 9. Check the creation date and time:
 10. Change the date on `yesterday.txt` to match yesterday's date
 11. Check the creation date and time again: 
-12. Create a directory called `~/testbackup` and copy all files from `~/lab` into it.
-13. Use one command to remove the directory `~/testbackup` and all files into it.
-14. Create a directory `~/etcbackup` and copy all *.conf files from /etc into it. Did you include all subdirectories of /etc ?
+12. Create a directory `~/mybackup` and copy all files from `~/lab` into it
+13. Use one command to remove the directory `~/mybackup` and all files into it
+14. Create a directory `~/logbackup` and copy the *.log files from /var/log into it
 15. Count the number of linux from the file `/etc/wgetrc`
 16. Count the number of words from the file `/etc/hdparm.conf`
 
