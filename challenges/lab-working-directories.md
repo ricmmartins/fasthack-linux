@@ -1,4 +1,4 @@
-# Working with directories
+# Handling directories
 
 ## Objectives
 
