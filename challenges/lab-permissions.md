@@ -2,7 +2,7 @@
 
 ## Objectives
 
-1. As regular user, create a directory `~/permissioning`. Create a file owned by yourself in there.
+1. As regular user, create a directory `~/permissions`.
 2. Copy a file owned by root from `/etc/` to your permissions dir, who owns this file now?
 3. As root, create a file in the users `~/permissions` directory.
 4. As normal user, look at who owns this file created by root.
