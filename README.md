@@ -57,7 +57,7 @@ Just for reference, [here is](commands.md) a good cheat sheet.
 | 8. [Disks, partitions and file systems](challenges/lab-disks.md) |
 | 9. [Logical Volume Mananager](challenges/lab-lvm.md) |
 | 10. [Package management](challenges/lab-packages.md) |
-| 11. [Deploying a simple web application](challenges/lab-deploy.md) |
+| 11. [Setting up a webserver and deploying a simple php application into it](challenges/lab-webserver.md) |
 
 
 
