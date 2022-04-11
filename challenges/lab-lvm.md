@@ -7,8 +7,6 @@
 
 ## Objectives
 
-### LVM
-
 1. Create a Physical Volume (`PV`) with the disk added
 2. Check that the ```PV``` is created
 3. Create a Volume Group (```VG```) using the created PV
