@@ -1,4 +1,4 @@
-# Disks, Partitions and File Systems
+# Disks, partitions and file Systems
 
 ## Requirements
 
