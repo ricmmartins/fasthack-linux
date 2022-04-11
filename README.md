@@ -50,12 +50,11 @@ Just for reference, [here is](commands.md) a good cheat sheet.
 | 1. [Handling directories](challenges/lab-working-directories.md)|
 | 2. [Handling files](challenges/lab-working-files.md) |
 | 3. [File contents](challenges/lab-file-contents.md) |
-| 4. [Control operators](challenges/lab-control-operators.md) |
-| 5. [Standard file permissions](challenges/lab-permissions.md) |
-| 6. [Process management](challenges/lab-process-management.md) |
-| 7. [Group and user management](challenges/lab-groups-and-users.md) |
-| 8. [Scripting](challenges/lab-scripting.md) |
-| 9. [Disks, partitions and file systems](challenges/lab-disks.md) |
+| 4. [Standard file permissions](challenges/lab-permissions.md) |
+| 5. [Process management](challenges/lab-process-management.md) |
+| 6. [Group and user management](challenges/lab-groups-and-users.md) |
+| 7. [Scripting](challenges/lab-scripting.md) |
+| 8. [Disks, partitions and file systems](challenges/lab-disks.md) |
 
 
 
