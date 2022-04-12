@@ -4,7 +4,7 @@ In this lab we will setting up a webserver and deploy a simple php application i
 
 ## Objectives
 
-1. Clone the sample application [from here](/resources/simple-php-app.tar.gz)
+1. Download the sample application [from here](/resources/simple-php-app.tar.gz) to your home directory
 2. Install nginx
 3. Install php-fpm
 4. Configure Nginx
