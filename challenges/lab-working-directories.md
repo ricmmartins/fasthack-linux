@@ -1,7 +1,5 @@
 # Handling directories
 
-- [ ] 
-
 ## Objectives
 
 1. Display your current directory
