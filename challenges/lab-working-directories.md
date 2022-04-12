@@ -1,6 +1,6 @@
 # Handling directories
 
-- [x] 
+- [ ] 
 
 ## Objectives
 
