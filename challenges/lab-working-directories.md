@@ -13,7 +13,6 @@
 #### 9. List recursively the content of your `~` 
 #### 10. Find the directories within your home folder
 
-
 ---
 
 [Back](/README.md)| [Answers](https://github.com/ricmmartins/fasthack-linux-answers/blob/main/challenges/lab-working-directories.md) | 
