@@ -3,6 +3,8 @@
 ## Objectives
 
 - [X]
+
+
 1. Display your current directory
 2. Go to the parent directory of the current directory
 3. Go to the root directory
