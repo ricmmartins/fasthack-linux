@@ -2,7 +2,7 @@
 
 ## Objectives
 
-- [ X ]
+- [x] 
 
 
 1. Display your current directory
