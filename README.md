@@ -74,11 +74,11 @@ Just for reference, [here is](commands.md) a good cheat sheet.
 * [Introduction to Linux - Free course on Linux Foundation](https://training.linuxfoundation.org/training/introduction-to-linux/)
 
 ## Contributions
-Contributions in the form of bug reports, feature requests and PRs are always welcome.
+Contributions in the form of errors, feature requests and PRs are always welcome.
 
 Please follow these steps before submitting a PR:
 
-* Create an issue describing the bug or feature request.
+* Create an issue describing the error or feature request.
 * Clone the repository and create a topic branch.
 * Make changes, adding new tests for new functionality.
 * Submit a PR.
