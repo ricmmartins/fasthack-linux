@@ -4,7 +4,7 @@ In this lab we will setting up a webserver and deploy a simple php application i
 
 ## Objectives
 
-1. Clone the application from here: [https://github.com/ricmmartins/simple-php-app](https://github.com/ricmmartins/simple-php-app)
+1. Clone the application [from here](/resources/simple-php-app.tar.gz)
 2. Install nginx
 3. Install php-fpm
 4. Configure Nginx
