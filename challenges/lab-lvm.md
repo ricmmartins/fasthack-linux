@@ -18,8 +18,8 @@
 #### 9. Mount the ```LV```s in the directories created earlier in ```/mnt```
 #### 10. Resize the smallest ```LV``` to take up another 20% of the disk
 #### 11. Check:
-    1. That the ```LV``` has been resized
-    2. If there was reflection in the file system
+1. That the ```LV``` has been resized
+2. If there was reflection in the file system
 #### 12. Resize the file system
 
 ---
