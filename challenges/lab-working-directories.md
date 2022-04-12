@@ -2,8 +2,8 @@
 
 ## Objectives
 
-1. Display your current directory
-2. Go to the parent directory of the current directory
+### 1. Display your current directory
+### 2. Go to the parent directory of the current directory
 3. Go to the root directory
 4. List the contents of the root directory
 5. Display a long listing of the root directory a long listing of the root directory
