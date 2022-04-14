@@ -74,8 +74,10 @@ ls -i > inodes.txt
 ```
 Outputs that are redirected to a file are not displayed on the standard output (screen or terminal), precisely because it was redirected to the file, except for standard errors.
 
+```bash
 `>` = create files
 `>>` = add to end of file
+```
 
 * **Redirect Standard Input**
 
@@ -92,3 +94,5 @@ To redirect the error message of a command to a file it is necessary to inform t
 Example:
 
 `ls -zz 2> error.txt`
+
+### Redirects `>`
