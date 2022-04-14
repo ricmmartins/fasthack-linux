@@ -6,9 +6,11 @@ Files on Linux are case sensitive. This means that MYLOG.txt is different from m
 
 This example shows the difference between two files, one with upper case S, the other with lower case s.
 
+```bash
 student@vm1:~/Linux$ ls summer.txt  Summer.txt
 student@vm1:~/Linux$ cat summer.txt It is hot.
 student@vm1:~/Linux$ cat Summer.txt It is very hot!
+``
 
 ## Everything is a file
 
