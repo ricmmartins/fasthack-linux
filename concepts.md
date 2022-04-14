@@ -37,4 +37,4 @@ Redirects the standard output of a program/command/script to some device or file
 
 For example, you can use the ls command to list files and use ls >listing to send the command output to the listing file. Use the cat command to view the contents of the listing file.
 
-To redirect only the error output of the ls command, use the syntax: ls 2>/tmp/errors-do-ls
+To redirect only the error output of the ls command, use the syntax: ls 2>/tmp/ls-errors
