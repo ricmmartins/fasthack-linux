@@ -27,7 +27,7 @@ Information contained in an Inode:
 
 In addition, Inodes are also independent of file names. So this means you can copy a single file, rename it and still have it point to the same Inode as the original.
 
-## Redirects and Pipes - stdin, stdout , stderr and tee
+## File descriptors, pipes and redirects
 
 This section explains how the input and output directing features of the GNU/Linux system work. 
 
