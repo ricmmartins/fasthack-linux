@@ -75,8 +75,8 @@ ls -i > inodes.txt
 Outputs that are redirected to a file are not displayed on the standard output (screen or terminal), precisely because it was redirected to the file, except for standard errors.
 
 ```bash
-`>` = create files
-`>>` = add to end of file
+> = create files
+>> = add to end of file
 ```
 
 * **Redirect Standard Input**
