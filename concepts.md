@@ -29,7 +29,9 @@ In addition, Inodes are also independent of file names. So this means you can co
 
 ## Redirects and pipe
 
-This section explains how the input and output directing features of the GNU/Linux system work.
+This section explains how the input and output directing features of the GNU/Linux system work. 
+
+A command always generates output that can be incorporated by another command, which generates other output that can be incorporated by another command, and so on until the output of the commands appears in a specific location (on the screen or within a file).
 
 ### The usage of `>` 
 
