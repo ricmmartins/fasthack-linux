@@ -67,7 +67,7 @@ ls -l /etc | sort -r | less
 
 The redirection operator `>` can send the output of a command to a file, or read from a file.
 
-* **Standard Output Redirection**: 
+* **Standard Output Redirection**
 
 ```bash
 ls -i > inodes.txt
@@ -77,10 +77,18 @@ Outputs that are redirected to a file are not displayed on the standard output (
 `>` = create files
 `>>` = add to end of file
 
-* **Redirect Standard Input**:
+* **Redirect Standard Input**
 
 The command instead of reading information from a keyboard, it reads from a file. 
 
 Redirect the file into a command
 
 `cat < /etc/group > groups.txt` = The operator with less sign `<` it is an input redirection operator, that is, the contents of the file `/etc/groups/` will be read by the command `cat` and then it will be sent through the output redirection operator `>` to the file "groups.txt"
+
+* **Standard Error Redirection**
+
+To redirect the error message of a command to a file it is necessary to inform the File Descriptor 2 before the redirection operator `>`
+
+Example:
+
+`ls -zz 2> error.txt`
