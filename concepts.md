@@ -10,7 +10,7 @@ This example shows the difference between two files, one with upper case S, the 
 student@vm1:~/Linux$ ls summer.txt  Summer.txt
 student@vm1:~/Linux$ cat summer.txt It is hot.
 student@vm1:~/Linux$ cat Summer.txt It is very hot!
-``
+```
 
 ## Everything is a file
 
