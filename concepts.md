@@ -31,7 +31,7 @@ In addition, Inodes are also independent of file names. So this means you can co
 
 This section explains how the input and output directing features of the GNU/Linux system work.
 
-### > 
+### The usage of `>` 
 
 Redirects the standard output of a program/command/script to some device or file instead of the standard output device (screen). When used with files, this redirect creates or replaces the contents of the file.
 
