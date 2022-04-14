@@ -47,7 +47,7 @@ There are 3 file descriptors that show how files can be accessed, they are:
 * **Standard Error (stderr)**: The Standard Error is also a text output stream, but used to display error messages.
 When your command fails, it generates an error which is displayed by the Standard Error output, linked to the terminal and is called **File Descriptor 2**.
 
-### Pipes `|`
+### Pipes 
 
 Pipe allows you to join two or more commands executed in sequence.
 
@@ -63,7 +63,7 @@ If more than two commands are used with redirection, we name the resulting opera
 ls -l /etc | sort -r | less
 ```
 
-### Redirects `>`
+### Redirects
 
 The redirection operator `>` can send the output of a command to a file, or read from a file.
 
