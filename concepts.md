@@ -40,8 +40,8 @@ Abstraction of an identification to access a file. When a process wants to manip
 
 There are 3 file descriptors that show how files can be accessed, they are:
 
-*** Standard Input (stdin)
-**
+* **Standard Input (stdin)**
+
 Standard Input is a stream for text input, linked to the keyboard. It is named as File Descriptor 0.
 
 *** Standard Output (stdout)
