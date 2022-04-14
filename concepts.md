@@ -46,3 +46,7 @@ There are 3 file descriptors that show how files can be accessed, they are:
 
 * **Standard Error (stderr)**: The Standard Error is also a text output stream, but used to display error messages.
 When your command fails, it generates an error which is displayed by the Standard Error output, linked to the terminal and is called File Descriptor 2.
+
+### Pipes `|`
+
+### Redirects `>`
