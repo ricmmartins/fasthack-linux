@@ -31,7 +31,8 @@ In addition, Inodes are also independent of file names. So this means you can co
 
 This section explains how the input and output directing features of the GNU/Linux system work.
 
-* `>`
+### > 
+
 Redirects the standard output of a program/command/script to some device or file instead of the standard output device (screen). When used with files, this redirect creates or replaces the contents of the file.
 
 For example, you can use the ls command to list files and use ls >listing to send the command output to the listing file. Use the cat command to view the contents of the listing file.
