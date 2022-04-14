@@ -95,4 +95,31 @@ Example:
 
 `ls -zz 2> error.txt`
 
-### Redirects `>`
+### The tee command
+
+The “tee” command allows you to send the output of a command to a file and to the screen at the same time.
+
+Syntax:
+
+```bash
+tee [options] files
+```
+
+Options:
+
+```bash
+-a = Append the files instead of overwriting it
+```
+
+Example:
+
+```bash
+ls -l | tee result.txt
+```
+
+Example 2:
+
+```bash
+ls -i | tee result2.txt | less
+```
+
