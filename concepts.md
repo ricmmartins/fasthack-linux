@@ -49,4 +49,38 @@ When your command fails, it generates an error which is displayed by the Standar
 
 ### Pipes `|`
 
+Pipe allows you to join two or more commands executed in sequence.
+
+Example:
+
+```bash
+ls -l /etc | less 
+```
+
+If more than two commands are used with redirection, we name the resulting operation a **Pipeline**.
+
+```bash
+ls -l /etc | sort -r | less
+```
+
 ### Redirects `>`
+
+The redirection operator `>` can send the output of a command to a file, or read from a file.
+
+* **Standard Output Redirection**: 
+
+```bash
+ls -i > inodes.txt
+```
+Outputs that are redirected to a file are not displayed on the standard output (screen or terminal), precisely because it was redirected to the file, except for standard errors.
+
+`>` = create files
+`>>` = add to end of file
+
+* **Redirect Standard Input**:
+
+The command instead of reading information from a keyboard, it reads from a file. 
+
+Redirect the file into a command
+
+`cat < /etc/group > groups.txt` = The operator with less sign `<` it is an input redirection operator, that is, the contents of the file `/etc/groups/` will be read by the command `cat` and then it will be sent through the output redirection operator `>` to the file "groups.txt"
