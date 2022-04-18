@@ -37,9 +37,9 @@ For our activites, is recommended to use the [Azure Cloud Shell](http://shell.az
 
 ### :white_check_mark: Linux basic concepts
 
-* There are some basic concepts that will be nice if you have them. If you would like to take a look they are [listed here](concepts.md).
-* Concepts around the Linux Filesystem Hierarchy Standard (FHS) are recommended, so you can get more details about it [here](fhs.md).
-* Regarding Linux commands, just for reference, [here is](commands.md) a good cheat sheet.
+* There are some basic concepts that will be nice if you have them. If you would like to take a look they are [listed here](/resources/concepts.md).
+* Concepts around the Linux Filesystem Hierarchy Standard (FHS) are recommended, so you can get more details about it [here](/resources/fhs.md).
+* Regarding Linux commands, just for reference, [here is](/resources/commands.md) a good cheat sheet.
 
 ## Challenges
 
