@@ -10,7 +10,7 @@
 #### 1. Identify the new disk added to the machine
 #### 2. Edit the disk partition table:
 1. Add a new partition
-2. List and identify in the S.O. the partition created
+2. List and identify in the operating system the partition created
 3. Erase partition
 4. Check in S.O. that the partition has been removed
 5. Add two new partitions with type 83
