@@ -1,5 +1,5 @@
 # FastHack - Mastering Linux 
-FastHack Linux Edition - This FastHack will serves as an introduction to important command line concepts and skills to learn more about Linux.
+FastHack Linux Edition - This FastHack will serve as an introduction to important command line concepts and skills to learn more about Linux.
 <img align="right" src="images/linuxpenguin.png" width="250"/>
 
 ## Linux History 
@@ -33,7 +33,7 @@ When someone refers to one of these three terms in the context of Linux, they ge
 
 Becoming a Linux expert requires you to be comfortable with using a terminal. Any administrative task, including file manipulation, package installation, and user management, can be accomplished through the terminal. The terminal is interactive: you specify commands to run and the terminal outputs the results of those commands. To execute any command, you type it into the prompt and press ENTER.
 
-For our activites, is recommended to use the [Azure Cloud Shell](http://shell.azure.com/).
+For our activites, it is recommended to use the [Azure Cloud Shell](http://shell.azure.com/).
 
 ### :white_check_mark: Linux basic concepts
 
