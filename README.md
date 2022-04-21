@@ -1,5 +1,5 @@
 # FastHack - Mastering Linux 
-FastHack Linux Edition - This FastHack will serve as an introduction to important command line concepts and skills to learn more about Linux.
+FastHack Linux Edition - This hachathon will serve as an introduction to important command line concepts and skills on Linux environments.
 <img align="right" src="images/linuxpenguin.png" width="250"/>
 
 ## Linux History 
