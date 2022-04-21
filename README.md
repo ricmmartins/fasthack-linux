@@ -89,9 +89,7 @@ When someone refers to one of these three terms in the context of Linux, they ge
 * [Introduction to Linux - Free course on Linux Foundation](https://training.linuxfoundation.org/training/introduction-to-linux/)
 
 ## Contributions
-Contributions in the form of errors, feature requests and PRs are always welcome.
-
-Please follow these steps before submitting a PR:
+Contributions in the form of errors, feature requests and PRs are always welcome. Please follow these steps before submitting a PR:
 
 * Create an issue describing the error or feature request.
 * Clone the repository and create a topic branch.
