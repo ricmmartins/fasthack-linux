@@ -1,3 +1,4 @@
 theme: jekyll-theme-minimal
 title: FastHack - Linux Edition
 description: Mastering Linux
+show_downloads: false
