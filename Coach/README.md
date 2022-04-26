@@ -3,6 +3,8 @@
 ## Introduction
 Welcome to the coach's guide for the Mastering Linux What The Hack. Here you will find links to specific guidance for coaches for each of the challenges.
 
+**NOTE:** If you are a Hackathon participant, this is the answer guide. Don't cheat yourself by looking at these during the hack! Go learn something. :)
+
 ## Coach's Guides
 1. Challenge 01: **[Create a Linux Virtual Machine](../Coach/Solution-01.md)**
 	 - A Linux Virtual machine is the prequise for the challenges, so create a new Ubuntu Linux VM
@@ -28,3 +30,37 @@ Welcome to the coach's guide for the Mastering Linux What The Hack. Here you wil
 	 - Learn about package management and common activites such as update package distribution lists, install and uninstall packages.
 1. Challenge 12: **[Setting up a webserver](../Coach/Solution-12.md)**
 	 - In this challenge we will setting up a webserver and deploy a simple php application into it. The usage of SSL could be a plus.
+
+## Coach Prerequisites 
+
+This hack has pre-reqs that a coach is responsible for understanding and/or setting up BEFORE hosting an event. 
+
+The guide covers the common preparation steps a coach needs to do before the event.
+
+### Student Resources
+
+Before the hack, it is the Coach's responsibility to download and package up the contents of the \`/Student/Resources\` folder of this hack into a "Resources.zip" file. The coach should then provide a copy of the Resources.zip file to all students at the start of the hack.
+
+## Azure Requirements
+
+This hack requires students to have access to an Azure subscription where they can create and consume Azure resources. These Azure requirements should be shared with a stakeholder in the organization that will be providing the Azure subscription(s) that will be used by the students.
+
+- For the Challenge 01 an Azure subscription with contributor access will be required.
+- For all other challenges, at least a contributor access to a pre-created Ubuntu Linux 20.04 virtual machine will be required.
+- For the optional advanced challenge from the Challenge 12, these are the requirements:
+	- A public ip attached to the virtual machine
+	- Access to the public ip of the virtual machine
+	- Access to the Azure App Service Domain to get a domain or a acess to the DNS management of an existent domain
+
+## Repository Contents
+
+- \`./Coach\`
+  - Coach's Guide and related files
+- \`./Coach/Solutions\`
+  - Solution files with completed example answers to a challenge
+- \`./Student\`
+  - Student's Challenge Guide
+- \`./Student/Resources\`
+  - Resource files, sample code, scripts, etc meant to be provided to students. (Must be packaged up by the coach and provided to students at start of event)
+
+
