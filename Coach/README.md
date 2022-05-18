@@ -1,4 +1,4 @@
-# What The Hack - Mastering Linux - Coach Guide
+# What The Hack - Linux Fundamentals - Coach Guide
 
 ## Introduction
 Welcome to the coach's guide for the Mastering Linux What The Hack. Here you will find links to specific guidance for coaches for each of the challenges.
