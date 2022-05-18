@@ -1,4 +1,4 @@
-# FastHack - Mastering Linux 
+# FastHack - Linux Fundamentals
 
 ## Introduction
 
