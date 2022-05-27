@@ -45,7 +45,7 @@ Before the hack, it is the Coach's responsibility to ensure students can access 
 
 This hack requires students to have access to an Azure subscription where they can create and consume Azure resources. These Azure requirements should be shared with a stakeholder in the organization that will be providing the Azure subscription(s) that will be used by the students.
 
-- For the Challenge 01 an Azure subscription with contributor access will be required.
+- For Challenge 01 an Azure subscription with contributor access will be required.
 - For all other challenges, at least a contributor access to a pre-created Ubuntu Linux 20.04 virtual machine will be required.
 - For the optional advanced challenge from the Challenge 12, these are the requirements:
 	- A public ip attached to the virtual machine
