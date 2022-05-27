@@ -29,7 +29,7 @@ Welcome to the coach's guide for the Mastering Linux What The Hack. Here you wil
 1. Challenge 11: **[Package management](../Coach/Solution-11.md)**
 	 - Learn about package management and common activites such as update package distribution lists, install and uninstall packages.
 1. Challenge 12: **[Setting up a webserver](../Coach/Solution-12.md)**
-	 - In this challenge we will setting up a webserver and deploy a simple php application into it. The usage of SSL could be a plus.
+	 - In this challenge we will setting up a webserver and deploy a simple PHP application into it. The usage of SSL could be a plus.
 
 ## Coach Prerequisites 
 
