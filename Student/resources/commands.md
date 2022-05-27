@@ -4,6 +4,9 @@ The command line terminal in Linux is the operating system’s most powerful com
 
 In this page, we’ll present you with a curated list of the most handy Linux commands. 
 
+_Please note that those commands are for Linux in general, both RedHat-like and Debian-like distributions. There are some commands in the Package management session which may be specific for Redhat-based such as yum and rpm which do not work in Ubuntu (Debian-based)._
+
+
 ## File Commands
 
 | Command | Description |
