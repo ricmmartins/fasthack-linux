@@ -1,7 +1,7 @@
 # What The Hack - Linux Fundamentals - Coach Guide
 
 ## Introduction
-Welcome to the coach's guide for the Mastering Linux What The Hack. Here you will find links to specific guidance for coaches for each of the challenges.
+Welcome to the coach's guide for the Linux Fundamentals Hackathon. Here you will find links to specific guidance for coaches for each of the challenges.
 
 **NOTE:** If you are a Hackathon participant, this is the answer guide. Don't cheat yourself by looking at these during the hack! Go learn something. :)
 
@@ -24,7 +24,7 @@ Welcome to the coach's guide for the Mastering Linux What The Hack. Here you wil
 	 - Learn some basic stuff on shell scripting and the usage of some commands such as echo, cut, read and grep.
 1. Challenge 09: **[Disks, partitions and file systems](../Coach/Solution-09.md)**
 	 - You will be working with disks and partitions and learn about Linux filesystems and commands such as fdisk, mkfs and mount.
-1. Challenge 10: **[Logical Volume Mananager](../Coach/Solution-10.md)**
+1. Challenge 10: **[Logical Volume Manager](../Coach/Solution-10.md)**
 	 - Discover about the Logical Volume Manager on Linux, and how to use commands such as pvcreate, vgcreate, lvrcreate, and more.
 1. Challenge 11: **[Package management](../Coach/Solution-11.md)**
 	 - Learn about package management and common activites such as update package distribution lists, install and uninstall packages.
