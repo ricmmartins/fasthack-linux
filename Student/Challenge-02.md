@@ -4,7 +4,7 @@
 
 ## Description
 
-In this challenge you will learn how to perform common directory operations such as displaying your current directory and list directory contents.
+In this challenge you will learn how to perform common directory operations such as displaying your current directory and listing directory contents.
 
 - Display your current directory
 - Go to the parent directory of the current directory
@@ -32,5 +32,5 @@ In this challenge you will learn how to perform common directory operations such
 
 ## Learning Resources
 
-- [https://linuxjourney.com/lesson/the-shell](https://linuxjourney.com/lesson/the-shell)
+- [The Shell](https://linuxjourney.com/lesson/the-shell)
 
