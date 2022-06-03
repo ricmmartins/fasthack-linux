@@ -44,4 +44,4 @@ In this challenge you will learn basic commands about file manipulation such as 
 
 ## Learning Resources
 
-- [https://linuxjourney.com/lesson/the-shell](https://linuxjourney.com/lesson/the-shell)
+- [The Shell](https://linuxjourney.com/lesson/the-shell)
