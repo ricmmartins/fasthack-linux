@@ -2,7 +2,7 @@
 
 ## Introduction
 
-FastHack Linux Edition - This is the **1st Linux "Hackathon" by Microsoft!** It's a resource created to help interested people to get Linux skills and an understanding of basic command-line concepts. We're working to release intermediate and advanced topics (such as containers and security) soon! **Stay tuned!**
+FastHack Linux Edition - This is the **1st Linux "Hackathon" by Microsoft!** It's a learning resource created to help interested people to get Linux skills and an understanding of basic command-line concepts using Azure to build and learn. We're working to release intermediate and advanced topics (such as containers and security) soon! **Stay tuned!**
 <img align="right" src="./Student/resources/images/linuxpenguin.png" width="250"/>
 
 ## Linux History
