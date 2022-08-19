@@ -1,4 +1,4 @@
-# FastHack - Linux Fundamentals
+# FastHack - Linux FUNdamentals
 
 ## Introduction
 
