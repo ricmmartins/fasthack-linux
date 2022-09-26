@@ -5,6 +5,8 @@
 This is the **1st Linux "Hackathon" by Microsoft!** It's a learning resource created to help interested people to get Linux skills and an understanding of basic command-line concepts using Azure to build and learn. We're working to release intermediate and advanced topics (such as containers and security) soon! **Stay tuned!**
 <img align="right" src="./Student/resources/images/linuxpenguin.png" width="250"/>
 
+Note: This Hackathon were incorporated into the Microsoft WhatTheHack. Take a look at [http://aka.ms/wth](http://aka.ms/wth)
+
 ## Linux History
 
 Linux is a family of free and open-source operating systems based on the Linux kernel. Operating systems based on Linux are known as Linux distributions or distros. Examples include Debian, Ubuntu, Fedora, CentOS, Gentoo, Arch Linux, and many others.
