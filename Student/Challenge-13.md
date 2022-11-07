@@ -38,8 +38,8 @@ Changing the default SSH port reduces number of such attacks, so for this exerci
 
 ## Learning resoures
 
-- [How Fail2Ban Works to Protect Services on a Linux Server]([https://linuxjourney.com/lesson/software-distribution](https://www.digitalocean.com/community/tutorials/how-fail2ban-works-to-protect-services-on-a-linux-server))
-- [Using Fail2ban to Secure Your Server]([https://www.tecmint.com/linux-package-management/](https://www.linode.com/docs/guides/using-fail2ban-to-secure-your-server-a-tutorial/))
-- [How to Install and Configure Fail2ban on Ubuntu 20.04]([https://www.linode.com/docs/guides/linux-package-management-overview/](https://linuxize.com/post/install-configure-fail2ban-on-ubuntu-20-04/))
-- [Change SSH Port]([https://linuxhandbook.com/change-ssh-port/])
-- [Configure SSH Key based authentication on a Linux Server] ([https://www.digitalocean.com/community/tutorials/how-to-configure-ssh-key-based-authentication-on-a-linux-server])
+- [How Fail2Ban Works to Protect Services on a Linux Server](https://www.digitalocean.com/community/tutorials/how-fail2ban-works-to-protect-services-on-a-linux-server))
+- [Using Fail2ban to Secure Your Server](https://www.linode.com/docs/guides/using-fail2ban-to-secure-your-server-a-tutorial/)
+- [How to Install and Configure Fail2ban on Ubuntu 20.04](https://linuxize.com/post/install-configure-fail2ban-on-ubuntu-20-04/)
+- [Change SSH Port](https://linuxhandbook.com/change-ssh-port/)
+- [Configure SSH Key based authentication on a Linux Server] (https://www.digitalocean.com/community/tutorials/how-to-configure-ssh-key-based-authentication-on-a-linux-server)
