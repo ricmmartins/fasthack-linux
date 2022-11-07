@@ -1,6 +1,6 @@
 # Challenge 12 - Setting up a WebServer - Coach's Guide 
 
-[< Previous Solution](./Challenge-11.md) - **[Home](../README.md)** - [Next Challenge >](./Challenge-13.md)
+[< Previous Solution](./Challenge-11.md) - **[Home](../README.md)** - [Next Solution >](./Challenge-13.md)
 
 ## Notes & Guidance
 1. Download the sample application [from here](/resources/simple-php-app.tar.gz) to your home directory
