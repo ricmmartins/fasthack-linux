@@ -19,7 +19,7 @@ The idea behind Fail2ban is very simple: temporarily or permanently ban an IP th
 
 1. Ensure the distribution lists are updated
 2. Ensure the installation of fail2ban package
-3. Make sure that Fail2Ban is enabled to be started at the boot time 
+3. Make sure that Fail2Ban will start automatically during the VM boot
 4. Ensure Fail2Ban is enabled to protect the SSH service
 5. Check the file /var/log/auth.log to validate that it's working properly
 
