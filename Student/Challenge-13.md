@@ -6,7 +6,7 @@
 
 In a server, especially those directly exposed to the Internet such as web servers are very common to receive thousand of authentication attempts. If you check your /var/log/auth.log file, you will attest to this. 
 
-99.999% of those logins fail. They are based on silly dictionary attacks, which (unfortunately) work in some % of the cases. Are you sure that your password and the passwords of all the users on your system are strong enough to survive such an attack? This is why the usage of SSH Keys is a better alternative than the user/password approach. 
+Those attempts are based on silly dictionary attacks, which (unfortunately) work in some % of the cases. Are you sure that your password and the passwords of all the users on your system are strong enough to survive such an attack? This is why the usage of SSH Keys is a better alternative than the user/password approach for authentication. 
 
 This challenge will cover about some options to minimize those issues: 
 
