@@ -168,5 +168,70 @@ Status for the jail: sshd
    `- Banned IP list:
 ```
 
+5. Change the SSH default port from 22 to 2222
 
+`student@vm01:~$ sudo su`
+`root@vm01:/home/student# sed -i 's/#Port 22/Port 2222/g' /etc/ssh/sshd_config; systemctl restart sshd`
 
+6. Setup SSH keys in order to improve the connection method to the server
+
+In this exercise we will be using the Windows Subsystem for Linux, but you can follow [this instructions](https://www.ssh.com/academy/ssh/putty/windows/puttygen) to use Putty. 
+
+Using the [Windows Subsystem for Linux](https://learn.microsoft.com/en-us/windows/wsl/install) on your local computer, generate a SSH key pair by typing:
+
+`$ ssh-keygen`
+
+```bash
+rmmartins@DESKTOP-58U032B:~$ ssh-keygen
+Generating public/private rsa key pair.
+Enter file in which to save the key (/home/rmmartins/.ssh/id_rsa):
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /home/rmmartins/.ssh/id_rsa
+Your public key has been saved in /home/rmmartins/.ssh/id_rsa.pub
+The key fingerprint is:
+SHA256:3xDVbIS9eE8Ij2ktzFzoIku6c7BF0pqmV89jBtME1Yw rmmartins@DESKTOP-58U032B
+The key's randomart image is:
++---[RSA 3072]----+
+|         ..+.B.  |
+|        . E.* *  |
+|       . ..= X o |
+|      . = o.@ * .|
+|       BS=.o o o |
+|      * *..o    .|
+|     o * =. .    |
+|    . = . *      |
+|     . o o .     |
++----[SHA256]-----+
+```
+
+Now we need to copy the SSH Public Key to the server. The simplest way is to use ssh-copy-id. So from your local machine type:
+
+`$ ssh-copy-id <username>@<virtualmachine.ip> -p 2222`
+
+_Please note that the port 2222 is used since we changed from 22 to 2222 previously_
+
+```bash
+/usr/bin/ssh-copy-id: INFO: Source of key(s) to be installed: "/home/rmmartins/.ssh/id_rsa.pub"
+/usr/bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter out any that are already installed
+/usr/bin/ssh-copy-id: INFO: 1 key(s) remain to be installed -- if you are prompted now it is to install the new keys
+rmmartins@20.3.122.121's password:
+
+Number of key(s) added: 1
+
+Now try logging into the machine, with:   "ssh -p '2222' 'rmmartins@20.3.122.121'"
+and check to make sure that only the key(s) you wanted were added.
+```
+
+Then disable password authentication on the server:
+
+`student@vm01:~$ sudo nano /etc/ssh/sshd_config`
+
+Search for a directive called PasswordAuthentication (this may be commented out). Umcomment the line removing the # at the beginning of the line and set the value to no:
+
+```bash
+PasswordAuthentication no
+```
+Restart the SSH service
+
+`student@vm01:~$ sudo systemctl restart ssh`
