@@ -42,4 +42,4 @@ Changing the default SSH port reduces number of such attacks, so for this exerci
 - [Using Fail2ban to Secure Your Server](https://www.linode.com/docs/guides/using-fail2ban-to-secure-your-server-a-tutorial/)
 - [How to Install and Configure Fail2ban on Ubuntu 20.04](https://linuxize.com/post/install-configure-fail2ban-on-ubuntu-20-04/)
 - [Change SSH Port](https://linuxhandbook.com/change-ssh-port/)
-- [Configure SSH Key based authentication on a Linux Server] (https://www.digitalocean.com/community/tutorials/how-to-configure-ssh-key-based-authentication-on-a-linux-server)
+- [Configure SSH Key based authentication on a Linux Server](https://www.digitalocean.com/community/tutorials/how-to-configure-ssh-key-based-authentication-on-a-linux-server)
