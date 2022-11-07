@@ -154,6 +154,21 @@ logpath = %(sshd_log)s
 backend = %(sshd_backend)s
 ```
 
+`student@vm01:~$ sudo fail2ban-client status sshd`
+
+```bash
+Status for the jail: sshd
+|- Filter
+|  |- Currently failed: 0
+|  |- Total failed:     0
+|  `- File list:        /var/log/auth.log
+`- Actions
+   |- Currently banned: 0
+   |- Total banned:     0
+   `- Banned IP list:
+```
+
+
 5. Check the file /var/log/auth.log to validate that it's working properly
 
 `student@vm01:~$ tail -f /var/log/auth.log`
