@@ -169,8 +169,4 @@ Status for the jail: sshd
 ```
 
 
-5. Check the file /var/log/auth.log to validate that it's working properly
 
-`student@vm01:~$ tail -f /var/log/auth.log`
-```bash
-``` 
