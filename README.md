@@ -60,6 +60,8 @@ With the exception of challenge 01 which has as an outcome a Linux Virtual Machi
 	 - In this challenge we will setting up a webserver and deploy a simple PHP application into it. The usage of SSL could be a plus. 
 * Challenge 13: **[Protecting a Server](Student/Challenge-13.md)**
 	- In this challenge we will discover about how to use Fail2Ban to protect services in a Linux environment.
+* Challenge 14: **[Running Containers](Student/Challenge-14.md)**
+	- Your objective in this challenge will be to create a container image from a sample application and make it run using Docker.
 	 
 ## Prerequisites
 - Your own Azure subscription with contributor access for the Challenge 01 or contributor access to a pre-created Azure Virtual Machine for all other challenges.
