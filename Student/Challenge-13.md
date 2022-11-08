@@ -1,6 +1,7 @@
 # Challenge 13 - Protecting a Server
 
-[< Previous Challenge](./Challenge-12.md) - **[Home](../README.md)**
+[< Previous Challenge](./Challenge-12.md) - **[Home](../README.md)** - [Next Challenge >](./Challenge-14.md)
+
 
 ## Description
 
