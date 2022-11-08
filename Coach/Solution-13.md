@@ -212,16 +212,18 @@ Now we need to copy the SSH Public Key to the server. The simplest way is to use
 _Please note that the port 2222 is used since we changed from 22 to 2222 previously_
 
 ```bash
-/usr/bin/ssh-copy-id: INFO: Source of key(s) to be installed: "/home/rmmartins/.ssh/id_rsa.pub"
+/usr/bin/ssh-copy-id: INFO: Source of key(s) to be installed: "/home/user/.ssh/id_rsa.pub"
 /usr/bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter out any that are already installed
 /usr/bin/ssh-copy-id: INFO: 1 key(s) remain to be installed -- if you are prompted now it is to install the new keys
-rmmartins@20.3.122.121's password:
+user@20.3.122.121's password:
 
 Number of key(s) added: 1
 
-Now try logging into the machine, with:   "ssh -p '2222' 'rmmartins@20.3.122.121'"
+Now try logging into the machine, with:   "ssh -p '2222' 'user@20.3.122.121'"
 and check to make sure that only the key(s) you wanted were added.
 ```
+
+_Please note that if your ssh private key was saved in another place different from the default /home/<user>/.ssh/id_rsa, you will have to specify for the connection as ssh -p '2222' 'user@20.3.122.121 -i <path.of.your.private.ssh.key>'_
 
 Then disable password authentication on the server:
 
