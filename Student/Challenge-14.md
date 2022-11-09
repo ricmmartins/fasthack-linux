@@ -26,7 +26,7 @@ It handles running containers (among some other things) but not building them. T
 
 This challenge will cover the following: 
 
-- Download the sample application [from here](/resources/simple-php-app.tar.gz) to your home directory
+- Download the sample application [from here](/Student/resources/simple-php-app.tar.gz) to the home directory
 - Uncompress the file
 - Creation of the Dockerfile
 - Building of the image
