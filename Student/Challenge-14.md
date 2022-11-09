@@ -28,7 +28,6 @@ This challenge will cover the following:
 
 - Install the docker runtime
 - Download the sample application [from here](/Student/resources/simple-php-app.tar.gz) to the home directory
-- Uncompress the file
 - Creation of the Dockerfile
 - Building of the image
 - Test the execution of the container
