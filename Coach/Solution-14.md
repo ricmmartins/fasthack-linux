@@ -275,7 +275,7 @@ Then let's create a tag for our image before publish on Docker Hub
 
 `student@vm01:~$ sudo docker tag simplephpapp <username>/simplephpapp`
 
-Log-in to your docker account:
+Log-in into your Docker account:
 
 `student@vm01:~$ sudo docker login`
 
@@ -290,6 +290,8 @@ Login Succeeded
 Upload your image to Docker Hub:
 
 `student@vm01:~$ sudo docker push username/simplephpapp`
+
+```bash
 Using default tag: latest
 The push refers to repository [docker.io/username/simplephpapp]
 2d37541b2339: Pushed
@@ -305,6 +307,7 @@ b2a882794e1a: Pushed
 d80da1ca62ca: Pushed
 d9d07d703dd5: Mounted from library/debian
 latest: digest: sha256:4b2ca1bd723bbebcf9ca955e35bf47f1b461b53cb1d0ef835dcb91367068416a size: 2830
+```
 
 
 
