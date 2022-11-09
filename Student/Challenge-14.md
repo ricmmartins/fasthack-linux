@@ -26,7 +26,7 @@ It handles running containers (among some other things) but not building them. T
 
 This challenge will cover the following: 
 
-- Using git to clone a [sample application](https://github.com/ricmmartins/simple-php-app) from GitHub
+- Using git to clone a [sample application](https://github.com/ricmmartins/fasthack-linux/tree/main/Student/resources/sample-application) from GitHub
 - Creation of the Dockerfile
 - Building of the image
 - Test the execution of the container
