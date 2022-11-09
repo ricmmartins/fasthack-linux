@@ -41,5 +41,5 @@ This challenge will cover the following:
 ## Learning resoures
 
 - [What is a container?](https://azure.microsoft.com/en-us/resources/cloud-computing-dictionary/what-is-a-container/)
-- [Introductin to Containers and Docker]([https://www.digitalocean.com/community/tutorials/how-fail2ban-works-to-protect-services-on-a-linux-server](https://learn.microsoft.com/en-us/dotnet/architecture/microservices/container-docker-introduction/))
+- [Introduction to Containers and Docker](https://learn.microsoft.com/en-us/dotnet/architecture/microservices/container-docker-introduction)
 - [A beginner’s guide to Docker — how to create your first Docker application](https://www.freecodecamp.org/news/a-beginners-guide-to-docker-how-to-create-your-first-docker-application-cc03de9b639f/)
