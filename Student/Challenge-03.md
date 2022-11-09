@@ -8,10 +8,10 @@ In this challenge you will learn basic commands about file manipulation such as 
 
 - Find in the `/var` directory all the files that have been modified in the last 60 minutes
 - Show the type of file of `/bin/htop`, `/etc/passwd` and `/usr/bin/passwd`
-- Go to your home directory and download [azure-linux.svg](https://docs.microsoft.com/en-us/learn/achievements/azure-linux.svg)  and [azure-ops-guide.pdf](https://docsmsftpdfs.blob.core.windows.net/guides/azure/azure-ops-guide.pdf) 
-- Display the type of file of `azure-linux.svg` and `azure-ops-guide.pdf`
+- Go to your home directory and download [azure-linux.svg](https://docs.microsoft.com/en-us/learn/achievements/azure-linux.svg)  and [InfographicRC2.pdf](https://azure.microsoft.com/mediahandler/files/resourcefiles/infographic-reliability-with-microsoft-azure/InfographicRC2.pdf) 
+- Display the type of file of `azure-linux.svg` and `InfographicRC2.pdf`
 - Rename `azure-linux.svg` to `azure-linux.pdf` 
-- Display the type of file of `azure-linux.pdf` and `azure-ops-guide.pdf`
+- Display the type of file of `azure-linux.pdf` and `InfographicRC2.pdf`
 - Create a directory `~/lab` and enter it.
 - Create the file `today.log` and the file `yesterday.log` in lab.
 - Check the creation date and time
