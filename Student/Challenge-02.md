@@ -14,8 +14,8 @@ In this challenge you will learn how to perform common directory operations such
 - Stay where you are and list the contents of your home directory (`~`)
 - List all the files (including hidden files) in your home directory
 - Use a single command to create the following directory tree `~/folder1/folder2/folder3` (folder3 is a subdirectory from folder2, and folder2 is a subdirectory from folder1)
-- List recursively the content of your `~` 
-- Find the directories within your home folder
+- List recursively the content of your home folder (`~`)
+- Find the directories within your home folder  (`~`)
 
 ## Success Criteria
 
