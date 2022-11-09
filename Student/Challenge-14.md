@@ -24,21 +24,31 @@ Another key difference is that, unlike Docker, Podman is not able to build conta
 
 It handles running containers (among some other things) but not building them. The goal here is to have a set of container standards that any application can be developed to support, rather than relying on a single monolithic application such as Docker to perform all duties.
 
-This challenge will cover the following: 
+This challenge will let you have your first contact with containers. You will: 
 
 - Install the docker runtime
-- Download the sample application [from here](/Student/resources/simple-php-app.tar.gz) to the home directory
-- Creation of the Dockerfile
-- Building of the image
+- Run a Nginx container
+- Access the default website in your virtual machine
+
+If you would like to go over an advanced challenge, try this one:
+
+- Download this sample application [from here](/Student/resources/simple-php-app.tar.gz) to your home directory
+- Create a Dockerfile to install the Nginx, PHP, and run this php application.
+- Build the image
 - Test the execution of the container
 - Publish the image to Docker Hub
 
 ## Success Criteria
 
 1. Make sure that Docker runtime was successfully installed
-2. Ensure the sample application was downloaded into the virtual machine
-3. Have the application running via container and accessible from the browser
-4. Validate that the container image were published into Docker Hub
+2. Ensure your Nginx container is running properly
+3. Access the default website from Nginx through the public IP of your virtual machine
+
+If you decided to take the advanced challenge:
+
+1. Ensure the sample application was downloaded into the virtual machine
+6. Have the application running via container and accessible from the browser
+7. Validate that the container image were published into Docker Hub
 
 ## Learning resoures
 
