@@ -93,9 +93,9 @@ InfographicRC2.pdf: PDF document, version 1.5
 
 `student@vm01:~$ mv azure-linux.svg azure-linux.pdf`
 
-6. Display the type of file of azure-linux.pdf and azure-ops-guide.pdf
+6. Display the type of file of azure-linux.pdf and InfographicRC2.pdf
 
-`student@vm01:~$ file azure-linux.pdf azure-ops-guide.pdf`
+`student@vm01:~$ file azure-linux.pdf InfographicRC2.pdf`
 
 ```bash
 azure-linux.pdf:     SVG Scalable Vector Graphics image
