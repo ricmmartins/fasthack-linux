@@ -113,7 +113,6 @@ MAINTAINER You - you@domain.com
 RUN apt-get update
 RUN apt-get install -y nginx
 RUN apt-get install -y php7.4-fpm
-RUN apt-get install -y git
 
 # Nginx
 RUN ln -sf /dev/stdout /var/log/nginx/access.log
