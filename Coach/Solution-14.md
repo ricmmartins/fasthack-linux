@@ -309,6 +309,12 @@ d9d07d703dd5: Mounted from library/debian
 latest: digest: sha256:4b2ca1bd723bbebcf9ca955e35bf47f1b461b53cb1d0ef835dcb91367068416a size: 2830
 ```
 
+And if you would like to connect to your container in execution and check internally, you can run the following command:
 
+`student@vm01:~$ sudo docker run -t -i simplephpapp /bin/bash`
+
+```bash
+root@ac4a7ec02110:/var/www/app#
+```
 
 
