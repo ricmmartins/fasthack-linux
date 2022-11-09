@@ -75,7 +75,58 @@ Processing triggers for dbus (1.12.16-2ubuntu2.3) ...
 Processing triggers for libc-bin (2.31-0ubuntu9.9) ...
 ```
 
-2. Download the sample application [from here](/Student/resources/simple-php-app.tar.gz) to your home directory
+2. To run the Nginx container, execute the following command:
+
+`student@vm01:~$ sudo docker run --name mynginx -p 8090:80 -d nginx`
+
+```bash
+Unable to find image 'nginx:latest' locally
+latest: Pulling from library/nginx
+e9995326b091: Pull complete
+71689475aec2: Pull complete
+f88a23025338: Pull complete
+0df440342e26: Pull complete
+eef26ceb3309: Pull complete
+8e3ed6a9e43a: Pull complete
+Digest: sha256:943c25b4b66b332184d5ba6bb18234273551593016c0e0ae906bab111548239f
+Status: Downloaded newer image for nginx:latest
+45628ca1834a818ff7512837e5036bd4532350db685b1049d7de663b133ddd32
+```
+3. Test if the container is running properly:
+
+`student@vm01:~$ curl localhost:8090`
+
+```bash
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+<style>
+html { color-scheme: light dark; }
+body { width: 35em; margin: 0 auto;
+font-family: Tahoma, Verdana, Arial, sans-serif; }
+</style>
+</head>
+<body>
+<h1>Welcome to nginx!</h1>
+<p>If you see this page, the nginx web server is successfully installed and
+working. Further configuration is required.</p>
+
+<p>For online documentation and support please refer to
+<a href="http://nginx.org/">nginx.org</a>.<br/>
+Commercial support is available at
+<a href="http://nginx.com/">nginx.com</a>.</p>
+
+<p><em>Thank you for using nginx.</em></p>
+</body>
+</html>
+```
+
+In the Network Security Group associated with your virtual machine, open the port 8090 and try access using the http://yourpublicip:8090
+
+For the advanced challenge, here are the steps:
+
+1. Download the sample application [from here](/Student/resources/simple-php-app.tar.gz) to your home directory
 
 `student@vm01:~$ cd ~ ;  wget https://github.com/ricmmartins/fasthack-linux/blob/main/Student/resources/simple-php-app.tar.gz?raw=true -O simple-php-app.tar.gz`
 
@@ -101,7 +152,7 @@ simple-php-app.tar.gz         100%[=============================================
 2022-11-09 01:46:30 (32.0 MB/s) - ‘simple-php-app.tar.gz’ saved [28596/28596]
 ```
 
-3. Create the Dockerfile
+2. Create the Dockerfile
 
 In your home directory create a file called Dockerfile with the following content:
 
@@ -133,7 +184,7 @@ EXPOSE 80
 CMD service php7.4-fpm start && nginx -g "daemon off;" 
 ```
 
-4. Create the Nginx config file which will be addedd to the container. Create a file called "default" with the following content
+3. Create the Nginx config file which will be addedd to the container. Create a file called "default" with the following content
 
 ```bash
 server {
@@ -151,7 +202,7 @@ server {
 } 
 ```
 
-5. Now let's build the image
+4. Now let's build the image
 
 `student@vm01:~$ sudo docker build . -t simplephpapp`
 
@@ -219,7 +270,7 @@ Successfully built 29df1bb28150
 Successfully tagged simplephpapp:latest
 ```
 
-6. Let's run our container mapping the container port 80 to the 8080 on the virtual machine
+5. Let's run our container mapping the container port 80 to the 8080 on the virtual machine
 
 
 `student@vm01:~$ sudo docker run -d -p 8080:80 simplephpapp`
@@ -228,7 +279,7 @@ Successfully tagged simplephpapp:latest
 cf07d004cddde38366fe49af702dc9ad99099fbae6735460e2432eeef6db8607
 ```
 
-7. Let's test
+6. Let's test
 
 
 `student@vm01:~$ curl localhost:8080`
@@ -266,7 +317,7 @@ cf07d004cddde38366fe49af702dc9ad99099fbae6735460e2432eeef6db8607
 </html>
 ```
 
-8. Publish the image to Docker Hub
+7. Publish the image to Docker Hub
 
 Now if you want to share this application with the world, you can publish it to the Docker Hub. Go to https://hub.docker.com and create your free account. 
 
