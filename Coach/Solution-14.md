@@ -271,7 +271,7 @@ cf07d004cddde38366fe49af702dc9ad99099fbae6735460e2432eeef6db8607
 
 Now if you want to share this application with the world, you can publish it to the Docker Hub. Go to https://hub.docker.com and create your free account. 
 
-Then let's create a tag for our app before publish on Docker Hub
+Then let's create a tag for our image before publish on Docker Hub
 
 `student@vm01:~$ sudo docker tag simplephpapp <username>/simplephpapp`
 
