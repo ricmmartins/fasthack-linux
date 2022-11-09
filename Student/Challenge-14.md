@@ -4,43 +4,42 @@
 
 ## Description
 
-In a server, especially those directly exposed to the Internet such as web servers are very common to receive thousand of authentication attempts. If you check your /var/log/auth.log file, you will attest to this. 
+Containers are executable units of software in which application code is packaged, along with its libraries and dependencies, in common ways so that it can be run anywhere, whether it be on desktop, traditional IT, or the cloud.
 
-Those attempts are based on silly dictionary attacks, which (unfortunately) work in some % of the cases. Are you sure that your password and the passwords of all the users on your system are strong enough to survive such an attack? This is why the usage of SSH Keys is a better alternative than the user/password approach for authentication. 
+To do this, containers take advantage of a form of operating system (OS) virtualization in which features of the OS (in the case of the Linux kernel, namely the namespaces and cgroups primitives) are leveraged to both isolate processes and control the amount of CPU, memory, and disk that those processes have access to.
 
-This challenge will cover about some options to minimize those issues: 
+Containers are small, fast, and portable because unlike a virtual machine, containers do not need include a guest OS in every instance and can, instead, simply leverage the features and resources of the host OS.
 
-1. Install Fail2Ban
-2. Change the SSH Port
-3. Enable SSH Keys instead of username/password
+Containers first appeared decades ago with versions like FreeBSD Jails and AIX Workload Partitions, but most modern developers remember 2013 as the start of the modern container era with the introduction of [Docker](https://www.docker.com/).
 
-The idea behind Fail2ban is very simple: temporarily or permanently ban an IP that performed multiple undesired actions, such as unsuccessful authentication, access to a restricted area, etc. Originally it was developed to catch illegal SSH login attempts, but later on, it grew up into an easily customizable toolkit for speedy reaction on some events (such as detected failed login attempts) recorded in the log files.
+Docker is a platform for developing, shipping, and running applications. Let’s unpack that statement. Docker allows users to build new container images, push those images to Docker Hub, and also download those images from the Docker Hub. Docker Hub acts as a container image library, and it hosts container images that users build. There are also some new alternatives to Docker such as [Podman](https://podman.io/).
 
-Changing the default SSH port reduces number of such attacks, so for this exercice let's change from 22 to 2222. Remember to open the 2222 port on your NSG.
+Podman is a daemonless container engine for developing, managing, and running OCI Containers (Open Containers Initiative) on your Linux System. Contrary to Docker, Podman does not require a daemon process to launch and manage containers. This is an important difference between the two projects.
 
+Podman seeks to improve on some of Docker’s drawbacks. For one, Podman does not require a daemon running as root. In fact, Podman containers run with the same permissions as the user who launched them. This addresses a significant security concern, although you can still run containers with root permissions if you really want to.
 
-- Install the package fail2ban
-- Validate the configuration file /etc/fail2ban/jail.conf
-- Make sure Fail2Ban it's working as expected
-- Make changes on SSH default port and setup SSH keys
+Podman seeks to be a drop-in replacement for Docker as far as the CLI is concerned. The developers boast that most users can simply use alias docker=podman and continue running the same familiar commands. The container image format is also fully compatible between Docker and Podman, so existing containers built on Dockerfiles will work with Podman.
 
+Another key difference is that, unlike Docker, Podman is not able to build container images (the tool [Buildah](https://buildah.io/) is instead used for this). This shows that Podman is not built to be monolithic.
 
+It handles running containers (among some other things) but not building them. The goal here is to have a set of container standards that any application can be developed to support, rather than relying on a single monolithic application such as Docker to perform all duties.
 
+This challenge will cover the following: 
+
+- Using git to clone a sample application from GitHub
+- Creation of the Dockerfile
+- Building of the image
+- Test the execution of the container
+- Publish the image to Docker Hub
 
 ## Success Criteria
 
-1. Ensure the distribution lists are updated
-2. Ensure the installation of fail2ban package
-3. Make sure that Fail2Ban will start automatically during the VM boot
-4. Ensure Fail2Ban is enabled to protect the SSH service
-5. Change the SSH default port from 22 to 2222
-6. Setup SSH keys in order to improve the connection method to the server
+1. Ensure the sample application was successfully cloned into the virtual machine
+2. Have the application running via container and accessible from the browser
+3. Validate that the container image were published into Docker Hub
 
 ## Learning resoures
 
-- [How Fail2Ban Works to Protect Services on a Linux Server](https://www.digitalocean.com/community/tutorials/how-fail2ban-works-to-protect-services-on-a-linux-server)
-- [Using Fail2ban to Secure Your Server](https://www.linode.com/docs/guides/using-fail2ban-to-secure-your-server-a-tutorial/)
-- [How to Install and Configure Fail2ban on Ubuntu 20.04](https://linuxize.com/post/install-configure-fail2ban-on-ubuntu-20-04/)
-- [Change SSH Port](https://linuxhandbook.com/change-ssh-port/)
-- [Configure SSH Key based authentication on a Linux Server](https://www.digitalocean.com/community/tutorials/how-to-configure-ssh-key-based-authentication-on-a-linux-server)
-- [Set up SSH public key authentication to connect to a remote system](https://kb.iu.edu/d/aews#:~:text=The%20corresponding%20public%20key%20will%20be%20generated%20using,characters%2C%20and%20then%20press%20Enter%20or%20Return.%20)
+- [What is a container?](https://azure.microsoft.com/en-us/resources/cloud-computing-dictionary/what-is-a-container/)
+- [Introductin to Containers and Docker]([https://www.digitalocean.com/community/tutorials/how-fail2ban-works-to-protect-services-on-a-linux-server](https://learn.microsoft.com/en-us/dotnet/architecture/microservices/container-docker-introduction/))
+- [A beginner’s guide to Docker — how to create your first Docker application](https://www.freecodecamp.org/news/a-beginners-guide-to-docker-how-to-create-your-first-docker-application-cc03de9b639f/)
