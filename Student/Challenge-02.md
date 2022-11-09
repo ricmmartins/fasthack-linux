@@ -24,7 +24,7 @@ In this challenge you will learn how to perform common directory operations such
 3. Validate you are in the `/` directory
 4. Confirm you can list the files under the `/`
 5. Confirm you can see the long list with details from `/` directory
-6. Confirm you are listing the content of your home directory (`~`) and not from root (`/`)
+6. Confirm you are listing the content of your home directory (`~`) and not from root directory (`/`)
 7. Confirm you can see the hidden files from your home directory
 8. Validate if you were able to create the directory tree using a single command
 9. Confirm if you are seeing a recursive list of the content from your `~` 
