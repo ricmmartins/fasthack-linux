@@ -26,6 +26,7 @@ It handles running containers (among some other things) but not building them. T
 
 This challenge will cover the following: 
 
+- Install the docker runtime
 - Download the sample application [from here](/Student/resources/simple-php-app.tar.gz) to the home directory
 - Uncompress the file
 - Creation of the Dockerfile
@@ -35,9 +36,10 @@ This challenge will cover the following:
 
 ## Success Criteria
 
-1. Ensure the sample application was successfully cloned into the virtual machine
-2. Have the application running via container and accessible from the browser
-3. Validate that the container image were published into Docker Hub
+1. Make sure that Docker runtime was successfully installed
+2. Ensure the sample application was downloaded into the virtual machine
+3. Have the application running via container and accessible from the browser
+4. Validate that the container image were published into Docker Hub
 
 ## Learning resoures
 
