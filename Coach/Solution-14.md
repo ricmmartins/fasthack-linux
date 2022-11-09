@@ -73,7 +73,6 @@ Processing triggers for systemd (245.4-4ubuntu3.18) ...
 Processing triggers for man-db (2.9.1-1) ...
 Processing triggers for dbus (1.12.16-2ubuntu2.3) ...
 Processing triggers for libc-bin (2.31-0ubuntu9.9) ...
-
 ```
 
 2. Download the sample application [from here](/Student/resources/simple-php-app.tar.gz) to your home directory
@@ -133,7 +132,7 @@ CMD service php7.4-fpm start && nginx -g "daemon off;"
 
 EXPOSE 80 
 CMD service php7.4-fpm start && nginx -g "daemon off;" 
-
+```
 
 4. Create the Nginx config file which will be addedd to the container. Create a file called "default" with the following content
 
