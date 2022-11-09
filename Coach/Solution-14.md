@@ -104,7 +104,7 @@ simple-php-app.tar.gz         100%[=============================================
 
 3. Create the Dockerfile
 
-Enter to the simple-php-app directory, then create a file called Dockerfile with the following content
+In your home directory create a file called Dockerfile with the following content:
 
 ```bash
 FROM debian
