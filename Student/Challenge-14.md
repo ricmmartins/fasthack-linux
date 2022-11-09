@@ -26,7 +26,8 @@ It handles running containers (among some other things) but not building them. T
 
 This challenge will cover the following: 
 
-- Using wget to download a [sample application](https://github.com/ricmmartins/fasthack-linux/blob/main/Student/resources/simple-php-app.tar.gz) from a repository and uncompress the file.
+- Download a [sample application](https://github.com/ricmmartins/fasthack-linux/blob/main/Student/resources/simple-php-app.tar.gz) from a repository
+- Uncompress the file
 - Creation of the Dockerfile
 - Building of the image
 - Test the execution of the container
