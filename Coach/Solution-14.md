@@ -267,4 +267,45 @@ cf07d004cddde38366fe49af702dc9ad99099fbae6735460e2432eeef6db8607
 </html>
 ```
 
+8. Publish the image to Docker Hub
+
+Now if you want to share this application with the world, you can publish it to the Docker Hub. Go to https://hub.docker.com and create your free account. 
+
+Then let's create a tag for our app before publish on Docker Hub
+
+`student@vm01:~$ sudo docker tag simplephpapp <username>/simplephpapp`
+
+Log-in to your docker account:
+
+`student@vm01:~$ sudo docker login`
+
+```bash
+Login with your Docker ID to push and pull images from Docker Hub. If you don't have a Docker ID, head over to https://hub.docker.com to create one.
+Username: <username>
+WARNING! Your password will be stored unencrypted in /root/.docker/config.json.
+Configure a credential helper to remove this warning. See
+https://docs.docker.com/engine/reference/commandline/login/#credentials-store
+Login Succeeded
+```
+Upload your image to Docker Hub:
+
+`student@vm01:~$ sudo docker push username/simplephpapp`
+Using default tag: latest
+The push refers to repository [docker.io/username/simplephpapp]
+2d37541b2339: Pushed
+344414308e52: Pushed
+9a637731d024: Pushed
+fca49c737601: Pushed
+34141b7e27dc: Pushed
+c0d2c2ffac17: Pushed
+c3546dcce943: Pushed
+b2a882794e1a: Pushed
+3af4c408a1f6: Pushed
+77c055de0507: Pushed
+d80da1ca62ca: Pushed
+d9d07d703dd5: Mounted from library/debian
+latest: digest: sha256:4b2ca1bd723bbebcf9ca955e35bf47f1b461b53cb1d0ef835dcb91367068416a size: 2830
+
+
+
 
