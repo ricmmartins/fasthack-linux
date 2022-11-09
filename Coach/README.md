@@ -32,6 +32,8 @@ Welcome to the coach's guide for the Linux Fundamentals Hackathon. Here you will
 	 - In this challenge we will setting up a webserver and deploy a simple PHP application into it. The usage of SSL could be a plus.
 * Challenge 13: **[Protecting a Server](../Coach/Solution-13.md)**
 	- In this challenge we will discover about how to use Fail2Ban to protect services in a Linux environment.
+* Challenge 14: **[Running Containers](../Coach/Solution-14.md)**
+	- Your objective in this challenge will be to create a container image from a sample application and make it run using Docker.
 
 ## Coach Prerequisites 
 
