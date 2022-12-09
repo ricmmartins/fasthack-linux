@@ -1,6 +1,6 @@
 # Challenge 14 - Running Containers
 
-[< Previous Challenge](./Challenge-13.md) - **[Home](../README.md)**
+[< Previous Challenge](./Challenge-13.md) - **[Home](./README.md)**
 
 ## Description
 
