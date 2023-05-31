@@ -87,7 +87,7 @@ When someone refers to one of these three terms in the context of Linux, they ge
 * [Linux Journey](https://linuxjourney.com/)
 * [Linux Upskill Challenge](https://linuxupskillchallenge.org/)
 * [Beginner's Guide for Linux - Tecmint](https://www.tecmint.com/free-online-linux-learning-guide-for-beginners/)
-* [Preparation for Linux Foundation Certified System Adminsitrator](https://github.com/Bes0n/LFCS)
+* [Preparation for Linux Foundation Certified System Administrator](https://github.com/Bes0n/LFCS)
 * [Linux Foundation Certified System Administrator (LFCS) Notes](https://github.com/simonesavi/lfcs)
 * [The Linux Documentation Project](https://tldp.org/)
 * [Intrduction to Linux - from TLPD](https://tldp.org/LDP/intro-linux/intro-linux.pdf)
