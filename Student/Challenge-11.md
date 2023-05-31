@@ -26,7 +26,7 @@ During this challenge, you will learn about package management and the most comm
 5. Validate you have the details from the package vim
 6. Ensure the Docker container runtime is installed
 
-## Learning resoures
+## Learning resources
 
 - [Software Distribution](https://linuxjourney.com/lesson/software-distribution)
 - [Linux Package Management with Yum, RPM, Apt, Dpkg, Aptitude and Zypper](https://www.tecmint.com/linux-package-management/)
