@@ -102,9 +102,6 @@ Contributions in the form of errors, feature requests and PRs are always welcome
 * Make changes, adding new tests for new functionality.
 * Submit a PR.
 
-## Feedback
-Please [share](https://forms.office.com/r/1W73Y1rrxu) your experience during this Linux Hackathon and help us to improve.
-
 ## Show your support
 Give a ⭐️ if this content helped you!
 
