@@ -1,11 +1,11 @@
-# FastHack - Linux FUNdamentals
+# Hackathon - Linux FUNdamentals
 
 ## Introduction
 
 This is a learning resource created to help interested people to get Linux skills and an understanding of basic command-line concepts using Azure to build and learn.
 <img align="right" src="./Student/resources/images/linuxpenguin.png" width="250"/>
 
-Note: This Hackathon were incorporated into the Microsoft What The Hack, as the 1st Linux "Hackathon" by Microsoft! See more at [http://aka.ms/wth](http://aka.ms/wth)
+> Note: This Hackathon were incorporated into the Microsoft What The Hack, as the 1st Linux "Hackathon" by Microsoft! See more at [http://aka.ms/wth](http://aka.ms/wth)
 
 ## Linux History
 
