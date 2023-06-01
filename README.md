@@ -94,6 +94,10 @@ When someone refers to one of these three terms in the context of Linux, they ge
 * [Linux Commands Notes for Professionals](https://goalkicker.com/LinuxBook/LinuxNotesForProfessionals.pdf)
 * [Introduction to Linux - Free course on Linux Foundation](https://training.linuxfoundation.org/training/introduction-to-linux/)
 
+## Coach's Guide
+
+In the [coach](./Coach/) directory are the guidelines in case you are running the Hackathon in an event and are a coach, as well as the solutions for the proposed challenges. If you're doing the Hackathon as a student, don't be fooled by looking at the solutions during the hack! Go learn something. :)
+
 ## Contributions
 Contributions in the form of errors, feature requests and PRs are always welcome. Please follow these steps before submitting a PR:
 
