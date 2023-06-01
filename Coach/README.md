@@ -3,7 +3,7 @@
 ## Introduction
 Welcome to the coach's guide for the Linux Fundamentals Hackathon. Here you will find links to specific guidance for coaches for each of the challenges.
 
-**NOTE:** If you are a Hackathon participant, this is the answer guide. Don't cheat yourself by looking at these during the hack! Go learn something. :)
+> **NOTE:** If you are a Hackathon participant, this is the answer guide. Don't cheat yourself by looking at these during the hack! Go learn something. :)
 
 ## Coach's Guides
 * Challenge 01: **[Create a Linux Virtual Machine](../Coach/Solution-01.md)**
