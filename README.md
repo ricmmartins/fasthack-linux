@@ -132,6 +132,7 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## Related Projects
 
+- :book: [From Server to Cluster](https://fromservertocluster.com/) — Kubernetes book for Linux professionals
 - :rocket: [Kubernetes Hackathon](https://k8shackathon.com/) — From Linux admin to Kubernetes expert
 - :robot: [AI for Infrastructure Professionals](https://ai4infra.com/) — AI workloads on infrastructure you build
 
