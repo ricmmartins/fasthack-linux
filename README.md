@@ -8,7 +8,7 @@
 
 ## Introduction
 
-A hands-on, challenge-based hackathon to help you master Linux fundamentals — from basic commands to web servers and containers. Run it on **any cloud provider**, a **local VM**, or even **WSL2**.
+A hands-on, challenge-based hackathon to help you master Linux fundamentals — from basic commands to networking, firewalls, and real-world troubleshooting. 20 challenges, cloud agnostic. Run it on **any cloud provider**, a **local VM**, or even **WSL2**.
 
 <img align="right" src="./Student/resources/images/linuxpenguin.png" width="250"/>
 
@@ -130,6 +130,21 @@ Contributions in the form of bug reports, feature requests, and PRs are always w
 
 This project is licensed under the [MIT License](LICENSE).
 
+## Related Projects
+
+- :rocket: [Kubernetes Hackathon](https://k8shackathon.com/) — From Linux admin to Kubernetes expert
+- :robot: [AI for Infrastructure Professionals](https://ai4infra.com/) — AI workloads on infrastructure you build
+
+## :globe_with_meridians: Portuguese Content
+
+Looking for content in Portuguese? Visit **[ricardomartins.com.br](https://ricardomartins.com.br)** for articles, tutorials, and resources on Linux, Kubernetes, and Cloud Infrastructure.
+
 ## Show your support
 
 Give a :star: if this content helped you!
+
+---
+
+**Disclaimer:** This is an independent, personal project — not an official Microsoft publication. The views and content are solely the author's own.
+
+Created by **[Ricardo Martins](https://rmmartins.com)** — Principal Solutions Engineer @ Microsoft
