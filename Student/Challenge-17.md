@@ -11,7 +11,7 @@ Linux excels at text processing. The ability to chain commands together with pip
 1. Create a sample log file for exercises:
 
 ```bash
-sudo cp /var/log/syslog /tmp/practice.log 2>/dev/null || journalctl --no-pager -n 200 > /tmp/practice.log
+sudo cp /var/log/syslog /tmp/practice.log 2>/dev/null || sudo journalctl --no-pager -n 200 > /tmp/practice.log
 ```
 
 2. Use `cut` to extract the first three fields (date/time/hostname) from each line: `cut -d' ' -f1-3 /tmp/practice.log | head -10`
@@ -28,7 +28,7 @@ awk '{sum += $2} END {print "Total:", sum}' /tmp/fruits.txt
 ```
 
 9. Build a pipeline to find unique IP addresses in a log file (if any exist): `grep -oE '[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+' /tmp/practice.log | sort -u`
-10. Use `wc -l` with `xargs` — count how many .conf files exist under /etc: `find /etc -name "*.conf" 2>/dev/null | wc -l`
+10. Count how many .conf files exist under /etc: `find /etc -name "*.conf" 2>/dev/null | wc -l`
 
 ## Success Criteria
 

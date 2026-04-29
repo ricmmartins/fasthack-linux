@@ -169,8 +169,7 @@ Status for the jail: sshd
 
 5. Change the SSH default port from 22 to 2222
 
-`student@vm01:~$ sudo su`
-`root@vm01:/home/student# sed -i 's/#Port 22/Port 2222/g' /etc/ssh/sshd_config; systemctl restart ssh`
+`student@vm01:~$ sudo sed -i 's/#Port 22/Port 2222/g' /etc/ssh/sshd_config; sudo systemctl restart ssh`
 
 6. Setup SSH keys in order to improve the connection method to the server
 

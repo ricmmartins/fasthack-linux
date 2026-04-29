@@ -134,13 +134,13 @@ total 0
 -rw-rw-r-- 1 student student 0 Apr  6 12:00 yesterday.log
 ```
 
-12. Create a directory called `~/testbackup` and copy all files from `~/lab` into it.
+12. Create a directory called `~/mybackup` and copy all files from `~/lab` into it.
 
-`student@vm01:~$ mkdir ~/testbackup ; cp -r ~/lab ~/testbackup/ ; ls -R  ~/testbackup`
+`student@vm01:~$ mkdir ~/mybackup ; cp -r ~/lab ~/mybackup/ ; ls -R  ~/mybackup`
 
-13. Use one command to remove the directory `~/testbackup` and all files into it.
+13. Use one command to remove the directory `~/mybackup` and all files into it.
 
-`student@vm01:~$ rm -rf ~/testbackup `
+`student@vm01:~$ rm -rf ~/mybackup `
 
 14. Create a directory `~/logbackup` and copy the `*.log` files from `/var/log` into it
 
@@ -157,13 +157,9 @@ total 1796
 -rw-r--r-- 1 rmmartins rmmartins   2290 Apr 11 15:39 ubuntu-advantage-timer.log
 -rw-r--r-- 1 rmmartins rmmartins 190238 Apr 11 15:39 waagent.log
 ```
-15. Count the number of lines from the file `/etc/wgetrc`
+15. Count the number of times 'linux' appears in the file `/etc/wgetrc`
 
-`student@vm01:~$ wc -l /etc/wgetrc`
-
-```bash
-138 /etc/wgetrc
-```
+`student@vm01:~$ grep -oi linux /etc/wgetrc | wc -l`
 
 16. Count the number of words from the file `/etc/hdparm.conf`
 

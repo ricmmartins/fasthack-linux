@@ -32,7 +32,7 @@
 
 `student@vm01:~$ sudo su`
 
-`root@vm01:/# touch /home/student/permissions/rootfile`
+`root@vm01:/# touch /home/student/permissions/rootfile.txt`
 
 5. As regular user (student), look at who owns this file created by root.
 
@@ -43,18 +43,13 @@
 ```bash
 total 4
 -rw-rw-r-- 1 student student   0 Apr  8 14:55 myfile.txt
--rw-r--r-- 1 root      root        0 Apr  8 14:58 rootfile
+-rw-r--r-- 1 root      root        0 Apr  8 14:58 rootfile.txt
 -rw-r--r-- 1 student student 195022 Apr 11 19:51 waagent.log
 ```
 
 6. Change the ownership of all files in `/home/student/permissions` to yourself (student).
 
-`student@vm01:~$ chown student ~/permissions/*`
-
-```bash
-chown: changing ownership of '/home/student/permissions/rootfile': Operation not permitted
-```
-Note you cannot become owner of the file that belongs to root.
+`student@vm01:~$ sudo chown student:student /home/student/permissions/*`
 
 7. Make sure you (student) have all rights to files within `~`, and others can only read
 
@@ -63,6 +58,6 @@ Note you cannot become owner of the file that belongs to root.
 `student@vm01:~$ find ~ -type f -exec chmod 644 {} \; `
 
 ```bash
-chmod: changing permissions of '/home/student/permissions/rootfile': Operation not permitted
+chmod: changing permissions of '/home/student/permissions/rootfile.txt': Operation not permitted
 ```
 Note you cannot change permissions of the file that belongs to root.

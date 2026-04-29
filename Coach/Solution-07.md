@@ -27,7 +27,7 @@
   
     Another way to create:
     ```bash
-    student@vm01:~$ for usr in anna:marketing mary:finance peter:apps rick:prouction; do
+    student@vm01:~$ for usr in anna:marketing mary:finance peter:apps rick:production; do
     login=$(echo $usr | cut -d: -f1)
     group=$(echo $usr | cut -d: -f2)
     sudo useradd -c "$login" -d /home/$login -m -s /bin/bash -g $group $login

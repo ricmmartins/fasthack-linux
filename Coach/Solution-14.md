@@ -128,7 +128,7 @@ For the advanced challenge, here are the steps:
 
 1. Download the sample application [from here](../Student/resources/simple-php-app.tar.gz?raw=true) to your home directory
 
-`student@vm01:~$ cd ~ ;  wget https://github.com/ricmmartins/fasthack-linux/blob/main/Student/resources/simple-php-app.tar.gz?raw=true -O simple-php-app.tar.gz`
+`student@vm01:~$ cd ~ ;  wget https://raw.githubusercontent.com/ricmmartins/fasthack-linux/main/Student/resources/simple-php-app.tar.gz -O simple-php-app.tar.gz`
 
 ```bash
 --2022-11-09 01:46:30--  https://github.com/ricmmartins/fasthack-linux/blob/main/Student/resources/simple-php-app.tar.gz?raw=true
@@ -219,7 +219,7 @@ Step 3/18 : RUN apt-get update
 Step 4/18 : RUN apt-get install -y nginx
  ---> Using cache
  ---> 68063a951ff4
-Step 5/18 : RUN apt-get install -y php7.4-fpm
+Step 5/18 : RUN apt-get install -y php-fpm
  ---> Using cache
  ---> 0cb1d630711e
 Step 6/18 : RUN apt-get install -y git
@@ -252,14 +252,14 @@ Step 14/18 : RUN mv simple-php-app/* /var/www/app
 Step 15/18 : EXPOSE 80
  ---> Using cache
  ---> 511c32e0a94b
-Step 16/18 : CMD service php7.4-fpm start && nginx -g "daemon off;"
+Step 16/18 : CMD service php8.3-fpm start && nginx -g "daemon off;"
  ---> Using cache
  ---> 055051250d25
 Step 17/18 : EXPOSE 80
  ---> Running in fb829564dede
 Removing intermediate container fb829564dede
  ---> 43377c41d083
-Step 18/18 : CMD service php7.4-fpm start && nginx -g "daemon off;"
+Step 18/18 : CMD service php8.3-fpm start && nginx -g "daemon off;"
  ---> Running in ee37edab8670
 Removing intermediate container ee37edab8670
  ---> 29df1bb28150

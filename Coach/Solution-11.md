@@ -8,12 +8,12 @@
 `student@vm1:~$ sudo apt update`
 
 ```bash
-Hit:1 http://azure.archive.ubuntu.com/ubuntu focal InRelease
-Hit:2 http://azure.archive.ubuntu.com/ubuntu focal-updates InRelease
-Hit:3 http://azure.archive.ubuntu.com/ubuntu focal-backports InRelease
-Hit:4 http://azure.archive.ubuntu.com/ubuntu focal-security InRelease
+Hit:1 http://azure.archive.ubuntu.com/ubuntu noble InRelease
+Hit:2 http://azure.archive.ubuntu.com/ubuntu noble-updates InRelease
+Hit:3 http://azure.archive.ubuntu.com/ubuntu noble-backports InRelease
+Hit:4 http://azure.archive.ubuntu.com/ubuntu noble-security InRelease
 Reading package lists... Done
-Building dependency tree
+Building dependency tree... Done
 Reading state information... Done
 3 packages can be upgraded. Run 'apt list --upgradable' to see them
 ```
@@ -76,120 +76,22 @@ Processing triggers for install-info (6.5.0.dfsg.1-2) ...
 
     2. php-fpm
 
-    `student@vm1:~$ sudo apt install net-tools` 
+    `student@vm1:~$ sudo apt install php-fpm` 
     
     ```bash
     Reading package lists... Done
-    Building dependency tree       
+    Building dependency tree... Done
     Reading state information... Done
     The following additional packages will be installed:
-      libsodium23 php-common php7.2-cli php7.2-common php7.2-fpm php7.2-json php7.2-opcache php7.2-readline
+      php-common php8.3-cli php8.3-common php8.3-fpm php8.3-opcache php8.3-readline
     Suggested packages:
       php-pear
     The following NEW packages will be installed:
-      libsodium23 php-common php-fpm php7.2-cli php7.2-common php7.2-fpm php7.2-json php7.2-opcache php7.2-readline
-    0 upgraded, 9 newly installed, 0 to remove and 0 not upgraded.
-    Need to get 4070 kB of archives.
-    After this operation, 17.7 MB of additional disk space will be used.
+      php-common php-fpm php8.3-cli php8.3-common php8.3-fpm php8.3-opcache php8.3-readline
+    0 upgraded, 7 newly installed, 0 to remove and 0 not upgraded.
+    Need to get 4870 kB of archives.
+    After this operation, 21.2 MB of additional disk space will be used.
     Do you want to continue? [Y/n] y
-    Get:1 http://azure.archive.ubuntu.com/ubuntu bionic/main amd64 libsodium23 amd64 1.0.16-2 [143 kB]
-    Get:2 http://azure.archive.ubuntu.com/ubuntu bionic/main amd64 php-common all 1:60ubuntu1 [12.1 kB]
-    Get:3 http://azure.archive.ubuntu.com/ubuntu bionic-updates/main amd64 php7.2-common amd64 7.2.24-0ubuntu0.18.04.11 [890 kB]
-    Get:4 http://azure.archive.ubuntu.com/ubuntu bionic-updates/main amd64 php7.2-json amd64 7.2.24-0ubuntu0.18.04.11 [18.9 kB]
-    Get:5 http://azure.archive.ubuntu.com/ubuntu bionic-updates/main amd64 php7.2-opcache amd64 7.2.24-0ubuntu0.18.04.11 [165 kB]
-    Get:6 http://azure.archive.ubuntu.com/ubuntu bionic-updates/main amd64 php7.2-readline amd64 7.2.24-0ubuntu0.18.04.11 [12.2 kB]
-    Get:7 http://azure.archive.ubuntu.com/ubuntu bionic-updates/main amd64 php7.2-cli amd64 7.2.24-0ubuntu0.18.04.11 [1411 kB]
-    Get:8 http://azure.archive.ubuntu.com/ubuntu bionic-updates/universe amd64 php7.2-fpm amd64 7.2.24-0ubuntu0.18.04.11 [1414 kB]
-    Get:9 http://azure.archive.ubuntu.com/ubuntu bionic/universe amd64 php-fpm all 1:7.2+60ubuntu1 [3172 B]
-    Fetched 4070 kB in 0s (11.9 MB/s)
-    Selecting previously unselected package libsodium23:amd64.
-    (Reading database ... 59433 files and directories currently installed.)
-    Preparing to unpack .../0-libsodium23_1.0.16-2_amd64.deb ...
-    Unpacking libsodium23:amd64 (1.0.16-2) ...
-    Selecting previously unselected package php-common.
-    Preparing to unpack .../1-php-common_1%3a60ubuntu1_all.deb ...
-    Unpacking php-common (1:60ubuntu1) ...
-    Selecting previously unselected package php7.2-common.
-    Preparing to unpack .../2-php7.2-common_7.2.24-0ubuntu0.18.04.11_amd64.deb ...
-    Unpacking php7.2-common (7.2.24-0ubuntu0.18.04.11) ...
-    Selecting previously unselected package php7.2-json.
-    Preparing to unpack .../3-php7.2-json_7.2.24-0ubuntu0.18.04.11_amd64.deb ...
-    Unpacking php7.2-json (7.2.24-0ubuntu0.18.04.11) ...
-    Selecting previously unselected package php7.2-opcache.
-    Preparing to unpack .../4-php7.2-opcache_7.2.24-0ubuntu0.18.04.11_amd64.deb ...
-    Unpacking php7.2-opcache (7.2.24-0ubuntu0.18.04.11) ...
-    Selecting previously unselected package php7.2-readline.
-    Preparing to unpack .../5-php7.2-readline_7.2.24-0ubuntu0.18.04.11_amd64.deb ...
-    Unpacking php7.2-readline (7.2.24-0ubuntu0.18.04.11) ...
-    Selecting previously unselected package php7.2-cli.
-    Preparing to unpack .../6-php7.2-cli_7.2.24-0ubuntu0.18.04.11_amd64.deb ...
-    Unpacking php7.2-cli (7.2.24-0ubuntu0.18.04.11) ...
-    Selecting previously unselected package php7.2-fpm.
-    Preparing to unpack .../7-php7.2-fpm_7.2.24-0ubuntu0.18.04.11_amd64.deb ...
-    Unpacking php7.2-fpm (7.2.24-0ubuntu0.18.04.11) ...
-    Selecting previously unselected package php-fpm.
-    Preparing to unpack .../8-php-fpm_1%3a7.2+60ubuntu1_all.deb ...
-    Unpacking php-fpm (1:7.2+60ubuntu1) ...
-    Setting up libsodium23:amd64 (1.0.16-2) ...
-    Setting up php-common (1:60ubuntu1) ...
-    Created symlink /etc/systemd/system/timers.target.wants/phpsessionclean.timer → /lib/systemd/system/phpsessionclean.timer.
-    Setting up php7.2-common (7.2.24-0ubuntu0.18.04.11) ...
-
-    Creating config file /etc/php/7.2/mods-available/calendar.ini with new version
-
-    Creating config file /etc/php/7.2/mods-available/ctype.ini with new version
-
-    Creating config file /etc/php/7.2/mods-available/exif.ini with new version
-
-    Creating config file /etc/php/7.2/mods-available/fileinfo.ini with new version
-
-    Creating config file /etc/php/7.2/mods-available/ftp.ini with new version
-
-    Creating config file /etc/php/7.2/mods-available/gettext.ini with new version
-
-    Creating config file /etc/php/7.2/mods-available/iconv.ini with new version
-
-    Creating config file /etc/php/7.2/mods-available/pdo.ini with new version
-
-    Creating config file /etc/php/7.2/mods-available/phar.ini with new version
-
-    Creating config file /etc/php/7.2/mods-available/posix.ini with new version
-
-    Creating config file /etc/php/7.2/mods-available/shmop.ini with new version
-
-    Creating config file /etc/php/7.2/mods-available/sockets.ini with new version
-
-    Creating config file /etc/php/7.2/mods-available/sysvmsg.ini with new version
-
-    Creating config file /etc/php/7.2/mods-available/sysvsem.ini with new version
-
-    Creating config file /etc/php/7.2/mods-available/sysvshm.ini with new version
-
-    Creating config file /etc/php/7.2/mods-available/tokenizer.ini with new version
-    Setting up php7.2-readline (7.2.24-0ubuntu0.18.04.11) ...
-
-    Creating config file /etc/php/7.2/mods-available/readline.ini with new version
-    Setting up php7.2-json (7.2.24-0ubuntu0.18.04.11) ...
-
-    Creating config file /etc/php/7.2/mods-available/json.ini with new version
-    Setting up php7.2-opcache (7.2.24-0ubuntu0.18.04.11) ...
-
-    Creating config file /etc/php/7.2/mods-available/opcache.ini with new version
-    Setting up php7.2-cli (7.2.24-0ubuntu0.18.04.11) ...
-    update-alternatives: using /usr/bin/php7.2 to provide /usr/bin/php (php) in auto mode
-    update-alternatives: using /usr/bin/phar7.2 to provide /usr/bin/phar (phar) in auto mode
-    update-alternatives: using /usr/bin/phar.phar7.2 to provide /usr/bin/phar.phar (phar.phar) in auto mode
-
-    Creating config file /etc/php/7.2/cli/php.ini with new version
-    Setting up php7.2-fpm (7.2.24-0ubuntu0.18.04.11) ...
-
-    Creating config file /etc/php/7.2/fpm/php.ini with new version
-    Created symlink /etc/systemd/system/multi-user.target.wants/php7.2-fpm.service → /lib/systemd/system/php7.2-fpm.service.
-    Setting up php-fpm (1:7.2+60ubuntu1) ...
-    Processing triggers for man-db (2.8.3-2ubuntu0.1) ...
-    Processing triggers for ureadahead (0.100.0-21) ...
-    Processing triggers for libc-bin (2.27-3ubuntu1.5) ...
-    Processing triggers for systemd (237-3ubuntu10.53) ...
     ```
         
     3. nginx
