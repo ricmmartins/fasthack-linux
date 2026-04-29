@@ -227,7 +227,7 @@ Size of logical volume vg_data/lv_part2 changed from 500.00 MiB (125 extents) to
     lv_part2 vg_data -wi-ao---- <1.49g
     ```   
 
-    2. If there was reflection in the file system
+    2. If the resize was reflected in the file system
 
     `student@vm01:~$ df -h /mnt/dir1 /mnt/dir2` 
 

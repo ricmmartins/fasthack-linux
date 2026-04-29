@@ -4,7 +4,7 @@
 
 ## Description
 
-In this challenge your objectives will involve basic process management, giving you real-world activities such as checking a list of processes running, identifying process ids and discovering process execution in y our environment.
+In this challenge your objectives will involve basic process management, giving you real-world activities such as checking a list of processes running, identifying process ids and discovering process execution in your environment.
 
 - Discover how many processes are running on your server
 - View the list of processes in tree format

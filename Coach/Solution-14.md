@@ -122,11 +122,11 @@ Commercial support is available at
 </html>
 ```
 
-In the Network Security Group associated with your virtual machine, open the port 8090 and try access using the http://yourpublicip:8090
+In the firewall or cloud security group associated with your server, open port 8090 and try access using http://yourpublicip:8090
 
 For the advanced challenge, here are the steps:
 
-1. Download the sample application [from here](/Student/resources/simple-php-app.tar.gz) to your home directory
+1. Download the sample application [from here](../Student/resources/simple-php-app.tar.gz?raw=true) to your home directory
 
 `student@vm01:~$ cd ~ ;  wget https://github.com/ricmmartins/fasthack-linux/blob/main/Student/resources/simple-php-app.tar.gz?raw=true -O simple-php-app.tar.gz`
 
@@ -163,7 +163,7 @@ MAINTAINER You - you@domain.com
 # Packages
 RUN apt-get update
 RUN apt-get install -y nginx
-RUN apt-get install -y php7.4-fpm
+RUN apt-get install -y php-fpm
 
 # Nginx
 RUN ln -sf /dev/stdout /var/log/nginx/access.log
@@ -178,13 +178,10 @@ ADD simple-php-app.tar.gz /var/www/app/
 RUN mv simple-php-app/* /var/www/app
 
 EXPOSE 80
-CMD service php7.4-fpm start && nginx -g "daemon off;"
-
-EXPOSE 80 
-CMD service php7.4-fpm start && nginx -g "daemon off;" 
+CMD service php8.3-fpm start && nginx -g "daemon off;"
 ```
 
-3. Create the Nginx config file which will be addedd to the container. Create a file called "default" with the following content
+3. Create the Nginx config file which will be added to the container. Create a file called "default" with the following content
 
 ```bash
 server {
@@ -194,7 +191,7 @@ server {
     location ~ \.php$ {
         try_files $uri =404;
         fastcgi_split_path_info ^(.+\.php)(/.+)$;
-        fastcgi_pass unix:/var/run/php/php7.4-fpm.sock;
+        fastcgi_pass unix:/var/run/php/php8.3-fpm.sock;
         fastcgi_index index.php;
         fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
         include fastcgi_params;
@@ -270,7 +267,7 @@ Successfully built 29df1bb28150
 Successfully tagged simplephpapp:latest
 ```
 
-5. Let's run our container mapping the container port 80 to the 8080 on the virtual machine
+5. Let's run our container mapping the container port 80 to the 8080 on the server
 
 
 `student@vm01:~$ sudo docker run -d -p 8080:80 simplephpapp`

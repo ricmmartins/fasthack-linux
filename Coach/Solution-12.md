@@ -3,11 +3,11 @@
 [< Previous Solution](./Solution-11.md) - **[Home](./README.md)** - [Next Solution >](./Solution-13.md)
 
 ## Notes & Guidance
-1. Download the sample application [from here](/Student/resources/simple-php-app.tar.gz) to your home directory
+1. Download the sample application [from here](../Student/resources/simple-php-app.tar.gz?raw=true) to your home directory
 
 `student@vm01:~$ cd ~ ;  wget https://github.com/ricmmartins/fasthack-linux/blob/main/Student/resources/simple-php-app.tar.gz?raw=true -O simple-php-app.tar.gz`
 
-2. Extract the content of simple-php-app.tar.gz on our home directory
+2. Extract the content of simple-php-app.tar.gz on your home directory
 
 `student@vm01:~$ tar xzvf simple-php-app.tar.gz`
 
@@ -137,7 +137,7 @@ server {
  
         location ~ \.php$ {
             include snippets/fastcgi-php.conf;
-            fastcgi_pass unix:/var/run/php/php7.4-fpm.sock;
+            fastcgi_pass unix:/var/run/php/php8.3-fpm.sock;
         }
 }
 ``` 
@@ -145,17 +145,17 @@ server {
 
 `student@vm01:~$ sudo cp ~/default /etc/nginx/sites-enabled/default`
 
-`student@vm01:~$ sudo systemctl restart php7.4-fpm`
+`student@vm01:~$ sudo systemctl restart php8.3-fpm`
 
 `student@vm01:~$ sudo systemctl restart nginx`
 
-Remember to open port 80 on NSG
+Remember to open port 80 in your firewall or cloud security group
 
 ### Advanced challenge
 
 To add SSL we will use [Certbot](https://certbot.eff.org/) to get a certificate from [Let's Encrypt](https://letsencrypt.org/). Here are the steps you need to follow:
 
-* Ensure you have a valid domain with an A record pointing to the Virtual Machine Public IP. A valid domain with an A register defined is a pre-requisite for Certbot. You can use Azure App Service Domains to get a domain.  
+* Ensure you have a valid domain with an A record pointing to the server's public IP. A valid domain with an A record defined is a prerequisite for Certbot. If using Azure, you can use Azure App Service Domains to get a domain.  
     
 * After addressing the previous step, you must adjust your Nginx config file `/etc/nginx/sites-enabled/default` setting the **server_name** directive to point to the name of your domain. Eg:
     
@@ -183,4 +183,4 @@ Restart Nginx:
 
 `student@vm01:~$ sudo systemctl restart nginx` 
 
-Remember to open the port 443 on the NSG
+Remember to open the port 443 in your firewall or cloud security group

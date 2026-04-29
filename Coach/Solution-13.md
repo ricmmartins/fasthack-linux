@@ -2,7 +2,7 @@
 [< Previous Solution](./Solution-12.md) - **[Home](./README.md)** - [Next Solution >](./Solution-14.md)
 
 ## Notes & Guidance
-1. Ensure the distriubtion lists are update 
+1. Ensure the distribution lists are updated 
 
 `student@vm01:~$ sudo apt update`
 
@@ -170,11 +170,11 @@ Status for the jail: sshd
 5. Change the SSH default port from 22 to 2222
 
 `student@vm01:~$ sudo su`
-`root@vm01:/home/student# sed -i 's/#Port 22/Port 2222/g' /etc/ssh/sshd_config; systemctl restart sshd`
+`root@vm01:/home/student# sed -i 's/#Port 22/Port 2222/g' /etc/ssh/sshd_config; systemctl restart ssh`
 
 6. Setup SSH keys in order to improve the connection method to the server
 
-In this exercise we will be using the Windows Subsystem for Linux, but you can follow [this instructions](https://www.ssh.com/academy/ssh/putty/windows/puttygen) to use Putty. 
+In this exercise we will be using the Windows Subsystem for Linux, but you can follow [these instructions](https://www.ssh.com/academy/ssh/putty/windows/puttygen) to use PuTTY. 
 
 Using the [Windows Subsystem for Linux](https://learn.microsoft.com/en-us/windows/wsl/install) on your local computer, generate a SSH key pair by typing:
 
@@ -228,7 +228,7 @@ Then disable password authentication on the server:
 
 `student@vm01:~$ sudo nano /etc/ssh/sshd_config`
 
-Search for a directive called PasswordAuthentication (this may be commented out). Umcomment the line removing the # at the beginning of the line and set the value to no:
+Search for a directive called PasswordAuthentication (this may be commented out). Uncomment the line removing the # at the beginning of the line and set the value to no:
 
 ```bash
 PasswordAuthentication no

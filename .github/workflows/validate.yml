@@ -1,0 +1,169 @@
+name: Validate Content
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  structure:
+    name: Validate Structure
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check required files exist
+        run: |
+          ERRORS=0
+          for f in README.md LICENSE Coach/README.md; do
+            if [ ! -f "$f" ]; then
+              echo "::error::Missing required file: $f"
+              ERRORS=$((ERRORS + 1))
+            fi
+          done
+
+          TOTAL=$(ls Student/Challenge-*.md 2>/dev/null | wc -l)
+          echo "Found $TOTAL challenge files"
+          if [ "$TOTAL" -lt 14 ]; then
+            echo "::error::Expected at least 14 challenges, found $TOTAL"
+            ERRORS=$((ERRORS + 1))
+          fi
+
+          SOLUTIONS=$(ls Coach/Solution-*.md 2>/dev/null | wc -l)
+          echo "Found $SOLUTIONS solution files"
+          if [ "$SOLUTIONS" -lt 14 ]; then
+            echo "::error::Expected at least 14 solutions, found $SOLUTIONS"
+            ERRORS=$((ERRORS + 1))
+          fi
+
+          if [ "$TOTAL" -ne "$SOLUTIONS" ]; then
+            echo "::error::Mismatch: $TOTAL challenges vs $SOLUTIONS solutions"
+            ERRORS=$((ERRORS + 1))
+          fi
+
+          exit $ERRORS
+
+  navigation:
+    name: Validate Navigation
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check navigation links
+        run: |
+          ERRORS=0
+          TOTAL=$(ls Student/Challenge-*.md | wc -l)
+
+          for i in $(seq 1 $TOTAL); do
+            FILE=$(printf "Student/Challenge-%02d.md" $i)
+            if [ ! -f "$FILE" ]; then continue; fi
+
+            # First challenge should have Home link
+            if [ $i -eq 1 ]; then
+              if ! grep -q '\[Home\](../README.md)' "$FILE"; then
+                echo "::error file=$FILE::Missing Home link"
+                ERRORS=$((ERRORS + 1))
+              fi
+            fi
+
+            # Middle challenges should have Prev and Next
+            if [ $i -gt 1 ] && [ $i -lt $TOTAL ]; then
+              PREV=$(printf "Challenge-%02d.md" $((i - 1)))
+              NEXT=$(printf "Challenge-%02d.md" $((i + 1)))
+              if ! grep -q "$PREV" "$FILE"; then
+                echo "::error file=$FILE::Missing previous link to $PREV"
+                ERRORS=$((ERRORS + 1))
+              fi
+              if ! grep -q "$NEXT" "$FILE"; then
+                echo "::error file=$FILE::Missing next link to $NEXT"
+                ERRORS=$((ERRORS + 1))
+              fi
+            fi
+
+            # Last challenge should have Prev and Home
+            if [ $i -eq $TOTAL ]; then
+              PREV=$(printf "Challenge-%02d.md" $((i - 1)))
+              if ! grep -q "$PREV" "$FILE"; then
+                echo "::error file=$FILE::Missing previous link to $PREV"
+                ERRORS=$((ERRORS + 1))
+              fi
+            fi
+          done
+
+          # Check solution navigation
+          for i in $(seq 1 $TOTAL); do
+            FILE=$(printf "Coach/Solution-%02d.md" $i)
+            if [ ! -f "$FILE" ]; then continue; fi
+
+            if ! grep -q '\[Home\](./README.md)\|Home' "$FILE"; then
+              echo "::warning file=$FILE::Missing Home link in solution"
+            fi
+          done
+
+          exit $ERRORS
+
+  markdown:
+    name: Validate Markdown
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check for common issues
+        run: |
+          ERRORS=0
+
+          # Check for deprecated Ubuntu versions in instructions (not historical references)
+          for f in Student/Challenge-*.md Coach/Solution-*.md; do
+            if grep -n 'Ubuntu 20\.04\|Ubuntu 18\.04' "$f" | grep -iv 'history\|note\|hint\|instead of' > /dev/null 2>&1; then
+              echo "::warning file=$f::Contains references to EOL Ubuntu version"
+            fi
+          done
+
+          # Check for old Microsoft docs URLs
+          for f in $(find . -name "*.md" -not -path "./.git/*"); do
+            if grep -n 'docs\.microsoft\.com' "$f" > /dev/null 2>&1; then
+              echo "::warning file=$f::Contains legacy docs.microsoft.com URL (use learn.microsoft.com)"
+            fi
+          done
+
+          # Check for broken internal links
+          for f in Student/Challenge-*.md; do
+            while IFS= read -r link; do
+              # Extract relative path from markdown link
+              path=$(echo "$link" | sed 's/.*(\(\.\/[^)]*\)).*/\1/' | sed 's/?.*//')
+              dir=$(dirname "$f")
+              target="$dir/$path"
+              if [ ! -f "$target" ] && [ ! -d "$target" ]; then
+                echo "::warning file=$f::Potentially broken link: $path"
+              fi
+            done < <(grep -o '\[.*\](\./[^)]*)\|(\.\./[^)]*)' "$f" 2>/dev/null || true)
+          done
+
+          exit $ERRORS
+
+  spelling:
+    name: Check Common Typos
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check for known typos
+        run: |
+          WARNINGS=0
+          TYPOS="Maninpulate|lvrcreate|activites|Intrduction|diretory|directoy|sucessfully|onwership|exercice|resoures|whithin|unmonted|formated|ouptut|addedd|distriubtion|Umcomment"
+
+          for f in $(find . -name "*.md" -not -path "./.git/*"); do
+            matches=$(grep -inE "$TYPOS" "$f" || true)
+            if [ -n "$matches" ]; then
+              echo "::warning file=$f::Contains known typos"
+              echo "$matches"
+              WARNINGS=$((WARNINGS + 1))
+            fi
+          done
+
+          if [ $WARNINGS -gt 0 ]; then
+            echo "::warning::Found typos in $WARNINGS files"
+          fi
+          # Don't fail on typos, just warn
+          exit 0

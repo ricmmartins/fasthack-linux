@@ -30,7 +30,7 @@ In this challenge let's learn about file content manipulation and discover how t
 4. Check if the file `count.bkp` was created 
 5. Check if the file `cat-count.log` was created
 6. Confirm if you can see the content of the file `cat-count.log` in reverse order
-7. Validate if you was able to see the content of the file `/etc/selinux/semanage.conf` paged
+7. Validate if you were able to see the content of the file `/etc/selinux/semanage.conf` paged
 8. Check if you can see the biggest file in `/var/log` at the top of the list
 
 ## Learning Resources

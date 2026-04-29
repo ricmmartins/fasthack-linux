@@ -4,7 +4,7 @@
 
 ## Description
 
-During this challenge, you will learn about package management and the most common activites such as update package distribution lists, install and uninstall packages on a Debian based Linux distribution.
+During this challenge, you will learn about package management and the most common activities such as update package distribution lists, install and uninstall packages on a Debian based Linux distribution.
 
 - Update the package distribution lists
 - Update the packages installed on your virtual machine
@@ -26,7 +26,7 @@ During this challenge, you will learn about package management and the most comm
 5. Validate you have the details from the package vim
 6. Ensure the Docker container runtime is installed
 
-## Learning resources
+## Learning Resources
 
 - [Software Distribution](https://linuxjourney.com/lesson/software-distribution)
 - [Linux Package Management with Yum, RPM, Apt, Dpkg, Aptitude and Zypper](https://www.tecmint.com/linux-package-management/)

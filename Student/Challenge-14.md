@@ -1,6 +1,6 @@
 # Challenge 14 - Running Containers
 
-[< Previous Challenge](./Challenge-13.md) - **[Home](./README.md)**
+[< Previous Challenge](./Challenge-13.md) - **[Home](../README.md)**
 
 ## Description
 
@@ -32,7 +32,7 @@ This challenge will let you have your first contact with containers. You will:
 
 If you would like to go over an advanced challenge, try this one:
 
-- Download this sample application [from here](/Student/resources/simple-php-app.tar.gz) to your home directory
+- Download this sample application [from here](./resources/simple-php-app.tar.gz?raw=true) to your home directory
 - Create a Dockerfile to install the Nginx, PHP, and run this php application.
 - Build the image
 - Test the execution of the container
@@ -42,15 +42,15 @@ If you would like to go over an advanced challenge, try this one:
 
 1. Make sure that Docker runtime was successfully installed
 2. Ensure your Nginx container is running properly
-3. Access the default website from Nginx through the public IP of your virtual machine
+3. Access the default website from Nginx through the public IP of your server
 
 If you decided to take the advanced challenge:
 
-1. Ensure the sample application was downloaded into the virtual machine
-6. Have the application running via container and accessible from the browser
-7. Validate that the container image were published into Docker Hub
+1. Ensure the sample application was downloaded into the server
+2. Have the application running via container and accessible from the browser
+3. Validate that the container image were published into Docker Hub
 
-## Learning resoures
+## Learning Resources
 
 - [What is a container?](https://azure.microsoft.com/en-us/resources/cloud-computing-dictionary/what-is-a-container/)
 - [Introduction to Containers and Docker](https://learn.microsoft.com/en-us/dotnet/architecture/microservices/container-docker-introduction)

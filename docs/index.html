@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linux Hackathon - Master Linux Fundamentals</title>
+    <meta name="description" content="A hands-on, challenge-based hackathon to master Linux fundamentals. 14 challenges from basic commands to containers. Cloud agnostic.">
+    <style>
+        :root {
+            --bg: #0d1117;
+            --surface: #161b22;
+            --border: #30363d;
+            --text: #e6edf3;
+            --text-secondary: #8b949e;
+            --accent: #f97316;
+            --accent-light: #fb923c;
+            --green: #3fb950;
+            --blue: #58a6ff;
+            --purple: #bc8cff;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+
+        /* Hero */
+        .hero {
+            padding: 80px 0 60px;
+            text-align: center;
+            background: linear-gradient(135deg, #1a1207 0%, #0d1117 50%, #0d1117 100%);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .hero-badge {
+            display: inline-block;
+            padding: 6px 16px;
+            background: rgba(249, 115, 22, 0.15);
+            border: 1px solid rgba(249, 115, 22, 0.3);
+            border-radius: 20px;
+            font-size: 0.85rem;
+            color: var(--accent-light);
+            margin-bottom: 24px;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 16px;
+            background: linear-gradient(135deg, var(--accent) 0%, #fbbf24 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            color: var(--text-secondary);
+            max-width: 700px;
+            margin: 0 auto 32px;
+        }
+
+        .hero-buttons { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.2s;
+        }
+
+        .btn-primary {
+            background: var(--accent);
+            color: #fff;
+        }
+
+        .btn-primary:hover { background: var(--accent-light); transform: translateY(-1px); }
+
+        .btn-secondary {
+            background: var(--surface);
+            color: var(--text);
+            border: 1px solid var(--border);
+        }
+
+        .btn-secondary:hover { border-color: var(--text-secondary); }
+
+        /* Stats */
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1px;
+            background: var(--border);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            overflow: hidden;
+            margin: 48px auto 0;
+            max-width: 800px;
+        }
+
+        .stat {
+            background: var(--surface);
+            padding: 24px;
+            text-align: center;
+        }
+
+        .stat-value {
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: var(--accent);
+        }
+
+        .stat-label {
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+            margin-top: 4px;
+        }
+
+        /* Sections */
+        section { padding: 64px 0; }
+
+        .section-title {
+            font-size: 2rem;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 12px;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            color: var(--text-secondary);
+            margin-bottom: 48px;
+            font-size: 1.1rem;
+        }
+
+        /* Challenges Grid */
+        .challenges-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+            gap: 16px;
+        }
+
+        .challenge-card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 20px;
+            transition: all 0.2s;
+            text-decoration: none;
+            color: var(--text);
+            display: block;
+        }
+
+        .challenge-card:hover {
+            border-color: var(--accent);
+            transform: translateY(-2px);
+        }
+
+        .challenge-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 10px;
+        }
+
+        .challenge-number {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 36px;
+            height: 36px;
+            border-radius: 8px;
+            font-weight: 700;
+            font-size: 0.85rem;
+            flex-shrink: 0;
+        }
+
+        .cn-basics { background: rgba(249, 115, 22, 0.15); color: var(--accent-light); }
+        .cn-admin { background: rgba(59, 130, 246, 0.15); color: var(--blue); }
+        .cn-advanced { background: rgba(188, 140, 255, 0.15); color: var(--purple); }
+
+        .challenge-title { font-weight: 600; font-size: 1rem; }
+
+        .challenge-desc {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            line-height: 1.5;
+        }
+
+        .challenge-tags {
+            display: flex;
+            gap: 6px;
+            margin-top: 10px;
+            flex-wrap: wrap;
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.7rem;
+            font-weight: 500;
+            background: rgba(255, 255, 255, 0.06);
+            color: var(--text-secondary);
+        }
+
+        /* Learning Path */
+        .path-section { background: var(--surface); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+
+        .path-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .path-card {
+            background: var(--bg);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 24px;
+            text-align: center;
+            text-decoration: none;
+            color: var(--text);
+            transition: all 0.2s;
+        }
+
+        .path-card:hover { border-color: var(--accent); transform: translateY(-2px); }
+
+        .path-icon { font-size: 2.5rem; margin-bottom: 12px; }
+
+        .path-card h3 { font-size: 1.1rem; margin-bottom: 8px; }
+
+        .path-card p { font-size: 0.85rem; color: var(--text-secondary); }
+
+        .path-current {
+            border-color: var(--accent);
+            background: rgba(249, 115, 22, 0.05);
+        }
+
+        .path-arrow {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            color: var(--text-secondary);
+        }
+
+        /* Footer */
+        footer {
+            padding: 40px 0;
+            text-align: center;
+            border-top: 1px solid var(--border);
+        }
+
+        .footer-links { display: flex; gap: 24px; justify-content: center; flex-wrap: wrap; margin-bottom: 16px; }
+
+        .footer-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.2s;
+        }
+
+        .footer-links a:hover { color: var(--accent); }
+
+        .footer-copy { font-size: 0.8rem; color: var(--text-secondary); }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2rem; }
+            .stats { grid-template-columns: repeat(2, 1fr); }
+            .challenges-grid { grid-template-columns: 1fr; }
+            .path-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <div class="container">
+            <div class="hero-badge">&#127427; Open Source &middot; Cloud Agnostic &middot; Hands-On</div>
+            <h1>Linux Hackathon</h1>
+            <p>Master Linux fundamentals through 14 hands-on challenges. From basic commands to web servers and containers &mdash; learn by doing.</p>
+
+            <div class="hero-buttons">
+                <a href="https://github.com/ricmmartins/fasthack-linux" class="btn btn-primary">
+                    &#128187; Start the Hackathon
+                </a>
+                <a href="https://github.com/ricmmartins/fasthack-linux/tree/main/Coach" class="btn btn-secondary">
+                    &#128218; Coach&rsquo;s Guide
+                </a>
+            </div>
+
+            <div class="stats">
+                <div class="stat">
+                    <div class="stat-value">14</div>
+                    <div class="stat-label">Challenges</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-value">5-7h</div>
+                    <div class="stat-label">Estimated Time</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-value">&#9729;&#65039;</div>
+                    <div class="stat-label">Cloud Agnostic</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-value">24.04</div>
+                    <div class="stat-label">Ubuntu LTS</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section>
+        <div class="container">
+            <h2 class="section-title">Challenges</h2>
+            <p class="section-subtitle">Progressive difficulty &mdash; from your first command to running containers</p>
+
+            <div class="challenges-grid">
+                <a href="https://github.com/ricmmartins/fasthack-linux/blob/main/Student/Challenge-01.md" class="challenge-card">
+                    <div class="challenge-header">
+                        <div class="challenge-number cn-basics">01</div>
+                        <div class="challenge-title">Create a Linux Virtual Machine</div>
+                    </div>
+                    <div class="challenge-desc">Set up your Ubuntu Linux environment &mdash; cloud VM, local VM, or WSL2</div>
+                    <div class="challenge-tags"><span class="tag">setup</span><span class="tag">vm</span><span class="tag">ssh</span></div>
+                </a>
+
+                <a href="https://github.com/ricmmartins/fasthack-linux/blob/main/Student/Challenge-02.md" class="challenge-card">
+                    <div class="challenge-header">
+                        <div class="challenge-number cn-basics">02</div>
+                        <div class="challenge-title">Handling Directories</div>
+                    </div>
+                    <div class="challenge-desc">Common directory operations: cd, ls, mkdir, rmdir, and more</div>
+                    <div class="challenge-tags"><span class="tag">directories</span><span class="tag">navigation</span></div>
+                </a>
+
+                <a href="https://github.com/ricmmartins/fasthack-linux/blob/main/Student/Challenge-03.md" class="challenge-card">
+                    <div class="challenge-header">
+                        <div class="challenge-number cn-basics">03</div>
+                        <div class="challenge-title">Handling Files</div>
+                    </div>
+                    <div class="challenge-desc">Create, rename, find, and remove files using core Linux commands</div>
+                    <div class="challenge-tags"><span class="tag">files</span><span class="tag">cp</span><span class="tag">mv</span><span class="tag">rm</span></div>
+                </a>
+
+                <a href="https://github.com/ricmmartins/fasthack-linux/blob/main/Student/Challenge-04.md" class="challenge-card">
+                    <div class="challenge-header">
+                        <div class="challenge-number cn-basics">04</div>
+                        <div class="challenge-title">File Contents</div>
+                    </div>
+                    <div class="challenge-desc">Count lines, display specific content, and manipulate file data</div>
+                    <div class="challenge-tags"><span class="tag">cat</span><span class="tag">head</span><span class="tag">tail</span><span class="tag">grep</span></div>
+                </a>
+
+                <a href="https://github.com/ricmmartins/fasthack-linux/blob/main/Student/Challenge-05.md" class="challenge-card">
+                    <div class="challenge-header">
+                        <div class="challenge-number cn-basics">05</div>
+                        <div class="challenge-title">Standard File Permissions</div>
+                    </div>
+                    <div class="challenge-desc">Linux file permissions, ownership, chmod, and chown</div>
+                    <div class="challenge-tags"><span class="tag">permissions</span><span class="tag">chmod</span><span class="tag">chown</span></div>
+                </a>
+
+                <a href="https://github.com/ricmmartins/fasthack-linux/blob/main/Student/Challenge-06.md" class="challenge-card">
+                    <div class="challenge-header">
+                        <div class="challenge-number cn-admin">06</div>
+                        <div class="challenge-title">Process Management</div>
+                    </div>
+                    <div class="challenge-desc">Check running processes, identify PIDs, and manage system services</div>
+                    <div class="challenge-tags"><span class="tag">ps</span><span class="tag">top</span><span class="tag">kill</span><span class="tag">systemctl</span></div>
+                </a>
+
+                <a href="https://github.com/ricmmartins/fasthack-linux/blob/main/Student/Challenge-07.md" class="challenge-card">
+                    <div class="challenge-header">
+                        <div class="challenge-number cn-admin">07</div>
+                        <div class="challenge-title">Group and User Management</div>
+                    </div>
+                    <div class="challenge-desc">Create and manage users and groups in a Linux environment</div>
+                    <div class="challenge-tags"><span class="tag">useradd</span><span class="tag">groupadd</span><span class="tag">passwd</span></div>
+                </a>
+
+                <a href="https://github.com/ricmmartins/fasthack-linux/blob/main/Student/Challenge-08.md" class="challenge-card">
+                    <div class="challenge-header">
+                        <div class="challenge-number cn-admin">08</div>
+                        <div class="challenge-title">Scripting</div>
+                    </div>
+                    <div class="challenge-desc">Shell scripting fundamentals: echo, variables, cut, read, and grep</div>
+                    <div class="challenge-tags"><span class="tag">bash</span><span class="tag">scripting</span><span class="tag">automation</span></div>
+                </a>
+
+                <a href="https://github.com/ricmmartins/fasthack-linux/blob/main/Student/Challenge-09.md" class="challenge-card">
+                    <div class="challenge-header">
+                        <div class="challenge-number cn-admin">09</div>
+                        <div class="challenge-title">Disks, Partitions and File Systems</div>
+                    </div>
+                    <div class="challenge-desc">Partition disks, create file systems, and mount storage</div>
+                    <div class="challenge-tags"><span class="tag">fdisk</span><span class="tag">mkfs</span><span class="tag">mount</span></div>
+                </a>
+
+                <a href="https://github.com/ricmmartins/fasthack-linux/blob/main/Student/Challenge-10.md" class="challenge-card">
+                    <div class="challenge-header">
+                        <div class="challenge-number cn-admin">10</div>
+                        <div class="challenge-title">Logical Volume Manager</div>
+                    </div>
+                    <div class="challenge-desc">LVM: physical volumes, volume groups, and logical volumes</div>
+                    <div class="challenge-tags"><span class="tag">pvcreate</span><span class="tag">vgcreate</span><span class="tag">lvcreate</span></div>
+                </a>
+
+                <a href="https://github.com/ricmmartins/fasthack-linux/blob/main/Student/Challenge-11.md" class="challenge-card">
+                    <div class="challenge-header">
+                        <div class="challenge-number cn-admin">11</div>
+                        <div class="challenge-title">Package Management</div>
+                    </div>
+                    <div class="challenge-desc">Install, update, and manage packages with apt and dpkg</div>
+                    <div class="challenge-tags"><span class="tag">apt</span><span class="tag">dpkg</span><span class="tag">packages</span></div>
+                </a>
+
+                <a href="https://github.com/ricmmartins/fasthack-linux/blob/main/Student/Challenge-12.md" class="challenge-card">
+                    <div class="challenge-header">
+                        <div class="challenge-number cn-advanced">12</div>
+                        <div class="challenge-title">Setting up a Webserver</div>
+                    </div>
+                    <div class="challenge-desc">Deploy Nginx + PHP-FPM and serve a web application with optional SSL</div>
+                    <div class="challenge-tags"><span class="tag">nginx</span><span class="tag">php-fpm</span><span class="tag">ssl</span></div>
+                </a>
+
+                <a href="https://github.com/ricmmartins/fasthack-linux/blob/main/Student/Challenge-13.md" class="challenge-card">
+                    <div class="challenge-header">
+                        <div class="challenge-number cn-advanced">13</div>
+                        <div class="challenge-title">Protecting a Server</div>
+                    </div>
+                    <div class="challenge-desc">Secure SSH, change ports, set up Fail2Ban, and enable key-based auth</div>
+                    <div class="challenge-tags"><span class="tag">fail2ban</span><span class="tag">ssh</span><span class="tag">security</span></div>
+                </a>
+
+                <a href="https://github.com/ricmmartins/fasthack-linux/blob/main/Student/Challenge-14.md" class="challenge-card">
+                    <div class="challenge-header">
+                        <div class="challenge-number cn-advanced">14</div>
+                        <div class="challenge-title">Running Containers</div>
+                    </div>
+                    <div class="challenge-desc">Run Docker containers, build images, and publish to Docker Hub</div>
+                    <div class="challenge-tags"><span class="tag">docker</span><span class="tag">containers</span><span class="tag">images</span></div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="path-section">
+        <div class="container">
+            <h2 class="section-title">Learning Path</h2>
+            <p class="section-subtitle">From Linux fundamentals to Kubernetes mastery to AI-powered infrastructure</p>
+
+            <div class="path-grid">
+                <a href="https://linuxhackathon.com" class="path-card path-current">
+                    <div class="path-icon">&#128039;</div>
+                    <h3>Linux Hackathon</h3>
+                    <p>Master the fundamentals. 14 challenges covering files, permissions, processes, scripting, storage, and containers.</p>
+                    <div style="margin-top:12px;font-size:0.8rem;color:var(--accent);">&#9664; You are here</div>
+                </a>
+
+                <a href="https://k8shackathon.com" class="path-card">
+                    <div class="path-icon">&#9781;&#65039;</div>
+                    <h3>Kubernetes Hackathon</h3>
+                    <p>Level up. 20 challenges covering 100% of CKA + CKAD + CKS certification domains.</p>
+                </a>
+
+                <a href="https://ai4infra.com" class="path-card">
+                    <div class="path-icon">&#129302;</div>
+                    <h3>AI for Infrastructure</h3>
+                    <p>The future. Learn how AI is transforming infrastructure management and operations.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="https://github.com/ricmmartins/fasthack-linux">&#128187; GitHub</a>
+                <a href="https://ricardomartins.com.br">&#128221; Blog (PT-BR)</a>
+                <a href="https://k8shackathon.com">&#9781;&#65039; Kubernetes Hackathon</a>
+                <a href="https://ai4infra.com">&#129302; AI for Infra</a>
+            </div>
+            <p class="footer-copy">&copy; 2024 Ricardo Martins. Licensed under MIT.</p>
+        </div>
+    </footer>
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4L7JZBSW62"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-4L7JZBSW62');
+    </script>
+</body>
+</html>

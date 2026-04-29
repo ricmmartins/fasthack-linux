@@ -12,8 +12,8 @@ In this challenge you will learn some basic stuff on shell scripting and the usa
 
 ## Success Criteria
 
-1. Ensure the ouptut from the script is displaying correctly the current distribution in use
-2. Validate if you was able to see all usernames with a shell ending in sh
+1. Ensure the output from the script is displaying correctly the current distribution in use
+2. Validate if you were able to see all usernames with a shell ending in sh
 3. Check if the script is working as expected
 
 ## Learning Resources

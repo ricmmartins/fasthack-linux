@@ -1,111 +1,123 @@
 # Hackathon - Linux FUNdamentals
 
+![CI](https://github.com/ricmmartins/fasthack-linux/workflows/Validate%20Content/badge.svg)
+![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
+![Ubuntu 24.04](https://img.shields.io/badge/Ubuntu-24.04%20LTS-E95420?logo=ubuntu&logoColor=white)
+![Shell](https://img.shields.io/badge/Shell-Bash-4EAA25?logo=gnubash&logoColor=white)
+![Cloud Agnostic](https://img.shields.io/badge/Cloud-Agnostic-blue)
+
 ## Introduction
 
-This is a learning resource created to help interested people to get Linux skills and an understanding of basic command-line concepts using Azure to build and learn. But it is not restricted to using Azure and you can run this hackathon on any virtual machine using Ubuntu Linux.
+A hands-on, challenge-based hackathon to help you master Linux fundamentals — from basic commands to web servers and containers. Run it on **any cloud provider**, a **local VM**, or even **WSL2**.
+
 <img align="right" src="./Student/resources/images/linuxpenguin.png" width="250"/>
 
-> Note: This Hackathon were incorporated into the Microsoft What The Hack, as the 1st Linux "Hackathon" by Microsoft! See more at [http://aka.ms/wth](http://aka.ms/wth)
+> **Note:** This hackathon was incorporated into [Microsoft What The Hack](https://aka.ms/wth) as the first Linux hackathon by Microsoft!
 
 ## Linux History
 
 Linux is a family of free and open-source operating systems based on the Linux kernel. Operating systems based on Linux are known as Linux distributions or distros. Examples include Debian, Ubuntu, Fedora, CentOS, Gentoo, Arch Linux, and many others.
 
-The Linux kernel has been under active development since 1991, and has proven to be extremely versatile and adaptable. You can find computers that run Linux in a wide variety of contexts all over the world, from web servers to cell phones. Today, 90% of all cloud infrastructure and 74% of the world’s smartphones are powered by Linux.
+The Linux kernel has been under active development since 1991 and has proven to be extremely versatile and adaptable. You can find computers that run Linux in a wide variety of contexts all over the world, from web servers to cell phones. Today, 90% of all cloud infrastructure and 74% of the world's smartphones are powered by Linux.
 
-To read more about Linux History, Linux Distributions and Linux Kernel, [click here](./Student/resources/linux-history.md).
-
+To read more about Linux history, distributions, and the kernel, [click here](./Student/resources/linux-history.md).
 
 ## Learning Objectives
-In this hack you will be challenged with some common tasks from a real world scenario in Linux administration duties, such as:
 
-1. Create a Linux Virtual Machine on Azure
+In this hack you will be challenged with common tasks from real-world Linux administration duties, such as:
+
+1. Create a Linux virtual machine
 2. Handle files and directories
-3. Maninpulate file contents
+3. Manipulate file contents
 4. Work with standard Linux permissions
 5. Collect information about Linux processes in your environment
-6. Management of users and groups
-7. Basic shell scripting 
-8. Work with disks, partitions and logical volume manager
-9. Linux package management 
-10. Implement a basic webserver 
+6. Manage users and groups
+7. Basic shell scripting
+8. Work with disks, partitions, and logical volume manager
+9. Linux package management
+10. Implement a basic web server
+11. Protect a server with Fail2Ban
+12. Run containers with Docker
 
 ## Challenges
 
-With the exception of challenge 01 which has as an outcome a Linux Virtual Machine which will be required for all other challenges, each challenge can be done separately and they are not interdependent. The level of complexity increases accordingly with the respective number of each one.
+With the exception of Challenge 01 (which sets up the Linux environment required for all other challenges), each challenge can be done separately and they are not interdependent. The level of complexity increases with the challenge number.
 
-* Challenge 01: **[Create a Linux Virtual Machine](Student/Challenge-01.md)**
-	 - A Linux Virtual machine is the prerequisite for the challenges, so create a new Ubuntu Linux VM
-* Challenge 02: **[Handling Directories](Student/Challenge-02.md)**
-	 - Learn how to perform common directory operations such as displaying your current directory and listing directory contents.
-* Challenge 03: **[Handling Files](Student/Challenge-03.md)**
-	 - Learn basic commands about file manipulation such as create, rename, find and remove files.
-* Challenge 04: **[File Contents](Student/Challenge-04.md)**
-	 - Learn about file content manipulation and discover how to count file lines, display specific lines from a file, and more.
-* Challenge 05: **[Standard File Permissions](Student/Challenge-05.md)**
-	 - Learn about the Linux standard file permissions and understand how to work with file permissioning on a Linux environment.
-* Challenge 06: **[Process Management](Student/Challenge-06.md)**
-	 - Your objectives will involve basic process management, such as checking processes running and identifying process ids. 
-* Challenge 07: **[Group and User Management](Student/Challenge-07.md)**
-	 - In this challenge you will learn about the creation of user and groups in a Linux environment.
-* Challenge 08: **[Scripting](Student/Challenge-08.md)**
-	 - Learn some basic stuff on shell scripting and the usage of some commands such as echo, cut, read and grep.
-* Challenge 09: **[Disks, Partitions and File Systems](Student/Challenge-09.md)**
-	 - You will be working with disks and partitions and learn about linx filesystems and commands such as fdisk, mkfs and mount.
-* Challenge 10: **[Logical Volume Manager](Student/Challenge-10.md)**
-	 - Discover about the Logical Volume Manager on Linux, and how to use commands such as pvcreate, vgcreate, lvrcreate, and more.
-* Challenge 11: **[Package Management](Student/Challenge-11.md)**
-	 - Learn about package management and common activites such as update package distribution lists, install and uninstall packages.
-* Challenge 12: **[Setting up a Webserver](Student/Challenge-12.md)**
-	 - In this challenge we will setting up a webserver and deploy a simple PHP application into it. The usage of SSL could be a plus. 
-* Challenge 13: **[Protecting a Server](Student/Challenge-13.md)**
-	- In this challenge we will discover about how to use Fail2Ban to protect services in a Linux environment.
-* Challenge 14: **[Running Containers](Student/Challenge-14.md)**
-	- Your objective in this challenge will be to deploy an Nginx container and access it. If you would like to go deeper, there is another option to deploy a simple PHP application.
-	 
+| # | Challenge | Description |
+|---|-----------|-------------|
+| 01 | **[Create a Linux Virtual Machine](Student/Challenge-01.md)** | Set up an Ubuntu Linux environment — cloud VM, local VM, or WSL2 |
+| 02 | **[Handling Directories](Student/Challenge-02.md)** | Common directory operations: displaying your current directory and listing contents |
+| 03 | **[Handling Files](Student/Challenge-03.md)** | File manipulation: create, rename, find, and remove files |
+| 04 | **[File Contents](Student/Challenge-04.md)** | File content manipulation: count lines, display specific lines, and more |
+| 05 | **[Standard File Permissions](Student/Challenge-05.md)** | Linux standard file permissions and ownership management |
+| 06 | **[Process Management](Student/Challenge-06.md)** | Basic process management: checking running processes and identifying PIDs |
+| 07 | **[Group and User Management](Student/Challenge-07.md)** | Creation of users and groups in a Linux environment |
+| 08 | **[Scripting](Student/Challenge-08.md)** | Basic shell scripting with echo, cut, read, and grep |
+| 09 | **[Disks, Partitions and File Systems](Student/Challenge-09.md)** | Linux filesystems and commands: fdisk, mkfs, and mount |
+| 10 | **[Logical Volume Manager](Student/Challenge-10.md)** | LVM commands: pvcreate, vgcreate, lvcreate, and more |
+| 11 | **[Package Management](Student/Challenge-11.md)** | Package management: update lists, install, and uninstall packages |
+| 12 | **[Setting up a Webserver](Student/Challenge-12.md)** | Set up Nginx + PHP-FPM and deploy a simple web application |
+| 13 | **[Protecting a Server](Student/Challenge-13.md)** | Use Fail2Ban to protect services in a Linux environment |
+| 14 | **[Running Containers](Student/Challenge-14.md)** | Deploy an Nginx container with Docker and optionally build a custom image |
+
 ## Prerequisites
-- To run this hackathon on Azure and utilize the Azure Cloud Shell, you will need an Azure subscription with contributor access for Challenge 01 or contributor access to a pre-created Azure Virtual Machine for all other challenges. To run this hackathon on any other cloud provider or even locally, you just need a virtual machine running Ubuntu Linux.
-- Access to a terminal. The terms “terminal,” “shell,” and “command line interface” are often used interchangeably, but there are subtle differences between them:
 
-	* A terminal is an input and output environment that presents a text-only window running a shell.
-	* A shell is a program that exposes the computer’s operating system to a user or program. In Linux systems, the shell presented in a terminal is a command line interpreter.
-	* A command line interface is a user interface (managed by a command line interpreter program) which processes commands to a computer program and outputs the results.
-When someone refers to one of these three terms in the context of Linux, they generally mean a terminal environment where you can run commands and see the results printed out to the terminal.
+- **A Linux environment** — choose one:
+  - :cloud: **Cloud VM**: Azure, AWS, GCP, or any cloud provider — create an Ubuntu 24.04 LTS VM
+  - :computer: **Local VM**: VirtualBox, UTM, Hyper-V, or VMware with Ubuntu 24.04 LTS
+  - :window: **WSL2**: Windows Subsystem for Linux (Ubuntu)
+  - :desktop_computer: **Existing server**: Any Ubuntu/Debian-based Linux system
 
-		Becoming a Linux expert requires you to be comfortable with using a terminal. Any administrative task, including file manipulation, package installation, and user management, can be accomplished through the terminal. The terminal is interactive: you specify commands to run and the terminal outputs the results of those commands. To execute any command, you type it into the prompt and press ENTER.
+- **Access to a terminal**. The terms "terminal," "shell," and "command line interface" are often used interchangeably, but there are subtle differences:
+  - A **terminal** is an input/output environment that presents a text-only window running a shell.
+  - A **shell** is a program that exposes the operating system to a user. In Linux, the shell in a terminal is a command-line interpreter.
+  - A **command-line interface (CLI)** processes commands and outputs results.
 
-		For our activites, it is recommended to use the [Azure Cloud Shell](http://shell.azure.com/).
+  Becoming a Linux expert requires you to be comfortable with using a terminal. Any administrative task — file manipulation, package installation, user management — can be accomplished through the terminal. The terminal is interactive: you type commands and press ENTER to execute them.
 
-
-- There are some basic concepts that will be nice if you have them. If you would like to take a look they are [listed here](./Student/resources/concepts.md).
-- Concepts around the Linux Filesystem Hierarchy Standard (FHS) are recommended, so you can get more details about it [here](./Student/resources/fhs.md).
-- Regarding Linux commands, just for reference, [here is](./Student/resources/commands.md) a good cheat sheet.
-- The Linux man pages are your best friend. Make sure to use as best you can.
+- **Background knowledge** (optional but helpful):
+  - [Basic Linux concepts](./Student/resources/concepts.md)
+  - [Filesystem Hierarchy Standard (FHS)](./Student/resources/fhs.md)
+  - [Linux commands cheat sheet](./Student/resources/commands.md)
+  - The Linux `man` pages are your best friend. Make sure to use them!
 
 ## Learning Resources
 
 * [Linux Journey](https://linuxjourney.com/)
 * [Linux Upskill Challenge](https://linuxupskillchallenge.org/)
-* [Beginner's Guide for Linux - Tecmint](https://www.tecmint.com/free-online-linux-learning-guide-for-beginners/)
+* [Beginner's Guide for Linux — Tecmint](https://www.tecmint.com/free-online-linux-learning-guide-for-beginners/)
 * [Preparation for Linux Foundation Certified System Administrator](https://github.com/Bes0n/LFCS)
 * [Linux Foundation Certified System Administrator (LFCS) Notes](https://github.com/simonesavi/lfcs)
 * [The Linux Documentation Project](https://tldp.org/)
-* [Intrduction to Linux - from TLPD](https://tldp.org/LDP/intro-linux/intro-linux.pdf)
+* [Introduction to Linux — TLDP](https://tldp.org/LDP/intro-linux/intro-linux.pdf)
 * [Linux Commands Notes for Professionals](https://goalkicker.com/LinuxBook/LinuxNotesForProfessionals.pdf)
-* [Introduction to Linux - Free course on Linux Foundation](https://training.linuxfoundation.org/training/introduction-to-linux/)
+* [Introduction to Linux — Free course on Linux Foundation](https://training.linuxfoundation.org/training/introduction-to-linux/)
+
+## What's Next?
+
+Once you have mastered Linux fundamentals, take your skills to the next level:
+
+:rocket: **[Kubernetes Hackathon](https://k8shackathon.com)** — From Linux admin to Kubernetes expert. 20 hands-on challenges covering 100% of CKA + CKAD + CKS certification domains.
+
+:robot: **[AI for Infrastructure Professionals](https://ai4infra.com)** — Learn how AI is transforming infrastructure management.
 
 ## Coach's Guide
 
-In the [coach](./Coach/) directory are the guidelines in case you are running the Hackathon in an event and are a coach, as well as the solutions for the proposed challenges. If you're doing the Hackathon as a student, don't be fooled by looking at the solutions during the hack! Go learn something. :)
+In the [Coach](./Coach/) directory are the guidelines for running the hackathon as an event, as well as the solutions for the proposed challenges. If you are doing the hackathon as a student, don't look at the solutions during the hack! Go learn something. :)
 
 ## Contributions
-Contributions in the form of errors, feature requests and PRs are always welcome. Please follow these steps before submitting a PR:
 
-* Create an issue describing the error or feature request.
-* Clone the repository and create a topic branch.
-* Make changes, adding new tests for new functionality.
-* Submit a PR.
+Contributions in the form of bug reports, feature requests, and PRs are always welcome. Please follow these steps before submitting a PR:
+
+1. Create an issue describing the bug or feature request.
+2. Clone the repository and create a topic branch.
+3. Make changes, adding new tests for new functionality.
+4. Submit a PR.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
 
 ## Show your support
-Give a ⭐️ if this content helped you!
 
+Give a :star: if this content helped you!

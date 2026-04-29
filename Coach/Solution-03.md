@@ -48,14 +48,14 @@
 /usr/bin/passwd: setuid ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, BuildID[sha1]=6af93256cb810d90b2f96fc052b05b43b954f5b2, for GNU/Linux 3.2.0, stripped
 ```
 
-3. Go to your home directory and download [azure-linux.svg](https://docs.microsoft.com/en-us/learn/achievements/azure-linux.svg)  and [InfographicRC2.pdf](https://azure.microsoft.com/mediahandler/files/resourcefiles/infographic-reliability-with-microsoft-azure/InfographicRC2.pdf)
+3. Go to your home directory and download [azure-linux.svg](https://learn.microsoft.com/en-us/learn/achievements/azure-linux.svg)  and [InfographicRC2.pdf](https://azure.microsoft.com/mediahandler/files/resourcefiles/infographic-reliability-with-microsoft-azure/InfographicRC2.pdf)
 
-`student@vm01:~$ cd ~; wget https://docs.microsoft.com/en-us/learn/achievements/azure-linux.svg`
+`student@vm01:~$ cd ~; wget https://learn.microsoft.com/en-us/learn/achievements/azure-linux.svg`
 
 ```bash
---2022-04-08 00:01:28--  https://docs.microsoft.com/en-us/learn/achievements/azure-linux.svg
-Resolving docs.microsoft.com (docs.microsoft.com)... 104.112.140.13, 2600:1419:bc00:493::353e, 2600:1419:bc00:48e::353e
-Connecting to docs.microsoft.com (docs.microsoft.com)|104.112.140.13|:443... connected.
+--2022-04-08 00:01:28--  https://learn.microsoft.com/en-us/learn/achievements/azure-linux.svg
+Resolving learn.microsoft.com (learn.microsoft.com)... 104.112.140.13, 2600:1419:bc00:493::353e, 2600:1419:bc00:48e::353e
+Connecting to learn.microsoft.com (learn.microsoft.com)|104.112.140.13|:443... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: unspecified [image/svg+xml]
 Saving to: ‘azure-linux.svg’

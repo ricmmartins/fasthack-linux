@@ -7,7 +7,7 @@
 
 `student@vm01:~$ mkdir ~/permissions`
 
-2. Create a file called `myfile.txt` under `~permissions`.
+2. Create a file called `myfile.txt` under `~/permissions`.
 
 `student@vm01:~$ touch ~/permissions/myfile.txt`
 

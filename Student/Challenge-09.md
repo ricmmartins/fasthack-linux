@@ -5,11 +5,11 @@
 ## Pre-requisites 
 
 - Create a data disk with the size of 5GB
-- Add the disk the the virtual machine 
+- Add the disk to the virtual machine 
 
 ## Description
 
-This challenge you will be working with disks and partitions. Will be an opportunity to learn about Linux filesystems and commands such as `fdisk`, `mkfs` and `mount`.
+In this challenge you will be working with disks and partitions. Will be an opportunity to learn about Linux filesystems and commands such as `fdisk`, `mkfs` and `mount`.
 
 - Identify the new disk added to the machine
 - Edit the disk partition table:
@@ -22,7 +22,7 @@ This challenge you will be working with disks and partitions. Will be an opportu
 - Create a file system on each of the partitions created
 - Create a directory for each of the partitions inside the `/mnt` directory
 - Mount each of the partitions in the respective directory
-- Verify that the partitions are mounted correctly whithin the operational system.
+- Verify that the partitions are mounted correctly within the operational system.
 - Write files inside one of the partitions
 - Unmount the partitions
 - Remove existing partitions
@@ -32,10 +32,10 @@ This challenge you will be working with disks and partitions. Will be an opportu
 1. Check if the disk was added to the virtual machine
 2. Make sure you created the partitions as expected
 3. Validate on both partitions the file system created 
-4. Make sure you have created the the respective directories inside `mnt` directory
+4. Make sure you have created the respective directories inside `/mnt` directory
 5. Make sure the partitions are properly mounted
 6. Ensure you can create files on the partitions
-7. Make sure you unmonted the partitions and removed both properly
+7. Make sure you unmounted the partitions and removed both properly
 
 ## Learning Resources
 
