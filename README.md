@@ -38,6 +38,12 @@ In this hack you will be challenged with common tasks from real-world Linux admi
 10. Implement a basic web server
 11. Protect a server with Fail2Ban
 12. Run containers with Docker
+13. Understand Linux networking fundamentals
+14. Manage services with systemd and journalctl
+15. Process text with sed, awk, and pipes
+16. Schedule tasks with cron and at
+17. Configure host-level firewalls with UFW
+18. Troubleshoot real-world Linux scenarios
 
 ## Challenges
 
@@ -59,6 +65,12 @@ With the exception of Challenge 01 (which sets up the Linux environment required
 | 12 | **[Setting up a Webserver](Student/Challenge-12.md)** | Set up Nginx + PHP-FPM and deploy a simple web application |
 | 13 | **[Protecting a Server](Student/Challenge-13.md)** | Use Fail2Ban to protect services in a Linux environment |
 | 14 | **[Running Containers](Student/Challenge-14.md)** | Deploy an Nginx container with Docker and optionally build a custom image |
+| 15 | **[Networking Fundamentals](Student/Challenge-15.md)** | IP addresses, DNS resolution, routing, ports, and connectivity tools |
+| 16 | **[systemd & Service Management](Student/Challenge-16.md)** | Manage services with systemctl, view logs with journalctl, create custom units |
+| 17 | **[Text Processing](Student/Challenge-17.md)** | Master sed, awk, pipes, and text manipulation pipelines |
+| 18 | **[Task Scheduling](Student/Challenge-18.md)** | Automate tasks with cron jobs and one-time scheduling with at |
+| 19 | **[Firewall Configuration](Student/Challenge-19.md)** | Control network access with UFW — allow, deny, and rate limiting |
+| 20 | **[Linux Troubleshooting](Student/Challenge-20.md)** | Capstone: diagnose and fix three real-world scenarios |
 
 ## Prerequisites
 

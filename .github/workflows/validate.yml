@@ -25,15 +25,15 @@ jobs:
 
           TOTAL=$(ls Student/Challenge-*.md 2>/dev/null | wc -l)
           echo "Found $TOTAL challenge files"
-          if [ "$TOTAL" -lt 14 ]; then
-            echo "::error::Expected at least 14 challenges, found $TOTAL"
+          if [ "$TOTAL" -lt 20 ]; then
+            echo "::error::Expected at least 20 challenges, found $TOTAL"
             ERRORS=$((ERRORS + 1))
           fi
 
           SOLUTIONS=$(ls Coach/Solution-*.md 2>/dev/null | wc -l)
           echo "Found $SOLUTIONS solution files"
-          if [ "$SOLUTIONS" -lt 14 ]; then
-            echo "::error::Expected at least 14 solutions, found $SOLUTIONS"
+          if [ "$SOLUTIONS" -lt 20 ]; then
+            echo "::error::Expected at least 20 solutions, found $SOLUTIONS"
             ERRORS=$((ERRORS + 1))
           fi
 

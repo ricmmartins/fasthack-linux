@@ -24,6 +24,12 @@ Welcome to the coach's guide for the Linux Fundamentals Hackathon. Here you will
 | 12 | **[Setting up a Webserver](Solution-12.md)** | Nginx + PHP-FPM web application deployment |
 | 13 | **[Protecting a Server](Solution-13.md)** | Fail2Ban and SSH hardening |
 | 14 | **[Running Containers](Solution-14.md)** | Docker containers and image building |
+| 15 | **[Networking Fundamentals](Solution-15.md)** | IP, DNS, routing, ports, connectivity |
+| 16 | **[systemd & Service Management](Solution-16.md)** | systemctl, journalctl, custom units |
+| 17 | **[Text Processing](Solution-17.md)** | sed, awk, pipes, text pipelines |
+| 18 | **[Task Scheduling](Solution-18.md)** | Cron jobs and at scheduling |
+| 19 | **[Firewall Configuration](Solution-19.md)** | UFW rules and rate limiting |
+| 20 | **[Linux Troubleshooting](Solution-20.md)** | Capstone troubleshooting scenarios |
 
 ## Coach Prerequisites
 
@@ -67,7 +73,13 @@ For the optional advanced challenge in Challenge 12 (SSL), students will need:
 | 12 - Setting up a Webserver | 30-45 min |
 | 13 - Protecting a Server | 30-45 min |
 | 14 - Running Containers | 30-45 min |
-| **Total** | **~5-7 hours** |
+| 15 - Networking Fundamentals | 25-35 min |
+| 16 - systemd & Service Management | 25-35 min |
+| 17 - Text Processing | 20-30 min |
+| 18 - Task Scheduling | 20-30 min |
+| 19 - Firewall Configuration | 25-35 min |
+| 20 - Linux Troubleshooting (Capstone) | 35-45 min |
+| **Total** | **~8-11 hours** |
 
 ## Repository Contents
 
