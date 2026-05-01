@@ -1,9 +1,9 @@
-# Challenge 08 - Scripting - Coach's Guide 
+# Desafio 08 - Scripting - Guia do Coach 
 
-[< Previous Solution](./Solution-07.md) - **[Home](./README.md)** - [Next Solution >](./Solution-09.md)
+[< Solução Anterior](./Solution-07.md) - **[Início](./README.md)** - [Próxima Solução >](./Solution-09.md)
 
-## Notes & Guidance
-1. Create a script that looks up the name of the current distribution in the `/etc/os-release` file and prints it to the screen
+## Notas e Orientações
+1. Crie um script que procure o nome da distribuição atual no arquivo `/etc/os-release` e imprima na tela
 
 `student@vm01:~$ vim distribution.sh`
 
@@ -20,7 +20,7 @@ echo "The current distribution is: $distribution"
 The current distribution is: "Ubuntu"
 ```
 
-2. Create a script that reads the usernames from `/etc/passwd` and prints the ones with shell ending in sh
+2. Crie um script que leia os nomes de usuário do `/etc/passwd` e imprima aqueles com shell terminando em sh
 
 `student@vm01:~$ vim users.sh`
 
@@ -39,7 +39,7 @@ Users with login shell:
 root student omsagent nxautomation anna mary peter rick"
 ```
 
-3. Create a script that adds two integers requested from the user and print the sum
+3. Crie um script que some dois inteiros solicitados ao usuário e imprima o resultado
 
 `student@vm01:~$ vim sum.sh`
 
