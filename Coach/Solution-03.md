@@ -1,9 +1,9 @@
-# Challenge 03 - Handling files - Coach's Guide 
+# Desafio 03 - Manipulando arquivos - Guia do Coach 
 
-[< Previous Solution](./Solution-02.md) - **[Home](./README.md)** - [Next Solution >](./Solution-04.md)
+[< Solução Anterior](./Solution-02.md) - **[Home](./README.md)** - [Próxima Solução >](./Solution-04.md)
 
-## Notes & Guidance
-1. Find in the `/var` directory all the files that have been modified in the last 60 minutes
+## Notas e Orientações
+1. Encontre no diretório `/var` todos os arquivos que foram modificados nos últimos 60 minutos
 
 `student@vm01:~$ sudo find /var -type f -mmin -60`
 
@@ -38,7 +38,7 @@
 /var/opt/microsoft/omsagent/bd86f0a1-de9e-4b93-ac76-ad6c417b11ef/state/omsconfig.log.auditd_dsc_log.pos
 /var/opt/microsoft/auoms/auomscollect.lock
 ```
-2. Show the type of file of `/usr/bin/htop`, `/etc/passwd` and `/usr/bin/passwd
+2. Mostre o tipo de arquivo de `/usr/bin/htop`, `/etc/passwd` e `/usr/bin/passwd`
 
 `student@vm01:~$ file /usr/bin/htop /etc/passwd /usr/bin/passwd`
 
@@ -48,7 +48,7 @@
 /usr/bin/passwd: setuid ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, BuildID[sha1]=6af93256cb810d90b2f96fc052b05b43b954f5b2, for GNU/Linux 3.2.0, stripped
 ```
 
-3. Go to your home directory and download [azure-linux.svg](https://docs.microsoft.com/en-us/learn/achievements/azure-linux.svg)  and [InfographicRC2.pdf](https://azure.microsoft.com/mediahandler/files/resourcefiles/infographic-reliability-with-microsoft-azure/InfographicRC2.pdf)
+3. Vá para o seu diretório home e baixe [azure-linux.svg](https://docs.microsoft.com/en-us/learn/achievements/azure-linux.svg) e [InfographicRC2.pdf](https://azure.microsoft.com/mediahandler/files/resourcefiles/infographic-reliability-with-microsoft-azure/InfographicRC2.pdf)
 
 `student@vm01:~$ cd ~; wget https://docs.microsoft.com/en-us/learn/achievements/azure-linux.svg`
 
@@ -58,11 +58,11 @@ Resolving docs.microsoft.com (docs.microsoft.com)... 104.112.140.13, 2600:1419:b
 Connecting to docs.microsoft.com (docs.microsoft.com)|104.112.140.13|:443... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: unspecified [image/svg+xml]
-Saving to: ‘azure-linux.svg’
+Saving to: 'azure-linux.svg'
 
-azure-linux.svg                                                           [ <=>                                                                                                                                                                      ]   1.58M  --.-KB/s    in 0.02s
+azure-linux.svg                                                                    [ <=>                                                                                                                                                              ]   1.58M  --.-KB/s    in 0.02s
 
-2022-04-08 00:01:28 (67.5 MB/s) - ‘azure-linux.svg’ saved [1651731]
+2022-04-08 00:01:28 (67.5 MB/s) - 'azure-linux.svg' saved [1651731]
 ```
 
 `student@vm01:~$ wget https://azure.microsoft.com/mediahandler/files/resourcefiles/infographic-reliability-with-microsoft-azure/InfographicRC2.pdf`
@@ -73,14 +73,14 @@ Resolving azure.microsoft.com (azure.microsoft.com)... 13.107.42.16, 2620:1ec:21
 Connecting to azure.microsoft.com (azure.microsoft.com)|13.107.42.16|:443... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 993229 (970K) [application/pdf]
-Saving to: ‘InfographicRC2.pdf’
+Saving to: 'InfographicRC2.pdf'
 
 InfographicRC2.pdf            100%[=================================================>] 969.95K  4.19MB/s    in 0.2s
 
-2022-11-09 12:44:19 (4.19 MB/s) - ‘InfographicRC2.pdf’ saved [993229/993229]
+2022-11-09 12:44:19 (4.19 MB/s) - 'InfographicRC2.pdf' saved [993229/993229]
 ```
 
-4. Display the type of file of azure-linux.svg and InfographicRC2.pdf
+4. Exiba o tipo de arquivo de azure-linux.svg e InfographicRC2.pdf
 
 `student@vm01:~$ file azure-linux.svg InfographicRC2.pdf`
 
@@ -89,11 +89,11 @@ azure-linux.svg:     SVG Scalable Vector Graphics image
 InfographicRC2.pdf: PDF document, version 1.5
 ```
 
-5. Rename azure-linux.svg to azure-linux.pdf 
+5. Renomeie azure-linux.svg para azure-linux.pdf 
 
 `student@vm01:~$ mv azure-linux.svg azure-linux.pdf`
 
-6. Display the type of file of azure-linux.pdf and InfographicRC2.pdf
+6. Exiba o tipo de arquivo de azure-linux.pdf e InfographicRC2.pdf
 
 `student@vm01:~$ file azure-linux.pdf InfographicRC2.pdf`
 
@@ -102,15 +102,15 @@ azure-linux.pdf:     SVG Scalable Vector Graphics image
 InfographicRC2.pdf: PDF document, version 1.5
 ```
 
-7. Create a directory `~/lab` and enter it.
+7. Crie um diretório `~/lab` e entre nele.
 
 `student@vm01:~$ mkdir ~/lab ; cd ~/lab`
 
-8. Create the file today.log and the file yesterday.log in lab.
+8. Crie o arquivo today.log e o arquivo yesterday.log em lab.
 
 `student@vm01:~$ touch today.log yesterday.log`
 
-9. Check the creation date and time
+9. Verifique a data e hora de criação
 
 `student@vm01:~$ ls -l`
 
@@ -120,11 +120,11 @@ total 0
 -rw-rw-r-- 1 student student 0 Apr  7 23:50 yesterday.log
 ```
 
-10. Change the date on yesterday.log to match yesterday's date
+10. Altere a data de yesterday.log para corresponder à data de ontem
 
 `student@vm01:~$ touch -t 202204061200 yesterday.log (substitute 20220407 with yesterday date - 20220406 as e.g. )`
 
-11. Check the creation date and time again
+11. Verifique a data e hora de criação novamente
 
 `student@vm01:~$ ls -l`
 
@@ -134,15 +134,15 @@ total 0
 -rw-rw-r-- 1 student student 0 Apr  6 12:00 yesterday.log
 ```
 
-12. Create a directory called `~/testbackup` and copy all files from `~/lab` into it.
+12. Crie um diretório chamado `~/testbackup` e copie todos os arquivos de `~/lab` para ele.
 
-`student@vm01:~$ mkdir ~/testbackup ; cp -r ~/lab ~/testbackup/ ; ls -R  ~/testbackup`
+`student@vm01:~$ mkdir ~/testbackup ; cp -r ~/lab  ~/testbackup/ ; ls -R  ~/testbackup`
 
-13. Use one command to remove the directory `~/testbackup` and all files into it.
+13. Use um comando para remover o diretório `~/testbackup` e todos os arquivos dentro dele.
 
 `student@vm01:~$ rm -rf ~/testbackup `
 
-14. Create a directory `~/logbackup` and copy the `*.log` files from `/var/log` into it
+14. Crie um diretório `~/logbackup` e copie os arquivos `*.log` de `/var/log` para ele
 
 `student@vm01:~$ mkdir ~/logbackup ; cp -r /var/log/*.log ~/logbackup ; ls -l ~/logbackup`
 
@@ -157,7 +157,7 @@ total 1796
 -rw-r--r-- 1 rmmartins rmmartins   2290 Apr 11 15:39 ubuntu-advantage-timer.log
 -rw-r--r-- 1 rmmartins rmmartins 190238 Apr 11 15:39 waagent.log
 ```
-15. Count the number of lines from the file `/etc/wgetrc`
+15. Conte o número de linhas do arquivo `/etc/wgetrc`
 
 `student@vm01:~$ wc -l /etc/wgetrc`
 
@@ -165,7 +165,7 @@ total 1796
 138 /etc/wgetrc
 ```
 
-16. Count the number of words from the file `/etc/hdparm.conf`
+16. Conte o número de palavras do arquivo `/etc/hdparm.conf`
 
 `student@vm01:~$ wc -w /etc/hdparm.conf`
 
