@@ -136,15 +136,20 @@ This hackathon is the starting point of a complete learning journey:
 
 ```mermaid
 flowchart TD
-    A["🐧 Linux FUNdamentals\n20 hands-on challenges\nlinuxhackathon.com"]:::green --> B["☸️ Kubernetes Hackathon\n20 hands-on challenges\nk8shackathon.com"]:::blue
-    B --> C["🤖 AI for Infrastructure\nAI + Cloud\nai4infra.com"]:::blue
-    D["📖 From Server to Cluster\nThe WHY behind the WHAT\nfromservertocluster.com"]:::blue
+    subgraph path["🚀 Progressive Learning Path"]
+        A["🐧 Linux FUNdamentals\n20 hands-on challenges\nlinuxhackathon.com"]:::highlight --> B["☸️ Kubernetes Hackathon\n20 hands-on challenges\nk8shackathon.com"]:::blue
+        B --> C["🤖 AI for Infrastructure\nAI + Cloud\nai4infra.com"]:::blue
+    end
+    D["📖 From Server to Cluster\nThe WHY behind the WHAT\nfromservertocluster.com"]:::green
     A -. "companion reading" .-> D
     B -. "companion reading" .-> D
     C -. "companion reading" .-> D
 
-    classDef green fill:#0d9e4f,stroke:#0d9e4f,color:#fff
+    classDef highlight fill:#1a73e8,stroke:#0d47a1,color:#fff,stroke-width:3px
     classDef blue fill:#1a73e8,stroke:#1a73e8,color:#fff
+    classDef green fill:#2e7d32,stroke:#1b5e20,color:#fff
+
+    style path fill:#fffde7,stroke:#f9a825,color:#333
 ```
 
 ## :globe_with_meridians: Portuguese Content
