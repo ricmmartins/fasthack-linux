@@ -135,21 +135,24 @@ This project is licensed under the [MIT License](LICENSE).
 This hackathon is the starting point of a complete learning journey:
 
 ```mermaid
-flowchart TD
-    subgraph path["🚀 Progressive Learning Path"]
-        A["🐧 Linux FUNdamentals\n20 hands-on challenges\nlinuxhackathon.com"]:::highlight --> B["☸️ Kubernetes Hackathon\n20 hands-on challenges\nk8shackathon.com"]:::green
-        B --> C["🤖 AI for Infrastructure\nAI + Cloud\nai4infra.com"]:::blue
+flowchart TB
+    subgraph journey["🚀 Progressive Learning Path"]
+        direction LR
+        A["🐧 <b>Linux FUNdamentals</b><br/>20 hands-on challenges<br/><i>linuxhackathon.com</i>"] ==> B["☸️ <b>Kubernetes Hackathon</b><br/>20 hands-on challenges<br/><i>k8shackathon.com</i>"] ==> C["🤖 <b>AI for Infrastructure</b><br/>AI + Cloud<br/><i>ai4infra.com</i>"]
     end
-    D["📖 From Server to Cluster\nThe WHY behind the WHAT\nfromservertocluster.com"]:::blue
-    A -. "companion reading" .-> D
-    B -. "companion reading" .-> D
-    C -. "companion reading" .-> D
 
-    classDef highlight fill:#1a73e8,stroke:#0d47a1,color:#fff,stroke-width:3px
-    classDef green fill:#2e7d32,stroke:#1b5e20,color:#fff
-    classDef blue fill:#1a73e8,stroke:#1a73e8,color:#fff
+    A -.->|companion reading| D
+    B -.->|companion reading| D
+    C -.->|companion reading| D
 
-    style path fill:#fffde7,stroke:#f9a825,color:#333
+    D["📖 <b>From Server to Cluster</b><br/>The WHY behind the WHAT<br/><i>fromservertocluster.com</i>"]
+
+    classDef challenge fill:#2b5ea7,stroke:#1e4a8a,color:#fff,stroke-width:2px
+    classDef hackathon fill:#1a7f37,stroke:#116329,color:#fff,stroke-width:3px
+
+    class A,C challenge
+    class B hackathon
+    class D challenge
 
     click A "https://linuxhackathon.com" _blank
     click B "https://k8shackathon.com" _blank
