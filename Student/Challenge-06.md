@@ -1,25 +1,25 @@
-# Challenge 06 - Process management
+# Desafio 06 - Gerenciamento de processos
 
-[< Previous Challenge](./Challenge-05.md) - **[Home](../README.md)** - [Next Challenge >](./Challenge-07.md)
+[< Desafio Anterior](./Challenge-05.md) - **[Início](../README.md)** - [Próximo Desafio >](./Challenge-07.md)
 
-## Description
+## Descrição
 
-In this challenge your objectives will involve basic process management, giving you real-world activities such as checking a list of processes running, identifying process ids and discovering process execution in y our environment.
+Neste desafio seus objetivos envolverão gerenciamento básico de processos, proporcionando atividades do mundo real como verificar uma lista de processos em execução, identificar IDs de processos e descobrir a execução de processos no seu ambiente.
 
-- Discover how many processes are running on your server
-- View the list of processes in tree format
-- Identify if the syslog process is running
-- Identify the process id of the syslog process
+- Descubra quantos processos estão em execução no seu servidor
+- Visualize a lista de processos em formato de árvore
+- Identifique se o processo syslog está em execução
+- Identifique o ID do processo syslog
 
-## Success Criteria
+## Critérios de Sucesso
 
-1. Ensure you can view all process running in your server
-2. Check the number of processes are running on your server
-3. Validate if you can see the process tree 
-4. Show the syslog process running
-5. Show the PID of the syslog process
+1. Garanta que você consegue visualizar todos os processos em execução no seu servidor
+2. Verifique o número de processos em execução no seu servidor
+3. Valide se você consegue ver a árvore de processos 
+4. Mostre o processo syslog em execução
+5. Mostre o PID do processo syslog
 
-## Learning Resources
+## Recursos de Aprendizado
 
 - [The command PS](https://linuxjourney.com/lesson/monitor-processes-ps-command)
 - [Process Management in Linux](https://www.geeksforgeeks.org/process-management-in-linux/)
