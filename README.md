@@ -1,111 +1,99 @@
 # Hackathon - Linux FUNdamentals
 
-## Introduction
+## Introdução
 
-This is a learning resource created to help interested people to get Linux skills and an understanding of basic command-line concepts using Azure to build and learn. But it is not restricted to using Azure and you can run this hackathon on any virtual machine using Ubuntu Linux.
+Este é um recurso de aprendizado criado para ajudar pessoas interessadas a adquirir habilidades em Linux e compreender conceitos básicos de linha de comando usando o Azure para construir e aprender. Porém, não se restringe ao uso do Azure e você pode executar este hackathon em qualquer máquina virtual com Ubuntu Linux.
+
 <img align="right" src="./Student/resources/images/linuxpenguin.png" width="250"/>
 
-> Note: This Hackathon were incorporated into the Microsoft What The Hack, as the 1st Linux "Hackathon" by Microsoft! See more at [http://aka.ms/wth](http://aka.ms/wth)
+> Nota: Este Hackathon foi incorporado ao Microsoft What The Hack, como o 1º "Hackathon" de Linux pela Microsoft! Saiba mais em [http://aka.ms/wth](http://aka.ms/wth)
 
-## Linux History
+## História do Linux
 
-Linux is a family of free and open-source operating systems based on the Linux kernel. Operating systems based on Linux are known as Linux distributions or distros. Examples include Debian, Ubuntu, Fedora, CentOS, Gentoo, Arch Linux, and many others.
+Linux é uma família de sistemas operacionais livres e de código aberto baseados no kernel Linux. Sistemas operacionais baseados em Linux são conhecidos como distribuições Linux ou distros. Exemplos incluem Debian, Ubuntu, Fedora, CentOS, Gentoo, Arch Linux e muitos outros.
 
-The Linux kernel has been under active development since 1991, and has proven to be extremely versatile and adaptable. You can find computers that run Linux in a wide variety of contexts all over the world, from web servers to cell phones. Today, 90% of all cloud infrastructure and 74% of the world’s smartphones are powered by Linux.
+O kernel Linux está em desenvolvimento ativo desde 1991, e provou ser extremamente versátil e adaptável. Você pode encontrar computadores que executam Linux em uma grande variedade de contextos ao redor do mundo, desde servidores web até telefones celulares. Hoje, 90% de toda a infraestrutura em nuvem e 74% dos smartphones do mundo são alimentados pelo Linux.
 
-To read more about Linux History, Linux Distributions and Linux Kernel, [click here](./Student/resources/linux-history.md).
+Para ler mais sobre a História do Linux, Distribuições Linux e Kernel Linux, [clique aqui](./Student/resources/linux-history.md).
 
+## Objetivos de Aprendizado
 
-## Learning Objectives
-In this hack you will be challenged with some common tasks from a real world scenario in Linux administration duties, such as:
+Neste hack você será desafiado com algumas tarefas comuns de um cenário real de administração Linux, como:
 
-1. Create a Linux Virtual Machine on Azure
-2. Handle files and directories
-3. Maninpulate file contents
-4. Work with standard Linux permissions
-5. Collect information about Linux processes in your environment
-6. Management of users and groups
-7. Basic shell scripting 
-8. Work with disks, partitions and logical volume manager
-9. Linux package management 
-10. Implement a basic webserver 
+1. Criar uma Máquina Virtual Linux no Azure
+2. Manipular arquivos e diretórios
+3. Manipular conteúdos de arquivos
+4. Trabalhar com permissões padrão do Linux
+5. Coletar informações sobre processos Linux em seu ambiente
+6. Gerenciamento de usuários e grupos
+7. Scripts básicos em shell
+8. Trabalhar com discos, partições e gerenciador de volumes lógicos
+9. Gerenciamento de pacotes Linux
+10. Implementar um servidor web básico
 
-## Challenges
+## Desafios
 
-With the exception of challenge 01 which has as an outcome a Linux Virtual Machine which will be required for all other challenges, each challenge can be done separately and they are not interdependent. The level of complexity increases accordingly with the respective number of each one.
+Com exceção do desafio 01, que tem como resultado uma Máquina Virtual Linux necessária para todos os outros desafios, cada desafio pode ser feito separadamente e eles não são interdependentes. O nível de complexidade aumenta de acordo com o número respectivo de cada um.
 
-* Challenge 01: **[Create a Linux Virtual Machine](Student/Challenge-01.md)**
-	 - A Linux Virtual machine is the prerequisite for the challenges, so create a new Ubuntu Linux VM
-* Challenge 02: **[Handling Directories](Student/Challenge-02.md)**
-	 - Learn how to perform common directory operations such as displaying your current directory and listing directory contents.
-* Challenge 03: **[Handling Files](Student/Challenge-03.md)**
-	 - Learn basic commands about file manipulation such as create, rename, find and remove files.
-* Challenge 04: **[File Contents](Student/Challenge-04.md)**
-	 - Learn about file content manipulation and discover how to count file lines, display specific lines from a file, and more.
-* Challenge 05: **[Standard File Permissions](Student/Challenge-05.md)**
-	 - Learn about the Linux standard file permissions and understand how to work with file permissioning on a Linux environment.
-* Challenge 06: **[Process Management](Student/Challenge-06.md)**
-	 - Your objectives will involve basic process management, such as checking processes running and identifying process ids. 
-* Challenge 07: **[Group and User Management](Student/Challenge-07.md)**
-	 - In this challenge you will learn about the creation of user and groups in a Linux environment.
-* Challenge 08: **[Scripting](Student/Challenge-08.md)**
-	 - Learn some basic stuff on shell scripting and the usage of some commands such as echo, cut, read and grep.
-* Challenge 09: **[Disks, Partitions and File Systems](Student/Challenge-09.md)**
-	 - You will be working with disks and partitions and learn about linx filesystems and commands such as fdisk, mkfs and mount.
-* Challenge 10: **[Logical Volume Manager](Student/Challenge-10.md)**
-	 - Discover about the Logical Volume Manager on Linux, and how to use commands such as pvcreate, vgcreate, lvrcreate, and more.
-* Challenge 11: **[Package Management](Student/Challenge-11.md)**
-	 - Learn about package management and common activites such as update package distribution lists, install and uninstall packages.
-* Challenge 12: **[Setting up a Webserver](Student/Challenge-12.md)**
-	 - In this challenge we will setting up a webserver and deploy a simple PHP application into it. The usage of SSL could be a plus. 
-* Challenge 13: **[Protecting a Server](Student/Challenge-13.md)**
-	- In this challenge we will discover about how to use Fail2Ban to protect services in a Linux environment.
-* Challenge 14: **[Running Containers](Student/Challenge-14.md)**
-	- Your objective in this challenge will be to deploy an Nginx container and access it. If you would like to go deeper, there is another option to deploy a simple PHP application.
-	 
-## Prerequisites
-- To run this hackathon on Azure and utilize the Azure Cloud Shell, you will need an Azure subscription with contributor access for Challenge 01 or contributor access to a pre-created Azure Virtual Machine for all other challenges. To run this hackathon on any other cloud provider or even locally, you just need a virtual machine running Ubuntu Linux.
-- Access to a terminal. The terms “terminal,” “shell,” and “command line interface” are often used interchangeably, but there are subtle differences between them:
+* Desafio 01: **[Criar uma Máquina Virtual Linux](Student/Challenge-01.md)** - Uma máquina virtual Linux é o pré-requisito para os desafios, então crie uma nova VM Ubuntu Linux
+* Desafio 02: **[Manipulando Diretórios](Student/Challenge-02.md)** - Aprenda a realizar operações comuns com diretórios, como exibir seu diretório atual e listar o conteúdo de diretórios.
+* Desafio 03: **[Manipulando Arquivos](Student/Challenge-03.md)** - Aprenda comandos básicos sobre manipulação de arquivos, como criar, renomear, encontrar e remover arquivos.
+* Desafio 04: **[Conteúdo de Arquivos](Student/Challenge-04.md)** - Aprenda sobre manipulação de conteúdo de arquivos e descubra como contar linhas, exibir linhas específicas de um arquivo e mais.
+* Desafio 05: **[Permissões Padrão de Arquivos](Student/Challenge-05.md)** - Aprenda sobre as permissões padrão de arquivos Linux e entenda como trabalhar com permissões em um ambiente Linux.
+* Desafio 06: **[Gerenciamento de Processos](Student/Challenge-06.md)** - Seus objetivos envolverão gerenciamento básico de processos, como verificar processos em execução e identificar IDs de processos.
+* Desafio 07: **[Gerenciamento de Grupos e Usuários](Student/Challenge-07.md)** - Neste desafio você aprenderá sobre a criação de usuários e grupos em um ambiente Linux.
+* Desafio 08: **[Scripting](Student/Challenge-08.md)** - Aprenda conceitos básicos de scripts em shell e o uso de comandos como echo, cut, read e grep.
+* Desafio 09: **[Discos, Partições e Sistemas de Arquivos](Student/Challenge-09.md)** - Você trabalhará com discos e partições e aprenderá sobre sistemas de arquivos Linux e comandos como fdisk, mkfs e mount.
+* Desafio 10: **[Gerenciador de Volumes Lógicos](Student/Challenge-10.md)** - Descubra sobre o Gerenciador de Volumes Lógicos no Linux e como usar comandos como pvcreate, vgcreate, lvcreate e mais.
+* Desafio 11: **[Gerenciamento de Pacotes](Student/Challenge-11.md)** - Aprenda sobre gerenciamento de pacotes e atividades comuns como atualizar listas de distribuição de pacotes, instalar e desinstalar pacotes.
+* Desafio 12: **[Configurando um Servidor Web](Student/Challenge-12.md)** - Neste desafio vamos configurar um servidor web e implantar uma aplicação PHP simples. O uso de SSL pode ser um diferencial.
+* Desafio 13: **[Protegendo um Servidor](Student/Challenge-13.md)** - Neste desafio vamos descobrir como usar o Fail2Ban para proteger serviços em um ambiente Linux.
+* Desafio 14: **[Executando Containers](Student/Challenge-14.md)** - Seu objetivo neste desafio será implantar um container Nginx e acessá-lo. Se quiser ir mais a fundo, há outra opção para implantar uma aplicação PHP simples.
 
-	* A terminal is an input and output environment that presents a text-only window running a shell.
-	* A shell is a program that exposes the computer’s operating system to a user or program. In Linux systems, the shell presented in a terminal is a command line interpreter.
-	* A command line interface is a user interface (managed by a command line interpreter program) which processes commands to a computer program and outputs the results.
-When someone refers to one of these three terms in the context of Linux, they generally mean a terminal environment where you can run commands and see the results printed out to the terminal.
+## Pré-requisitos
 
-		Becoming a Linux expert requires you to be comfortable with using a terminal. Any administrative task, including file manipulation, package installation, and user management, can be accomplished through the terminal. The terminal is interactive: you specify commands to run and the terminal outputs the results of those commands. To execute any command, you type it into the prompt and press ENTER.
+- Para executar este hackathon no Azure e utilizar o Azure Cloud Shell, você precisará de uma assinatura Azure com acesso de contribuidor para o Desafio 01 ou acesso de contribuidor a uma Máquina Virtual Azure pré-criada para todos os outros desafios. Para executar este hackathon em qualquer outro provedor de nuvem ou localmente, você só precisa de uma máquina virtual executando Ubuntu Linux.
+- Acesso a um terminal. Os termos "terminal", "shell" e "interface de linha de comando" são frequentemente usados de forma intercambiável, mas existem diferenças sutis entre eles:
+  * Um terminal é um ambiente de entrada e saída que apresenta uma janela somente texto executando um shell.
+  * Um shell é um programa que expõe o sistema operacional do computador a um usuário ou programa. Em sistemas Linux, o shell apresentado em um terminal é um interpretador de linha de comando.
+  * Uma interface de linha de comando é uma interface de usuário (gerenciada por um programa interpretador de linha de comando) que processa comandos para um programa de computador e exibe os resultados.
 
-		For our activites, it is recommended to use the [Azure Cloud Shell](http://shell.azure.com/).
+  Quando alguém se refere a um desses três termos no contexto do Linux, geralmente significa um ambiente de terminal onde você pode executar comandos e ver os resultados impressos no terminal.
 
+  Tornar-se um especialista em Linux requer que você esteja confortável usando um terminal. Qualquer tarefa administrativa, incluindo manipulação de arquivos, instalação de pacotes e gerenciamento de usuários, pode ser realizada através do terminal. O terminal é interativo: você especifica comandos para executar e o terminal exibe os resultados desses comandos. Para executar qualquer comando, você digita no prompt e pressiona ENTER.
 
-- There are some basic concepts that will be nice if you have them. If you would like to take a look they are [listed here](./Student/resources/concepts.md).
-- Concepts around the Linux Filesystem Hierarchy Standard (FHS) are recommended, so you can get more details about it [here](./Student/resources/fhs.md).
-- Regarding Linux commands, just for reference, [here is](./Student/resources/commands.md) a good cheat sheet.
-- The Linux man pages are your best friend. Make sure to use as best you can.
+  Para nossas atividades, é recomendado usar o [Azure Cloud Shell](http://shell.azure.com/).
 
-## Learning Resources
+- Existem alguns conceitos básicos que seria bom conhecer. Se quiser dar uma olhada, eles estão [listados aqui](./Student/resources/concepts.md).
+- Conceitos sobre o Linux Filesystem Hierarchy Standard (FHS) são recomendados, então você pode obter mais detalhes [aqui](./Student/resources/fhs.md).
+- Em relação aos comandos Linux, apenas como referência, [aqui está](./Student/resources/commands.md) um bom guia rápido.
+- As páginas man do Linux são suas melhores amigas. Certifique-se de usá-las da melhor forma possível.
+
+## Recursos de Aprendizado
 
 * [Linux Journey](https://linuxjourney.com/)
 * [Linux Upskill Challenge](https://linuxupskillchallenge.org/)
-* [Beginner's Guide for Linux - Tecmint](https://www.tecmint.com/free-online-linux-learning-guide-for-beginners/)
-* [Preparation for Linux Foundation Certified System Administrator](https://github.com/Bes0n/LFCS)
-* [Linux Foundation Certified System Administrator (LFCS) Notes](https://github.com/simonesavi/lfcs)
+* [Guia para Iniciantes em Linux - Tecmint](https://www.tecmint.com/free-online-linux-learning-guide-for-beginners/)
+* [Preparação para Linux Foundation Certified System Administrator](https://github.com/Bes0n/LFCS)
+* [Notas do Linux Foundation Certified System Administrator (LFCS)](https://github.com/simonesavi/lfcs)
 * [The Linux Documentation Project](https://tldp.org/)
-* [Intrduction to Linux - from TLPD](https://tldp.org/LDP/intro-linux/intro-linux.pdf)
-* [Linux Commands Notes for Professionals](https://goalkicker.com/LinuxBook/LinuxNotesForProfessionals.pdf)
-* [Introduction to Linux - Free course on Linux Foundation](https://training.linuxfoundation.org/training/introduction-to-linux/)
+* [Introdução ao Linux - do TLDP](https://tldp.org/LDP/intro-linux/intro-linux.pdf)
+* [Notas de Comandos Linux para Profissionais](https://goalkicker.com/LinuxBook/LinuxNotesForProfessionals.pdf)
+* [Introdução ao Linux - Curso gratuito da Linux Foundation](https://training.linuxfoundation.org/training/introduction-to-linux/)
 
-## Coach's Guide
+## Guia do Coach
 
-In the [coach](./Coach/) directory are the guidelines in case you are running the Hackathon in an event and are a coach, as well as the solutions for the proposed challenges. If you're doing the Hackathon as a student, don't be fooled by looking at the solutions during the hack! Go learn something. :)
+No diretório [coach](./Coach/) estão as diretrizes caso você esteja executando o Hackathon em um evento e seja um coach, bem como as soluções para os desafios propostos. Se você está fazendo o Hackathon como estudante, não se engane olhando as soluções durante o hack! Vá aprender algo. :)
 
-## Contributions
-Contributions in the form of errors, feature requests and PRs are always welcome. Please follow these steps before submitting a PR:
+## Contribuições
 
-* Create an issue describing the error or feature request.
-* Clone the repository and create a topic branch.
-* Make changes, adding new tests for new functionality.
-* Submit a PR.
+Contribuições na forma de correções de erros, solicitações de funcionalidades e PRs são sempre bem-vindas. Por favor, siga estes passos antes de enviar um PR:
 
-## Show your support
-Give a ⭐️ if this content helped you!
+* Crie uma issue descrevendo o erro ou solicitação de funcionalidade.
+* Clone o repositório e crie uma branch de tópico.
+* Faça as alterações, adicionando novos testes para novas funcionalidades.
+* Envie um PR.
 
+## Mostre seu apoio
+
+Dê uma ⭐️ se este conteúdo te ajudou!
