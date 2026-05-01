@@ -89,6 +89,21 @@ Com exceção do desafio 01 (que configura o ambiente Linux necessário para tod
 * [Notas de Comandos Linux para Profissionais](https://goalkicker.com/LinuxBook/LinuxNotesForProfessionals.pdf)
 * [Introdução ao Linux - Curso gratuito da Linux Foundation](https://training.linuxfoundation.org/training/introduction-to-linux/)
 
+## Trilha de Aprendizado
+
+Este hackathon é o ponto de partida de uma jornada completa de aprendizado:
+
+```mermaid
+flowchart TD
+    A["🐧 Linux FUNdamentals\n20 desafios práticos\nlinuxhackathon.com"]:::blue --> B["☸️ Kubernetes Hackathon\n20 desafios práticos\nk8shackathon.com"]:::blue
+    B --> C["🤖 AI for Infrastructure\nAI + Cloud\nai4infra.com"]:::blue
+    D["📖 From Server to Cluster\nO PORQUÊ por trás do QUÊ\nfromservertocluster.com"]:::blue
+    A -. "leitura complementar" .-> D
+    B -. "leitura complementar" .-> D
+    C -. "leitura complementar" .-> D
+
+    classDef blue fill:#1a73e8,stroke:#1a73e8,color:#fff
+```
 ## Guia do Coach
 
 No diretório [coach](./Coach/) estão as diretrizes caso você esteja executando o Hackathon em um evento e seja um coach, bem como as soluções para os desafios propostos. Se você está fazendo o Hackathon como estudante, não se engane olhando as soluções durante o hack! Vá aprender algo. :)
