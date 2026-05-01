@@ -1,165 +1,165 @@
-# The Filesystem Hierarchy Standard
+# O Padrão de Hierarquia do Sistema de Arquivos
 
-Nearly all Linux distributions are compliant with a universal standard for filesystem directory structure known as the Filesystem Hierarchy Standard (FHS). The FHS defines a set of directories, each of which serve their own special function.
+Quase todas as distribuições Linux estão em conformidade com um padrão universal para a estrutura de diretórios do sistema de arquivos conhecido como Filesystem Hierarchy Standard (FHS). O FHS define um conjunto de diretórios, cada um com sua função especial.
 
-The forward slash (```/```) is used to indicate the root directory in the filesystem hierarchy defined by the FHS.
+A barra (`/`) é usada para indicar o diretório raiz na hierarquia do sistema de arquivos definida pelo FHS.
 
-When a user logs in to the shell, they are brought to their own user directory, stored within ```/home/```. This is referred to as the user’s home directory. The FHS defines ```/home/``` as containing the home directories for regular users.
+Quando um usuário faz login no shell, ele é levado ao seu próprio diretório de usuário, armazenado em `/home/`. Este é referido como o diretório home do usuário. O FHS define `/home/` como contendo os diretórios home dos usuários regulares.
 
-The root user has its own home directory specified by the FHS: ```/root/```. Note that ```/``` is referred to as the “root directory”, and that it is different from ```root/```, which is stored within ```/```.
+O usuário root tem seu próprio diretório home especificado pelo FHS: `/root/`. Note que `/` é referido como o "diretório raiz", e que é diferente de `root/`, que está armazenado dentro de `/`.
 
-Because the FHS is the default filesystem layout on Linux machines, and each directory within it is included to serve a specific purpose, it simplifies the process of organizing files by their function.
+Como o FHS é o layout padrão do sistema de arquivos em máquinas Linux, e cada diretório dentro dele está incluído para servir a um propósito específico, ele simplifica o processo de organização de arquivos por sua função.
 
-## FHS Structure
+## Estrutura do FHS
 
 <img align="center" src="./images/fhs.png"/>
 
-### **/ (root)**
+### **/ (raiz)**
 
-* This is the beginning of the Linux filesystem hierarchy. All the file paths originate from root. The directories listed above or symbolic links to those directories are required in / otherwise, the file structure isn’t FSH compliant.
+* Este é o início da hierarquia do sistema de arquivos do Linux. Todos os caminhos de arquivo se originam do raiz. Os diretórios listados acima ou links simbólicos para esses diretórios são obrigatórios em / caso contrário, a estrutura de arquivos não está em conformidade com o FHS.
 
 ### **/boot**
 
-* This directory contains all the files necessary for the system to boot up
-* This includes the kernel files, initrd, initramfs, bootloader etc.
+* Este diretório contém todos os arquivos necessários para o sistema inicializar
+* Isso inclui os arquivos do kernel, initrd, initramfs, bootloader etc.
 
 ### **/bin**
 
- * Stores essential command binaries which can be used by both system administrator and user such as cat,ls,mv,ps,mount etc.
-* These commands are used to boot up a system (access boot files, mount drives) and can be used while repairing a system when the binaries in /usr aren’t available
+ * Armazena binários de comandos essenciais que podem ser usados tanto pelo administrador do sistema quanto pelo usuário, como cat, ls, mv, ps, mount etc.
+* Esses comandos são usados para inicializar um sistema (acessar arquivos de boot, montar unidades) e podem ser usados ao reparar um sistema quando os binários em /usr não estão disponíveis
 
 ### **/sbin**
 
-* Just like /bin, /sbin also contains essential system binaries. However these binaries are only meant to be used by a system administrator rather than a normal user.
-* These binaries are mostly used for device management. For example, fdisk, fsck, mkfs, ifconfig, reboot.
+* Assim como /bin, /sbin também contém binários essenciais do sistema. No entanto, esses binários são destinados apenas para uso do administrador do sistema, e não de um usuário normal.
+* Esses binários são usados principalmente para gerenciamento de dispositivos. Por exemplo, fdisk, fsck, mkfs, ifconfig, reboot.
 
 ### **/lib**
 
-* Libraries are standard code files that define the commands used in a programming language. During compilation, a compiler looks up these libraries to make sense of the code just as we might look up a dictionary to understand the meaning of words while reading a book.
-* This directory contains all the libraries needed to boot up the system and for commands in /bin and /sbin to run.
-* This also contains kernel modules which control a lot of your hardware and device functioning
-* A lot of times, there are different 32 bit and 64 bit libraries with the same name. To avoid any collusion, these binaries are kept in two separate directories accordingly named /lib32 and /lib64.
+* Bibliotecas são arquivos de código padrão que definem os comandos usados em uma linguagem de programação. Durante a compilação, um compilador consulta essas bibliotecas para dar sentido ao código, assim como consultamos um dicionário para entender o significado das palavras ao ler um livro.
+* Este diretório contém todas as bibliotecas necessárias para inicializar o sistema e para os comandos em /bin e /sbin funcionarem.
+* Também contém módulos do kernel que controlam grande parte do funcionamento do seu hardware e dispositivos
+* Muitas vezes, existem bibliotecas diferentes de 32 bits e 64 bits com o mesmo nome. Para evitar qualquer conflito, esses binários são mantidos em dois diretórios separados chamados /lib32 e /lib64.
 
 ### **/media**
 
-* This directory contains several sub-directories where the system mounts removable devices such as usb drives.
+* Este diretório contém vários subdiretórios onde o sistema monta dispositivos removíveis, como drives USB.
 
 ### **/mnt**
 
-* This directory can be used by an user to manually mount a device. (as opposed to /media which is only used by the system)
-* The current convention among users is making a separate subdirectory under /mnt and mounting the device in that subdirectory, while the older tradition is mounting the device directly in /mnt.
+* Este diretório pode ser usado por um usuário para montar manualmente um dispositivo. (ao contrário de /media que é usado apenas pelo sistema)
+* A convenção atual entre os usuários é criar um subdiretório separado em /mnt e montar o dispositivo nesse subdiretório, enquanto a tradição mais antiga é montar o dispositivo diretamente em /mnt.
 
 ### **/opt**
 
-* /opt contains libraries and binaries related to packages which are not installed by your system’s package managers but are installed through third party means like using Discord’s in-application update button.
-* /opt is a less popular alternative of /usr/local . It is the vendor who decided where the libraries and binaries go but usually more monolithic and proprietary softwares like zoom use /opt.
+* /opt contém bibliotecas e binários relacionados a pacotes que não são instalados pelo gerenciador de pacotes do seu sistema, mas são instalados por meios de terceiros, como usar o botão de atualização dentro do aplicativo do Discord.
+* /opt é uma alternativa menos popular ao /usr/local. É o fornecedor quem decide onde as bibliotecas e binários são colocados, mas geralmente softwares mais monolíticos e proprietários como o zoom usam /opt.
 
 ### **/home**
 
-* Home contains all the personal user specific files. It contains separate directories for each user which can be accessed by cd /home/username
-* This is where you do most of your work. All the downloads, pictures, music etc on your system are in /home.
-* The user specific configuration file for each application can be found in /home/[username]/.conf
-* You can go to any users home directory by executing cd ~[username] . If there is only one user on system, just cd ~ works.
+* Home contém todos os arquivos pessoais específicos do usuário. Contém diretórios separados para cada usuário que podem ser acessados por cd /home/username
+* É aqui que você faz a maior parte do seu trabalho. Todos os downloads, fotos, músicas etc no seu sistema estão em /home.
+* O arquivo de configuração específico do usuário para cada aplicação pode ser encontrado em /home/[username]/.conf
+* Você pode ir ao diretório home de qualquer usuário executando cd ~[username]. Se há apenas um usuário no sistema, apenas cd ~ funciona.
 
 ### **/etc**
 
-* This directory contains configuration files of your system.
-* The name of your device, your passwords, your network configuration, DNS, crontabs, date and time ..etc are stored here in configuration files.
-* This directory cannot contain any binary executable files according to FHS.
-* These configuration files affect all users on system. If you want to make config changes for a specific user, ~/.conf/ should be used instead of 
+* Este diretório contém arquivos de configuração do seu sistema.
+* O nome do seu dispositivo, suas senhas, sua configuração de rede, DNS, crontabs, data e hora etc são armazenados aqui em arquivos de configuração.
+* Este diretório não pode conter nenhum arquivo binário executável de acordo com o FHS.
+* Esses arquivos de configuração afetam todos os usuários do sistema. Se você deseja fazer alterações de configuração para um usuário específico, ~/.conf/ deve ser usado em vez de 
 /etc/
 
 ### **/usr**
 
-The /usr directory has very interesting origins. At the time of formation, it was supposed to act like the /home directory, but when people ran out of space on /bin, they started storing the non-essential binaries in /usr. You can read the whole story [here](https://mobile.twitter.com/foone/status/1059310938354987008).
+O diretório /usr tem origens muito interessantes. Na época de sua criação, ele deveria funcionar como o diretório /home, mas quando as pessoas ficaram sem espaço em /bin, começaram a armazenar os binários não essenciais em /usr. Você pode ler a história completa [aqui](https://mobile.twitter.com/foone/status/1059310938354987008).
 
-Over time, this directory has been fashioned to store the binaries and libraries for the applications that are installed by the user. So for example, while bash is in /bin (since it can be used by all users) and fdisk is in /sbin (since it should only be used by administrators), user-installed applications like vlc are in /usr/bin.
+Com o tempo, este diretório foi moldado para armazenar os binários e bibliotecas das aplicações instaladas pelo usuário. Então, por exemplo, enquanto o bash está em /bin (já que pode ser usado por todos os usuários) e o fdisk está em /sbin (já que deve ser usado apenas por administradores), aplicações instaladas pelo usuário como o vlc estão em /usr/bin.
 
-This way /usr has its own hierarchy just like the / (root) did.
+Desta forma, /usr tem sua própria hierarquia, assim como / (raiz).
 
 #### /usr/bin
 
-* This is the primary directory of executable commands on the system.
-* Contains all user installed command binaries 
-* If you want to execute your scripts using a single command, you usually place them in /usr/bin/
+* Este é o diretório principal de comandos executáveis no sistema.
+* Contém todos os binários de comandos instalados pelo usuário 
+* Se você deseja executar seus scripts usando um único comando, geralmente os coloca em /usr/bin/
 
 #### **/usr/sbin**
 
-* This contains user installed command binaries that can only be used by system administrators.
+* Contém binários de comandos instalados pelo usuário que só podem ser usados por administradores do sistema.
 
 #### **/usr/lib**
 
-* This contains the essential libraries for packages in /usr/bin and /usr/sbin just like /lib.
+* Contém as bibliotecas essenciais para pacotes em /usr/bin e /usr/sbin, assim como /lib.
 
 #### **/usr/local**
 
-* This is used for all packages which are compiled manually from source by the system administrator.
-* This directory has its own hierarchy with all the bin, sbin and lib folders which contain the binaries and applications of the compiled softwares.
+* É usado para todos os pacotes que são compilados manualmente a partir do código-fonte pelo administrador do sistema.
+* Este diretório tem sua própria hierarquia com todas as pastas bin, sbin e lib que contêm os binários e aplicações dos softwares compilados.
 
 #### **/usr/share**
 
-* Contains several architecture-independent miscellaneous files
-* Man files, word list(dictionaries) and defintion files are all included in this.
+* Contém vários arquivos diversos independentes de arquitetura
+* Arquivos man, lista de palavras (dicionários) e arquivos de definição estão todos incluídos aqui.
 
-**The case for /usr merge – Is there really a difference between /bin and /usr/bin?**
+**O caso da fusão /usr – Existe realmente uma diferença entre /bin e /usr/bin?**
 
-The need for moving non-essential binaries to a different folder historically arose from a lack of space in the /bin hard disk. However, that was 1971. Today over 50 years later, we no longer face the same size problems. This has rendered two separate folders for default and user-installed binaries useless. Over time this has also caused a hodge-podge in the filesystems, with both the directory having redundant binaries which makes it confusing.
+A necessidade de mover binários não essenciais para uma pasta diferente surgiu historicamente da falta de espaço no disco rígido de /bin. No entanto, isso foi em 1971. Hoje, mais de 50 anos depois, não enfrentamos mais os mesmos problemas de espaço. Isso tornou duas pastas separadas para binários padrão e instalados pelo usuário inúteis. Com o tempo, isso também causou uma confusão nos sistemas de arquivos, com ambos os diretórios tendo binários redundantes, o que torna tudo confuso.
 
-For this reason, over the years, many distributions (Debian, Fedora, Ubuntu, Arch etc.) have merged /usr/bin and /bin in the same directory.
+Por esse motivo, ao longo dos anos, muitas distribuições (Debian, Fedora, Ubuntu, Arch etc.) fundiram /usr/bin e /bin no mesmo diretório.
 
-Similarly /usr/sbin – /sbin and /usr/lib – /lib have been merged into the same directory to simplify the directory structure. Now the /bin folder is just a symlink to the /usr/bin directory and the same for other merges.
+Da mesma forma, /usr/sbin – /sbin e /usr/lib – /lib foram fundidos no mesmo diretório para simplificar a estrutura de diretórios. Agora a pasta /bin é apenas um link simbólico para o diretório /usr/bin e o mesmo para as outras fusões.
 
-You can read more about the discussion regarding these merges [here](https://www.freedesktop.org/wiki/Software/systemd/TheCaseForTheUsrMerge/) and [here](https://www.linux-magazine.com/Issues/2019/228/Debian-usr-Merge).
+Você pode ler mais sobre a discussão a respeito dessas fusões [aqui](https://www.freedesktop.org/wiki/Software/systemd/TheCaseForTheUsrMerge/) e [aqui](https://www.linux-magazine.com/Issues/2019/228/Debian-usr-Merge).
 
 ### **/run**
 
-* This directory contains the metadata of the device since the last boot.
-* This includes data of all the system processes and daemons that were executed in the current session.
-* Files under this directory are cleared (removed or truncated) at the beginning of the boot process.
+* Este diretório contém os metadados do dispositivo desde a última inicialização.
+* Isso inclui dados de todos os processos do sistema e daemons que foram executados na sessão atual.
+* Os arquivos neste diretório são limpos (removidos ou truncados) no início do processo de inicialização.
 
 ### **/srv**
 
-* You will only ever use this directory if your device is acting as a webserver, as this directory contains all the files regarding webservers.
-* For example, if you host an FTP server, all the files that need to be shared should by default go in a /srv/ftp.
+* Você só usará este diretório se seu dispositivo estiver funcionando como um servidor web, pois este diretório contém todos os arquivos relacionados a servidores web.
+* Por exemplo, se você hospedar um servidor FTP, todos os arquivos que precisam ser compartilhados devem, por padrão, ir em /srv/ftp.
 
 ### **/tmp**
 
-* Contains temporary files of the currently running processes.
-* This data is also flushed after every boot.
+* Contém arquivos temporários dos processos em execução no momento.
+* Esses dados também são apagados após cada inicialização.
 
 ### **/proc**
 
-* Just like /dev which provides devices as files, this folder contains system information and kernel information as files.
-* This includes information regarding memory, partitions, hardware (battery, temperature, etc.), all loaded kernel modules, etc.
+* Assim como /dev que fornece dispositivos como arquivos, esta pasta contém informações do sistema e do kernel como arquivos.
+* Isso inclui informações sobre memória, partições, hardware (bateria, temperatura, etc.), todos os módulos do kernel carregados, etc.
 
-### **/sys (distro specific)**
+### **/sys (específico da distribuição)**
 
-* It contains information similarly held in /proc/, but displays a hierarchical view of specific device information in regards to hot plug devices.
+* Contém informações semelhantes às mantidas em /proc/, mas exibe uma visão hierárquica de informações específicas de dispositivos em relação a dispositivos hot plug.
 
 ### **/dev**
 
-* Contains device files for all the for all the physical and virtual devices mounted in the system.
-* Device files aren't files in the traditional sense. They are a way for device drivers to access and interact with the said device
-* Usually the primary storage is called sda (/dev/sda)
+* Contém arquivos de dispositivo para todos os dispositivos físicos e virtuais montados no sistema.
+* Arquivos de dispositivo não são arquivos no sentido tradicional. Eles são uma forma de os drivers de dispositivo acessarem e interagirem com o dispositivo em questão
+* Geralmente o armazenamento primário é chamado de sda (/dev/sda)
 
 ### **/var**
 
-* Contains variable data regarding the running processes.
-* This includes the logs, cache and spools for all applications.
-* Spools are the data which are waiting for further processing. Examples are a document waiting in printer queue or an email header waiting to be sent.
+* Contém dados variáveis sobre os processos em execução.
+* Isso inclui os logs, cache e spools de todas as aplicações.
+* Spools são os dados que estão aguardando processamento adicional. Exemplos são um documento esperando na fila de impressão ou um cabeçalho de e-mail aguardando para ser enviado.
 
-### **/root (optional)**
+### **/root (opcional)**
 
-* This is supposed to be the home directory for the root user, as opposed to /home which is the home directory for the non root users.
+* Este é o diretório home do usuário root, ao contrário de /home que é o diretório home dos usuários não-root.
 
-### **/lost+found (ext4 feature)**
+### **/lost+found (recurso do ext4)**
 
-* While not listed in the FHS, this directory is automatically generated by fsck.
-* It stores all the orphaned and corrupted files in this folder.
-* This includes the files you couldn't save becuase of a power cut, files corrupted due to a failed upgrade process etc.
+* Embora não esteja listado no FHS, este diretório é gerado automaticamente pelo fsck.
+* Ele armazena todos os arquivos órfãos e corrompidos nesta pasta.
+* Isso inclui os arquivos que você não conseguiu salvar por causa de uma queda de energia, arquivos corrompidos devido a uma falha no processo de atualização etc.
 
-## Conclusion
+## Conclusão
 
-Since 1993, the Filesystem Hierarchy Standard has been the guideline for Unix-like directory structures. It requires the root directory partition to contain all the files the system needs for booting and mounting additional partitions.
+Desde 1993, o Filesystem Hierarchy Standard tem sido a diretriz para estruturas de diretórios semelhantes ao Unix. Ele exige que a partição do diretório raiz contenha todos os arquivos que o sistema precisa para inicializar e montar partições adicionais.
 
-In 2015, FHS was integrated into the Linux Standard Base (LSB) and is now maintained by the Linux Foundation. To read more about the current FHS standard, I highly recommend checking out the [full text](https://refspecs.linuxfoundation.org/FHS_3.0/fhs/index.html) of the last release in 2015. Keep exploring!
+Em 2015, o FHS foi integrado ao Linux Standard Base (LSB) e agora é mantido pela Linux Foundation. Para ler mais sobre o padrão FHS atual, recomendo fortemente verificar o [texto completo](https://refspecs.linuxfoundation.org/FHS_3.0/fhs/index.html) da última versão lançada em 2015. Continue explorando!
