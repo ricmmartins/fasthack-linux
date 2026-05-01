@@ -1,43 +1,43 @@
-# Challenge 09 - Disks, Partitions and File Systems
+# Desafio 09 - Discos, Partições e Sistemas de Arquivos
 
-[< Previous Challenge](./Challenge-08.md) - **[Home](../README.md)** - [Next Challenge >](./Challenge-10.md)
+[< Desafio Anterior](./Challenge-08.md) - **[Início](../README.md)** - [Próximo Desafio >](./Challenge-10.md)
 
-## Pre-requisites 
+## Pré-requisitos
 
-- Create a data disk with the size of 5GB
-- Add the disk the the virtual machine 
+- Crie um disco de dados com o tamanho de 5GB
+- Adicione o disco à máquina virtual
 
-## Description
+## Descrição
 
-This challenge you will be working with disks and partitions. Will be an opportunity to learn about Linux filesystems and commands such as `fdisk`, `mkfs` and `mount`.
+Neste desafio você trabalhará com discos e partições. Será uma oportunidade para aprender sobre sistemas de arquivos Linux e comandos como `fdisk`, `mkfs` e `mount`.
 
-- Identify the new disk added to the machine
-- Edit the disk partition table:
-    - Add a new partition with 500MB
-    - List and identify in the operating system the partition created
-    - Erase partition
-    - Check in the operating system that the partition has been removed
-    - Add two new partitions with a native Linux partition (83), one with 500MB and another with 100MB
-    - Check in the operating system that the partitions were created
-- Create a file system on each of the partitions created
-- Create a directory for each of the partitions inside the `/mnt` directory
-- Mount each of the partitions in the respective directory
-- Verify that the partitions are mounted correctly whithin the operational system.
-- Write files inside one of the partitions
-- Unmount the partitions
-- Remove existing partitions
+- Identifique o novo disco adicionado à máquina
+- Edite a tabela de partição do disco:
+    - Adicione uma nova partição com 500MB
+    - Liste e identifique no sistema operacional a partição criada
+    - Apague a partição
+    - Verifique no sistema operacional que a partição foi removida
+    - Adicione duas novas partições com tipo Linux nativo (83), uma com 500MB e outra com 100MB
+    - Verifique no sistema operacional que as partições foram criadas
+- Crie um sistema de arquivos em cada uma das partições criadas
+- Crie um diretório para cada uma das partições dentro do diretório `/mnt`
+- Monte cada uma das partições no respectivo diretório
+- Verifique se as partições estão montadas corretamente no sistema operacional
+- Escreva arquivos dentro de uma das partições
+- Desmonte as partições
+- Remova as partições existentes
 
-## Success Criteria
+## Critérios de Sucesso
 
-1. Check if the disk was added to the virtual machine
-2. Make sure you created the partitions as expected
-3. Validate on both partitions the file system created 
-4. Make sure you have created the the respective directories inside `mnt` directory
-5. Make sure the partitions are properly mounted
-6. Ensure you can create files on the partitions
-7. Make sure you unmonted the partitions and removed both properly
+1. Verifique se o disco foi adicionado à máquina virtual
+2. Certifique-se de que as partições foram criadas conforme esperado
+3. Valide em ambas as partições o sistema de arquivos criado
+4. Certifique-se de que os respectivos diretórios foram criados dentro do diretório `mnt`
+5. Certifique-se de que as partições estão corretamente montadas
+6. Garanta que você consegue criar arquivos nas partições
+7. Certifique-se de que desmontou as partições e removeu ambas corretamente
 
-## Learning Resources
+## Recursos de Aprendizado
 
 - [Filesystem Hierarchy](https://linuxjourney.com/lesson/filesystem-hierarchy)
 - [Dev Directory](https://linuxjourney.com/lesson/dev-directory)
