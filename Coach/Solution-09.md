@@ -1,9 +1,9 @@
-# Challenge 09 - Disks, partitions and file systems - Coach's Guide 
+# Desafio 09 - Discos, partições e sistemas de arquivos - Guia do Coach 
 
-[< Previous Solution](./Solution-08.md) - **[Home](./README.md)** - [Next Solution >](./Solution-10.md)
+[< Solução Anterior](./Solution-08.md) - **[Início](./README.md)** - [Próxima Solução >](./Solution-10.md)
 
-## Notes & Guidance
-1. Identify the new disk added to the machine
+## Notas e Orientações
+1. Identifique o novo disco adicionado à máquina
 
 `student@vm01:~$ sudo fdisk -l | grep "^Disk"`
 
@@ -34,11 +34,11 @@ Disk model: Virtual Disk
 [  150.694433] sd 1:0:0:0: [sdc] Attached SCSI disk
 ```
 
-2. Edit the disk partition table:
+2. Edite a tabela de partição do disco:
 
     `student@vm01:~$ sudo fdisk /dev/sdc`
 
-    1. Add a new partition with 500MB
+    1. Adicione uma nova partição com 500MB
     
     ```bash
     Welcome to fdisk (util-linux 2.34).
@@ -64,7 +64,7 @@ Disk model: Virtual Disk
     Syncing disks.
     ```
     
-    2. List and identify in the S.O. the partition created
+    2. Liste e identifique no S.O. a partição criada
 
     `student@vm01:~$ ls -l /dev/sdc*`
     
@@ -73,7 +73,7 @@ Disk model: Virtual Disk
     brw-rw---- 1 root disk 8, 33 Apr  6 15:09 /dev/sdc1
     ```
     
-    3. Erase partition
+    3. Apague a partição
 
     `student@vm01:~$ sudo fdisk /dev/sdc`
 
@@ -93,7 +93,7 @@ Disk model: Virtual Disk
     Syncing disks.
     ```
 
-    4. Check in S.O. that the partition has been removed
+    4. Verifique no S.O. que a partição foi removida
 
     `student@vm01:~$ ls -l /dev/sdc*`
 
@@ -101,7 +101,7 @@ Disk model: Virtual Disk
     brw-rw---- 1 root disk 8, 32 Apr  6 15:12 /dev/sdc
     ```
 
-    5. Add two new partitions with a native Linux partition (83), one with 500MB and another with 100MB
+    5. Adicione duas novas partições com uma partição Linux nativa (83), uma com 500MB e outra com 100MB
 
     `student@vm01:~$ sudo fdisk /dev/sdc`
     
@@ -139,7 +139,7 @@ Disk model: Virtual Disk
     Syncing disks.
     ```
 
-    6. Check in S.O. that the partitions were created
+    6. Verifique no S.O. que as partições foram criadas
 
     `student@vm01:~$ ls -l /dev/sdc*`
     
@@ -149,7 +149,7 @@ Disk model: Virtual Disk
     brw-rw---- 1 root disk 8, 34 Apr  6 15:53 /dev/sdc2
     ```
     
-3. Create a file system on each of the partitions created
+3. Crie um sistema de arquivos em cada uma das partições criadas
 
 `student@vm01:~$ sudo mkfs.ext4 /dev/sdc1`
 
@@ -180,21 +180,21 @@ Creating journal (1024 blocks): done
 Writing superblocks and filesystem accounting information: done
 ```
 
-4. Create a directory for each of the partitions inside the `/mnt` directory
+4. Crie um diretório para cada uma das partições dentro do diretório `/mnt`
 
 `student@vm01:~$ sudo mkdir /mnt/dir1`
 
 `student@vm01:~$ sudo mkdir /mnt/dir2`
 
 
-5. Mount each of the partitions in the respective directory
+5. Monte cada uma das partições no respectivo diretório
 
 `student@vm01:~$ sudo mount /dev/sdc1 /mnt/dir1`
 
 `student@vm01:~$ sudo mount /dev/sdc2 /mnt/di2`
 
 
-6. Verify that the partitions are mounted correctly in OS.
+6. Verifique que as partições estão montadas corretamente no S.O.
 
 `student@vm01:~$ sudo ls -l /mnt/dir*`
 
@@ -208,7 +208,7 @@ total 16
 drwx------ 2 root root 16384 Apr  6 15:59 lost+found
 ```
 
-7. Write files inside one of the partitions
+7. Escreva arquivos dentro de uma das partições
 
 `student@vm01:~$ sudo touch /mnt/dir1/file1`
 
@@ -228,13 +228,13 @@ total 16
 drwx------ 2 root root 16384 Apr  6 15:59 lost+found
 ```
 
-8. Unmount the partitions
+8. Desmonte as partições
 
 `student@vm01:~$ sudo umount /mnt/dir1`
 
 `student@vm01:~$ sudo umount /mnt/dir2`
 
-9. Remove existing partitions
+9. Remova as partições existentes
 
 `student@vm01:~$ sudo fdisk /dev/sdc`
 
