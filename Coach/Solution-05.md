@@ -1,17 +1,17 @@
-# Challenge 05 - Standard file permissions - Coach's Guide 
+# Desafio 05 - Permissões padrão de arquivos - Guia do Coach 
 
-[< Previous Solution](./Solution-04.md) - **[Home](./README.md)** - [Next Solution >](./Solution-06.md)
+[< Solução Anterior](./Solution-04.md) - **[Home](./README.md)** - [Próxima Solução >](./Solution-06.md)
 
-## Notes & Guidance
-1. As a regular user (student), create a directory ~/permissions. 
+## Notas e Orientações
+1. Como usuário regular (student), crie um diretório ~/permissions. 
 
 `student@vm01:~$ mkdir ~/permissions`
 
-2. Create a file called `myfile.txt` under `~permissions`.
+2. Crie um arquivo chamado `myfile.txt` em `~permissions`.
 
 `student@vm01:~$ touch ~/permissions/myfile.txt`
 
-3. List the properties of the file `/var/log/waagent.log`. Then copy this file to your permissions directory. Who is the new owner of this file now?
+3. Liste as propriedades do arquivo `/var/log/waagent.log`. Em seguida, copie este arquivo para o seu diretório permissions. Quem é o novo proprietário deste arquivo agora?
 
 `student@vm01:~$ ls -l /var/log/waagent.log`
 
@@ -28,13 +28,13 @@
 -rw-r--r-- 1 student student 195022 Apr 11 19:51 waagent.log
 ```
 
-4. As root, create a file called `rootfile.txt` in the `/home/student/permissions` directory.
+4. Como root, crie um arquivo chamado `rootfile.txt` no diretório `/home/student/permissions`.
 
 `student@vm01:~$ sudo su`
 
 `root@vm01:/# touch /home/student/permissions/rootfile`
 
-5. As regular user (student), look at who owns this file created by root.
+5. Como usuário regular (student), veja quem é o proprietário deste arquivo criado pelo root.
 
 `root@vm01:/# exit`
 
@@ -43,20 +43,20 @@
 ```bash
 total 4
 -rw-rw-r-- 1 student student   0 Apr  8 14:55 myfile.txt
--rw-r--r-- 1 root      root        0 Apr  8 14:58 rootfile
+-rw-r--r-- 1 root      root          0 Apr  8 14:58 rootfile
 -rw-r--r-- 1 student student 195022 Apr 11 19:51 waagent.log
 ```
 
-6. Change the ownership of all files in `/home/student/permissions` to yourself (student).
+6. Altere a propriedade de todos os arquivos em `/home/student/permissions` para você mesmo (student).
 
 `student@vm01:~$ chown student ~/permissions/*`
 
 ```bash
 chown: changing ownership of '/home/student/permissions/rootfile': Operation not permitted
 ```
-Note you cannot become owner of the file that belongs to root.
+Observe que você não pode se tornar proprietário do arquivo que pertence ao root.
 
-7. Make sure you (student) have all rights to files within `~`, and others can only read
+7. Certifique-se de que você (student) tem todos os direitos sobre os arquivos em `~`, e outros podem apenas ler
 
 `student@vm01:~$ find ~ -type d -exec chmod 755 {} \; `
 
@@ -65,4 +65,4 @@ Note you cannot become owner of the file that belongs to root.
 ```bash
 chmod: changing permissions of '/home/student/permissions/rootfile': Operation not permitted
 ```
-Note you cannot change permissions of the file that belongs to root.
+Observe que você não pode alterar as permissões do arquivo que pertence ao root.
