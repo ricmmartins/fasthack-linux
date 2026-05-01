@@ -1,8 +1,8 @@
-# Challenge 13 - Protecting a Server - Coach's Guide 
-[< Previous Solution](./Solution-12.md) - **[Home](./README.md)** - [Next Solution >](./Solution-14.md)
+# Desafio 13 - Protegendo um Servidor - Guia do Coach 
+[< Solução Anterior](./Solution-12.md) - **[Início](./README.md)** - [Próxima Solução >](./Solution-14.md)
 
-## Notes & Guidance
-1. Ensure the distriubtion lists are update 
+## Notas e Orientações
+1. Certifique-se de que as listas de distribuição estão atualizadas 
 
 `student@vm01:~$ sudo apt update`
 
@@ -55,7 +55,7 @@ Reading state information... Done
 24 packages can be upgraded. Run 'apt list --upgradable' to see them.
 ```
 
-2. Ensure the installation of fail2ban package
+2. Certifique-se da instalação do pacote fail2ban
 
 `student@vm01:~$ sudo apt install fail2ban`
 
@@ -81,18 +81,18 @@ Selecting previously unselected package fail2ban.
 (Reading database ... 58571 files and directories currently installed.)
 Preparing to unpack .../fail2ban_0.11.1-1_all.deb ...
 Unpacking fail2ban (0.11.1-1) ...
-Selecting previously unselected package python3-pyinotify...........................................................]
-Preparing to unpack .../python3-pyinotify_0.9.6-1.2ubuntu1_all.deb .................................................]
-Unpacking python3-pyinotify (0.9.6-1.2ubuntu1) .....................................................................]
+Selecting previously unselected package python3-pyinotify.
+Preparing to unpack .../python3-pyinotify_0.9.6-1.2ubuntu1_all.deb ...
+Unpacking python3-pyinotify (0.9.6-1.2ubuntu1) ...
 Selecting previously unselected package whois.
-Preparing to unpack .../archives/whois_5.5.6_amd64.deb .............................................................]
+Preparing to unpack .../archives/whois_5.5.6_amd64.deb ...
 Unpacking whois (5.5.6) ...
-Setting up whois (5.5.6) ...........................................................................................]
-Setting up fail2ban (0.11.1-1) .....................................................................................]
+Setting up whois (5.5.6) ...
+Setting up fail2ban (0.11.1-1) ...
 Created symlink /etc/systemd/system/multi-user.target.wants/fail2ban.service → /lib/systemd/system/fail2ban.service.
-Setting up python3-pyinotify (0.9.6-1.2ubuntu1) ....................................................................]
-Processing triggers for man-db (2.9.1-1) ...........................................................................]
-Processing triggers for systemd (245.4-4ubuntu3.18) ................................................................]
+Setting up python3-pyinotify (0.9.6-1.2ubuntu1) ...
+Processing triggers for man-db (2.9.1-1) ...
+Processing triggers for systemd (245.4-4ubuntu3.18) ...
 ```
 
 `student@vm01:~$ cat /var/log/fail2ban.log`
@@ -115,7 +115,7 @@ Processing triggers for systemd (245.4-4ubuntu3.18) ............................
 2022-11-07 22:23:14,093 fail2ban.jail           [2435]: INFO    Jail 'sshd' started
 ```
 
-3. Make sure that Fail2Ban will start automatically during the VM boot
+3. Certifique-se de que o Fail2Ban iniciará automaticamente durante o boot da VM
 
 `student@vm01:~$ sudo systemctl status fail2ban`
 
@@ -135,9 +135,9 @@ Nov 07 22:23:13 rmmartins systemd[1]: Started Fail2Ban Service.
 Nov 07 22:23:14 rmmartins fail2ban-server[2435]: Server ready
 ```
 
-4. Ensure Fail2Ban is enabled to protect the SSH service
+4. Certifique-se de que o Fail2Ban está habilitado para proteger o serviço SSH
 
-Make sure that the [sshd] section is present and uncommented:
+Certifique-se de que a seção [sshd] está presente e descomentada:
 
 `student@vm01:~$ cat /etc/fail2ban/jail.conf`
 
@@ -167,16 +167,16 @@ Status for the jail: sshd
    `- Banned IP list:
 ```
 
-5. Change the SSH default port from 22 to 2222
+5. Altere a porta padrão do SSH de 22 para 2222
 
 `student@vm01:~$ sudo su`
 `root@vm01:/home/student# sed -i 's/#Port 22/Port 2222/g' /etc/ssh/sshd_config; systemctl restart sshd`
 
-6. Setup SSH keys in order to improve the connection method to the server
+6. Configure chaves SSH para melhorar o método de conexão ao servidor
 
-In this exercise we will be using the Windows Subsystem for Linux, but you can follow [this instructions](https://www.ssh.com/academy/ssh/putty/windows/puttygen) to use Putty. 
+Neste exercício vamos usar o Windows Subsystem for Linux, mas você pode seguir [estas instruções](https://www.ssh.com/academy/ssh/putty/windows/puttygen) para usar o Putty. 
 
-Using the [Windows Subsystem for Linux](https://learn.microsoft.com/en-us/windows/wsl/install) on your local computer, generate a SSH key pair by typing:
+Usando o [Windows Subsystem for Linux](https://learn.microsoft.com/en-us/windows/wsl/install) no seu computador local, gere um par de chaves SSH digitando:
 
 `$ ssh-keygen`
 
@@ -204,11 +204,11 @@ The key's randomart image is:
 +----[SHA256]-----+
 ```
 
-Now we need to copy the SSH Public Key to the server. The simplest way is to use ssh-copy-id. So from your local machine type:
+Agora precisamos copiar a Chave Pública SSH para o servidor. A maneira mais simples é usar o ssh-copy-id. Então, no seu computador local, digite:
 
 `$ ssh-copy-id <username>@<virtualmachine.ip> -p 2222`
 
-_Please note that the port 2222 is used since we changed from 22 to 2222 previously_
+_Note que a porta 2222 é usada, pois alteramos de 22 para 2222 anteriormente_
 
 ```bash
 /usr/bin/ssh-copy-id: INFO: Source of key(s) to be installed: "/home/user/.ssh/id_rsa.pub"
@@ -222,17 +222,17 @@ Now try logging into the machine, with:   "ssh -p '2222' 'user@20.3.122.121'"
 and check to make sure that only the key(s) you wanted were added.
 ```
 
-_Please note that if your ssh private key was saved in another place different from the default /home/<user>/.ssh/id_rsa, you will have to specify for the connection as ssh -p '2222' 'user@20.3.122.121 -i <path.of.your.private.ssh.key>'_
+_Note que se sua chave privada SSH foi salva em outro local diferente do padrão /home/<user>/.ssh/id_rsa, você terá que especificar para a conexão como ssh -p '2222' 'user@20.3.122.121 -i <caminho.da.sua.chave.privada.ssh>'_
 
-Then disable password authentication on the server:
+Então desabilite a autenticação por senha no servidor:
 
 `student@vm01:~$ sudo nano /etc/ssh/sshd_config`
 
-Search for a directive called PasswordAuthentication (this may be commented out). Umcomment the line removing the # at the beginning of the line and set the value to no:
+Procure por uma diretiva chamada PasswordAuthentication (ela pode estar comentada). Descomente a linha removendo o # no início da linha e defina o valor como no:
 
 ```bash
 PasswordAuthentication no
 ```
-Restart the SSH service
+Reinicie o serviço SSH
 
 `student@vm01:~$ sudo systemctl restart ssh`
