@@ -1,9 +1,9 @@
-# Challenge 10 - Logical volume manager - Coach's Guide 
+# Desafio 10 - Gerenciador de volumes lógicos - Guia do Coach 
 
-[< Previous Solution](./Solution-09.md) - **[Home](./README.md)** - [Next Solution >](./Solution-11.md)
+[< Solução Anterior](./Solution-09.md) - **[Início](./README.md)** - [Próxima Solução >](./Solution-11.md)
 
-## Notes & Guidance
-1. Create a Physical Volume (```PV```) with the disk added
+## Notas e Orientações
+1. Crie um Physical Volume (```PV```) com o disco adicionado
 
 `student@vm01:~$ sudo pvcreate /dev/sdc`
 
@@ -13,7 +13,7 @@ WARNING: dos signature detected on /dev/sdc at offset 510. Wipe it? [y/n]: y
   Physical volume "/dev/sdc" successfully created.
 ```
 
-2. Check that the ```PV``` is created
+2. Verifique que o ```PV``` foi criado
 
 `student@vm01:~$ sudo pvs`
 
@@ -25,7 +25,7 @@ WARNING: dos signature detected on /dev/sdc at offset 510. Wipe it? [y/n]: y
 `student@vm01:~$ sudo pvdisplay /dev/sdc`
 
 ```bash
- "/dev/sdc" is a new physical volume of "5.00 GiB"
+  "/dev/sdc" is a new physical volume of "5.00 GiB"
   --- NEW Physical volume ---
   PV Name               /dev/sdc
   VG Name
@@ -38,7 +38,7 @@ WARNING: dos signature detected on /dev/sdc at offset 510. Wipe it? [y/n]: y
   PV UUID               iofx4y-hjbo-vQda-mjZI-9mgn-Bw9B-SVAiYM
 ```
 
-3. Create a Volume Group (```VG```) using the created PV
+3. Crie um Volume Group (```VG```) usando o PV criado
 
 `student@vm01:~$ sudo vgcreate vg_data /dev/sdc`
 
@@ -47,7 +47,7 @@ WARNING: dos signature detected on /dev/sdc at offset 510. Wipe it? [y/n]: y
 Volume group "vg_data" successfully created
 ```
 
-4. Verify that the VG is created
+4. Verifique que o VG foi criado
 
 `student@vm01:~$ sudo vgs`
 
@@ -81,7 +81,7 @@ VG      #PV #LV #SN Attr   VSize  VFree
   VG UUID               2c7S20-cH8a-tRkt-ebKq-ym9X-rk1X-yiyOo1
 ```
 
-5. Create a Logical Volume (```LV```) using half the disk (2.5GB)
+5. Crie um Logical Volume (```LV```) usando metade do disco (2.5GB)
 
 `student@vm01:~$ sudo lvcreate -L 2.5G -n lv_part1 vg_data`
 
@@ -91,7 +91,7 @@ WARNING: ext4 signature detected on /dev/vg_data/lv_part1 at offset 1080. Wipe i
   Logical volume "lv_part1" created.
 ```
 
-6. Create an ```LV``` using 10% of the disk (500MB)
+6. Crie um ```LV``` usando 10% do disco (500MB)
 
 `student@vm01:~$ sudo lvcreate -L 500M -n lv_part2 vg_data`
 
@@ -102,7 +102,7 @@ WARNING: ext4 signature detected on /dev/vg_data/lv_part2 at offset 1080. Wipe i
   Logical volume "lv_part2" created.
 ```
 
-7. Verify that ```LV```s are created
+7. Verifique que os ```LV```s foram criados
 
 `student@vm01:~$ sudo lvs vg_data`
 
@@ -150,7 +150,7 @@ LV       VG      Attr       LSize   Pool Origin Data%  Meta%  Move Log Cpy%Sync 
   Block device           253:1
 ```
 
-8. Format both ```LV```s as ```ext4```
+8. Formate ambos os ```LV```s como ```ext4```
 
 `student@vm01:~$ sudo mkfs.ext4 /dev/vg_data/lv_part1`
 
@@ -186,7 +186,7 @@ Creating journal (4096 blocks): done
 Writing superblocks and filesystem accounting information: done
 ```
 
-9. Mount the ```LV```s in the directories created earlier in ```/mnt```
+9. Monte os ```LV```s nos diretórios criados anteriormente em ```/mnt```
 
 `student@vm01:~$ sudo mount /dev/vg_data/lv_part1 /mnt/dir1`
 
@@ -207,7 +207,7 @@ Filesystem                    Size  Used Avail Use% Mounted on
 /dev/mapper/vg_data-lv_part2  469M  768K  433M   1% /mnt/dir2
 ```
 
-10. Resize the smallest ```LV``` to take up another 20% of the disk (1GB)
+10. Redimensione o menor ```LV``` para ocupar mais 20% do disco (1GB)
 
 `student@vm01:~$ sudo lvresize -L +1G /dev/vg_data/lv_part2`
 
@@ -216,8 +216,8 @@ Size of logical volume vg_data/lv_part2 changed from 500.00 MiB (125 extents) to
   Logical volume vg_data/lv_part2 successfully resized.
 ```
 
-11. Check:
-    1. That the ```LV``` has been resized
+11. Verifique:
+    1. Que o ```LV``` foi redimensionado
 
     `student@vm01:~$ sudo lvs vg_data` 
 
@@ -227,7 +227,7 @@ Size of logical volume vg_data/lv_part2 changed from 500.00 MiB (125 extents) to
     lv_part2 vg_data -wi-ao---- <1.49g
     ```   
 
-    2. If there was reflection in the file system
+    2. Se houve reflexo no sistema de arquivos
 
     `student@vm01:~$ df -h /mnt/dir1 /mnt/dir2` 
 
@@ -237,7 +237,7 @@ Size of logical volume vg_data/lv_part2 changed from 500.00 MiB (125 extents) to
     /dev/mapper/vg_data-lv_part2  469M  768K  433M   1% /mnt/dir2
     ```
 
-12. Resize the file system
+12. Redimensione o sistema de arquivos
 
 `student@vm01:~$ sudo resize2fs /dev/vg_data/lv_part2` 
 
