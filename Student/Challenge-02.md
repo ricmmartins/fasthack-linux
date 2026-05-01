@@ -1,36 +1,35 @@
-# Challenge 02 - Handling directories
+# Desafio 02 - Manipulando diretórios
 
-[< Previous Challenge](./Challenge-01.md) - **[Home](../README.md)** - [Next Challenge >](./Challenge-03.md)
+[< Desafio Anterior](./Challenge-01.md) - **[Início](../README.md)** - [Próximo Desafio >](./Challenge-03.md)
 
-## Description
+## Descrição
 
-In this challenge you will learn how to perform common directory operations such as displaying your current directory and listing directory contents.
+Neste desafio você aprenderá como realizar operações comuns com diretórios, como exibir seu diretório atual e listar o conteúdo de diretórios.
 
-- Display your current directory
-- Go to the parent directory of the current directory
-- Go to the root directory (`/`)
-- List the contents of the root directory (`/`)
-- Display a long listing of the root directory
-- Stay where you are and list the contents of your home directory (`~`)
-- List all the files (including hidden files) in your home directory (`~`)
-- Use a single command to create the following directory tree `~/folder1/folder2/folder3` (folder3 is a subdirectory from folder2, and folder2 is a subdirectory from folder1)
-- List recursively the content of your home folder (`~`)
-- Find the directories within your home folder  (`~`)
+- Exiba seu diretório atual
+- Vá para o diretório pai do diretório atual
+- Vá para o diretório raiz (`/`)
+- Liste o conteúdo do diretório raiz (`/`)
+- Exiba uma listagem longa do diretório raiz
+- Permaneça onde você está e liste o conteúdo do seu diretório home (`~`)
+- Liste todos os arquivos (incluindo arquivos ocultos) no seu diretório home (`~`)
+- Use um único comando para criar a seguinte árvore de diretórios `~/folder1/folder2/folder3` (folder3 é um subdiretório de folder2, e folder2 é um subdiretório de folder1)
+- Liste recursivamente o conteúdo do seu diretório home (`~`)
+- Encontre os diretórios dentro do seu diretório home (`~`)
 
-## Success Criteria
+## Critérios de Sucesso
 
-1. Confirm you can see your username under the home folder (`~`)
-2. Confirm you are in the `/home` directory (`~`)
-3. Validate you are in the `/` directory
-4. Confirm you can list the files under the `/`
-5. Confirm you can see the long list with details from `/` directory
-6. Confirm you are listing the content of your home directory (`~`) and not from root directory (`/`)
-7. Confirm you can see the hidden files from your home directory (`~`)
-8. Validate if you were able to create the directory tree using a single command
-9. Confirm if you are seeing a recursive list of the content from your home directoy (`~`)
-10. Validate if only directories are being listed within your home folder (`~`)
+1. Confirme que você consegue ver seu nome de usuário sob o diretório home (`~`)
+2. Confirme que você está no diretório `/home` (`~`)
+3. Valide que você está no diretório `/`
+4. Confirme que você consegue listar os arquivos sob o `/`
+5. Confirme que você consegue ver a listagem longa com detalhes do diretório `/`
+6. Confirme que você está listando o conteúdo do seu diretório home (`~`) e não do diretório raiz (`/`)
+7. Confirme que você consegue ver os arquivos ocultos do seu diretório home (`~`)
+8. Valide se você conseguiu criar a árvore de diretórios usando um único comando
+9. Confirme se você está vendo uma listagem recursiva do conteúdo do seu diretório home (`~`)
+10. Valide se apenas diretórios estão sendo listados dentro do seu diretório home (`~`)
 
-## Learning Resources
+## Recursos de Aprendizado
 
 - [The Shell](https://linuxjourney.com/lesson/the-shell)
-
