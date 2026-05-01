@@ -1,13 +1,13 @@
-# Challenge 12 - Setting up a WebServer - Coach's Guide 
+# Desafio 12 - Configurando um Servidor Web - Guia do Coach 
 
-[< Previous Solution](./Solution-11.md) - **[Home](./README.md)** - [Next Solution >](./Solution-13.md)
+[< Solução Anterior](./Solution-11.md) - **[Início](./README.md)** - [Próxima Solução >](./Solution-13.md)
 
-## Notes & Guidance
-1. Download the sample application [from here](/Student/resources/simple-php-app.tar.gz) to your home directory
+## Notas e Orientações
+1. Baixe a aplicação de exemplo [daqui](/Student/resources/simple-php-app.tar.gz) para o seu diretório home
 
 `student@vm01:~$ cd ~ ;  wget https://github.com/ricmmartins/fasthack-linux/blob/main/Student/resources/simple-php-app.tar.gz?raw=true -O simple-php-app.tar.gz`
 
-2. Extract the content of simple-php-app.tar.gz on our home directory
+2. Extraia o conteúdo do simple-php-app.tar.gz no nosso diretório home
 
 `student@vm01:~$ tar xzvf simple-php-app.tar.gz`
 
@@ -23,7 +23,7 @@ simple-php-app/assets/js/bootstrap.min.js
 simple-php-app/index.php
 ```
 
-3. Install nginx
+3. Instale o nginx
 
 `student@vm01:~$ sudo apt install nginx-core`
 
@@ -48,7 +48,7 @@ Setting up nginx-core (1.18.0-0ubuntu1.2) ...
 Processing triggers for man-db (2.9.1-1) ...
 ```
 
-4. Install php-fpm
+4. Instale o php-fpm
 
 `student@vm01:~$ sudo apt install php-fpm`
 
@@ -120,7 +120,7 @@ Processing triggers for php7.4-cli (7.4.3-4ubuntu2.10) ...
 Processing triggers for php7.4-fpm (7.4.3-4ubuntu2.10) ...
 ```
 
-5. Configure Nginx
+5. Configure o Nginx
 
 `student@vm01:~$ cat <<'EOT' > ~/default`
 ```bash
@@ -149,38 +149,38 @@ server {
 
 `student@vm01:~$ sudo systemctl restart nginx`
 
-Remember to open port 80 on NSG
+Lembre-se de abrir a porta 80 no NSG
 
-### Advanced challenge
+### Desafio avançado
 
-To add SSL we will use [Certbot](https://certbot.eff.org/) to get a certificate from [Let's Encrypt](https://letsencrypt.org/). Here are the steps you need to follow:
+Para adicionar SSL vamos usar o [Certbot](https://certbot.eff.org/) para obter um certificado do [Let's Encrypt](https://letsencrypt.org/). Aqui estão os passos que você precisa seguir:
 
-* Ensure you have a valid domain with an A record pointing to the Virtual Machine Public IP. A valid domain with an A register defined is a pre-requisite for Certbot. You can use Azure App Service Domains to get a domain.  
+* Certifique-se de que você tem um domínio válido com um registro A apontando para o IP Público da Máquina Virtual. Um domínio válido com um registro A definido é um pré-requisito para o Certbot. Você pode usar o Azure App Service Domains para obter um domínio.  
     
-* After addressing the previous step, you must adjust your Nginx config file `/etc/nginx/sites-enabled/default` setting the **server_name** directive to point to the name of your domain. Eg:
+* Após resolver o passo anterior, você deve ajustar o arquivo de configuração do Nginx `/etc/nginx/sites-enabled/default` configurando a diretiva **server_name** para apontar para o nome do seu domínio. Ex:
     
 `student@vm01:~$ sudo sed -i.bkp -e 's/_;/linuxhackathon.com;/g' /etc/nginx/sites-enabled/default`
 
-Then let's proceed to the setup and configurations for Certbot by setting new environment variables: 
+Então vamos prosseguir com a configuração do Certbot definindo novas variáveis de ambiente: 
 
 ```
 export DOMAIN_NAME="linuxhackathon.com"
 export EMAIL="admin@linuxhackathon.com"
 ````
-_Remember to change according to your domain_
+_Lembre-se de alterar de acordo com o seu domínio_
 
-Install snap tool to get certbot:
+Instale a ferramenta snap para obter o certbot:
 
 `student@vm01:~$ sudo snap install core; sudo snap refresh core`
 
-Install and configure Certbot:
+Instale e configure o Certbot:
 
 `student@vm01:~$ sudo snap install --classic certbot` 
 
 `student@vm01:~$ sudo certbot --nginx -d "${DOMAIN_NAME}" -m "${EMAIL}" --agree-tos -n` 
 
-Restart Nginx:
+Reinicie o Nginx:
 
 `student@vm01:~$ sudo systemctl restart nginx` 
 
-Remember to open the port 443 on the NSG
+Lembre-se de abrir a porta 443 no NSG
