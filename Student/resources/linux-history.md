@@ -1,67 +1,67 @@
-## Linux History
+## História do Linux
 
-Linux borrows heavily from the UNIX operating system because it was written to be a free and open source version of UNIX. Files are stored in a hierarchical filesystem, with the top node of the system being root or simply "/". 
+O Linux é fortemente baseado no sistema operacional UNIX porque foi escrito para ser uma versão livre e de código aberto do UNIX. Os arquivos são armazenados em um sistema de arquivos hierárquico, com o nó superior do sistema sendo o root ou simplesmente "/". 
 
-Whenever possible, Linux makes its components available via files or objects that look like files. Processes, devices, and network sockets are all represented by file-like objects, and can often be worked with using the same utilities used for regular files.
+Sempre que possível, o Linux disponibiliza seus componentes através de arquivos ou objetos que se parecem com arquivos. Processos, dispositivos e sockets de rede são todos representados por objetos semelhantes a arquivos, e muitas vezes podem ser manipulados usando os mesmos utilitários usados para arquivos regulares.
 
-Linux is a fully multitasking (a method where multiple tasks are performed during the same period of time), multiuser operating system, with built-in networking and service processes known as daemons in the UNIX world. Linux was inspired by UNIX, but it is not UNIX.
+O Linux é um sistema operacional totalmente multitarefa (um método onde múltiplas tarefas são realizadas durante o mesmo período de tempo), multiusuário, com rede integrada e processos de serviço conhecidos como daemons no mundo UNIX. O Linux foi inspirado pelo UNIX, mas não é UNIX.
 
-**So, what is a Linux distribution and how does it relate to the Linux kernel?**
+**Então, o que é uma distribuição Linux e como ela se relaciona com o kernel Linux?**
 
-As illustrated below, the [Linux kernel](http://www.kernel.org) is the core of a computer operating system. A full **Linux distribution** consists of the kernel plus a number of other software tools for file-related operations, user management, and software package management. Each of these tools provides a small part of the complete system. Each tool is often its own separate project, with its own developers working to perfect that piece of the system.
+Como ilustrado abaixo, o [kernel Linux](http://www.kernel.org) é o núcleo de um sistema operacional de computador. Uma **distribuição Linux** completa consiste no kernel mais uma série de outras ferramentas de software para operações relacionadas a arquivos, gerenciamento de usuários e gerenciamento de pacotes de software. Cada uma dessas ferramentas fornece uma pequena parte do sistema completo. Cada ferramenta é frequentemente seu próprio projeto separado, com seus próprios desenvolvedores trabalhando para aperfeiçoar aquela parte do sistema.
 
 <img align="center" src="./images/linux-intro.png"/>
 
-A vast variety of Linux distributions cater to different audiences and organizations depending on their specific needs. Large commercial organizations tend to favor the commercially supported distributions from Red Hat, SUSE and Canonical (Ubuntu).
+Uma vasta variedade de distribuições Linux atende a diferentes públicos e organizações dependendo de suas necessidades específicas. Grandes organizações comerciais tendem a favorecer as distribuições com suporte comercial da Red Hat, SUSE e Canonical (Ubuntu).
 
-**Services associated with distributions**
+**Serviços associados às distribuições**
 
 <img align="center" src="./images/services-distributions.png"/>
 
-CentOS is a popular free alternative to Red Hat Enterprise Linux (RHEL). Ubuntu and Fedora are popular in the educational realm. Scientific Linux is favored by the scientific research community for its compatibility with scientific and mathematical software packages. Both CentOS and Scientific Linux are binary-compatible with RHEL; i.e., binary software packages in most cases will install properly across the distributions.
+O CentOS é uma alternativa gratuita popular ao Red Hat Enterprise Linux (RHEL). O Ubuntu e o Fedora são populares no âmbito educacional. O Scientific Linux é preferido pela comunidade de pesquisa científica por sua compatibilidade com pacotes de software científicos e matemáticos. Tanto o CentOS quanto o Scientific Linux são compatíveis em binário com o RHEL; ou seja, pacotes de software binários na maioria dos casos serão instalados corretamente em todas as distribuições.
 
-Many commercial distributors, including Red Hat, Ubuntu, SUSE, and Oracle, provide long term fee-based support for their distributions, as well as hardware and software certification. All major distributors provide update services for keeping your system primed with the latest security and bug fixes, and performance enhancements, as well as provide online support resources.
+Muitos distribuidores comerciais, incluindo Red Hat, Ubuntu, SUSE e Oracle, fornecem suporte de longo prazo baseado em taxas para suas distribuições, assim como certificação de hardware e software. Todos os principais distribuidores fornecem serviços de atualização para manter seu sistema atualizado com as últimas correções de segurança e bugs, e melhorias de desempenho, além de fornecer recursos de suporte online.
 
-**Distro Families**
+**Famílias de Distribuições**
 
 <img align="center" src="./images/linuxkernel-distros.png"/>
 
-**Debian Family**
+**Família Debian**
 
-The Debian distribution is upstream for several other distributions including Ubuntu, and Ubuntu is upstream for Linux Mint and others. It is commonly used on both servers and desktop computers. Debian is a pure open source project and focuses on one key aspect, that is, stability. It also provides the largest and most complete software repository to its users.
+A distribuição Debian é a base para várias outras distribuições incluindo o Ubuntu, e o Ubuntu é a base para o Linux Mint e outros. É comumente usada tanto em servidores quanto em computadores desktop. O Debian é um projeto puramente de código aberto e foca em um aspecto chave, que é a estabilidade. Também fornece o maior e mais completo repositório de software para seus usuários.
 
-Ubuntu aims at providing a good compromise between long term stability and ease of use. Since Ubuntu gets most of its packages from Debian’s stable branch, Ubuntu also has access to a very large software repository. 
+O Ubuntu visa fornecer um bom equilíbrio entre estabilidade de longo prazo e facilidade de uso. Como o Ubuntu obtém a maioria de seus pacotes do branch estável do Debian, o Ubuntu também tem acesso a um repositório de software muito grande. 
 
-_Key Facts About the Debian Family:_
+_Fatos Importantes Sobre a Família Debian:_
 
-* The Debian family is upstream for Ubuntu, and Ubuntu is upstream for Linux Mint and others.
-* It uses the DPKG-based apt-get package manager (we cover in more detail later) to install, update, and remove packages in the system.
-* Ubuntu has been widely used for cloud deployments.
-	
-**Fedora Family**
+* A família Debian é a base para o Ubuntu, e o Ubuntu é a base para o Linux Mint e outros.
+* Utiliza o gerenciador de pacotes apt-get baseado em DPKG (abordaremos em mais detalhes posteriormente) para instalar, atualizar e remover pacotes no sistema.
+* O Ubuntu tem sido amplamente usado para implantações em nuvem.
 
-Fedora is the community distribution that forms the basis of Red Hat Enterprise Linux (RHEL), CentOS, Scientific Linux, and Oracle Linux. Fedora contains significantly more software than Red Hat’s enterprise version. One reason for this is that a diverse community is involved in building Fedora; it is not just a company.
+**Família Fedora**
 
-_Key Facts About the Fedora Family:_
+O Fedora é a distribuição comunitária que forma a base do Red Hat Enterprise Linux (RHEL), CentOS, Scientific Linux e Oracle Linux. O Fedora contém significativamente mais software do que a versão empresarial da Red Hat. Uma razão para isso é que uma comunidade diversificada está envolvida na construção do Fedora; não é apenas uma empresa.
 
-* The Fedora family is upstream for CentOS, RHEL, and Oracle Linux.
-* It supports hardware platforms such as x86, x86-64, Itanium, PowerPC, and IBM System z.
-* It uses the RPM-based yum package manager (we cover in more detail later) to install, update, and remove packages in the system.
-* RHEL is widely used by enterprises which host their own systems.
+_Fatos Importantes Sobre a Família Fedora:_
 
-**SUSE Family**
+* A família Fedora é a base para o CentOS, RHEL e Oracle Linux.
+* Suporta plataformas de hardware como x86, x86-64, Itanium, PowerPC e IBM System z.
+* Utiliza o gerenciador de pacotes yum baseado em RPM (abordaremos em mais detalhes posteriormente) para instalar, atualizar e remover pacotes no sistema.
+* O RHEL é amplamente usado por empresas que hospedam seus próprios sistemas.
 
-The relationship between SUSE, SUSE Linux Enterprise Server (SLES), and openSUSE is similar to the one described between Fedora, Red Hat Enterprise Linux, and CentOS. 
+**Família SUSE**
 
-_Key Facts About the SUSE Family:_
+A relação entre SUSE, SUSE Linux Enterprise Server (SLES) e openSUSE é semelhante à descrita entre Fedora, Red Hat Enterprise Linux e CentOS. 
 
-* SUSE Linux Enterprise Server (SLES) is upstream for openSUSE.
-* It uses the RPM-based zypper package manager (we cover in more detail later) to install, update, and remove packages in the system.
-* It includes the YaST (Yet another System Tool) application for system administration purposes.
-	
-As said, the biggest differences between the distros are their package management systems and tools.
-Debian (and derived distros) use the Debian (.deb) package format, Red-hat (and derived distros) use the RPM (.rpm) package format. And distros like Arch and Slackware use their own packaging formats and tools.
+_Fatos Importantes Sobre a Família SUSE:_
 
-Packaging differences aside, some distros - like Debian Testing, Fedora (Red-hat based) and Arch tend to use newer versions of the Linux kernel and other software packages. But this comes at the cost of potential instability and breakage - which can happen from time to time after updates on these systems - albeit rarely.
+* O SUSE Linux Enterprise Server (SLES) é a base para o openSUSE.
+* Utiliza o gerenciador de pacotes zypper baseado em RPM (abordaremos em mais detalhes posteriormente) para instalar, atualizar e remover pacotes no sistema.
+* Inclui a aplicação YaST (Yet another System Tool) para fins de administração do sistema.
 
-Whereas distros like Debian Stable and RHEL use older, better tested versions of software. Although they use slightly dated, older software - they are considered to be much more stable. Also the package maintainers always keep the software patched with the latest security updates.
+Como dito, as maiores diferenças entre as distribuições são seus sistemas de gerenciamento de pacotes e ferramentas.
+Debian (e distribuições derivadas) usa o formato de pacote Debian (.deb), Red-hat (e distribuições derivadas) usa o formato de pacote RPM (.rpm). E distribuições como Arch e Slackware usam seus próprios formatos e ferramentas de empacotamento.
+
+Diferenças de empacotamento à parte, algumas distribuições - como Debian Testing, Fedora (baseada em Red-hat) e Arch tendem a usar versões mais recentes do kernel Linux e outros pacotes de software. Mas isso vem com o custo de potencial instabilidade e quebras - que podem acontecer de tempos em tempos após atualizações nesses sistemas - embora raramente.
+
+Enquanto distribuições como Debian Stable e RHEL usam versões mais antigas e melhor testadas de software. Embora usem software ligeiramente desatualizado e mais antigo - são consideradas muito mais estáveis. Além disso, os mantenedores de pacotes sempre mantêm o software atualizado com as últimas correções de segurança.
