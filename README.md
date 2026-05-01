@@ -138,7 +138,10 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## :globe_with_meridians: Portuguese Content
 
-Looking for content in Portuguese? Visit **[ricardomartins.com.br](https://ricardomartins.com.br)** for articles, tutorials, and resources on Linux, Kubernetes, and Cloud Infrastructure.
+:brazil: **This hackathon is also available in Brazilian Portuguese!**
+Check out the [`pt-br`](https://github.com/ricmmartins/fasthack-linux/tree/pt-br) branch for the full translated version of all challenges, coach guides, and documentation.
+
+For additional articles, tutorials, and resources on Linux, Kubernetes, and Cloud Infrastructure in Portuguese, visit **[ricardomartins.com.br](https://ricardomartins.com.br)**.
 
 ## Show your support
 
