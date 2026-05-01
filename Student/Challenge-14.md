@@ -1,57 +1,57 @@
-# Challenge 14 - Running Containers
+# Desafio 14 - Executando Containers
 
-[< Previous Challenge](./Challenge-13.md) - **[Home](./README.md)**
+[< Desafio Anterior](./Challenge-13.md) - **[Início](./README.md)**
 
-## Description
+## Descrição
 
-Containers are executable units of software in which application code is packaged, along with its libraries and dependencies, in common ways so that it can be run anywhere, whether it be on desktop, traditional IT, or the cloud.
+Containers são unidades executáveis de software nas quais o código da aplicação é empacotado, junto com suas bibliotecas e dependências, de maneiras comuns para que possa ser executado em qualquer lugar, seja em desktop, TI tradicional ou na nuvem.
 
-To do this, containers take advantage of a form of operating system (OS) virtualization in which features of the OS (in the case of the Linux kernel, namely the namespaces and cgroups primitives) are leveraged to both isolate processes and control the amount of CPU, memory, and disk that those processes have access to.
+Para isso, os containers aproveitam uma forma de virtualização do sistema operacional (SO) na qual recursos do SO (no caso do kernel Linux, especificamente os namespaces e primitivas de cgroups) são utilizados tanto para isolar processos quanto para controlar a quantidade de CPU, memória e disco que esses processos podem acessar.
 
-Containers are small, fast, and portable because unlike a virtual machine, containers do not need include a guest OS in every instance and can, instead, simply leverage the features and resources of the host OS.
+Containers são pequenos, rápidos e portáteis porque, diferentemente de uma máquina virtual, os containers não precisam incluir um SO convidado em cada instância e podem, em vez disso, simplesmente aproveitar os recursos e funcionalidades do SO hospedeiro.
 
-Containers first appeared decades ago with versions like FreeBSD Jails and AIX Workload Partitions, but most modern developers remember 2013 as the start of the modern container era with the introduction of [Docker](https://www.docker.com/).
+Containers apareceram pela primeira vez décadas atrás com versões como FreeBSD Jails e AIX Workload Partitions, mas a maioria dos desenvolvedores modernos lembra de 2013 como o início da era moderna dos containers com a introdução do [Docker](https://www.docker.com/).
 
-Docker is a platform for developing, shipping, and running applications. Let’s unpack that statement. Docker allows users to build new container images, push those images to Docker Hub, and also download those images from the Docker Hub. Docker Hub acts as a container image library, and it hosts container images that users build. There are also some new alternatives to Docker such as [Podman](https://podman.io/).
+Docker é uma plataforma para desenvolver, distribuir e executar aplicações. Vamos detalhar essa afirmação. O Docker permite que os usuários construam novas imagens de container, enviem essas imagens para o Docker Hub, e também baixem essas imagens do Docker Hub. O Docker Hub funciona como uma biblioteca de imagens de container, e hospeda imagens de container que os usuários constroem. Existem também algumas novas alternativas ao Docker como o [Podman](https://podman.io/).
 
-Podman is a daemonless container engine for developing, managing, and running OCI Containers (Open Containers Initiative) on your Linux System. Contrary to Docker, Podman does not require a daemon process to launch and manage containers. This is an important difference between the two projects.
+Podman é um engine de container sem daemon para desenvolver, gerenciar e executar OCI Containers (Open Containers Initiative) no seu sistema Linux. Ao contrário do Docker, o Podman não requer um processo daemon para iniciar e gerenciar containers. Esta é uma diferença importante entre os dois projetos.
 
-Podman seeks to improve on some of Docker’s drawbacks. For one, Podman does not require a daemon running as root. In fact, Podman containers run with the same permissions as the user who launched them. This addresses a significant security concern, although you can still run containers with root permissions if you really want to.
+O Podman busca melhorar algumas das desvantagens do Docker. Por exemplo, o Podman não requer um daemon rodando como root. Na verdade, containers do Podman rodam com as mesmas permissões do usuário que os iniciou. Isso resolve uma preocupação significativa de segurança, embora você ainda possa executar containers com permissões de root se realmente quiser.
 
-Podman seeks to be a drop-in replacement for Docker as far as the CLI is concerned. The developers boast that most users can simply use alias docker=podman and continue running the same familiar commands. The container image format is also fully compatible between Docker and Podman, so existing containers built on Dockerfiles will work with Podman.
+O Podman busca ser um substituto direto do Docker no que diz respeito à CLI. Os desenvolvedores afirmam que a maioria dos usuários pode simplesmente usar alias docker=podman e continuar executando os mesmos comandos familiares. O formato de imagem de container também é totalmente compatível entre Docker e Podman, então containers existentes construídos em Dockerfiles funcionarão com o Podman.
 
-Another key difference is that, unlike Docker, Podman is not able to build container images (the tool [Buildah](https://buildah.io/) is instead used for this). This shows that Podman is not built to be monolithic.
+Outra diferença chave é que, diferentemente do Docker, o Podman não é capaz de construir imagens de container (a ferramenta [Buildah](https://buildah.io/) é usada para isso). Isso mostra que o Podman não foi construído para ser monolítico.
 
-It handles running containers (among some other things) but not building them. The goal here is to have a set of container standards that any application can be developed to support, rather than relying on a single monolithic application such as Docker to perform all duties.
+Ele lida com a execução de containers (entre outras coisas), mas não com a construção deles. O objetivo aqui é ter um conjunto de padrões de container que qualquer aplicação possa ser desenvolvida para suportar, em vez de depender de uma única aplicação monolítica como o Docker para realizar todas as tarefas.
 
-This challenge will let you have your first contact with containers. You will: 
+Este desafio permitirá que você tenha seu primeiro contato com containers. Você irá:
 
-- Install the docker runtime
-- Run a Nginx container
-- Access the default website in your virtual machine
+- Instalar o runtime do Docker
+- Executar um container Nginx
+- Acessar o website padrão na sua máquina virtual
 
-If you would like to go over an advanced challenge, try this one:
+Se você quiser ir além com um desafio avançado, tente este:
 
-- Download this sample application [from here](/Student/resources/simple-php-app.tar.gz) to your home directory
-- Create a Dockerfile to install the Nginx, PHP, and run this php application.
-- Build the image
-- Test the execution of the container
-- Publish the image to Docker Hub
+- Baixe esta aplicação de exemplo [daqui](/Student/resources/simple-php-app.tar.gz) para o seu diretório home
+- Crie um Dockerfile para instalar o Nginx, PHP, e executar esta aplicação PHP.
+- Construa a imagem
+- Teste a execução do container
+- Publique a imagem no Docker Hub
 
-## Success Criteria
+## Critérios de Sucesso
 
-1. Make sure that Docker runtime was successfully installed
-2. Ensure your Nginx container is running properly
-3. Access the default website from Nginx through the public IP of your virtual machine
+1. Certifique-se de que o runtime do Docker foi instalado com sucesso
+2. Garanta que seu container Nginx está rodando corretamente
+3. Acesse o website padrão do Nginx através do IP público da sua máquina virtual
 
-If you decided to take the advanced challenge:
+Se você decidiu aceitar o desafio avançado:
 
-1. Ensure the sample application was downloaded into the virtual machine
-6. Have the application running via container and accessible from the browser
-7. Validate that the container image were published into Docker Hub
+1. Garanta que a aplicação de exemplo foi baixada na máquina virtual
+6. Tenha a aplicação rodando via container e acessível pelo navegador
+7. Valide que a imagem do container foi publicada no Docker Hub
 
-## Learning resoures
+## Recursos de Aprendizado
 
 - [What is a container?](https://azure.microsoft.com/en-us/resources/cloud-computing-dictionary/what-is-a-container/)
 - [Introduction to Containers and Docker](https://learn.microsoft.com/en-us/dotnet/architecture/microservices/container-docker-introduction)
-- [A beginner’s guide to Docker — how to create your first Docker application](https://www.freecodecamp.org/news/a-beginners-guide-to-docker-how-to-create-your-first-docker-application-cc03de9b639f/)
+- [A beginner's guide to Docker — how to create your first Docker application](https://www.freecodecamp.org/news/a-beginners-guide-to-docker-how-to-create-your-first-docker-application-cc03de9b639f/)
