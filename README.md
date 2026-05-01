@@ -150,6 +150,11 @@ flowchart TD
     classDef blue fill:#1a73e8,stroke:#1a73e8,color:#fff
 
     style path fill:#fffde7,stroke:#f9a825,color:#333
+
+    click A "https://linuxhackathon.com" _blank
+    click B "https://k8shackathon.com" _blank
+    click C "https://ai4infra.com" _blank
+    click D "https://fromservertocluster.com" _blank
 ```
 
 ## :globe_with_meridians: Portuguese Content
