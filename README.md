@@ -33,22 +33,30 @@ Neste hack você será desafiado com algumas tarefas comuns de um cenário real 
 
 ## Desafios
 
-Com exceção do desafio 01, que tem como resultado uma Máquina Virtual Linux necessária para todos os outros desafios, cada desafio pode ser feito separadamente e eles não são interdependentes. O nível de complexidade aumenta de acordo com o número respectivo de cada um.
+Com exceção do desafio 01 (que configura o ambiente Linux necessário para todos os outros desafios), cada desafio pode ser feito separadamente e eles não são interdependentes. O nível de complexidade aumenta com o número do desafio.
 
-* Desafio 01: **[Criar uma Máquina Virtual Linux](Student/Challenge-01.md)** - Uma máquina virtual Linux é o pré-requisito para os desafios, então crie uma nova VM Ubuntu Linux
-* Desafio 02: **[Manipulando Diretórios](Student/Challenge-02.md)** - Aprenda a realizar operações comuns com diretórios, como exibir seu diretório atual e listar o conteúdo de diretórios.
-* Desafio 03: **[Manipulando Arquivos](Student/Challenge-03.md)** - Aprenda comandos básicos sobre manipulação de arquivos, como criar, renomear, encontrar e remover arquivos.
-* Desafio 04: **[Conteúdo de Arquivos](Student/Challenge-04.md)** - Aprenda sobre manipulação de conteúdo de arquivos e descubra como contar linhas, exibir linhas específicas de um arquivo e mais.
-* Desafio 05: **[Permissões Padrão de Arquivos](Student/Challenge-05.md)** - Aprenda sobre as permissões padrão de arquivos Linux e entenda como trabalhar com permissões em um ambiente Linux.
-* Desafio 06: **[Gerenciamento de Processos](Student/Challenge-06.md)** - Seus objetivos envolverão gerenciamento básico de processos, como verificar processos em execução e identificar IDs de processos.
-* Desafio 07: **[Gerenciamento de Grupos e Usuários](Student/Challenge-07.md)** - Neste desafio você aprenderá sobre a criação de usuários e grupos em um ambiente Linux.
-* Desafio 08: **[Scripting](Student/Challenge-08.md)** - Aprenda conceitos básicos de scripts em shell e o uso de comandos como echo, cut, read e grep.
-* Desafio 09: **[Discos, Partições e Sistemas de Arquivos](Student/Challenge-09.md)** - Você trabalhará com discos e partições e aprenderá sobre sistemas de arquivos Linux e comandos como fdisk, mkfs e mount.
-* Desafio 10: **[Gerenciador de Volumes Lógicos](Student/Challenge-10.md)** - Descubra sobre o Gerenciador de Volumes Lógicos no Linux e como usar comandos como pvcreate, vgcreate, lvcreate e mais.
-* Desafio 11: **[Gerenciamento de Pacotes](Student/Challenge-11.md)** - Aprenda sobre gerenciamento de pacotes e atividades comuns como atualizar listas de distribuição de pacotes, instalar e desinstalar pacotes.
-* Desafio 12: **[Configurando um Servidor Web](Student/Challenge-12.md)** - Neste desafio vamos configurar um servidor web e implantar uma aplicação PHP simples. O uso de SSL pode ser um diferencial.
-* Desafio 13: **[Protegendo um Servidor](Student/Challenge-13.md)** - Neste desafio vamos descobrir como usar o Fail2Ban para proteger serviços em um ambiente Linux.
-* Desafio 14: **[Executando Containers](Student/Challenge-14.md)** - Seu objetivo neste desafio será implantar um container Nginx e acessá-lo. Se quiser ir mais a fundo, há outra opção para implantar uma aplicação PHP simples.
+| # | Desafio | Descrição |
+|---|---------|-----------|
+| 01 | **[Criar uma Máquina Virtual Linux](Student/Challenge-01.md)** | Configure um ambiente Ubuntu Linux — VM na nuvem, VM local ou WSL2 |
+| 02 | **[Manipulando Diretórios](Student/Challenge-02.md)** | Operações comuns com diretórios: exibir seu diretório atual e listar conteúdo |
+| 03 | **[Manipulando Arquivos](Student/Challenge-03.md)** | Manipulação de arquivos: criar, renomear, encontrar e remover arquivos |
+| 04 | **[Conteúdo de Arquivos](Student/Challenge-04.md)** | Manipulação de conteúdo de arquivos: contar linhas, exibir linhas específicas e mais |
+| 05 | **[Permissões Padrão de Arquivos](Student/Challenge-05.md)** | Permissões padrão de arquivos Linux e gerenciamento de propriedade |
+| 06 | **[Gerenciamento de Processos](Student/Challenge-06.md)** | Gerenciamento básico de processos: verificar processos em execução e identificar PIDs |
+| 07 | **[Gerenciamento de Grupos e Usuários](Student/Challenge-07.md)** | Criação de usuários e grupos em um ambiente Linux |
+| 08 | **[Scripting](Student/Challenge-08.md)** | Scripts básicos em shell com echo, cut, read e grep |
+| 09 | **[Discos, Partições e Sistemas de Arquivos](Student/Challenge-09.md)** | Sistemas de arquivos Linux e comandos: fdisk, mkfs e mount |
+| 10 | **[Gerenciador de Volumes Lógicos](Student/Challenge-10.md)** | Comandos LVM: pvcreate, vgcreate, lvcreate e mais |
+| 11 | **[Gerenciamento de Pacotes](Student/Challenge-11.md)** | Gerenciamento de pacotes: atualizar listas, instalar e desinstalar pacotes |
+| 12 | **[Configurando um Servidor Web](Student/Challenge-12.md)** | Configurar Nginx + PHP-FPM e implantar uma aplicação web simples |
+| 13 | **[Protegendo um Servidor](Student/Challenge-13.md)** | Usar Fail2Ban para proteger serviços em um ambiente Linux |
+| 14 | **[Executando Containers](Student/Challenge-14.md)** | Implantar um container Nginx com Docker e opcionalmente construir uma imagem personalizada |
+| 15 | **[Fundamentos de Rede](Student/Challenge-15.md)** | Endereços IP, resolução DNS, roteamento, portas e ferramentas de conectividade |
+| 16 | **[systemd e Gerenciamento de Serviços](Student/Challenge-16.md)** | Gerenciar serviços com systemctl, visualizar logs com journalctl, criar units personalizadas |
+| 17 | **[Processamento de Texto](Student/Challenge-17.md)** | Dominar sed, awk, pipes e pipelines de manipulação de texto |
+| 18 | **[Agendamento de Tarefas](Student/Challenge-18.md)** | Automatizar tarefas com cron jobs e agendamento único com at |
+| 19 | **[Configuração de Firewall](Student/Challenge-19.md)** | Controlar acesso à rede com UFW — permitir, negar e limitar taxa |
+| 20 | **[Troubleshooting Linux](Student/Challenge-20.md)** | Capstone: diagnosticar e corrigir três cenários do mundo real |
 
 ## Pré-requisitos
 
