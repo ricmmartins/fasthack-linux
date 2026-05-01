@@ -1,27 +1,26 @@
-# Challenge 07 - Group and user management
+# Desafio 07 - Gerenciamento de grupos e usuários
 
-[< Previous Challenge](./Challenge-06.md) - **[Home](../README.md)** - [Next Challenge >](./Challenge-08.md)
+[< Desafio Anterior](./Challenge-06.md) - **[Início](../README.md)** - [Próximo Desafio >](./Challenge-08.md)
 
-## Description
+## Descrição
 
-In this challenge you will learn about the creation of users and groups in a Linux environment.
+Neste desafio você aprenderá sobre a criação de usuários e grupos em um ambiente Linux.
 
-- Create the groups: marketing, finance, apps and production
-- Create the users below with the given characteristics:
-  - login: anna, main group: marketing
-  - login: mary, main group: finance
-  - login: peter, main group: apps
-  - login: rick, main group: production
-- Create passwords for all users
+- Crie os grupos: marketing, finance, apps e production
+- Crie os usuários abaixo com as características indicadas:
+  - login: anna, grupo principal: marketing
+  - login: mary, grupo principal: finance
+  - login: peter, grupo principal: apps
+  - login: rick, grupo principal: production
+- Crie senhas para todos os usuários
 
-## Success Criteria
+## Critérios de Sucesso
 
-1. Make sure you create the groups as requested 
-2. Validate if the users were created in the correct groups
-3. Confirm each user has a password
+1. Certifique-se de criar os grupos conforme solicitado 
+2. Valide se os usuários foram criados nos grupos corretos
+3. Confirme que cada usuário possui uma senha
 
-## Learning Resources
+## Recursos de Aprendizado
 
 - [Users and Groups](https://linuxjourney.com/lesson/users-and-groups)
 - [Linux User Group Management](https://www.redhat.com/sysadmin/linux-user-group-management)
-
