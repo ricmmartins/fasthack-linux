@@ -5,7 +5,7 @@
 ## Notes & Guidance
 1. Download the sample application [from here](../Student/resources/simple-php-app.tar.gz?raw=true) to your home directory
 
-`student@vm01:~$ cd ~ ;  wget https://raw.githubusercontent.com/ricmmartins/fasthack-linux/main/Student/resources/simple-php-app.tar.gz -O simple-php-app.tar.gz`
+`student@vm01:~$ cd ~ ;  wget https://raw.githubusercontent.com/ricmmartins/fasthack-linux/en-us/Student/resources/simple-php-app.tar.gz -O simple-php-app.tar.gz`
 
 2. Extract the content of simple-php-app.tar.gz on your home directory
 
