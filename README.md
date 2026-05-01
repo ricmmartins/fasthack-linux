@@ -94,21 +94,24 @@ Com exceção do desafio 01 (que configura o ambiente Linux necessário para tod
 Este hackathon é o ponto de partida de uma jornada completa de aprendizado:
 
 ```mermaid
-flowchart TD
-    subgraph path["🚀 Trilha de Aprendizado Progressiva"]
-        A["🐧 Linux FUNdamentals\n20 desafios hands-on\nlinuxhackathon.com"]:::highlight --> B["☸️ Kubernetes Hackathon\n20 desafios hands-on\nk8shackathon.com"]:::green
-        B --> C["🤖 AI for Infrastructure\nAI + Cloud\nai4infra.com"]:::blue
+flowchart TB
+    subgraph journey["🚀 Trilha de Aprendizado Progressiva"]
+        direction LR
+        A["🐧 <b>Linux FUNdamentals</b><br/>20 desafios hands-on<br/><i>linuxhackathon.com</i>"] ==> B["☸️ <b>Kubernetes Hackathon</b><br/>20 desafios hands-on<br/><i>k8shackathon.com</i>"] ==> C["🤖 <b>AI for Infrastructure</b><br/>AI + Cloud<br/><i>ai4infra.com</i>"]
     end
-    D["📖 From Server to Cluster\nO PORQUÊ por trás do QUÊ\nfromservertocluster.com"]:::blue
-    A -. "leitura complementar" .-> D
-    B -. "leitura complementar" .-> D
-    C -. "leitura complementar" .-> D
 
-    classDef highlight fill:#1a73e8,stroke:#0d47a1,color:#fff,stroke-width:3px
-    classDef green fill:#2e7d32,stroke:#1b5e20,color:#fff
-    classDef blue fill:#1a73e8,stroke:#1a73e8,color:#fff
+    A -.->|leitura complementar| D
+    B -.->|leitura complementar| D
+    C -.->|leitura complementar| D
 
-    style path fill:#fffde7,stroke:#f9a825,color:#333
+    D["📖 <b>From Server to Cluster</b><br/>O PORQUÊ por trás do QUÊ<br/><i>fromservertocluster.com</i>"]
+
+    classDef challenge fill:#2b5ea7,stroke:#1e4a8a,color:#fff,stroke-width:2px
+    classDef hackathon fill:#1a7f37,stroke:#116329,color:#fff,stroke-width:3px
+
+    class A,C challenge
+    class B hackathon
+    class D challenge
 
     click A "https://linuxhackathon.com" _blank
     click B "https://k8shackathon.com" _blank
