@@ -1,47 +1,47 @@
-# Challenge 03 - Handling files
+# Desafio 03 - Manipulando arquivos
 
-[< Previous Challenge](./Challenge-02.md) - **[Home](../README.md)** - [Next Challenge >](./Challenge-04.md)
+[< Desafio Anterior](./Challenge-02.md) - **[Início](../README.md)** - [Próximo Desafio >](./Challenge-04.md)
 
-## Description
+## Descrição
 
-In this challenge you will learn basic commands about file manipulation such as create, rename, find and remove files.
+Neste desafio você aprenderá comandos básicos sobre manipulação de arquivos, como criar, renomear, encontrar e remover arquivos.
 
-- Find in the `/var` directory all the files that have been modified in the last 60 minutes
-- Show the type of file of `/bin/htop`, `/etc/passwd` and `/usr/bin/passwd`
-- Go to your home directory and download [azure-linux.svg](https://docs.microsoft.com/en-us/learn/achievements/azure-linux.svg)  and [InfographicRC2.pdf](https://azure.microsoft.com/mediahandler/files/resourcefiles/infographic-reliability-with-microsoft-azure/InfographicRC2.pdf) 
-- Display the type of file of `azure-linux.svg` and `InfographicRC2.pdf`
-- Rename `azure-linux.svg` to `azure-linux.pdf` 
-- Display the type of file of `azure-linux.pdf` and `InfographicRC2.pdf`
-- Create a directory `~/lab` and enter it.
-- Create the file `today.log` and the file `yesterday.log` in lab.
-- Check the creation date and time
-- Change the date on `yesterday.log` to match yesterday's date
-- Check the creation date and time again
-- Create a directory `~/mybackup` and copy all files from `~/lab` into it
-- Use one command to remove the directory `~/mybackup` and all files under it
-- Create a directory `~/logbackup` and copy the `*.log` files from `/var/log` into it
-- Count the number of times 'linux' appears in the file `/etc/wgetrc`
-- Count the number of words from the file `/etc/hdparm.conf`
+- Encontre no diretório `/var` todos os arquivos que foram modificados nos últimos 60 minutos
+- Mostre o tipo de arquivo de `/bin/htop`, `/etc/passwd` e `/usr/bin/passwd`
+- Vá para o seu diretório home e baixe [azure-linux.svg](https://docs.microsoft.com/en-us/learn/achievements/azure-linux.svg)  e [InfograpicRC2.pdf](https://azure.microsoft.com/mediahandler/files/resourcefiles/infographic-reliability-with-microsoft-azure/InfograpicRC2.pdf) 
+- Exiba o tipo de arquivo de `azure-linux.svg` e `InfographicRC2.pdf`
+- Renomeie `azure-linux.svg` para `azure-linux.pdf` 
+- Exiba o tipo de arquivo de `azure-linux.pdf` e `InfographicRC2.pdf`
+- Crie um diretório `~/lab` e entre nele.
+- Crie o arquivo `today.log` e o arquivo `yesterday.log` em lab.
+- Verifique a data e hora de criação
+- Altere a data em `yesterday.log` para corresponder à data de ontem
+- Verifique a data e hora de criação novamente
+- Crie um diretório `~/mybackup` e copie todos os arquivos de `~/lab` para ele
+- Use um comando para remover o diretório `~/mybackup` e todos os arquivos dentro dele
+- Crie um diretório `~/logbackup` e copie os arquivos `*.log` de `/var/log` para ele
+- Conte o número de vezes que 'linux' aparece no arquivo `/etc/wgetrc`
+- Conte o número de palavras do arquivo `/etc/hdparm.conf`
 
-## Success Criteria
+## Critérios de Sucesso
 
-1. Show all the files that have been modified in the last 60 minutes within `/var`
-2. Make sure you checked the different file types of the files `/bin/htop`, `/etc/passwd` and `/usr/bin/passwd`
-3. Ensure you were able to download the files [azure-linux.svg](https://docs.microsoft.com/en-us/learn/achievements/azure-linux.svg)  and [azure-ops-guide.pdf](https://docsmsftpdfs.blob.core.windows.net/guides/azure/azure-ops-guide.pdf) successfully into your home diretory
-4. Confirm the different file types 
-5. Validate the renaming of `azure-linux.svg` to `azure-linux.pdf` 
-6. After the renaming of the extension, check if the file type was changed
-7. Make sure the directory was successfully created and that you are inside of the directory 
-8. Check if files were created correctly inside the `~/lab` directory 
-9. Confirm the creation date and time for each file
-10. Make sure you have changed the date properly to yesterday's date
-11. Confirm if the creation date and time were defined as expected
-12. Validate if the all files from `~/lab` were sucessfully placed into `~/mybackup`
-13. Make sure if you were able to remove everything using just one command 
-14. Show all log files copied from `/var/log` into `~/logbackup`
-15. Confirm how many lines exist in `/etc/wgetrc`
-16. Confirm how many words exist in `/etc/hdparm.conf`
+1. Mostre todos os arquivos que foram modificados nos últimos 60 minutos dentro de `/var`
+2. Certifique-se de que verificou os diferentes tipos de arquivo dos arquivos `/bin/htop`, `/etc/passwd` e `/usr/bin/passwd`
+3. Garanta que você conseguiu baixar os arquivos [azure-linux.svg](https://docs.microsoft.com/en-us/learn/achievements/azure-linux.svg)  e [azure-ops-guide.pdf](https://docmsftpdfs.blob.core.windows.net/guides/azure/azure-ops-guide.pdf) com sucesso no seu diretório home
+4. Confirme os diferentes tipos de arquivo 
+5. Valide a renomeação de `azure-linux.svg` para `azure-linux.pdf` 
+6. Após a renomeação da extensão, verifique se o tipo de arquivo foi alterado
+7. Certifique-se de que o diretório foi criado com sucesso e que você está dentro do diretório 
+8. Verifique se os arquivos foram criados corretamente dentro do diretório `~/lab` 
+9. Confirme a data e hora de criação de cada arquivo
+10. Certifique-se de que alterou a data corretamente para a data de ontem
+11. Confirme se a data e hora de criação foram definidas como esperado
+12. Valide se todos os arquivos de `~/lab` foram colocados com sucesso em `~/mybackup`
+13. Certifique-se de que conseguiu remover tudo usando apenas um comando 
+14. Mostre todos os arquivos de log copiados de `/var/log` para `~/logbackup`
+15. Confirme quantas linhas existem em `/etc/wgetrc`
+16. Confirme quantas palavras existem em `/etc/hdparm.conf`
 
-## Learning Resources
+## Recursos de Aprendizado
 
 - [The Shell](https://linuxjourney.com/lesson/the-shell)
