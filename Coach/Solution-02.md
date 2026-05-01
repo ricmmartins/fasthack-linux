@@ -1,9 +1,9 @@
-# Challenge 02 - Handling directories - Coach's Guide 
+# Desafio 02 - Manipulando diretórios - Guia do Coach 
 
-[< Previous Solution](./Solution-01.md) - **[Home](./README.md)** - [Next Solution >](./Solution-03.md)
+[< Solução Anterior](./Solution-01.md) - **[Home](./README.md)** - [Próxima Solução >](./Solution-03.md)
 
-## Notes & Guidance
-1. Display your current directory
+## Notas e Orientações
+1. Exiba o seu diretório atual
 
 `student@vm01:~$ pwd`
 
@@ -11,15 +11,15 @@
 /home/student
 ```
 
-2. Go to the parent directory of the current directory
+2. Vá para o diretório pai do diretório atual
 
 `student@vm01:~$ cd ..`
 
-3. Go to the root directory
+3. Vá para o diretório raiz
 
 `student@vm01:~$ cd /`
 
-4. Listing the contents of the root directory
+4. Listando o conteúdo do diretório raiz
 
 `student@vm01:~$ ls`
 
@@ -27,7 +27,7 @@
 bin  boot  dev  etc  home  lib  lib32  lib64  libx32  lost+found  media  mnt  opt  proc  root  run  sbin  snap  srv  sys  tmp  usr  var
 ```
 
-5. Display a long listing of the root directory
+5. Exiba uma listagem detalhada do diretório raiz
 
 `student@vm01:~$ ls -l`
 
@@ -58,18 +58,18 @@ drwxr-xr-x  14 root root  4096 Apr  4 21:40 usr
 drwxr-xr-x  13 root root  4096 Apr  4 21:41 var
 ```
 
-6. Stay where you are, and list the contents of ~
+6. Permaneça onde está e liste o conteúdo de ~
 
 `student@vm01:~$ ls ~`
 
-7.  List all the files (including hidden files) in your home directory
+7.  Liste todos os arquivos (incluindo arquivos ocultos) no seu diretório home
 
 `student@vm01:~$ ls -al ~`
 
 ```bash
 total 40
 drwxr-xr-x 4 student student 4096 Apr  8 00:12 .
-drwxr-xr-x 4 root      root      4096 Apr  6 15:06 ..
+drwxr-xr-x 4 root    root    4096 Apr  6 15:06 ..
 -rw------- 1 student student 2201 Apr  8 00:09 .bash_history
 -rw-r--r-- 1 student student  220 Feb 25  2020 .bash_logout
 -rw-r--r-- 1 student student 3771 Feb 25  2020 .bashrc
@@ -81,11 +81,11 @@ drwx------ 2 student student 4096 Apr  6 15:02 .ssh
 -rw-rw-r-- 1 student student  252 Apr  8 00:01 .wget-hsts
 ```
 
-8. Use a single command to create the following directory tree `~/folder1/folder2/folder3` (folder3 is a subdirectory from folder2, and folder2 is a subdirectory from folder1)
+8. Use um único comando para criar a seguinte árvore de diretórios `~/folder1/folder2/folder3` (folder3 é um subdiretório de folder2, e folder2 é um subdiretório de folder1)
 
 `student@vm01:~$ mkdir -p ~/folder1/folder2/folder3`
 
-9. List recursively the content of your ~ 
+9. Liste recursivamente o conteúdo do seu ~ 
 
 `student@vm01:~$ ls -R`
 
@@ -102,7 +102,7 @@ dir3
 /home/student/dir1/dir2/dir3:
 ```
 
-10. Find the directories within your home folder
+10. Encontre os diretórios dentro da sua pasta home
 
 `student@vm01:~$ find ~ -type d`
 
