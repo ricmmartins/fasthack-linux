@@ -1,22 +1,22 @@
-# Challenge 08 - Scripting
+# Desafio 08 - Scripting
 
-[< Previous Challenge](./Challenge-07.md) - **[Home](../README.md)** - [Next Challenge >](./Challenge-09.md)
+[< Desafio Anterior](./Challenge-07.md) - **[Início](../README.md)** - [Próximo Desafio >](./Challenge-09.md)
 
-## Description
+## Descrição
 
-In this challenge you will learn some basic stuff on shell scripting and the usage of some commands such as `echo`, `cut`, `read` and `grep`.
+Neste desafio você aprenderá alguns conceitos básicos sobre shell scripting e o uso de alguns comandos como `echo`, `cut`, `read` e `grep`.
 
-- Create a script that looks up the name of the current distribution in the `/etc/os-release` file and prints it to the screen
-- Create a script that reads the usernames from `/etc/passwd` and prints the ones with shell ending in sh
-- Create a script that adds two integers requested from the user and print the sum
+- Crie um script que busque o nome da distribuição atual no arquivo `/etc/os-release` e imprima na tela
+- Crie um script que leia os nomes de usuário do `/etc/passwd` e imprima os que possuem shell terminando em sh
+- Crie um script que some dois números inteiros solicitados ao usuário e imprima o resultado
 
-## Success Criteria
+## Critérios de Sucesso
 
-1. Ensure the ouptut from the script is displaying correctly the current distribution in use
-2. Validate if you was able to see all usernames with a shell ending in sh
-3. Check if the script is working as expected
+1. Certifique-se de que a saída do script está exibindo corretamente a distribuição atual em uso
+2. Valide se você conseguiu ver todos os nomes de usuário com shell terminando em sh
+3. Verifique se o script está funcionando conforme esperado
 
-## Learning Resources
+## Recursos de Aprendizado
 
 - [Shell Scripting Tutorial](https://www.shellscript.sh/)
 - [How create Shell Script in Linux](https://www.linuxjournal.com/content/how-create-shell-script-linux)
