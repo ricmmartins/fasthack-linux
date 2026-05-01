@@ -1,9 +1,9 @@
-# Challenge 06 - Process management - Coach's Guide 
+# Desafio 06 - Gerenciamento de processos - Guia do Coach 
 
-[< Previous Solution](./Solution-05.md) - **[Home](./README.md)** - [Next Solution >](./Solution-07.md)
+[< Solução Anterior](./Solution-05.md) - **[Home](./README.md)** - [Próxima Solução >](./Solution-07.md)
 
-## Notes & Guidance
-1. View the list of your server processes
+## Notas e Orientações
+1. Visualize a lista de processos do seu servidor
 
 `student@vm01:~$ ps -ef`
 
@@ -37,7 +37,7 @@ root          72       2  0 Apr07 ?        00:00:00 [kblockd]
 ...
 ```
 
-2. How many processes are running on your server
+2. Quantos processos estão em execução no seu servidor
 
 `student@vm01:~$ ps -ef | wc -l`
 
@@ -45,7 +45,7 @@ root          72       2  0 Apr07 ?        00:00:00 [kblockd]
 121
 ```
 
-3. View the list of processes in tree format
+3. Visualize a lista de processos em formato de árvore
 
 `student@vm01:~$ pstree`
 
@@ -80,7 +80,7 @@ systemd─┬─ModemManager───2*[{ModemManager}]
         └─unattended-upgr───{unattended-upgr}
 ```
 
-4. Identify if the syslog process is running
+4. Identifique se o processo syslog está em execução
 
 `student@vm01:~$ ps -ef | grep syslog`
 
@@ -90,7 +90,7 @@ syslog    1072     1  0 02:17 ?        00:00:00 /usr/sbin/rsyslogd -n
 student   2300  1829  0 02:49 pts/0    00:00:00 grep --color=auto syslog
 ```
 
-5. Identify the process id (pid) of the syslog
+5. Identifique o id do processo (pid) do syslog
 
 `student@vm01:~$ pgrep syslog`
 
