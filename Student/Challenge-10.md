@@ -1,43 +1,43 @@
-# Challenge 10 - Logical Volume Manager
+# Desafio 10 - Logical Volume Manager
 
-[< Previous Challenge](./Challenge-09.md) - **[Home](../README.md)** - [Next Challenge >](./Challenge-11.md)
+[< Desafio Anterior](./Challenge-09.md) - **[Início](../README.md)** - [Próximo Desafio >](./Challenge-11.md)
 
-## Pre-requisites 
+## Pré-requisitos
 
-- Create a data disk of 5GB
-- Add to the Virtual Machine
+- Crie um disco de dados de 5GB
+- Adicione à Máquina Virtual
 
-## Description
+## Descrição
 
-This challenge will give you an understanding over the Logical Volume Manager on Linux, and knowledge using the commands pvcreate, vgcreate, lvrcreate, and more
+Este desafio lhe dará um entendimento sobre o Logical Volume Manager no Linux, e conhecimento usando os comandos pvcreate, vgcreate, lvrcreate, e mais
 
-- Create a Physical Volume (`PV`) with the disk added
-- Check that the ```PV``` is created
-- Create a Volume Group (```VG```) using the created PV
-- Verify that the VG is created
-- Create a Logical Volume (```LV```) using half the disk (2.5GB)
-- Create an ```LV``` using 10% of the disk (500MB)
-- Verify that ```LV```s are created
-- Format both ```LV```s as ```ext4```
-- Mount the ```LV```s in the directories created earlier in ```/mnt```
-- Resize the smallest ```LV``` to take up another 20% of the disk (1GB)
-- Check:
-    - That the ```LV``` has been resized
-    - If there was reflection in the file system
-- Resize the file system
+- Crie um Physical Volume (`PV`) com o disco adicionado
+- Verifique se o ```PV``` foi criado
+- Crie um Volume Group (```VG```) usando o PV criado
+- Verifique se o VG foi criado
+- Crie um Logical Volume (```LV```) usando metade do disco (2.5GB)
+- Crie um ```LV``` usando 10% do disco (500MB)
+- Verifique se os ```LV```s foram criados
+- Formate ambos os ```LV```s como ```ext4```
+- Monte os ```LV```s nos diretórios criados anteriormente em ```/mnt```
+- Redimensione o menor ```LV``` para ocupar mais 20% do disco (1GB)
+- Verifique:
+    - Se o ```LV``` foi redimensionado
+    - Se houve reflexo no sistema de arquivos
+- Redimensione o sistema de arquivos
 
-## Success Criteria
+## Critérios de Sucesso
 
-1. Validate the creation of the Physical Volume
-2. Validate the creation of the Volume Group
-3. Validate the creation of the Logical Volume
-4. Make sure both logical volumes were created with the expected sizes
-5. Make sure both logical volumes were formated as ext4 file system
-6. Confirm both logical volumes were properly mounted at `/mnt`
-7. Show the logical volume and file system resized
+1. Valide a criação do Physical Volume
+2. Valide a criação do Volume Group
+3. Valide a criação do Logical Volume
+4. Certifique-se de que ambos os volumes lógicos foram criados com os tamanhos esperados
+5. Certifique-se de que ambos os volumes lógicos foram formatados como sistema de arquivos ext4
+6. Confirme que ambos os volumes lógicos foram corretamente montados em `/mnt`
+7. Mostre o volume lógico e o sistema de arquivos redimensionados
 
 
-## Learning Resources
+## Recursos de Aprendizado
 
 - [LVM (Logical Volume Manager)](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/5/html/deployment_guide/ch-lvm)
 - [LVM Guide](https://linuxhandbook.com/lvm-guide/)
