@@ -1,35 +1,34 @@
-# Challenge 05 - Standard file permissions
+# Desafio 05 - Permissões padrão de arquivos
 
-[< Previous Challenge](./Challenge-04.md) - **[Home](../README.md)** - [Next Challenge >](./Challenge-06.md)
+[< Desafio Anterior](./Challenge-04.md) - **[Início](../README.md)** - [Próximo Desafio >](./Challenge-06.md)
 
-## Description
+## Descrição
 
-In this challenge you will learn about the Linux standard file permissions and understand how to work with file permissioning on a Linux environment
+Neste desafio você aprenderá sobre as permissões padrão de arquivos do Linux e entenderá como trabalhar com permissões de arquivos em um ambiente Linux
 
-- As regular user (student), create a directory `~/permissions`
-- Create a file called `myfile.txt` under `~permissions`
-- List the properties of the file `/var/log/waagent.log`. Then copy this file to your permissions directory
-- As root, create a file called rootfile.txt in the `/home/student/permissions` directory
-- As regular user (student), look at who owns this file created by root
-- Change the ownership of all files in `/home/student/permissions` to yourself (student)
-- Make sure you (student) have all rights to files within `~`, and others can only read
+- Como usuário regular (student), crie um diretório `~/permissions`
+- Crie um arquivo chamado `myfile.txt` sob `~permissions`
+- Liste as propriedades do arquivo `/var/log/waagent.log`. Em seguida, copie este arquivo para o seu diretório permissions
+- Como root, crie um arquivo chamado rootfile.txt no diretório `/home/student/permissions`
+- Como usuário regular (student), veja quem é o dono deste arquivo criado pelo root
+- Altere a propriedade de todos os arquivos em `/home/student/permissions` para você mesmo (student)
+- Certifique-se de que você (student) tem todos os direitos sobre os arquivos dentro de `~`, e que outros podem apenas ler
 
-## Success Criteria
+## Critérios de Sucesso
 
-1. Check if the directory was sucessfully created
-2. Confirm the file created under `~permissions`
-3. Check the file inside your permissions directory. Who is the new owner of this file now?
-4. Make sure you have created the file as the user root in the `/home/student/permissions` directory
-5. Ensure you are logged as regular user (student), then check the owner of the file created by the user root
-6. Validate you was able to change the onwership of all files in in `/home/student/permissions` to the user student
-7. Confirm your rights within `~`, and make sure other users can only read
+1. Verifique se o diretório foi criado com sucesso
+2. Confirme o arquivo criado sob `~permissions`
+3. Verifique o arquivo dentro do seu diretório permissions. Quem é o novo dono deste arquivo agora?
+4. Certifique-se de que criou o arquivo como o usuário root no diretório `/home/student/permissions`
+5. Garanta que você está logado como usuário regular (student), então verifique o dono do arquivo criado pelo usuário root
+6. Valide que você conseguiu alterar a propriedade de todos os arquivos em `/home/student/permissions` para o usuário student
+7. Confirme seus direitos dentro de `~`, e certifique-se de que outros usuários podem apenas ler
 
 
-## Learning Resources
+## Recursos de Aprendizado
 
 - [File Permissions](https://linuxjourney.com/lesson/file-permissions)
 - [Understanding Linux File Permissions](https://www.linuxfoundation.org/blog/classic-sysadmin-understanding-linux-file-permissions/)
 - [Chmod Calculator](https://chmod-calculator.com/)
 - [Linux File Permissions](https://linuxhandbook.com/linux-file-permissions/)
 - [Suid, Sgid, and Sticky Bit](https://linuxhandbook.com/suid-sgid-sticky-bit/)
-
