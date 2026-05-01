@@ -1,9 +1,9 @@
-# Challenge 11 - Package Management - Coach's Guide 
+# Desafio 11 - Gerenciamento de Pacotes - Guia do Coach 
 
-[< Previous Solution](./Solution-10.md) - **[Home](./README.md)** - [Next Solution >](./Solution-12.md)
+[< Solução Anterior](./Solution-10.md) - **[Início](./README.md)** - [Próxima Solução >](./Solution-12.md)
 
-## Notes & Guidance
-1. Update the package distribution lists
+## Notas e Orientações
+1. Atualize as listas de distribuição de pacotes
 
 `student@vm1:~$ sudo apt update`
 
@@ -18,7 +18,7 @@ Reading state information... Done
 3 packages can be upgraded. Run 'apt list --upgradable' to see them
 ```
 
-2. Upgrade the packages installed at your virtual machine
+2. Atualize os pacotes instalados na sua máquina virtual
 
 `student@vm1:~$ sudo apt upgrade`
 
@@ -48,7 +48,7 @@ Processing triggers for man-db (2.8.3-2ubuntu0.1) ...
 Processing triggers for install-info (6.5.0.dfsg.1-2) ...
 ```
 
-3. Install the following packages
+3. Instale os seguintes pacotes
 
     1. git
     
@@ -65,7 +65,7 @@ Processing triggers for install-info (6.5.0.dfsg.1-2) ...
     0 upgraded, 1 newly installed, 0 to remove and 0 not upgraded.
     Need to get 4554 kB of archives.
     After this operation, 36.5 MB of additional disk space will be used.
-    Get:1 http://azure.archive.ubuntu.com/ubuntu focal-updates/main amd64 git amd64 1:2.25.1-1ubuntu3.2 [4554 kB]
+    Get:1 http://azure.archive.ubuntu.com/ubuntu focal-updates/main amd64 git amd64 1:2.25.1-1ubuntu3.2 [4554 kB]       
     Fetched 4554 kB in 0s (41.4 MB/s)
     Selecting previously unselected package git.
     (Reading database ... 67607 files and directories currently installed.)
@@ -76,18 +76,18 @@ Processing triggers for install-info (6.5.0.dfsg.1-2) ...
 
     2. php-fpm
 
-    `student@vm1:~$ sudo apt install net-tools` 
-    
+    `student@vm1:~$ sudo apt install net-tools`
+
     ```bash
     Reading package lists... Done
-    Building dependency tree       
+    Building dependency tree
     Reading state information... Done
     The following additional packages will be installed:
       libsodium23 php-common php7.2-cli php7.2-common php7.2-fpm php7.2-json php7.2-opcache php7.2-readline
     Suggested packages:
       php-pear
     The following NEW packages will be installed:
-      libsodium23 php-common php-fpm php7.2-cli php7.2-common php7.2-fpm php7.2-json php7.2-opcache php7.2-readline
+      libsodium23 php-common php-fpm php7.2-cli php7.2-common php7.2-fpm php7.2-json php7.2-opcache php7.2-readline     
     0 upgraded, 9 newly installed, 0 to remove and 0 not upgraded.
     Need to get 4070 kB of archives.
     After this operation, 17.7 MB of additional disk space will be used.
@@ -191,11 +191,11 @@ Processing triggers for install-info (6.5.0.dfsg.1-2) ...
     Processing triggers for libc-bin (2.27-3ubuntu1.5) ...
     Processing triggers for systemd (237-3ubuntu10.53) ...
     ```
-        
+
     3. nginx
 
-    `student@vm1:~$ sudo apt install nginx-core` 
-    
+    `student@vm1:~$ sudo apt install nginx-core`
+
     ```bash
     Reading package lists... Done
     Building dependency tree
@@ -239,7 +239,7 @@ Processing triggers for install-info (6.5.0.dfsg.1-2) ...
     Setting up libxpm4:amd64 (1:3.5.12-1) ...
     Setting up nginx-common (1.18.0-0ubuntu1.3) ...
     Setting up libjbig0:amd64 (2.1-3.1build1) ...
-    Setting up libnginx-mod-http-xslt-filter (1.18.0-0ubuntu1.3) ...##..................................................]
+    Setting up libnginx-mod-http-xslt-filter (1.18.0-0ubuntu1.3) ...
     Setting up libwebp6:amd64 (0.6.1-2ubuntu0.20.04.1) ...
     Setting up fonts-dejavu-core (2.37-1) ...
     Setting up libjpeg-turbo8:amd64 (2.0.3-0ubuntu1.20.04.1) ...
@@ -258,10 +258,10 @@ Processing triggers for install-info (6.5.0.dfsg.1-2) ...
     Processing triggers for libc-bin (2.31-0ubuntu9.7) ...
     ```
 
-4. Uninstall the package named nano
+4. Desinstale o pacote chamado nano
 
-`student@vm1:~$ sudo apt remove nano` 
-    
+`student@vm1:~$ sudo apt remove nano`
+
 ```bash
 Reading package lists... Done
 Building dependency tree
@@ -278,10 +278,10 @@ Processing triggers for install-info (6.7.0.dfsg.2-5) ...
 Processing triggers for man-db (2.9.1-1) ...
 ```
 
-5. Show packate details for vim
+5. Mostre detalhes do pacote vim
 
-`student@vm1:~$ sudo apt show  vim` 
-    
+`student@vm1:~$ sudo apt show  vim`
+
 ```bash
 Package: vim
 Version: 2:8.1.2269-1ubuntu5.7
@@ -313,10 +313,10 @@ Description: Vi IMproved - enhanced vi editor
  (or less).
 ```
 
-6. Search for docker at the packages list and install the Linux container runtime
+6. Pesquise por docker na lista de pacotes e instale o runtime de container Linux
 
-`student@vm1:~$ sudo apt search docker` 
-    
+`student@vm1:~$ sudo apt search docker`
+
 ```bash
 Sorting... Done
 Full Text Search... Done
@@ -342,9 +342,9 @@ debootstick/focal 2.4 amd64
 ...
 ...
   ```
-  
-  
-`student@vm1:~$ sudo apt install docker.io` 
+
+
+`student@vm1:~$ sudo apt install docker.io`
 
 ```bash
 Reading package lists... Done
