@@ -1,38 +1,37 @@
-# Challenge 12 - Setting up a webserver 
+# Desafio 12 - Configurando um servidor web
 
-[< Previous Challenge](./Challenge-11.md) - **[Home](../README.md)** - [Next Challenge >](./Challenge-13.md)
+[< Desafio Anterior](./Challenge-11.md) - **[Início](../README.md)** - [Próximo Desafio >](./Challenge-13.md)
 
-## Description
+## Descrição
 
-In this challenge we will be setting up a webserver and deploy a simple PHP application into it. As a plus, you can add SSL to ensure security requirements.
+Neste desafio vamos configurar um servidor web e implantar uma aplicação PHP simples nele. Como um plus, você pode adicionar SSL para garantir requisitos de segurança.
 
-- Download the sample application [from here](./resources/simple-php-app.tar.gz?raw=true) to your home directory
-- Extract the content of simple-php-app.tar.gz on our home directory
-- Install nginx-core
-- Install php7.4-fpm
-- Configure Nginx
+- Baixe a aplicação de exemplo [daqui](./resources/simple-php-app.tar.gz?raw=true) para o seu diretório home
+- Extraia o conteúdo do simple-php-app.tar.gz no seu diretório home
+- Instale o nginx-core
+- Instale o php7.4-fpm
+- Configure o Nginx
 
-## Success Criteria
+## Critérios de Sucesso
 
-1. Make sure you have the file simple-php-app-tar.gz within your `~`
-2. Show the content of the .tar.gz file extracted into your `~`
-3. Make sure you have the packages nginx-core and php7.4-fpm installed
-4. Show your Nginx running properly
+1. Certifique-se de que o arquivo simple-php-app-tar.gz está dentro do seu `~`
+2. Mostre o conteúdo do arquivo .tar.gz extraído no seu `~`
+3. Certifique-se de que os pacotes nginx-core e php7.4-fpm estão instalados
+4. Mostre o seu Nginx funcionando corretamente
 
-## Hint
+## Dica
 
-If you install Ubuntu 18.04 instead of Ubuntu 20.04, the version of the php-fpm which will be installed will be 7.2 instead of 7.4. Then make sure to configure the nginx config file properly.
+Se você instalar o Ubuntu 18.04 em vez do Ubuntu 20.04, a versão do php-fpm que será instalada será a 7.2 em vez da 7.4. Então certifique-se de configurar o arquivo de configuração do nginx corretamente.
 
-## Learning Resources
+## Recursos de Aprendizado
 
 - [How to install PHP 7.4 With Nginx on Ubuntu 20.04](https://www.rosehosting.com/blog/how-to-install-php-7-4-with-nginx-on-ubuntu-20-04/)
 - [How To Install Linux, Nginx, MySQL, PHP (LEMP stack) on Ubuntu 20.04](https://www.digitalocean.com/community/tutorials/how-to-install-linux-nginx-mysql-php-lemp-stack-on-ubuntu-20-04)
 
-## Advanced Challenge
-*Too comfortable?  Eager to do more?  Try this additional challenge!*
+## Desafio Avançado
+*Muito confortável? Quer fazer mais? Tente este desafio adicional!*
 
-- Add SSL
+- Adicionar SSL
 
-_Please note that for this advanced challenge, you will need to be able to access the virtual machine using a Public IP due the usage of an SSL certificate._
-
+_Por favor, note que para este desafio avançado, você precisará acessar a máquina virtual usando um IP Público devido ao uso de um certificado SSL._
 
