@@ -1,30 +1,29 @@
-# Challenge 01 - Create a Linux Virtual Machine
+# Desafio 01 - Criar uma Máquina Virtual Linux
 
-**[Home](../README.md)** - [Next Challenge >](./Challenge-02.md)
+**[Início](../README.md)** - [Próximo Desafio >](./Challenge-02.md)
 
-## Pre-requisites 
+## Pré-requisitos 
 
-- An active Azure Subscription.
+- Uma assinatura Azure ativa.
 
-## Description
+## Descrição
 
-To follow along you will need access to a server running a Linux-based operating system. Note that this hackathon was validated using a Linux server running Ubuntu 20.04 ([LTS](https://ubuntu.com/about/release-cycle)), but the examples given should work on any Linux distribution. See below the steps to follow to create your Linux Virtual Machine on Azure and choose the one with which you are more familiar.
+Para acompanhar, você precisará de acesso a um servidor executando um sistema operacional baseado em Linux. Note que este hackathon foi validado usando um servidor Linux executando Ubuntu 20.04 ([LTS](https://ubuntu.com/about/release-cycle)), mas os exemplos dados devem funcionar em qualquer distribuição Linux. Veja abaixo os passos a seguir para criar sua Máquina Virtual Linux no Azure e escolha aquele com o qual você está mais familiarizado.
 
-During the process of the creation of the VM, ensure the usage of **student** for the username with root privileges over the virtual machine, just to make it easier during the challenges. 
+Durante o processo de criação da VM, garanta o uso de **student** para o nome de usuário com privilégios de root sobre a máquina virtual, apenas para facilitar durante os desafios. 
 
-### Disclaimer
+### Aviso
 
-Opening port 22 to the public internet is a bad practice. We highly recommend using Azure Bastion or creating an NSG rule that limits access to the student's home IP address (or Azure Cloud Shell instance).
+Abrir a porta 22 para a internet pública é uma má prática. Recomendamos fortemente o uso do Azure Bastion ou a criação de uma regra NSG que limite o acesso ao endereço IP residencial do estudante (ou instância do Azure Cloud Shell).
 
-## Success Criteria
+## Critérios de Sucesso
 
-* Validate you was able to successfully create your **Ubuntu 20.04** Linux Virtual Machine
-* Confirm you can access through SSH
+* Valide que você conseguiu criar com sucesso sua Máquina Virtual Linux **Ubuntu 20.04**
+* Confirme que você consegue acessar via SSH
 
-## Learning Resources
+## Recursos de Aprendizado
 
-* [Create a Linux virtual machine in the Azure portal](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/quick-create-portal)
-* [Create a Linux virtual machine with the Azure CLI](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/quick-create-cli)
-* [Create a Linux virtual machine in Azure with PowerShell](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/quick-create-powershell)
-* [Connect to a Linux VM](https://docs.microsoft.com/en-us/azure/virtual-machines/linux-vm-connect?tabs=Linux)
-
+* [Criar uma máquina virtual Linux no portal do Azure](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/quick-create-portal)
+* [Criar uma máquina virtual Linux com o Azure CLI](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/quick-create-cli)
+* [Criar uma máquina virtual Linux no Azure com PowerShell](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/quick-create-powershell)
+* [Conectar a uma VM Linux](https://docs.microsoft.com/en-us/azure/virtual-machines/linux-vm-connect?tabs=Linux)
