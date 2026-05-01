@@ -1,18 +1,18 @@
-# Challenge 01 - Create a Linux Virtual Machine - Coach's Guide 
+# Desafio 01 - Criar uma Máquina Virtual Linux - Guia do Coach 
 
-**[Home](./README.md)** - [Next Solution >](./Solution-02.md)
+**[Home](./README.md)** - [Próxima Solução >](./Solution-02.md)
 
-## Notes & Guidance
+## Notas e Orientações
  
-To accomplish the creation of the Ubuntu 20.04 Linux Virtual Machine, you can follow the below steps using the Azure CLI from cloud shell:
+Para realizar a criação da Máquina Virtual Linux Ubuntu 20.04, você pode seguir os passos abaixo usando o Azure CLI a partir do cloud shell:
 
-- Create the resource group:
+- Criar o resource group:
 
 ```bash
 az group create --name rg-linux-fundamentals --location eastus
 ```
 
-- Create the Virtual Machine
+- Criar a Máquina Virtual
 
 ```bash
 az vm create \
@@ -23,9 +23,8 @@ az vm create \
   --generate-ssh-keys
 ```
 
-- Connect to virtual machine
+- Conectar à máquina virtual
 
 ```bash
 ssh student@[public-ip]
 ```
-
