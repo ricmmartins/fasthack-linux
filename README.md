@@ -150,9 +150,8 @@ flowchart TB
     classDef challenge fill:#2b5ea7,stroke:#1e4a8a,color:#fff,stroke-width:2px
     classDef hackathon fill:#1a7f37,stroke:#116329,color:#fff,stroke-width:3px
 
-    class A,C challenge
-    class B hackathon
-    class D challenge
+    class A hackathon
+    class B,C,D challenge
 
     click A "https://linuxhackathon.com" _blank
     click B "https://k8shackathon.com" _blank
