@@ -95,13 +95,14 @@ Este hackathon é o ponto de partida de uma jornada completa de aprendizado:
 
 ```mermaid
 flowchart TD
-    A["🐧 Linux FUNdamentals\n20 desafios práticos\nlinuxhackathon.com"]:::blue --> B["☸️ Kubernetes Hackathon\n20 desafios práticos\nk8shackathon.com"]:::blue
+    A["�� Linux FUNdamentals\n20 desafios práticos\nlinuxhackathon.com"]:::green --> B["☸️ Kubernetes Hackathon\n20 desafios práticos\nk8shackathon.com"]:::blue
     B --> C["🤖 AI for Infrastructure\nAI + Cloud\nai4infra.com"]:::blue
     D["📖 From Server to Cluster\nO PORQUÊ por trás do QUÊ\nfromservertocluster.com"]:::blue
     A -. "leitura complementar" .-> D
     B -. "leitura complementar" .-> D
     C -. "leitura complementar" .-> D
 
+    classDef green fill:#0d9e4f,stroke:#0d9e4f,color:#fff
     classDef blue fill:#1a73e8,stroke:#1a73e8,color:#fff
 ```
 ## Guia do Coach
