@@ -136,13 +136,14 @@ This hackathon is the starting point of a complete learning journey:
 
 ```mermaid
 flowchart TD
-    A["🐧 Linux FUNdamentals\n20 hands-on challenges\nlinuxhackathon.com"]:::blue --> B["☸️ Kubernetes Hackathon\n20 hands-on challenges\nk8shackathon.com"]:::blue
+    A["🐧 Linux FUNdamentals\n20 hands-on challenges\nlinuxhackathon.com"]:::green --> B["☸️ Kubernetes Hackathon\n20 hands-on challenges\nk8shackathon.com"]:::blue
     B --> C["🤖 AI for Infrastructure\nAI + Cloud\nai4infra.com"]:::blue
     D["📖 From Server to Cluster\nThe WHY behind the WHAT\nfromservertocluster.com"]:::blue
     A -. "companion reading" .-> D
     B -. "companion reading" .-> D
     C -. "companion reading" .-> D
 
+    classDef green fill:#0d9e4f,stroke:#0d9e4f,color:#fff
     classDef blue fill:#1a73e8,stroke:#1a73e8,color:#fff
 ```
 
