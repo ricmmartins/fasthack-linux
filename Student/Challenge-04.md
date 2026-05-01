@@ -1,14 +1,14 @@
-# Challenge 04 - File contents
+# Desafio 04 - Conteúdo de arquivos
 
-[< Previous Challenge](./Challenge-03.md) - **[Home](../README.md)** - [Next Challenge >](./Challenge-05.md)
+[< Desafio Anterior](./Challenge-03.md) - **[Início](../README.md)** - [Próximo Desafio >](./Challenge-05.md)
 
-## Description
+## Descrição
 
-In this challenge let's learn about file content manipulation and discover how to count file lines, display specific lines from a file, and more.
+Neste desafio vamos aprender sobre manipulação de conteúdo de arquivos e descobrir como contar linhas de arquivos, exibir linhas específicas de um arquivo e mais.
 
-- Display the first 10 lines of `/etc/resolv.conf`
-- Display the last 5 lines of `/etc/crontab`
-- Create a file named `count.log` with this content:
+- Exiba as primeiras 10 linhas de `/etc/resolv.conf`
+- Exiba as últimas 5 linhas de `/etc/crontab`
+- Crie um arquivo chamado `count.log` com este conteúdo:
 
     One<br>
     Two<br>
@@ -16,23 +16,23 @@ In this challenge let's learn about file content manipulation and discover how t
     Four<br>
     Five
 
-- Use `cp` to make a backup of this file to `count.bkp`
-- Use `cat` to make a backup of this file, saving as `cat-count.log`
-- Display the content of `cat-count.log`, with all lines in reverse order
-- Use `more` to display `/etc/selinux/semanage.conf`
-- Use `ls` to find the biggest file in `/var/log`
+- Use `cp` para fazer um backup deste arquivo para `count.bkp`
+- Use `cat` para fazer um backup deste arquivo, salvando como `cat-count.log`
+- Exiba o conteúdo de `cat-count.log`, com todas as linhas em ordem reversa
+- Use `more` para exibir `/etc/selinux/semanage.conf`
+- Use `ls` para encontrar o maior arquivo em `/var/log`
 
-## Success Criteria
+## Critérios de Sucesso
 
-1. Show the content of the first 10 lines of `/etc/resolv.conf`
-2. Show the last 5 lines of `/etc/crontab`
-3. Validate if the content of the file `count.log` was created as expected
-4. Check if the file `count.bkp` was created 
-5. Check if the file `cat-count.log` was created
-6. Confirm if you can see the content of the file `cat-count.log` in reverse order
-7. Validate if you was able to see the content of the file `/etc/selinux/semanage.conf` paged
-8. Check if you can see the biggest file in `/var/log` at the top of the list
+1. Mostre o conteúdo das primeiras 10 linhas de `/etc/resolv.conf`
+2. Mostre as últimas 5 linhas de `/etc/crontab`
+3. Valide se o conteúdo do arquivo `count.log` foi criado como esperado
+4. Verifique se o arquivo `count.bkp` foi criado 
+5. Verifique se o arquivo `cat-count.log` foi criado
+6. Confirme se você consegue ver o conteúdo do arquivo `cat-count.log` em ordem reversa
+7. Valide se você conseguiu ver o conteúdo do arquivo `/etc/selinux/semanage.conf` paginado
+8. Verifique se você consegue ver o maior arquivo em `/var/log` no topo da lista
 
-## Learning Resources
+## Recursos de Aprendizado
 
 - [The Shell](https://linuxjourney.com/lesson/the-shell)
