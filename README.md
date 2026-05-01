@@ -130,11 +130,21 @@ Contributions in the form of bug reports, feature requests, and PRs are always w
 
 This project is licensed under the [MIT License](LICENSE).
 
-## Related Projects
+## Learning Path
 
-- :book: [From Server to Cluster](https://fromservertocluster.com/) — Kubernetes book for Linux professionals
-- :rocket: [Kubernetes Hackathon](https://k8shackathon.com/) — From Linux admin to Kubernetes expert
-- :robot: [AI for Infrastructure Professionals](https://ai4infra.com/) — AI workloads on infrastructure you build
+This hackathon is the starting point of a complete learning journey:
+
+```mermaid
+flowchart TD
+    A["🐧 Linux FUNdamentals\n20 hands-on challenges\nlinuxhackathon.com"]:::blue --> B["☸️ Kubernetes Hackathon\n20 hands-on challenges\nk8shackathon.com"]:::blue
+    B --> C["🤖 AI for Infrastructure\nAI + Cloud\nai4infra.com"]:::blue
+    D["📖 From Server to Cluster\nThe WHY behind the WHAT\nfromservertocluster.com"]:::blue
+    A -. "companion reading" .-> D
+    B -. "companion reading" .-> D
+    C -. "companion reading" .-> D
+
+    classDef blue fill:#1a73e8,stroke:#1a73e8,color:#fff
+```
 
 ## :globe_with_meridians: Portuguese Content
 
