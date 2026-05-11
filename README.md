@@ -110,18 +110,22 @@ flowchart TB
     B -.->|leitura complementar| D
     C -.->|leitura complementar| D
 
+    B -.->|aprofundamento Azure| E
+
     D["📖 <b>From Server to Cluster</b><br/>O PORQUÊ por trás do QUÊ<br/><i>fromservertocluster.com</i>"]
+    E["☁️ <b>AKS Learning</b><br/>Do zero à produção no AKS<br/><i>aks-learning.github.io</i>"]
 
     classDef challenge fill:#2b5ea7,stroke:#1e4a8a,color:#fff,stroke-width:2px
     classDef hackathon fill:#1a7f37,stroke:#116329,color:#fff,stroke-width:3px
 
     class A hackathon
-    class B,C,D challenge
+    class B,C,D,E challenge
 
     click A "https://linuxhackathon.com" _blank
     click B "https://k8shackathon.com" _blank
     click C "https://ai4infra.com" _blank
     click D "https://fromservertocluster.com" _blank
+    click E "https://aks-learning.github.io" _blank
 ```
 ## O que Vem Depois?
 
@@ -132,6 +136,8 @@ Depois de dominar os fundamentos do Linux, leve suas habilidades ao próximo ní
 :book: **[From Server to Cluster](https://fromservertocluster.com)** — O livro complementar que faz a ponte entre Linux e Kubernetes. Entenda o PORQUÊ por trás de cada conceito.
 
 :robot: **[AI for Infrastructure Professionals](https://ai4infra.com)** — Aprenda como a IA está transformando o gerenciamento de infraestrutura.
+
+:cloud: **[AKS Learning](https://aks-learning.github.io)** — Usa Azure? Vá do zero à produção no Azure Kubernetes Service — rede, segurança, observabilidade, escalabilidade e GitOps.
 
 ## Guia do Coach
 
