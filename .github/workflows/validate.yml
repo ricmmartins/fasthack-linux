@@ -61,7 +61,7 @@ jobs:
 
             # First challenge should have Home link
             if [ $i -eq 1 ]; then
-              if ! grep -q '\[Home\](../README.md)' "$FILE"; then
+              if ! grep -qE '\[(Home|Início)\]\(../README.md\)' "$FILE"; then
                 echo "::error file=$FILE::Missing Home link"
                 ERRORS=$((ERRORS + 1))
               fi
