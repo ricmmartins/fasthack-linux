@@ -6,34 +6,29 @@ Bem-vindo ao guia do coach para o Hackathon de Fundamentos do Linux. Aqui você 
 > **NOTA:** Se você é um participante do Hackathon, este é o guia de respostas. Não trapaceie olhando estas respostas durante o hack! Vá aprender algo. :)
 
 ## Guias do Coach
-* Desafio 01: **[Criar uma Máquina Virtual Linux](../Coach/Solution-01.md)**
- - Uma máquina virtual Linux é o pré-requisito para os desafios, então crie uma nova VM Ubuntu Linux
-* Desafio 02: **[Manipulando Diretórios](../Coach/Solution-02.md)**
- - Aprenda como realizar operações comuns com diretórios, como exibir seu diretório atual e listar o conteúdo de diretórios.
-* Desafio 03: **[Manipulando Arquivos](../Coach/Solution-03.md)**
- - Aprenda comandos básicos sobre manipulação de arquivos, como criar, renomear, localizar e remover arquivos.
-* Desafio 04: **[Conteúdo de Arquivos](../Coach/Solution-04.md)**
- - Aprenda sobre manipulação de conteúdo de arquivos e descubra como contar linhas de um arquivo, exibir linhas específicas de um arquivo e muito mais.
-* Desafio 05: **[Permissões Padrão de Arquivos](../Coach/Solution-05.md)**
- - Aprenda sobre as permissões padrão de arquivos no Linux e entenda como trabalhar com permissionamento de arquivos em um ambiente Linux.
-* Desafio 06: **[Gerenciamento de Processos](../Coach/Solution-06.md)**
- - Seus objetivos envolverão o gerenciamento básico de processos, como verificar processos em execução e identificar IDs de processos.
-* Desafio 07: **[Gerenciamento de Grupos e Usuários](../Coach/Solution-07.md)**
- - Neste desafio você aprenderá sobre a criação de usuários e grupos em um ambiente Linux.
-* Desafio 08: **[Scripting](../Coach/Solution-08.md)**
- - Aprenda noções básicas sobre shell scripting e o uso de alguns comandos como echo, cut, read e grep.
-* Desafio 09: **[Discos, Partições e Sistemas de Arquivos](../Coach/Solution-09.md)**
- - Você trabalhará com discos e partições e aprenderá sobre sistemas de arquivos Linux e comandos como fdisk, mkfs e mount.
-* Desafio 10: **[Gerenciador de Volumes Lógicos](../Coach/Solution-10.md)**
- - Descubra sobre o Gerenciador de Volumes Lógicos no Linux e como usar comandos como pvcreate, vgcreate, lvrcreate e muito mais.
-* Desafio 11: **[Gerenciamento de Pacotes](../Coach/Solution-11.md)**
- - Aprenda sobre gerenciamento de pacotes e atividades comuns como atualizar listas de distribuição de pacotes, instalar e desinstalar pacotes.
-* Desafio 12: **[Configurando um Servidor Web](../Coach/Solution-12.md)**
- - Neste desafio vamos configurar um servidor web e implantar uma aplicação PHP simples nele. O uso de SSL seria um diferencial.
-* Desafio 13: **[Protegendo um Servidor](../Coach/Solution-13.md)**
-- Neste desafio vamos descobrir como usar o Fail2Ban para proteger serviços em um ambiente Linux.
-* Desafio 14: **[Executando Contêineres](../Coach/Solution-14.md)**
-- Seu objetivo neste desafio será criar uma imagem de contêiner a partir de uma aplicação de exemplo e fazê-la funcionar usando Docker.
+
+| # | Solução | Descrição |
+|---|---------|-----------|
+| 01 | **[Criar uma Máquina Virtual Linux](Solution-01.md)** | Configurar um ambiente Ubuntu Linux — VM na nuvem, VM local ou WSL2 |
+| 02 | **[Manipulando Diretórios](Solution-02.md)** | Operações comuns com diretórios |
+| 03 | **[Manipulando Arquivos](Solution-03.md)** | Manipulação de arquivos: criar, renomear, encontrar e remover |
+| 04 | **[Conteúdo de Arquivos](Solution-04.md)** | Manipulação de conteúdo de arquivos |
+| 05 | **[Permissões Padrão de Arquivos](Solution-05.md)** | Permissões de arquivos Linux e propriedade |
+| 06 | **[Gerenciamento de Processos](Solution-06.md)** | Verificar processos em execução e identificar PIDs |
+| 07 | **[Gerenciamento de Grupos e Usuários](Solution-07.md)** | Criação de usuários e grupos |
+| 08 | **[Scripting](Solution-08.md)** | Scripts básicos em shell |
+| 09 | **[Discos, Partições e Sistemas de Arquivos](Solution-09.md)** | fdisk, mkfs e mount |
+| 10 | **[Gerenciador de Volumes Lógicos](Solution-10.md)** | pvcreate, vgcreate, lvcreate |
+| 11 | **[Gerenciamento de Pacotes](Solution-11.md)** | Instalação e gerenciamento de pacotes |
+| 12 | **[Configurando um Servidor Web](Solution-12.md)** | Implantação de aplicação web com Nginx + PHP-FPM |
+| 13 | **[Protegendo um Servidor](Solution-13.md)** | Fail2Ban e hardening de SSH |
+| 14 | **[Executando Contêineres](Solution-14.md)** | Containers Docker e construção de imagens |
+| 15 | **[Fundamentos de Rede](Solution-15.md)** | IP, DNS, roteamento, portas, conectividade |
+| 16 | **[systemd e Gerenciamento de Serviços](Solution-16.md)** | systemctl, journalctl, units personalizadas |
+| 17 | **[Processamento de Texto](Solution-17.md)** | sed, awk, pipes, pipelines de texto |
+| 18 | **[Agendamento de Tarefas](Solution-18.md)** | Cron jobs e agendamento com at |
+| 19 | **[Configuração de Firewall](Solution-19.md)** | Regras UFW e limitação de taxa |
+| 20 | **[Troubleshooting Linux](Solution-20.md)** | Cenários capstone de troubleshooting |
 
 ## Pré-requisitos do Coach
 
@@ -45,25 +40,51 @@ O guia cobre os passos comuns de preparação que um coach precisa realizar ante
 
 Antes do hack, é responsabilidade do Coach garantir que os estudantes possam acessar o conteúdo da pasta `./Student/Resources`.
 
-## Requisitos do Azure
+## Requisitos do Ambiente
 
-Este hack requer que os estudantes tenham acesso a uma assinatura do Azure onde possam criar e consumir recursos do Azure. Estes requisitos do Azure devem ser compartilhados com uma parte interessada na organização que fornecerá a(s) assinatura(s) do Azure que serão utilizadas pelos estudantes.
+Os estudantes precisam de acesso a um ambiente Linux. As seguintes opções são suportadas:
 
-- Para o Desafio 01, será necessária uma assinatura do Azure com acesso de contribuidor.
-- Para todos os outros desafios, será necessário pelo menos acesso de contribuidor a uma máquina virtual Ubuntu Linux 20.04 pré-criada.
-- Para o desafio avançado opcional do Desafio 12, estes são os requisitos:
+- **VM na Nuvem**: Azure, AWS, GCP ou qualquer provedor de nuvem — crie uma VM Ubuntu 24.04 LTS
+- **VM Local**: VirtualBox, UTM, Hyper-V ou VMware com Ubuntu 24.04 LTS
+- **WSL2**: Windows Subsystem for Linux (Ubuntu)
+- **Servidor existente**: Qualquer sistema Linux baseado em Ubuntu/Debian
+
+Para os Desafios 09 e 10 (Discos/LVM), os estudantes precisarão da capacidade de anexar um disco adicional à sua VM. Isso é simples em provedores de nuvem e ferramentas de VM local, mas não é suportado no WSL2.
+
+Para o desafio avançado opcional do Desafio 12 (SSL), os estudantes precisarão:
 - Um IP público associado à máquina virtual
-- Acesso ao IP público da máquina virtual
-- Acesso ao Domínio do Azure App Service para obter um domínio ou acesso ao gerenciamento de DNS de um domínio existente
+- Acesso ao IP público pela internet
+- Um nome de domínio com acesso ao gerenciamento de DNS (opcional, para SSL adequado)
+
+## Tempo Estimado
+
+| Desafio | Tempo |
+|---------|-------|
+| 01 - Criar uma VM Linux | 15-30 min |
+| 02 - Manipulando Diretórios | 15-20 min |
+| 03 - Manipulando Arquivos | 20-30 min |
+| 04 - Conteúdo de Arquivos | 15-20 min |
+| 05 - Permissões Padrão de Arquivos | 20-30 min |
+| 06 - Gerenciamento de Processos | 15-20 min |
+| 07 - Gerenciamento de Grupos e Usuários | 20-30 min |
+| 08 - Scripting | 30-45 min |
+| 09 - Discos, Partições e Sistemas de Arquivos | 30-45 min |
+| 10 - Gerenciador de Volumes Lógicos | 30-45 min |
+| 11 - Gerenciamento de Pacotes | 15-20 min |
+| 12 - Configurando um Servidor Web | 30-45 min |
+| 13 - Protegendo um Servidor | 30-45 min |
+| 14 - Executando Contêineres | 30-45 min |
+| 15 - Fundamentos de Rede | 25-35 min |
+| 16 - systemd e Gerenciamento de Serviços | 25-35 min |
+| 17 - Processamento de Texto | 20-30 min |
+| 18 - Agendamento de Tarefas | 20-30 min |
+| 19 - Configuração de Firewall | 25-35 min |
+| 20 - Troubleshooting Linux (Capstone) | 35-45 min |
+| **Total** | **~8-11 horas** |
 
 ## Conteúdo do Repositório
 
-- `./Coach`
-  - Guia do Coach e arquivos relacionados
-- `./Coach/Solutions`
-  - Arquivos de solução com exemplos completos de respostas para cada desafio
-- `./Student`
-  - Guia de Desafios do Estudante
-- `./Student/Resources`
-  - Arquivos de recursos, código de exemplo, scripts, etc. destinados a serem fornecidos aos estudantes. (Devem ser empacotados pelo coach e fornecidos aos estudantes no início do evento)
+- `./Coach` — Guia do coach e arquivos de solução
+- `./Student` — Guia de desafios do estudante
+- `./Student/resources` — Arquivos de recursos, código de exemplo e materiais de referência
 

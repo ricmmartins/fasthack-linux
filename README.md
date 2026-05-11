@@ -1,8 +1,14 @@
 # Hackathon - Linux FUNdamentals
 
+![CI](https://github.com/ricmmartins/fasthack-linux/workflows/Validate%20Content/badge.svg)
+![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
+![Ubuntu 24.04](https://img.shields.io/badge/Ubuntu-24.04%20LTS-E95420?logo=ubuntu&logoColor=white)
+![Shell](https://img.shields.io/badge/Shell-Bash-4EAA25?logo=gnubash&logoColor=white)
+![Cloud Agnostic](https://img.shields.io/badge/Cloud-Agnostic-blue)
+
 ## Introdução
 
-Este é um recurso de aprendizado criado para ajudar pessoas interessadas a adquirir habilidades em Linux e compreender conceitos básicos de linha de comando usando o Azure para construir e aprender. Porém, não se restringe ao uso do Azure e você pode executar este hackathon em qualquer máquina virtual com Ubuntu Linux.
+Um hackathon prático e baseado em desafios para ajudar você a dominar os fundamentos do Linux — desde comandos básicos até rede, firewalls e troubleshooting do mundo real. 20 desafios, agnóstico de nuvem. Execute em **qualquer provedor de nuvem**, **VM local** ou até **WSL2**.
 
 <img align="right" src="./Student/resources/images/linuxpenguin.png" width="250"/>
 
@@ -117,6 +123,16 @@ flowchart TB
     click C "https://ai4infra.com" _blank
     click D "https://fromservertocluster.com" _blank
 ```
+## O que Vem Depois?
+
+Depois de dominar os fundamentos do Linux, leve suas habilidades ao próximo nível:
+
+:rocket: **[Kubernetes Hackathon](https://k8shackathon.com)** — De administrador Linux a especialista em Kubernetes. 20 desafios hands-on cobrindo 100% dos domínios das certificações CKA + CKAD + CKS.
+
+:book: **[From Server to Cluster](https://fromservertocluster.com)** — O livro complementar que faz a ponte entre Linux e Kubernetes. Entenda o PORQUÊ por trás de cada conceito.
+
+:robot: **[AI for Infrastructure Professionals](https://ai4infra.com)** — Aprenda como a IA está transformando o gerenciamento de infraestrutura.
+
 ## Guia do Coach
 
 No diretório [coach](./Coach/) estão as diretrizes caso você esteja executando o Hackathon em um evento e seja um coach, bem como as soluções para os desafios propostos. Se você está fazendo o Hackathon como estudante, não se engane olhando as soluções durante o hack! Vá aprender algo. :)
@@ -133,3 +149,20 @@ Contribuições na forma de correções de erros, solicitações de funcionalida
 ## Mostre seu apoio
 
 Dê uma ⭐️ se este conteúdo te ajudou!
+
+## Licença
+
+Este projeto está licenciado sob a [Licença MIT](LICENSE).
+
+## :globe_with_meridians: Conteúdo em Inglês
+
+:us: **Este hackathon também está disponível em Inglês!**
+Confira a branch [`en-us`](https://github.com/ricmmartins/fasthack-linux/tree/en-us) para a versão original completa de todos os desafios, guias de coach e documentação.
+
+Para artigos adicionais, tutoriais e recursos sobre Linux, Kubernetes e Infraestrutura em Nuvem em inglês, visite **[rmmartins.com](https://rmmartins.com)**.
+
+---
+
+**Aviso Legal:** Este é um projeto independente e pessoal — não é uma publicação oficial da Microsoft. O conteúdo e opiniões são exclusivamente do autor.
+
+Criado por **[Ricardo Martins](https://rmmartins.com)** — Principal Solutions Engineer @ Microsoft
