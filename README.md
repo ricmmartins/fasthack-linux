@@ -115,6 +115,8 @@ Once you have mastered Linux fundamentals, take your skills to the next level:
 
 :robot: **[AI for Infrastructure Professionals](https://ai4infra.com)** — Learn how AI is transforming infrastructure management.
 
+:cloud: **[AKS Learning](https://aks-learning.github.io)** — Using Azure? Go from zero to production on Azure Kubernetes Service — networking, security, observability, scaling, and GitOps.
+
 ## Coach's Guide
 
 In the [Coach](./Coach/) directory are the guidelines for running the hackathon as an event, as well as the solutions for the proposed challenges. If you are doing the hackathon as a student, don't look at the solutions during the hack! Go learn something. :)
@@ -147,18 +149,22 @@ flowchart TB
     B -.->|companion reading| D
     C -.->|companion reading| D
 
+    B -.->|Azure deep dive| E
+
     D["📖 <b>From Server to Cluster</b><br/>The WHY behind the WHAT<br/><i>fromservertocluster.com</i>"]
+    E["☁️ <b>AKS Learning</b><br/>Zero to production on AKS<br/><i>aks-learning.github.io</i>"]
 
     classDef challenge fill:#2b5ea7,stroke:#1e4a8a,color:#fff,stroke-width:2px
     classDef hackathon fill:#1a7f37,stroke:#116329,color:#fff,stroke-width:3px
 
     class A hackathon
-    class B,C,D challenge
+    class B,C,D,E challenge
 
     click A "https://linuxhackathon.com" _blank
     click B "https://k8shackathon.com" _blank
     click C "https://ai4infra.com" _blank
     click D "https://fromservertocluster.com" _blank
+    click E "https://aks-learning.github.io" _blank
 ```
 
 ## :globe_with_meridians: Portuguese Content
