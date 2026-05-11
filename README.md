@@ -1,6 +1,6 @@
 # Hackathon - Linux FUNdamentals
 
-![CI](https://github.com/ricmmartins/fasthack-linux/workflows/Validate%20Content/badge.svg?branch=pt-br)
+![CI](https://github.com/ricmmartins/fasthack-linux/actions/workflows/validate.yml/badge.svg?branch=pt-br)
 ![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
 ![Ubuntu 24.04](https://img.shields.io/badge/Ubuntu-24.04%20LTS-E95420?logo=ubuntu&logoColor=white)
 ![Shell](https://img.shields.io/badge/Shell-Bash-4EAA25?logo=gnubash&logoColor=white)
