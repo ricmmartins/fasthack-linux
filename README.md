@@ -111,6 +111,8 @@ Once you have mastered Linux fundamentals, take your skills to the next level:
 
 :rocket: **[Kubernetes Hackathon](https://k8shackathon.com)** — From Linux admin to Kubernetes expert. 20 hands-on challenges covering 100% of CKA + CKAD + CKS certification domains.
 
+:book: **[From Server to Cluster](https://fromservertocluster.com)** — The companion book that bridges Linux and Kubernetes. Understand the WHY behind every concept.
+
 :robot: **[AI for Infrastructure Professionals](https://ai4infra.com)** — Learn how AI is transforming infrastructure management.
 
 ## Coach's Guide
